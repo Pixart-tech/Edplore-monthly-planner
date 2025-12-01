@@ -1,84 +1,6 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './App.css';
-
-const LESSONS = {
-  Nursery: {
-    months: {
-      '1': {
-        days: {
-          '1': {
-            title: 'Colours Around Us',
-            content: 'Explore primary colours through simple objects found at home.',
-            video: 'https://www.youtube.com/embed/9QbC6VWxZl0',
-            doc: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-          },
-          '2': {
-            title: 'Sing Along Rhymes',
-            content: 'Practice rhythm and actions with a familiar nursery rhyme.',
-            video: 'https://www.youtube.com/embed/HY8k8rWfq5Y',
-            doc: 'https://www.africau.edu/images/default/sample.pdf',
-          },
-          '5': {
-            title: 'Shapes Scavenger Hunt',
-            content: 'Look for circles, squares, and triangles around your room.',
-            video: 'https://www.youtube.com/embed/zQEE6T8SDNk',
-            doc: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-          },
-        },
-      },
-      '3': {
-        days: {
-          '1': {
-            title: 'Outdoor Textures',
-            content: 'Collect leaves and describe how each one feels.',
-            video: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
-            doc: 'https://www.africau.edu/images/default/sample.pdf',
-          },
-          '4': {
-            title: 'Story Corner',
-            content: 'Listen to a short story and draw your favourite character.',
-            video: 'https://www.youtube.com/embed/ONmCC6zQ0Xk',
-            doc: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-          },
-        },
-      },
-    },
-  },
-  LKG: {
-    months: {
-      '2': {
-        days: {
-          '2': {
-            title: 'Count and Match',
-            content: 'Match numbers to the correct number of objects.',
-            video: 'https://www.youtube.com/embed/Q4Tkx93dJio',
-            doc: 'https://www.africau.edu/images/default/sample.pdf',
-          },
-          '7': {
-            title: 'Letter Tracing',
-            content: 'Practice tracing letters with proper strokes.',
-            video: 'https://www.youtube.com/embed/kCo0c94hqdA',
-            doc: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-          },
-        },
-      },
-    },
-  },
-  UKG: {
-    months: {
-      '5': {
-        days: {
-          '3': {
-            title: 'Simple Sentences',
-            content: 'Build short sentences using sight words.',
-            video: 'https://www.youtube.com/embed/mzK0hoZ39eY',
-            doc: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-          },
-        },
-      },
-    },
-  },
-};
+import LESSONS from './lessons.json';
 
 const monthNumbers = Array.from({ length: 10 }, (_, index) => String(index + 1));
 const dayNumbers = Array.from({ length: 20 }, (_, index) => String(index + 1));
@@ -91,6 +13,8 @@ function App() {
   const classData = LESSONS[selectedClass];
   const monthData = selectedMonth ? classData?.months?.[selectedMonth] : null;
   const dayData = selectedDay && monthData ? monthData.days?.[selectedDay] : null;
+  const [previewRequested, setPreviewRequested] = useState(false);
+  const [previewSuccess, setPreviewSuccess] = useState(false);
 
   const availableMonths = useMemo(
     () => new Set(Object.keys(classData.months || {})),
@@ -118,6 +42,11 @@ function App() {
     if (!availableDays.has(dayNumber)) return;
     setSelectedDay(dayNumber);
   };
+
+  useEffect(() => {
+    setPreviewRequested(false);
+    setPreviewSuccess(false);
+  }, [dayData]);
 
   return (
     <div className="app-shell">
@@ -185,18 +114,19 @@ function App() {
             {dayNumbers.map((dayNumber) => {
               const isAvailable = availableDays.has(dayNumber);
               return (
-                <button
-                  key={dayNumber}
-                  className={`day-button ${selectedDay === dayNumber ? 'active' : ''}`}
-                  disabled={!isAvailable}
-                  onClick={() => handleDaySelect(dayNumber)}
-                  aria-label={`Day ${dayNumber}${isAvailable ? '' : ' locked'}`}
-                >
-                  Day {dayNumber}
-                </button>
-              );
-            })}
-          </div>
+              <button
+                key={dayNumber}
+                className={`day-button ${selectedDay === dayNumber ? 'active' : ''}`}
+                disabled={!isAvailable}
+                onClick={() => handleDaySelect(dayNumber)}
+                aria-label={`Day ${dayNumber}${isAvailable ? '' : ' locked'}`}
+              >
+                <span>Day {dayNumber}</span>
+                {!isAvailable && <span className="lock">🔒</span>}
+              </button>
+            );
+          })}
+        </div>
         </section>
 
         <section className="panel lesson-panel">
@@ -224,12 +154,38 @@ function App() {
               </header>
               <p className="lesson-body">{dayData.content}</p>
               <div className="video-frame">
-                <iframe
-                  src={dayData.video}
-                  title={dayData.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                {previewRequested && (
+                  <iframe
+                    src={dayData.video}
+                    title={dayData.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    onLoad={() => setPreviewSuccess(true)}
+                    onError={() => setPreviewSuccess(false)}
+                  />
+                )}
+                <div
+                  className={`video-placeholder ${previewSuccess ? 'video-placeholder--hidden' : ''}`}
+                >
+                  <p>The video preview is blocked in this environment.</p>
+                  <div className="video-placeholder__actions">
+                    <button
+                      type="button"
+                      className="text-button"
+                      onClick={() => setPreviewRequested(true)}
+                      disabled={previewRequested}
+                    >
+                      {previewRequested ? 'Retry the inline preview' : 'Try the inline preview'}
+                    </button>
+                    <a
+                      href={dayData.video.replace('/embed/', '/watch?v=')}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ) : (

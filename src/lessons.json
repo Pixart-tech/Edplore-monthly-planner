@@ -1,0 +1,38 @@
+{
+  "Nursery": {
+    "months": {
+      "1": {
+        "days": {
+          "1": {
+            "title": "Colours Around Us",
+            "content": "Explore primary colours through simple objects found at home.",
+            "video": "https://youtu.be/kOV_yuN1P3Q",
+            "doc": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+          },
+          "2": {
+            "title": "Sing Along Rhymes",
+            "content": "Practice rhythm and actions with a familiar nursery rhyme.",
+            "video": "https://youtu.be/C3TtWQ2ZPbI?si=lJH8ORJiHbUrM_Vu",
+            "doc": "https://www.africau.edu/images/default/sample.pdf"
+          },
+          "3": {
+            "title": "Shapes Scavenger Hunt",
+            "content": "Look for circles, squares, and triangles around your room.",
+            "video": "https://www.youtube.com/embed/zQEE6T8SDNk",
+            "doc": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+          }
+        }
+      }
+    }
+  },
+  "LKG": {
+    "months": {
+    
+    }
+  },
+  "UKG": {
+    "months": {
+      
+    }
+  }
+}
