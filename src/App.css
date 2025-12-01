@@ -269,6 +269,16 @@ button {
   border: none;
 }
 
+.video-frame video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
 .empty-state {
   display: grid;
   place-items: center;
@@ -392,6 +402,20 @@ button {
 .lesson-slide__media {
   flex: 0 0 420px;
   width: min(420px, 100%);
+}
+
+.lesson-slide__image {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+.lesson-slide__image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .formatted-content {

@@ -1,20 +1,18 @@
-export const YOUTUBE_ID_REGEX =
-  /(?:youtu\.be\/|youtube\.com\/(?:embed\/|watch\?(?:.*&)?v=|v\/))([A-Za-z0-9_-]{11})/;
-
-export const getYoutubeEmbedUrl = (url) => {
-  if (!url) return '';
-  const match = url.match(YOUTUBE_ID_REGEX);
-  if (match) {
-    return `https://www.youtube.com/embed/${match[1]}`;
-  }
-  return url;
+const VIDEO_MIME_TYPE_MAP = {
+  mp4: 'video/mp4',
+  webm: 'video/webm',
+  ogg: 'video/ogg',
 };
 
-export const getYoutubeWatchUrl = (url) => {
+const getVideoExtension = (url) => {
   if (!url) return '';
-  const match = url.match(YOUTUBE_ID_REGEX);
-  if (match) {
-    return `https://www.youtube.com/watch?v=${match[1]}`;
-  }
-  return url;
+  const match = url.match(/\\.([a-z0-9]+)(?:[?#].*)?$/i);
+  return match ? match[1].toLowerCase() : '';
 };
+
+export const getVideoMimeType = (url) => {
+  const ext = getVideoExtension(url);
+  return VIDEO_MIME_TYPE_MAP[ext] || '';
+};
+
+export const isDirectVideoUrl = (url) => Boolean(getVideoMimeType(url));
