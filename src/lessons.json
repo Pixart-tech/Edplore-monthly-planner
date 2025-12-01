@@ -4,35 +4,153 @@
       "1": {
         "days": {
           "1": {
-            "title": "Colours Around Us",
-            "content": "Explore primary colours through simple objects found at home.",
-            "video": "https://youtu.be/kOV_yuN1P3Q",
-            "doc": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            "lessons": [
+              {
+                "title": "Circle Time: Introduction to Body Awareness",
+                "content": "^Concept:^ Initial engagement through movement and rhyme.\n^Activity:^ Introduce the rhyme \"Head, Shoulders, Knees, and Toes\".\n^Detailed Procedure:^ The instructor performs the actions slowly, touching and naming each body part mentioned in the rhyme (head, shoulders, knees, toes). This reinforces body parts identification, which is a component of General Awareness. The EVS source explicitly lists body parts like Shoulder, Knee, Foot, Toes, Thumb, Fingers, Elbow, Wrist, Heel, and Thigh.\n^More Activities/Examples:^ Sing \"Ten Little Fingers\" or another physical rhyme to promote fine motor engagement.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Literacy: Introduction to Standing Line",
+                "content": "^Concept:^ Introducing the fundamental vertical pre-writing stroke.\n^Hook:^ \"The Line Adventure!\" story, where the Standing Line is shown to help the character \"Lily the Line\" reach the skies.\n^Detailed Procedure:^ Explain that a Standing Line goes up and down, like standing tall. Demonstrate the stroke on a whiteboard.\n^Activities/Examples:^ \n* 1. Real-World Identification: Show students pictures of things that resemble standing lines, such as tall buildings, a doorframe, or a tree.\n* 2. Tracing Practice: Provide worksheets with dotted lines for students to trace over the lines.\n* 3. Movement Reinforcement: During the \"Line Dance\" break, encourage students to move like a standing line (standing tall and straight).",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Numeracy: Introduction to Big and Small",
+                "content": "^Concept:^ Introducing the comparative concept of size (spatial discrimination).\n^Hook:^ \"The Big and Small Adventure!\" hook, imagining being a tiny ant next to a giant elephant.\n^Detailed Procedure:^ Introduce vocabulary by displaying visibly contrasting objects. Examples used in the sources include a large gift box labeled \"Big\" and a small gift box labeled \"Small\", and a large dog versus a small dog.\n^Activities/Examples:^ \n* 1. Sorting Game: Provide assorted objects (e.g., balls, blocks, toy animals) and ask students to sort them into Big and Small categories.\n* 2. Workbook Task: Perform activities that require differentiation, such as circling the big hen and circling the small shirt.\n* 3. Drawing: Ask students to draw one big object and one small object on paper.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "General Awareness (EVS): Introduction to All About Me",
+                "content": "^Concept:^ Developing self-identity and expression.\n^Hook:^ \"The Magical Mirror\"\u2014a story about a mirror that shows who the child truly is.\n^Detailed Procedure:^ Ask questions such as: \"What makes you special?\". Allow children to look into a mirror (or plastic mirror) to see their reflection and discuss what they see.\n^Activities/Examples:^ Hand out worksheets (like the \"All About Me\" activities from EVS) where children can draw or write what makes them happy. Review the names of body parts (e.g., fingers, toes).",
+                "video": "",
+                "doc": ""
+              }
+            ]
           },
           "2": {
-            "title": "Sing Along Rhymes",
-            "content": "Practice rhythm and actions with a familiar nursery rhyme.",
-            "video": "https://youtu.be/C3TtWQ2ZPbI?si=lJH8ORJiHbUrM_Vu",
-            "doc": "https://www.africau.edu/images/default/sample.pdf"
+            "lessons": [
+              {
+                "title": "Circle Time: Revisit Rhyme",
+                "content": "^Concept:^ Continued muscle memory and movement coordination.\n^Activity:^ Revisit - Rhyme: \"Head, Shoulders, Knees, and Toes\".\n^Detailed Procedure:^ Sing the rhyme again, focusing on energetic movement and quick identification of the body parts (Shoulders, Knees, Feet, Toes, etc.).",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Literacy: Revisit Standing Line",
+                "content": "^Concept:^ Solidifying the vertical stroke through practice.\n^Activity:^ Revisit \u2013 Standing Line.\n^Detailed Procedure:^ Focus on Tracing Line Worksheets. Encourage correct pencil grasp and directionality (top-to-bottom motion).\n^More Activities/Examples:^ Group Collage: Provide chart paper and crayons and ask students to create a collage composed primarily of standing lines (e.g., drawing fences, rain, or tall grass).",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Numeracy: Revisit Big and Small",
+                "content": "^Concept:^ Applying size comparison through physical activity.\n^Activity:^ Revisit \u2013 Big and Small.\n^Detailed Procedure:^ Conduct the \"Big and Small Parade\" Movement Activity. The instructor calls out \"big\" or \"small,\" and students respond by stretching out wide and tall (big) or crouching down low and small (small).\n^More Activities/Examples:^ Use large/small flashcards of objects (e.g., a globe (heavy) vs. a feather (light)) and practice naming them, emphasizing the size comparison.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "General Awareness (EVS): Revisit All About Me",
+                "content": "^Concept:^ Encouraging deeper self-expression and sharing.\n^Activity:^ Revisit \u2013 All About Me.\n^Detailed Procedure:^ Engage students in a Q&A session about their favourite things (e.g., favourite foods, favourite clothes to wear). Use the provided EVS activity: \"Circle the clothes you like to wear\".\n^Art & Craft Connection:^ Use a Scribbling Time section of the workbook. Ask students to scribble about their favourite activity or person.",
+                "video": "",
+                "doc": ""
+              }
+            ]
           },
           "3": {
-            "title": "Shapes Scavenger Hunt",
-            "content": "Look for circles, squares, and triangles around your room.",
-            "video": "https://www.youtube.com/embed/zQEE6T8SDNk",
-            "doc": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            "lessons": [
+              {
+                "title": "Circle Time: Introduction to Story",
+                "content": "^Concept:^ Developing listening skills and exposure to narrative structure.\n^Activity:^ Intro \u2013 Story: The Tortoise and the Rabbit.\n^Detailed Procedure:^ Introduce the title and characters (The Tortoise and the Rabbit) and begin reading the narrative (found in the Rhymes and Stories source). Discuss the key elements of the characters and the race.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Literacy: Introduction to Sleeping Line",
+                "content": "^Concept:^ Introducing the horizontal pre-writing stroke.\n^Detailed Procedure:^ Explain that a Sleeping Line moves horizontally, left to right, like resting on a bed.\n^Activities/Examples:^ \n* 1. Tracing: Trace over the dotted sleeping lines provided in the English book.\n* 2. Matching: Use the workbook activity that requires tracing sleeping lines to connect animals to their respective homes (e.g., linking the lion to its den, or the bee to the beehive).\n* 3. Curves/Advanced Strokes: For quick finishers, introduce the practice of Curves, such as tracing the curved lines that look like fish scales or water waves.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Numeracy: Introduction to Same and Different",
+                "content": "^Concept:^ Learning pattern recognition and visual comparison (categorization).\n^Detailed Procedure:^ Show groups of objects where most are alike and one differs, contrasting items like two matching teddy bears versus one doll and one bear (Different).\n^Activities/Examples:^ \n* 1. Workbook Task: Students must cross out the object that is different from the others in each row. Examples include a row containing three red apples and a banana; or three eggs and a duck.\n* 2. Alternative Workbook Task: Circle the picture that is different, such as a yogurt cup among three teacups, or a skirt among three dresses.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "General Awareness (EVS): Introduction to Genders",
+                "content": "^Concept:^ Understanding basic social identity categories.\n^Detailed Procedure:^ Discuss the concepts of boys and girls. Ask them to discuss whether they feel like a boy or a girl, or something else.\n^Activities/Examples:^ Use the creative expression time (EVS objective) to provide worksheets with images of children engaged in various activities (e.g., playing games, cooking). Discuss and affirm that \"Boys and girls can like different things, but what matters most is being true to yourself\".",
+                "video": "",
+                "doc": ""
+              }
+            ]
+          },
+          "4": {
+            "lessons": [
+              {
+                "title": "Circle Time: Revisit Story",
+                "content": "^Concept:^ Focusing on the narrative outcome and moral lesson.\n^Activity:^ Revisit - Story: The Tortoise and the Rabbit.\n^Detailed Procedure:^ Recap the key plot points and discuss the implied meaning or moral of the story, such as perseverance.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Literacy: Revisit Sleeping Line",
+                "content": "^Concept:^ Practising the horizontal stroke in application.\n^Activity:^ Revisit \u2013 Sleeping Line.\n^Detailed Procedure:^ Practice drawing sleeping lines, perhaps turning the activity into a map-reading exercise, drawing a sleeping line across a maze to reach a goal (like guiding the rabbit through a maze to reach the carrot).\n^More Activities/Examples:^ Combine lines to draw a large square or rectangle. The rectangle shape, demonstrated by a door or a book, uses both standing and sleeping lines.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Numeracy: Introduction to Tall and Short / Long and Short",
+                "content": "^Concept:^ Introducing comparisons based on vertical height (Tall and Short) and horizontal length (Long and Short).\n^Detailed Procedure:^ \n** Tall and Short: Compare objects based on height. Activity: Tick the tall objects and cross the short ones. Examples include comparing a tall ladder to a shorter ladder, or a floor lamp to a table lamp.\n** Long and Short: Compare items based on length. The sources illustrate this with a long log and a short log, or a long snake and a short caterpillar. Activity: Tick (\u2714) the long objects and cross (X) the short ones. This includes comparing a long crayon to a short crayon, or a long rope to a short rope.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "General Awareness (EVS): Revisit Genders",
+                "content": "^Concept:^ Reinforcing respect for diverse activities and interests.\n^Activity:^ Revisit \u2013 Genders.\n^Detailed Procedure:^ Use the concept of Community Role Models and pictures of clothes to discuss that clothing choices and occupations are not limited by gender.",
+                "video": "",
+                "doc": ""
+              }
+            ]
+          },
+          "5": {
+            "lessons": [
+              {
+                "title": "Circle Time: Synthesis",
+                "content": "^Concept:^ Reviewing the week's auditory concepts.\n^Activity:^ Revisit \u2013 Rhyme and Story.\n^Detailed Procedure:^ Perform the \"Head, Shoulders, Knees, and Toes\" rhyme once more, and prompt children to recall the main message of The Tortoise and the Rabbit.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Literacy: Synthesis of Lines",
+                "content": "^Concept:^ Applying all learned strokes (Standing and Sleeping lines).\n^Activity:^ Revisit \u2013 Standing and Sleeping Line.\n^Detailed Procedure:^ Practice drawing and identifying shapes formed by these lines, such as drawing a Square (found in the workbook for tracing) or practicing writing the entire alphabet (A-Z) in large blocks, noting how letters like 'E' and 'T' use both strokes.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Numeracy: One and Many / Colour Focus (Red)",
+                "content": "^Concept:^ Introducing basic quantity recognition and primary colour identification.\n^Quantity (One and Many):^ Introduce the contrast between a single item (\"one\") and multiple items (\"many\"). Activity: Students must tick (\u2714) the correct answer when comparing images like a single cup vs. multiple cups, or one umbrella vs. many umbrellas.\n^Colour Focus (Red):^ Introduce the primary colour RED. Discuss objects that are red, such as a Car, Apple, Tomato, Strawberry, and Rose. Activity: Circle the objects that are red among distractors (e.g., car, strawberry, rose) and colour the apple red.",
+                "video": "",
+                "doc": ""
+              },
+              {
+                "title": "Art and Craft / Fine Motor: Hand Painting",
+                "content": "^Concept:^ Utilizing large motor skills and sensory engagement.\n^Activity:^ Hand Painting.\n^Detailed Procedure:^ Dedicate time to Handprint Art. Use water-based paint and large paper. Instruct students to dip their hands in paint and make prints.\n^More Activities/Examples:^ Allow students unstructured Scribbling Time (3 pages are dedicated to this in the Art & Craft book) to fully exercise the fine motor skills developed during the week's tracing work. This helps integrate the learned strokes freely.",
+                "video": "",
+                "doc": ""
+              }
+            ]
           }
         }
       }
     }
   },
   "LKG": {
-    "months": {
-    
-    }
+    "months": {}
   },
   "UKG": {
-    "months": {
-      
-    }
+    "months": {}
   }
 }
