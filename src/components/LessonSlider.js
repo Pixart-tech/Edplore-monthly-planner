@@ -1,11 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import PdfButton from './PdfButton';
 import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
 import Time from './Time';
 
 function LessonMedia({ lesson, shouldShowControls }) {
-  const [showImage, setShowImage] = useState(false);
   const [videoUrl, setVideoUrl] = useState(null);
   const [videoError, setVideoError] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
@@ -63,8 +62,8 @@ function LessonMedia({ lesson, shouldShowControls }) {
     );
   }, [hasImage, imageAssetPaths.length]);
 
-  const renderImageSelectors = () => {
-    if (imageAssetPaths.length <= 1) {
+  const renderImageSelectors = (isSmall = false) => {
+    if (imageAssetPaths.length <= 1 || isSmall) {
       return null;
     }
 
@@ -86,7 +85,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
     );
   };
 
-  const renderImage = (extraClass = '') => {
+  const renderImage = (extraClass = '', isSmall = false) => {
     if (!hasImage) {
       return null;
     }
@@ -96,19 +95,22 @@ function LessonMedia({ lesson, shouldShowControls }) {
     return (
       <div className={className}>
         {imageUrl ? (
-          <img src={imageUrl} alt={imageAlt} />
+          <img
+            src={imageUrl}
+            alt={imageAlt}
+            className={isSmall ? 'lesson-slide__image--small' : undefined}
+          />
         ) : (
           <p className="lesson-slide__image-placeholder">
             {imageError || 'Loading illustration...'}
           </p>
         )}
-        {renderImageSelectors()}
+        {renderImageSelectors(isSmall)}
       </div>
     );
   };
 
   useEffect(() => {
-    setShowImage(false);
     setVideoUrl(null);
     setVideoError(null);
 
@@ -149,32 +151,28 @@ function LessonMedia({ lesson, shouldShowControls }) {
     return null;
   }
 
+  const mediaClassNames = [
+    'lesson-slide__media',
+    hasVideo && hasImage ? 'lesson-slide__media--has-both' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <div className="lesson-slide__media">
-      {hasVideo ? (
+    <div className={mediaClassNames}>
+      {hasVideo && (
         <VideoPreview
           videoUrl={videoUrl}
           title={lesson.title}
           autoPlay={shouldShowControls}
           idleMessage={videoError || 'Navigate to this lesson to load the preview.'}
         />
-      ) : (
-        renderImage()
       )}
-      {hasVideo && hasImage && (
-        <>
-          <div className="lesson-slide__media-controls">
-            <button
-              type="button"
-              className="text-button"
-              onClick={() => setShowImage((prev) => !prev)}
-            >
-              {showImage ? 'Hide image' : 'View image'}
-            </button>
-          </div>
-          {showImage && renderImage('lesson-slide__image--sibling')}
-        </>
-      )}
+      {hasImage &&
+        renderImage(
+          hasVideo ? 'lesson-slide__image--inline' : '',
+          Boolean(hasVideo),
+        )}
     </div>
   );
 }
@@ -189,57 +187,6 @@ export default function LessonSlider({
   selectedMonth,
   selectedDay,
 }) {
-  const trackRef = useRef(null);
-  const [sliderHeight, setSliderHeight] = useState('auto');
-  const rafRef = useRef(null);
-
-  const updateSliderHeight = useCallback(() => {
-    if (rafRef.current) {
-      cancelAnimationFrame(rafRef.current);
-      rafRef.current = null;
-    }
-    if (!trackRef.current) {
-      setSliderHeight('auto');
-      return;
-    }
-
-    const activeSlide = trackRef.current.children[currentSlide];
-    if (activeSlide) {
-      rafRef.current = requestAnimationFrame(() => {
-        setSliderHeight(`${activeSlide.offsetHeight}px`);
-      });
-      return;
-    }
-
-    setSliderHeight('auto');
-  }, [currentSlide]);
-
-  useEffect(() => {
-    updateSliderHeight();
-  }, [updateSliderHeight, lessons]);
-
-  useEffect(() => {
-    window.addEventListener('resize', updateSliderHeight);
-    return () => window.removeEventListener('resize', updateSliderHeight);
-  }, [updateSliderHeight]);
-
-  useEffect(() => {
-    if (!trackRef.current) {
-      return undefined;
-    }
-
-    const activeSlide = trackRef.current.children[currentSlide];
-    if (!activeSlide || typeof ResizeObserver === 'undefined') {
-      return undefined;
-    }
-
-    const observer = new ResizeObserver(() => {
-      updateSliderHeight();
-    });
-
-    observer.observe(activeSlide);
-    return () => observer.disconnect();
-  }, [currentSlide, updateSliderHeight]);
 
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
@@ -284,34 +231,35 @@ export default function LessonSlider({
             Next
           </button>
         </div>
-        <div className="lesson-page__slider" style={{ height: sliderHeight }}>
-          <div
-            className="lesson-page__track"
-            ref={trackRef}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
+        <div className="lesson-page__slider">
+          <div className="lesson-page__track">
             {lessons.map((lesson, index) => {
               const shouldShowControls = index === currentSlide;
               return (
-            <article className="lesson-slide" key={`${lesson.title ?? 'lesson'}-${index}`}>
-              <header className="lesson-slide__header">
-                <div>
-                  <p className="eyebrow">Slider's {index + 1}</p>
-                  <h3>{lesson.title}</h3>
-                </div>
-                <Time time={lesson.time} />
-                {lesson.doc && <PdfButton href={lesson.doc} />}
-              </header>
-              <div className="lesson-slide__content">
-                <div className="lesson-slide__text">
-                  <FormattedContent text={lesson.content} />
-                </div>
-                <LessonMedia
-                  lesson={lesson}
-                  shouldShowControls={shouldShowControls}
-                />
-              </div>
-            </article>
+                <article
+                  className="lesson-slide"
+                  key={`${lesson.title ?? 'lesson'}-${index}`}
+                  style={{ display: shouldShowControls ? 'flex' : 'none' }}
+                  aria-hidden={!shouldShowControls}
+                >
+                  <header className="lesson-slide__header">
+                    <div>
+                      <p className="eyebrow">Slider's {index + 1}</p>
+                      <h3>{lesson.title}</h3>
+                    </div>
+                    <Time time={lesson.time} />
+                    {lesson.doc && <PdfButton href={lesson.doc} />}
+                  </header>
+                  <div className="lesson-slide__content">
+                    <div className="lesson-slide__text">
+                      <FormattedContent text={lesson.content} />
+                    </div>
+                    <LessonMedia
+                      lesson={lesson}
+                      shouldShowControls={shouldShowControls}
+                    />
+                  </div>
+                </article>
               );
             })}
           </div>
