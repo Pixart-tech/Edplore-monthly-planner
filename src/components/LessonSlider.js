@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import PdfButton from './PdfButton';
 import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
@@ -189,6 +189,58 @@ export default function LessonSlider({
   selectedMonth,
   selectedDay,
 }) {
+  const trackRef = useRef(null);
+  const [sliderHeight, setSliderHeight] = useState('auto');
+  const rafRef = useRef(null);
+
+  const updateSliderHeight = useCallback(() => {
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    if (!trackRef.current) {
+      setSliderHeight('auto');
+      return;
+    }
+
+    const activeSlide = trackRef.current.children[currentSlide];
+    if (activeSlide) {
+      rafRef.current = requestAnimationFrame(() => {
+        setSliderHeight(`${activeSlide.offsetHeight}px`);
+      });
+      return;
+    }
+
+    setSliderHeight('auto');
+  }, [currentSlide]);
+
+  useEffect(() => {
+    updateSliderHeight();
+  }, [updateSliderHeight, lessons]);
+
+  useEffect(() => {
+    window.addEventListener('resize', updateSliderHeight);
+    return () => window.removeEventListener('resize', updateSliderHeight);
+  }, [updateSliderHeight]);
+
+  useEffect(() => {
+    if (!trackRef.current) {
+      return undefined;
+    }
+
+    const activeSlide = trackRef.current.children[currentSlide];
+    if (!activeSlide || typeof ResizeObserver === 'undefined') {
+      return undefined;
+    }
+
+    const observer = new ResizeObserver(() => {
+      updateSliderHeight();
+    });
+
+    observer.observe(activeSlide);
+    return () => observer.disconnect();
+  }, [currentSlide, updateSliderHeight]);
+
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
       <div className="lesson-page__inner">
@@ -232,9 +284,10 @@ export default function LessonSlider({
             Next
           </button>
         </div>
-        <div className="lesson-page__slider">
+        <div className="lesson-page__slider" style={{ height: sliderHeight }}>
           <div
             className="lesson-page__track"
+            ref={trackRef}
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {lessons.map((lesson, index) => {

@@ -90,8 +90,7 @@ function App() {
               <h1>Pick a class, month, and day to view lessons</h1>
             </div>
             <p className="helper-text">
-              Locked months show a 🔒 icon. Days only unlock when a class and month have
-              available content.
+              Months and Days only unlock when have available content.
             </p>
           </header>
 
