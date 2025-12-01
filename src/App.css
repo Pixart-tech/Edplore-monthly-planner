@@ -428,6 +428,40 @@ button {
   background: #fff;
 }
 
+.lesson-slide__image-placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.lesson-slide__image-tabs {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lesson-slide__image-tab {
+  border: none;
+  background: #eef8f4;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lesson-slide__image-tab--active {
+  background: var(--accent);
+  color: #0f172a;
+}
+
 .lesson-slide__image img {
   display: block;
   width: 100%;
