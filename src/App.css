@@ -579,6 +579,22 @@ button {
 }
 
 @media (max-width: 900px) {
+
+  h3 {
+    margin: 4px 0 0;
+    font-size: 14px;
+  }
+
+  .formatted-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
   .lesson-slide__content {
     flex-direction: column;
   }
@@ -586,5 +602,10 @@ button {
   .lesson-slide__media {
     width: 100%;
     flex: 1 1 0;
+    order: 0;
+  }
+
+  .lesson-slide__text {
+    order: 1;
   }
 }
