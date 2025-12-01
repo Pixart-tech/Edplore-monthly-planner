@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PdfButton from './PdfButton';
 import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
+import Time from './Time';
 
 function LessonMedia({ lesson, shouldShowControls }) {
   const [showImage, setShowImage] = useState(false);
@@ -10,17 +11,18 @@ function LessonMedia({ lesson, shouldShowControls }) {
 
   const hasVideo = Boolean(lesson.video);
   const hasImage = Boolean(lesson.image);
+  const shouldLoadVideo = hasVideo && shouldShowControls;
 
   useEffect(() => {
     setShowImage(false);
     setVideoUrl(null);
     setVideoError(null);
 
-    if (hasVideo) {
+    if (shouldLoadVideo) {
       // CRA requires a static path prefix for dynamic imports.
-      // The paths in lessons.json are like ../assets/Nursery/Day-1/DAY-1-1.mp4
-      // We are in src/components, so ../assets maps to src/assets
-      import(`../assets/${lesson.video.split('assets/')[1]}`)
+      // The paths in lessons.json now include assets/, matching src/assets/Videos/...
+      // We are in src/components, so ../${lesson.video} resolves to src/assets/Videos/...
+      import(`../${lesson.video}`)
         .then((video) => {
           setVideoUrl(video.default);
         })
@@ -29,7 +31,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
           setVideoError('Could not load video.');
         });
     }
-  }, [lesson.video, hasVideo]);
+  }, [lesson.video, shouldLoadVideo]);
 
   if (!hasVideo && !hasImage) {
     return null;
@@ -41,8 +43,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
         <VideoPreview
           videoUrl={videoUrl}
           title={lesson.title}
-          autoLoad={shouldShowControls}
-          showActions={shouldShowControls}
+          autoPlay={shouldShowControls}
           idleMessage={videoError || 'Navigate to this lesson to load the preview.'}
         />
       ) : (
@@ -141,6 +142,7 @@ export default function LessonSlider({
                   <p className="eyebrow">Slider's {index + 1}</p>
                   <h3>{lesson.title}</h3>
                 </div>
+                <Time time={lesson.time} />
                 {lesson.doc && <PdfButton href={lesson.doc} />}
               </header>
               <div className="lesson-slide__content">

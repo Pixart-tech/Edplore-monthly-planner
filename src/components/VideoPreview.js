@@ -1,42 +1,48 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function VideoPreview({
   videoUrl,
   title,
-  autoLoad = false,
-  idleMessage = 'Navigate to this lesson to load the preview.',
-  showActions = true,
+  idleMessage,
+  autoPlay = false,
 }) {
-  const [previewReady, setPreviewReady] = useState(false);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    setPreviewReady(false);
-  }, [videoUrl, autoLoad]);
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [videoUrl]);
 
-  const shouldHidePlaceholder = previewReady && videoUrl;
-  const placeholderMessage = videoUrl
-    ? 'Loading the direct video preview...'
-    : idleMessage;
+  useEffect(() => {
+    if (autoPlay && videoRef.current && videoUrl) {
+      videoRef.current
+        .play()
+        .catch((err) => console.warn('Autoplay prevented by browser:', err));
+    }
+  }, [autoPlay, videoUrl]);
+
+  if (!videoUrl) {
+    return (
+      <div className="video-frame video-frame--idle">
+        <p>{idleMessage ?? 'Video will load once you open the slider.'}</p>
+      </div>
+    );
+  }
 
   return (
     <div className="video-frame">
-      {videoUrl && (
-        <video
-          controls
-          preload="metadata"
-          onLoadedData={() => setPreviewReady(true)}
-          onError={() => setPreviewReady(false)}
-          src={videoUrl}
-          title={title}
-        >
-          Your browser does not support the video tag.
-        </video>
-      )}
-      <div
-        className={`video-placeholder ${shouldHidePlaceholder ? 'video-placeholder--hidden' : ''}`}
+      <video
+        ref={videoRef}
+        key={videoUrl} // Ensures the component re-mounts on URL change
+        controls
+        preload="metadata"
+        autoPlay={autoPlay}
+        src={videoUrl}
+        title={title}
       >
-        <p>{placeholderMessage}</p>
-      </div>
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
