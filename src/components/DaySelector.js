@@ -1,13 +1,11 @@
 import React from 'react';
 
-export default function DaySelector({
-  dayNumbers,
-  availableDays,
-  selectedDay,
-  onSelect,
-}) {
+const DaySelector = React.forwardRef(function DaySelector(
+  { dayNumbers, availableDays, selectedDay, onSelect },
+  ref
+) {
   return (
-    <section className="panel">
+    <section ref={ref} className="panel">
       <div className="panel-heading">
         <p className="eyebrow">Step 3</p>
         <h2>Pick a day</h2>
@@ -31,4 +29,6 @@ export default function DaySelector({
       </div>
     </section>
   );
-}
+});
+
+export default DaySelector;

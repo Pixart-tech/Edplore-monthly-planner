@@ -32,12 +32,6 @@ IV. General Awareness (EVS): Introduction to Parts of the Body
     2. Activity: Conduct a "Touch and Name" game: The instructor calls out a body part, and the students must immediately touch it (e.g., "Touch your hands!").
 -------------------------------------------------------------------------------- 
 
-
-
-
-
-
-
 Day 2: Introduction to Backwards Slant and Spatial Directionality
 I. Circle Time: Revisit Rhyme
 • Activity: Revisit - Rhyme: "Ten Little Fingers".
@@ -64,26 +58,6 @@ IV. General Awareness (EVS): Revisit Parts of the Body
     1. Game: Play an active game of "Simon Says" focused on body parts (e.g., "Simon says wiggle your fingers," "Simon says touch your feet").
     2. Activity: Draw a large outline of a person and have students label or paste pictures of the corresponding body parts.
 -------------------------------------------------------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Day 3: Introduction to Shapes (Circle) and Fine Motor Curves
 I. Circle Time: Introduction to Social Language
@@ -112,22 +86,6 @@ IV. General Awareness (EVS): Introduction to Face and Torso Parts
     2. Discussion: Discuss the function of each part (e.g., eating with the mouth, smelling with the nose).
 -------------------------------------------------------------------------------- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Day 4: Application (Letter B, Number 2, Heavy/Light)
 I. Circle Time: Revisit Magic Words
 • Activity: Revisit – Magic Words.
@@ -146,22 +104,6 @@ IV. General Awareness (EVS): Revisit Face and Torso Parts and Action Words
     1. Activity: Practice Action Words. Call out words like Run, Jump, Drink, Write, Read, Sleep and have children perform the action. Discuss which parts (legs, mouth, hands, eyes) are involved.
     2. Extension: Discuss hygiene related to body parts (EVS topic), such as washing hands or brushing teeth.
 -------------------------------------------------------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Day 5: Synthesis and Fine Motor Creation
@@ -238,6 +180,8 @@ def build_lessons() -> tuple[dict, int]:
                 "content": content_text,
                 "video": "",
                 "doc": "",
+                "image": "",
+                "time": "20 minutes"
             }
         )
         current_section_title = None

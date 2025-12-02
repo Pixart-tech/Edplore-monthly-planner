@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import './App.css';
 import LESSONS from './lessons.json';
 import ClassSelector from './components/ClassSelector';
@@ -15,6 +15,7 @@ function App() {
   const [selectedDay, setSelectedDay] = useState(null);
   const [showLessonPage, setShowLessonPage] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const daySelectorRef = useRef(null);
 
   const classData = LESSONS[selectedClass];
   const monthData = selectedMonth ? classData?.months?.[selectedMonth] : null;
@@ -80,6 +81,18 @@ function App() {
     }
   }, [dayData]);
 
+  useEffect(() => {
+    if (selectedMonth && daySelectorRef.current) {
+      daySelectorRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [selectedMonth]);
+
+  useEffect(() => {
+    if (showLessonPage && typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [showLessonPage]);
+
   return (
     <div className="app-shell">
       {!showLessonPage && (
@@ -111,6 +124,7 @@ function App() {
               availableDays={availableDays}
               selectedDay={selectedDay}
               onSelect={handleDaySelect}
+              ref={daySelectorRef}
             />
           </main>
         </>
