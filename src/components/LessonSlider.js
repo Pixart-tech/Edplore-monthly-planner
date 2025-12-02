@@ -193,7 +193,6 @@ export default function LessonSlider({
       <div className="lesson-page__inner">
         <div className="lesson-page__header">
           <div>
-            <p className="eyebrow">slider</p>
             <h2>
               {selectedClass} · Month {selectedMonth} · Day {selectedDay}
             </h2>
@@ -244,12 +243,18 @@ export default function LessonSlider({
                   aria-hidden={!shouldShowControls}
                 >
                   <header className="lesson-slide__header">
-                    <div>
-                      <p className="eyebrow">Slider's {index + 1}</p>
-                      <h3>{lesson.title}</h3>
+                    <div className="lesson-slide__header-main">
+                      <div>
+                        <p className="eyebrow">Slider's {index + 1}</p>
+                        <h3>{lesson.title}</h3>
+                      </div>
+                      {lesson.doc && <PdfButton href={lesson.doc} />}
                     </div>
-                    {lessonTime ? <Time time={lessonTime} /> : null}
-                    {lesson.doc && <PdfButton href={lesson.doc} />}
+                    {lessonTime && (
+                      <div className="lesson-slide__time-row">
+                        <Time time={lessonTime} />
+                      </div>
+                    )}
                   </header>
                   <div className="lesson-slide__content">
                     <div className="lesson-slide__text">
