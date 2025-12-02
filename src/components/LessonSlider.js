@@ -234,6 +234,7 @@ export default function LessonSlider({
         <div className="lesson-page__slider">
           <div className="lesson-page__track">
             {lessons.map((lesson, index) => {
+              const lessonTime = lesson.time?.trim();
               const shouldShowControls = index === currentSlide;
               return (
                 <article
@@ -247,7 +248,7 @@ export default function LessonSlider({
                       <p className="eyebrow">Slider's {index + 1}</p>
                       <h3>{lesson.title}</h3>
                     </div>
-                    <Time time={lesson.time} />
+                    {lessonTime ? <Time time={lessonTime} /> : null}
                     {lesson.doc && <PdfButton href={lesson.doc} />}
                   </header>
                   <div className="lesson-slide__content">
