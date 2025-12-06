@@ -3,6 +3,7 @@ import PdfButton from './PdfButton';
 import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
 import Time from './Time';
+import TraceLetter, { TRACE_LETTER_KEYS } from './TraceLetter';
 
 function LessonMedia({ lesson, shouldShowControls }) {
   const [videoUrl, setVideoUrl] = useState(null);
@@ -177,6 +178,8 @@ function LessonMedia({ lesson, shouldShowControls }) {
   );
 }
 
+const TRACE_LETTER_SET = new Set(TRACE_LETTER_KEYS);
+
 export default function LessonSlider({
   lessons,
   currentSlide,
@@ -187,6 +190,106 @@ export default function LessonSlider({
   selectedMonth,
   selectedDay,
 }) {
+  const [popupPayload, setPopupPayload] = useState(null);
+
+  const closePopup = () => {
+    setPopupPayload(null);
+  };
+
+  useEffect(() => {
+    if (!popupPayload) {
+      return undefined;
+    }
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setPopupPayload(null);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [popupPayload]);
+
+  const renderPopupButtons = (lesson) => {
+    const normalizePopupData = (value) => {
+      if (!value) {
+        return null;
+      }
+      return typeof value === 'string' ? { content: value } : value;
+    };
+
+    const normalizeTraceLetter = (value) => {
+      if (typeof value !== 'string') {
+        return null;
+      }
+      const normalized = value.trim().toUpperCase();
+      return TRACE_LETTER_SET.has(normalized) ? normalized : null;
+    };
+
+    const actions = [
+      {
+        type: 'trace',
+        fallbackTitle: 'Trace reference',
+        payload: normalizePopupData(lesson.trace),
+      },
+      {
+        type: 'popvideo',
+        fallbackTitle: 'Pop video',
+        payload: normalizePopupData(lesson.popvideo),
+      },
+    ]
+      .map((action) => ({
+        ...action,
+        animationLetter:
+          action.type === 'trace'
+            ? normalizeTraceLetter(action.payload?.content)
+            : null,
+      }))
+      .filter((action) => action.payload);
+
+    if (!actions.length) {
+      return null;
+    }
+
+    return (
+      <div className="lesson-slide__popup-buttons">
+        {actions.map((action) => (
+          <button
+            key={action.type}
+            type="button"
+            className="text-button lesson-slide__popup-button"
+            onClick={() =>
+              setPopupPayload({
+                type: action.type,
+                ...action.payload,
+                animationLetter: action.animationLetter,
+              })
+            }
+          >
+            {action.payload.title ?? action.fallbackTitle}
+          </button>
+        ))}
+      </div>
+    );
+  };
+
+  const popupTitle =
+    popupPayload?.title ??
+    (popupPayload?.type === 'popvideo' ? 'Pop video' : 'Trace reference');
+
+  const showTraceAnimation =
+    popupPayload?.type === 'trace' && Boolean(popupPayload?.animationLetter);
+  const trimmedPopupContent =
+    typeof popupPayload?.content === 'string'
+      ? popupPayload.content.trim()
+      : '';
+  const shouldShowFormattedContent =
+    Boolean(trimmedPopupContent) &&
+    (!showTraceAnimation ||
+      trimmedPopupContent.toUpperCase() !== popupPayload?.animationLetter);
 
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
@@ -259,6 +362,7 @@ export default function LessonSlider({
                   <div className="lesson-slide__content">
                     <div className="lesson-slide__text">
                       <FormattedContent text={lesson.content} />
+                      {renderPopupButtons(lesson)}
                     </div>
                     <LessonMedia
                       lesson={lesson}
@@ -271,6 +375,44 @@ export default function LessonSlider({
           </div>
         </div>
       </div>
+      {popupPayload && (
+        <div
+          className="lesson-slide__popup-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={popupTitle}
+          onClick={closePopup}
+        >
+          <div
+            className="lesson-slide__popup-card"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <header className="lesson-slide__popup-header">
+              <h4>{popupTitle}</h4>
+              <button
+                type="button"
+                className="text-button lesson-slide__popup-close"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </header>
+            <div className="lesson-slide__popup-body">
+              {showTraceAnimation && (
+                <TraceLetter initialLetter={popupPayload.animationLetter} />
+              )}
+              {shouldShowFormattedContent && (
+                <FormattedContent text={popupPayload.content} />
+              )}
+              {!showTraceAnimation && !shouldShowFormattedContent && (
+                <p className="lesson-slide__popup-empty">
+                  No additional content available.
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

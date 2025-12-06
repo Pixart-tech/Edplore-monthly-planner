@@ -19,7 +19,15 @@
                 "video": "assets/Videos/Nursery/Day-1/DAY-1-2.mp4",
                 "doc": "",
                 "image": "",
-                "time": "20 minutes"
+                "time": "20 minutes",
+                "trace": {
+                  "title": "Click here to check tracing of standing line A",
+                  "content": "A"
+                },
+                "popvideo" : {
+                  "title": "Click here to check tracing of standing line",
+                  "content": "a"
+                }
               },
               {
                 "title": "Numeracy: Introduction to Big and Small",
