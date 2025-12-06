@@ -3,7 +3,10 @@ import PdfButton from './PdfButton';
 import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
 import Time from './Time';
-import TraceLetter, { TRACE_LETTER_KEYS } from './TraceLetter';
+import TraceLetter, {
+  TRACE_LETTER_KEYS,
+  canonicalTraceLetterKey,
+} from './TraceLetter';
 import PopVideoPlayer from './PopVideoPlayer';
 
 function LessonMedia({ lesson, shouldShowControls }) {
@@ -179,7 +182,9 @@ function LessonMedia({ lesson, shouldShowControls }) {
   );
 }
 
-const TRACE_LETTER_SET = new Set(TRACE_LETTER_KEYS);
+const TRACE_LETTER_SET = new Set(
+  TRACE_LETTER_KEYS.map(canonicalTraceLetterKey).filter(Boolean),
+);
 
 export default function LessonSlider({
   lessons,
@@ -223,11 +228,8 @@ export default function LessonSlider({
     };
 
     const normalizeTraceLetter = (value) => {
-      if (typeof value !== 'string') {
-        return null;
-      }
-      const normalized = value.trim().toUpperCase();
-      return TRACE_LETTER_SET.has(normalized) ? normalized : null;
+      const normalized = canonicalTraceLetterKey(value);
+      return normalized && TRACE_LETTER_SET.has(normalized) ? normalized : null;
     };
 
     const normalizePopVideoKey = (value) => {

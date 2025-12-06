@@ -13,11 +13,11 @@
                 "image": "",
                 "time": "20 minutes",
                 "trace": {
-                  "title": "Click here to check tracing of standing line A",
-                  "content": "B"
+                  "title": "Trace DownCurve",
+                  "content": "DownCurve"
                 },
                 "popvideo" : {
-                  "title": "Click here to check tracing of standing line",
+                  "title": "Sound B",
                   "content": "b"
                 }
               },
@@ -29,11 +29,11 @@
                 "image": "",
                 "time": "20 minutes",
                 "trace": {
-                  "title": "Click here to check tracing of standing line A",
-                  "content": "A"
+                  "title": "Trace A",
+                  "content": "UpCurve"
                 },
                 "popvideo" : {
-                  "title": "Click here to check tracing of standing line",
+                  "title": "Sound A",
                   "content": "a"
                 }
               },
@@ -43,7 +43,15 @@
                 "video": "assets/Videos/Nursery/Day-1/DAY-1-3.mp4",
                 "doc": "",
                 "image": "",
-                "time": "20 minutes"
+                "time": "20 minutes",
+                "trace": {
+                  "title": "Trace C",
+                  "content": "StandingLine"
+                },
+                "popvideo" : {
+                  "title": "Sound C",
+                  "content": "c"
+                }
               },
               {
                 "title": "General Awareness (EVS): Introduction to All About Me",
@@ -51,7 +59,15 @@
                 "video": "assets/Videos/Nursery/Day-1/DAY-1-4.mp4",
                 "doc": "",
                 "image": "",
-                "time": "20 minutes"
+                "time": "20 minutes",
+                "trace": {
+                  "title": "Trace D",
+                  "content": "SleepingLine"
+                },
+                "popvideo" : {
+                  "title": "Sound D",
+                  "content": "d"
+                }
               }
             ]
           },

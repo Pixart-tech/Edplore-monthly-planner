@@ -1,21 +1,47 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-export const TRACE_LETTER_KEYS = ['A', 'B', 'C', 'D', 'E', 'F'];
+const TRACE_LETTER_ALIASES = {
+  SLANT_LINE: 'SLANTING_LINE',
+};
+
+export const canonicalTraceLetterKey = (value) => {
+  if (typeof value !== 'string') {
+    return null;
+  }
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+
+  const spaced = trimmed.replace(/([a-z])([A-Z])/g, '$1_$2');
+  const normalized = spaced
+    .replace(/[-\s]+/g, '_')
+    .replace(/_+/g, '_');
+  const upper = normalized.toUpperCase();
+  return TRACE_LETTER_ALIASES[upper] ?? upper;
+};
+
+export const TRACE_LETTER_KEYS = [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'DownCurve',
+  'LeftCurve',
+  'RightCurve',
+  'Slanting Line',
+  'SleepingLine',
+  'StandingLine',
+  'UpCurve',
+];
 const strokeDelay = 90;
 const betweenStrokeDelay = 220;
 const strokeColors = ['#005587ff', '#0e8ee9ff', '#1c425aff', '#677275ff', '#4c6781ff'];
 const strokeColorNames = ['Orange', 'Blue', 'Green', 'Purple', 'Red'];
 
-const normalizeLetterInput = (value) => {
-  if (!value) {
-    return null;
-  }
-  if (typeof value !== 'string') {
-    return null;
-  }
-  const trimmed = value.trim().toUpperCase();
-  return trimmed.length === 1 ? trimmed : null;
-};
+const normalizeLetterInput = (value) => canonicalTraceLetterKey(value);
 
 function convertPoints(pointArray) {
   return pointArray.map(({ x, y }) => [x, y]);
@@ -32,6 +58,7 @@ function TraceLetter({ initialLetter }) {
   const [status, setStatus] = useState('loading');
   const [error, setError] = useState(null);
   const [activeLetter, setActiveLetter] = useState(null);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const normalized = useMemo(
     () => normalizeLetterInput(initialLetter),
@@ -62,35 +89,35 @@ function TraceLetter({ initialLetter }) {
     ctx.fill();
   };
 
- const drawStrokeIndicator = (points, number, color) => {
-  const ctx = getContext();
-  if (!ctx || points.length < 2) return;
+  const drawStrokeIndicator = (points, number, color) => {
+    const ctx = getContext();
+    if (!ctx || points.length < 2) return;
 
-  const badgeRadius = 16;
+    const badgeRadius = 16;
 
-  // Use END POINT instead of start point
-  const [xe, ye] = points[points.length - 1];
-  const [x1, y1] = points[points.length - 2];
+    // Use END POINT instead of start point
+    const [xe, ye] = points[points.length - 1];
+    const [x1, y1] = points[points.length - 2];
 
-  // Stroke direction angle (toward arrow)
-  const angle = Math.atan2(ye - y1, xe - x1);
+    // Stroke direction angle (toward arrow)
+    const angle = Math.atan2(ye - y1, xe - x1);
 
-  // Offset to place number above arrow neatly
-  const distance = 26;
-  let circleX = xe + Math.cos(angle + Math.PI / 2) * distance;
-  let circleY = ye + Math.sin(angle + Math.PI / 2) * distance;
+    // Offset to place number above arrow neatly
+    const distance = 26;
+    let circleX = xe + Math.cos(angle + Math.PI / 2) * distance;
+    let circleY = ye + Math.sin(angle + Math.PI / 2) * distance;
 
-  // Keep inside canvas
-  circleX = Math.min(Math.max(badgeRadius + 4, circleX), 300 - badgeRadius - 4);
-  circleY = Math.min(Math.max(badgeRadius + 4, circleY), 300 - badgeRadius - 4);
+    // Keep inside canvas
+    circleX = Math.min(Math.max(badgeRadius + 4, circleX), 300 - badgeRadius - 4);
+    circleY = Math.min(Math.max(badgeRadius + 4, circleY), 300 - badgeRadius - 4);
 
-  ctx.save();
-  ctx.beginPath();
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 2;
-  ctx.arc(circleX, circleY, badgeRadius, 0, Math.PI * 2);
-  ctx.fill();
+    ctx.save();
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.arc(circleX, circleY, badgeRadius, 0, Math.PI * 2);
+    ctx.fill();
   ctx.stroke();
 
   ctx.fillStyle = color;
@@ -161,7 +188,9 @@ function TraceLetter({ initialLetter }) {
       const nextLetter = drawingRef.current.pendingLetter;
       drawingRef.current.pendingLetter = null;
       drawLetter(nextLetter);
+      return;
     }
+    setIsAnimating(false);
   };
 
   const drawStrokePoints = (points, color, onComplete) => {
@@ -210,7 +239,7 @@ function TraceLetter({ initialLetter }) {
   };
 
   const drawLetter = (letter) => {
-    const normalizedLetter = typeof letter === 'string' ? letter.toUpperCase() : null;
+    const normalizedLetter = canonicalTraceLetterKey(letter);
     if (!normalizedLetter) {
       return;
     }
@@ -228,6 +257,7 @@ function TraceLetter({ initialLetter }) {
     clearCanvas();
     drawingRef.current.isDrawing = true;
     setActiveLetter(normalizedLetter);
+    setIsAnimating(true);
     drawStrokeSequence(entry.strokes, 0);
   };
 
@@ -290,14 +320,16 @@ function TraceLetter({ initialLetter }) {
 
             letterMap[letter] = { strokes };
             letterMap[letter.toLowerCase()] = letterMap[letter];
+
+            const canonicalLetter = canonicalTraceLetterKey(letter);
+            if (canonicalLetter) {
+              letterMap[canonicalLetter] = letterMap[letter];
+              letterMap[canonicalLetter.toLowerCase()] = letterMap[letter];
+            }
           });
 
         lettersRef.current = letterMap;
         setStatus('ready');
-
-        if (normalized && letterMap[normalized]) {
-          drawLetter(normalized);
-        }
       } catch (err) {
         if (!isMounted) {
           return;
@@ -328,6 +360,13 @@ function TraceLetter({ initialLetter }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [normalized, status]);
 
+  const handleReplay = () => {
+    if (!activeLetter) {
+      return;
+    }
+    drawLetter(activeLetter);
+  };
+
   return (
     <div className="trace-letter">
       <p className="trace-letter__label">
@@ -351,6 +390,18 @@ function TraceLetter({ initialLetter }) {
           </p>
         )}
       </div>
+      {status === 'ready' && activeLetter && (
+        <div className="trace-letter__actions">
+          <button
+            type="button"
+            className="text-button trace-letter__replay-button"
+            onClick={handleReplay}
+            disabled={isAnimating}
+          >
+            {isAnimating ? 'Drawing…' : 'Replay animation'}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
