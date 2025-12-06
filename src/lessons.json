@@ -11,7 +11,15 @@
                 "video": "assets/Videos/Nursery/Day-1/DAY-1-1.mp4",
                 "doc": "",
                 "image": "",
-                "time": "20 minutes"
+                "time": "20 minutes",
+                "trace": {
+                  "title": "Click here to check tracing of standing line A",
+                  "content": "B"
+                },
+                "popvideo" : {
+                  "title": "Click here to check tracing of standing line",
+                  "content": "b"
+                }
               },
               {
                 "title": "Literacy: Introduction to Standing Line",

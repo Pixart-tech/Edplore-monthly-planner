@@ -4,6 +4,7 @@ import VideoPreview from './VideoPreview';
 import FormattedContent from './FormattedContent';
 import Time from './Time';
 import TraceLetter, { TRACE_LETTER_KEYS } from './TraceLetter';
+import PopVideoPlayer from './PopVideoPlayer';
 
 function LessonMedia({ lesson, shouldShowControls }) {
   const [videoUrl, setVideoUrl] = useState(null);
@@ -229,6 +230,14 @@ export default function LessonSlider({
       return TRACE_LETTER_SET.has(normalized) ? normalized : null;
     };
 
+    const normalizePopVideoKey = (value) => {
+      if (typeof value !== 'string') {
+        return null;
+      }
+      const normalized = value.trim().toLowerCase();
+      return normalized || null;
+    };
+
     const actions = [
       {
         type: 'trace',
@@ -240,15 +249,21 @@ export default function LessonSlider({
         fallbackTitle: 'Pop video',
         payload: normalizePopupData(lesson.popvideo),
       },
-    ]
-      .map((action) => ({
+    ].map((action) => {
+      const animationLetter =
+        action.type === 'trace'
+          ? normalizeTraceLetter(action.payload?.content)
+          : null;
+
+      return {
         ...action,
-        animationLetter:
-          action.type === 'trace'
-            ? normalizeTraceLetter(action.payload?.content)
+        animationLetter,
+        popVideoKey:
+          action.type === 'popvideo'
+            ? normalizePopVideoKey(action.payload?.content)
             : null,
-      }))
-      .filter((action) => action.payload);
+      };
+    }).filter((action) => action.payload);
 
     if (!actions.length) {
       return null;
@@ -266,6 +281,7 @@ export default function LessonSlider({
                 type: action.type,
                 ...action.payload,
                 animationLetter: action.animationLetter,
+                popVideoKey: action.popVideoKey,
               })
             }
           >
@@ -282,14 +298,14 @@ export default function LessonSlider({
 
   const showTraceAnimation =
     popupPayload?.type === 'trace' && Boolean(popupPayload?.animationLetter);
+  const showPopVideo =
+    popupPayload?.type === 'popvideo' && Boolean(popupPayload?.popVideoKey);
   const trimmedPopupContent =
     typeof popupPayload?.content === 'string'
       ? popupPayload.content.trim()
       : '';
   const shouldShowFormattedContent =
-    Boolean(trimmedPopupContent) &&
-    (!showTraceAnimation ||
-      trimmedPopupContent.toUpperCase() !== popupPayload?.animationLetter);
+    Boolean(trimmedPopupContent) && !showTraceAnimation && !showPopVideo;
 
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
@@ -398,17 +414,22 @@ export default function LessonSlider({
               </button>
             </header>
             <div className="lesson-slide__popup-body">
+              {showPopVideo && (
+                <PopVideoPlayer videoKey={popupPayload.popVideoKey} />
+              )}
               {showTraceAnimation && (
                 <TraceLetter initialLetter={popupPayload.animationLetter} />
               )}
               {shouldShowFormattedContent && (
                 <FormattedContent text={popupPayload.content} />
               )}
-              {!showTraceAnimation && !shouldShowFormattedContent && (
-                <p className="lesson-slide__popup-empty">
-                  No additional content available.
-                </p>
-              )}
+              {!showTraceAnimation &&
+                !showPopVideo &&
+                !shouldShowFormattedContent && (
+                  <p className="lesson-slide__popup-empty">
+                    No additional content available.
+                  </p>
+                )}
             </div>
           </div>
         </div>

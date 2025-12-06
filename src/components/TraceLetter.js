@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 export const TRACE_LETTER_KEYS = ['A', 'B', 'C', 'D', 'E', 'F'];
 const strokeDelay = 90;
 const betweenStrokeDelay = 220;
-const strokeColors = ['#fb923c', '#0ea5e9', '#34d399', '#c084fc', '#f87171'];
+const strokeColors = ['#005587ff', '#0e8ee9ff', '#1c425aff', '#677275ff', '#4c6781ff'];
 const strokeColorNames = ['Orange', 'Blue', 'Green', 'Purple', 'Red'];
 
 const normalizeLetterInput = (value) => {
@@ -32,7 +32,6 @@ function TraceLetter({ initialLetter }) {
   const [status, setStatus] = useState('loading');
   const [error, setError] = useState(null);
   const [activeLetter, setActiveLetter] = useState(null);
-  const [completedStrokeNumber, setCompletedStrokeNumber] = useState(null);
 
   const normalized = useMemo(
     () => normalizeLetterInput(initialLetter),
@@ -61,6 +60,91 @@ function TraceLetter({ initialLetter }) {
     ctx.arc(x, y, 4, 0, Math.PI * 2);
     ctx.fillStyle = color;
     ctx.fill();
+  };
+
+ const drawStrokeIndicator = (points, number, color) => {
+  const ctx = getContext();
+  if (!ctx || points.length < 2) return;
+
+  const badgeRadius = 16;
+
+  // Use END POINT instead of start point
+  const [xe, ye] = points[points.length - 1];
+  const [x1, y1] = points[points.length - 2];
+
+  // Stroke direction angle (toward arrow)
+  const angle = Math.atan2(ye - y1, xe - x1);
+
+  // Offset to place number above arrow neatly
+  const distance = 26;
+  let circleX = xe + Math.cos(angle + Math.PI / 2) * distance;
+  let circleY = ye + Math.sin(angle + Math.PI / 2) * distance;
+
+  // Keep inside canvas
+  circleX = Math.min(Math.max(badgeRadius + 4, circleX), 300 - badgeRadius - 4);
+  circleY = Math.min(Math.max(badgeRadius + 4, circleY), 300 - badgeRadius - 4);
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2;
+  ctx.arc(circleX, circleY, badgeRadius, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.fillStyle = color;
+  ctx.font = 'bold 16px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(String(number), circleX, circleY);
+  ctx.restore();
+};
+
+
+  const drawStrokeArrow = (points, color) => {
+    const ctx = getContext();
+    if (!ctx || points.length < 2) {
+      return;
+    }
+
+    let [x2, y2] = points[points.length - 1];
+    let [x1, y1] = points[points.length - 2];
+
+    for (let i = points.length - 2; i >= 0; i -= 1) {
+      const [px, py] = points[i];
+      if (px !== x2 || py !== y2) {
+        x1 = px;
+        y1 = py;
+        break;
+      }
+    }
+
+    //after end point arrow display
+    const angle = Math.atan2(y2 - y1, x2 - x1);
+    const arrowLength = 18;
+    const arrowWidth = 9;
+
+    // Arrow tip AFTER end point
+    const forwardOffset = 10;  
+    const tipX = x2 + forwardOffset * Math.cos(angle);
+    const tipY = y2 + forwardOffset * Math.sin(angle);
+    const baseX = tipX - arrowLength * Math.cos(angle);
+    const baseY = tipY - arrowLength * Math.sin(angle);
+    const leftX = baseX + arrowWidth * Math.sin(angle);
+    const leftY = baseY - arrowWidth * Math.cos(angle);
+    const rightX = baseX - arrowWidth * Math.sin(angle);
+    const rightY = baseY + arrowWidth * Math.cos(angle);
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.fillStyle = color;
+    ctx.moveTo(tipX, tipY);
+    ctx.lineTo(leftX, leftY);
+    ctx.lineTo(rightX, rightY);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
   };
 
   const cancelAnimation = () => {
@@ -111,8 +195,9 @@ function TraceLetter({ initialLetter }) {
 
     const color = strokeColors[index % strokeColors.length];
     drawStrokePoints(strokes[index], color, () => {
+      drawStrokeIndicator(strokes[index], index + 1, color);
+      drawStrokeArrow(strokes[index], color);
       const nextIndex = index + 1;
-      setCompletedStrokeNumber(index + 1);
       if (nextIndex < strokes.length) {
         drawingRef.current.timer = setTimeout(
           () => drawStrokeSequence(strokes, nextIndex),
@@ -143,7 +228,6 @@ function TraceLetter({ initialLetter }) {
     clearCanvas();
     drawingRef.current.isDrawing = true;
     setActiveLetter(normalizedLetter);
-    setCompletedStrokeNumber(null);
     drawStrokeSequence(entry.strokes, 0);
   };
 
@@ -258,14 +342,6 @@ function TraceLetter({ initialLetter }) {
           aria-live="polite"
           aria-label="Letter tracing animation"
         />
-        {completedStrokeNumber && (
-          <div className="trace-letter__side-badge">
-            <span className="trace-letter__side-badge-label">Side</span>
-            <span className="trace-letter__side-badge-number">
-              {completedStrokeNumber}
-            </span>
-          </div>
-        )}
         {status === 'loading' && (
           <p className="trace-letter__status">Loading letters…</p>
         )}
@@ -274,19 +350,6 @@ function TraceLetter({ initialLetter }) {
             {error}
           </p>
         )}
-      </div>
-      <div className="trace-letter__legend">
-        {strokeColors.map((color, index) => (
-          <div key={`${color}-${index}`} className="trace-letter__legend-item">
-            <span
-              className="trace-letter__legend-dot"
-              style={{ background: color }}
-            />
-            <span>
-              Stroke {index + 1} · {strokeColorNames[index]}
-            </span>
-          </div>
-        ))}
       </div>
     </div>
   );
