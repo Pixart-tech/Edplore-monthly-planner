@@ -173,11 +173,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
           idleMessage={videoError || 'Navigate to this lesson to load the preview.'}
         />
       )}
-      {hasImage &&
-        renderImage(
-          hasVideo ? 'lesson-slide__image--inline' : '',
-          Boolean(hasVideo),
-        )}
+      {hasImage && !hasVideo && renderImage()}
     </div>
   );
 }
@@ -197,6 +193,9 @@ export default function LessonSlider({
   selectedDay,
 }) {
   const [popupPayload, setPopupPayload] = useState(null);
+  const [popupMediaUrl, setPopupMediaUrl] = useState(null);
+  const [popupAudioUrl, setPopupAudioUrl] = useState(null);
+  const [popupMediaError, setPopupMediaError] = useState(null);
 
   const closePopup = () => {
     setPopupPayload(null);
@@ -219,6 +218,196 @@ export default function LessonSlider({
     };
   }, [popupPayload]);
 
+  const resolveMediaPath = (value, defaultDir) => {
+    if (!value || typeof value !== 'string') {
+      return '';
+    }
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return '';
+    }
+    if (trimmed.startsWith('http')) {
+      return trimmed;
+    }
+    if (trimmed.includes('/') || trimmed.includes('.')) {
+      return trimmed;
+    }
+    return `${defaultDir}/${trimmed}`;
+  };
+
+  const resolveAudioPath = (value, defaultDir) => {
+    const base = resolveMediaPath(value, defaultDir);
+    if (!base || base.startsWith('http')) {
+      return base;
+    }
+    if (base.includes('.')) {
+      return base;
+    }
+    return `${base}.mp3`;
+  };
+
+  const resolveAudioImageAudioPath = (value) => {
+    if (!value || typeof value !== 'string') {
+      return '';
+    }
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return '';
+    }
+    if (trimmed.startsWith('http')) {
+      return trimmed;
+    }
+    let base = trimmed;
+    if (base.includes('/')) {
+      base = base.split('/').pop() || base;
+    }
+    base = base.replace(/\.[^/.]+$/, '');
+    return `imageAudio/${base}.mp3`;
+  };
+
+  const resolveAudioImageCandidates = (value) => {
+    if (!value || typeof value !== 'string') {
+      return [];
+    }
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return [];
+    }
+    if (trimmed.startsWith('http')) {
+      return [trimmed];
+    }
+
+    if (trimmed.includes('.')) {
+      if (trimmed.includes('/')) {
+        return [trimmed];
+      }
+      return [`imageAudio/${trimmed}`];
+    }
+
+    const base = trimmed.replace(/\.[^/.]+$/, '');
+    return [
+      `imageAudio/${base}.png`,
+      `imageAudio/${base}.jpg`,
+      `imageAudio/${base}.jpeg`,
+    ];
+  };
+
+  useEffect(() => {
+    setPopupMediaUrl(null);
+    setPopupAudioUrl(null);
+    setPopupMediaError(null);
+
+    if (!popupPayload || !['audio', 'audioimage', 'image'].includes(popupPayload.type)) {
+      return;
+    }
+
+    const contentPath = popupPayload?.content;
+    if (popupPayload.type === 'image') {
+      const path = resolveMediaPath(contentPath, 'images');
+      if (!path) {
+        setPopupMediaError('No image available.');
+        return;
+      }
+      if (path.startsWith('http')) {
+        setPopupMediaUrl(path);
+        return;
+      }
+      import(`../${path}`)
+        .then((asset) => {
+          setPopupMediaUrl(asset.default);
+        })
+        .catch(() => {
+          setPopupMediaError('Could not load image.');
+        });
+      return;
+    }
+    if (popupPayload.type === 'audio') {
+      const path = resolveAudioPath(contentPath, 'audio');
+      if (!path) {
+        setPopupMediaError('No audio available.');
+        return;
+      }
+      if (path.startsWith('http')) {
+        setPopupAudioUrl(path);
+        return;
+      }
+
+      import(`../${path}`)
+        .then((asset) => {
+          setPopupAudioUrl(asset.default);
+        })
+        .catch(() => {
+          setPopupMediaError('Could not load audio.');
+        });
+      return;
+    }
+
+    const candidates = resolveAudioImageCandidates(contentPath);
+    if (!candidates.length) {
+      setPopupMediaError('No image available.');
+      return;
+    }
+
+    if (candidates[0].startsWith('http')) {
+      setPopupMediaUrl(candidates[0]);
+    }
+
+    let cancelled = false;
+
+    const tryLoad = async () => {
+      for (const candidate of candidates) {
+        try {
+          // eslint-disable-next-line no-await-in-loop
+          const asset = await import(`../${candidate}`);
+          if (!cancelled) {
+            setPopupMediaUrl(asset.default);
+          }
+          return;
+        } catch (err) {
+          if (cancelled) {
+            return;
+          }
+        }
+      }
+      if (!cancelled) {
+        setPopupMediaError('Could not load image.');
+      }
+    };
+
+    if (!candidates[0].startsWith('http')) {
+      tryLoad();
+    }
+
+    const audioPath = resolveAudioImageAudioPath(contentPath);
+    if (!audioPath) {
+      return () => {
+        cancelled = true;
+      };
+    }
+    if (audioPath.startsWith('http')) {
+      setPopupAudioUrl(audioPath);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    import(`../${audioPath}`)
+      .then((asset) => {
+        if (!cancelled) {
+          setPopupAudioUrl(asset.default);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setPopupMediaError('Could not load audio.');
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [popupPayload]);
+
+
   const renderPopupButtons = (lesson) => {
     const normalizePopupData = (value) => {
       if (!value) {
@@ -239,6 +428,29 @@ export default function LessonSlider({
       const normalized = value.trim().toLowerCase();
       return normalized || null;
     };
+    const isUrl = (value) =>
+      typeof value === 'string' && value.trim().toLowerCase().startsWith('http');
+    const normalizeImagePath = (value) => {
+      if (!value) {
+        return null;
+      }
+      if (typeof value === 'string') {
+        return value.trim() || null;
+      }
+      if (Array.isArray(value)) {
+        const entry = value.find((item) => typeof item === 'string' && item.trim());
+        return entry ? entry.trim() : null;
+      }
+      if (typeof value === 'object') {
+        const entries = Object.entries(value)
+          .sort((a, b) => a[0].localeCompare(b[0]))
+          .map(([, item]) => (typeof item === 'string' ? item.trim() : ''))
+          .filter(Boolean);
+        return entries[0] || null;
+      }
+      return null;
+    };
+    const hasImageWithVideo = Boolean(lesson.video) && Boolean(lesson.image);
 
     const actions = [
       {
@@ -251,6 +463,23 @@ export default function LessonSlider({
         fallbackTitle: 'Pop video',
         payload: normalizePopupData(lesson.popvideo),
       },
+      {
+        type: 'image',
+        fallbackTitle: 'View image',
+        payload: hasImageWithVideo
+          ? { title: 'View image', content: normalizeImagePath(lesson.image) }
+          : null,
+      },
+      {
+        type: 'audio',
+        fallbackTitle: 'Audio',
+        payload: normalizePopupData(lesson.audio),
+      },
+      {
+        type: 'audioimage',
+        fallbackTitle: 'Image + audio',
+        payload: normalizePopupData(lesson.audioimage),
+      },
     ].map((action) => {
       const animationLetter =
         action.type === 'trace'
@@ -261,8 +490,12 @@ export default function LessonSlider({
         ...action,
         animationLetter,
         popVideoKey:
-          action.type === 'popvideo'
+          action.type === 'popvideo' && !isUrl(action.payload?.content)
             ? normalizePopVideoKey(action.payload?.content)
+            : null,
+        popVideoUrl:
+          action.type === 'popvideo' && isUrl(action.payload?.content)
+            ? action.payload?.content?.trim()
             : null,
       };
     }).filter((action) => action.payload);
@@ -296,18 +529,37 @@ export default function LessonSlider({
 
   const popupTitle =
     popupPayload?.title ??
-    (popupPayload?.type === 'popvideo' ? 'Pop video' : 'Trace reference');
+    (popupPayload?.type === 'popvideo'
+      ? 'Pop video'
+      : popupPayload?.type === 'image'
+        ? 'View image'
+      : popupPayload?.type === 'audioimage'
+        ? 'Image + audio'
+        : popupPayload?.type === 'audio'
+          ? 'Audio'
+          : 'Trace reference');
 
   const showTraceAnimation =
     popupPayload?.type === 'trace' && Boolean(popupPayload?.animationLetter);
   const showPopVideo =
     popupPayload?.type === 'popvideo' && Boolean(popupPayload?.popVideoKey);
+  const showPopVideoUrl =
+    popupPayload?.type === 'popvideo' && Boolean(popupPayload?.popVideoUrl);
+  const showImage = popupPayload?.type === 'image';
+  const showAudio = popupPayload?.type === 'audio';
+  const showAudioImage = popupPayload?.type === 'audioimage';
   const trimmedPopupContent =
     typeof popupPayload?.content === 'string'
       ? popupPayload.content.trim()
       : '';
   const shouldShowFormattedContent =
-    Boolean(trimmedPopupContent) && !showTraceAnimation && !showPopVideo;
+    Boolean(trimmedPopupContent) &&
+    !showTraceAnimation &&
+    !showPopVideo &&
+    !showPopVideoUrl &&
+    !showImage &&
+    !showAudio &&
+    !showAudioImage;
 
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
@@ -419,14 +671,62 @@ export default function LessonSlider({
               {showPopVideo && (
                 <PopVideoPlayer videoKey={popupPayload.popVideoKey} />
               )}
+              {showPopVideoUrl && (
+                <div className="lesson-slide__popup-media">
+                  <iframe
+                    src={popupPayload.popVideoUrl}
+                    title={popupTitle}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
               {showTraceAnimation && (
                 <TraceLetter initialLetter={popupPayload.animationLetter} />
+              )}
+              {showImage && (
+                <div className="lesson-slide__popup-media">
+                  {popupMediaUrl ? (
+                    <img src={popupMediaUrl} alt={popupTitle} />
+                  ) : (
+                    <p className="lesson-slide__popup-empty">
+                      {popupMediaError || 'Loading image...'}
+                    </p>
+                  )}
+                </div>
+              )}
+              {showAudio && (
+                <div className="lesson-slide__popup-media">
+                  {popupAudioUrl ? (
+                    <audio src={popupAudioUrl} controls />
+                  ) : (
+                    <p className="lesson-slide__popup-empty">
+                      {popupMediaError || 'Loading audio...'}
+                    </p>
+                  )}
+                </div>
+              )}
+              {showAudioImage && (
+                <div className="lesson-slide__popup-media">
+                  {popupMediaUrl ? (
+                    <img src={popupMediaUrl} alt={popupTitle} />
+                  ) : (
+                    <p className="lesson-slide__popup-empty">
+                      {popupMediaError || 'Loading image...'}
+                    </p>
+                  )}
+                  {popupAudioUrl && <audio src={popupAudioUrl} controls />}
+                </div>
               )}
               {shouldShowFormattedContent && (
                 <FormattedContent text={popupPayload.content} />
               )}
               {!showTraceAnimation &&
                 !showPopVideo &&
+                !showPopVideoUrl &&
+                !showImage &&
+                !showAudio &&
+                !showAudioImage &&
                 !shouldShowFormattedContent && (
                   <p className="lesson-slide__popup-empty">
                     No additional content available.

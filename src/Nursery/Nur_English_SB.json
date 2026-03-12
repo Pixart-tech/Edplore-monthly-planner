@@ -1,0 +1,429 @@
+{
+  "book": "Nursery English Skill",
+  "topics": [
+    {
+      "topic_id": "nur_eng_top_001",
+      "title": "Pre-Writing Strokes",
+      "page_start": 1,
+      "page_end": 6,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_001_01",
+          "title": "Standing lines",
+          "page_start": 1,
+          "page_end": 1,
+          "resource_flow": [
+            { "resource": "strokes", "type": "animation", "path": "Standing lines", "text": "Trace over the standing lines following the arrows." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_001_02",
+          "title": "Sleeping lines",
+          "page_start": 2,
+          "page_end": 2,
+          "resource_flow": [
+           { "resource": "strokes", "type": "animation", "path": "Sleeping lines", "text": "Trace over the sleeping lines to connect the bee to the hive and the dog to its house." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_001_03",
+          "title": "Slanting lines",
+          "page_start": 3,
+          "page_end": 4,
+          "resource_flow": [
+            { "resource": "strokes", "type": "animation", "path": "Slanting lines", "text": "Trace the slanting lines to help the child fly the kites." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_001_04",
+          "title": "Curves",
+          "page_start": 5,
+          "page_end": 6,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/eng/curves_intro.json", "text": "Introduction to drawing left and right curves." },
+            { "resource": "strokes", "type": "image", "path": "LeftCurve", "text": "Help the diver swim by tracing the curves on the fish's scales." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_002",
+      "title": "Letters A - E",
+      "page_start": 7,
+      "page_end": 16,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_002_01",
+          "title": "Letter Aa",
+          "page_start": 7,
+          "page_end": 8,
+          "resource_flow": [
+            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/a_phonics.mp3", "text": "A says /a/ as in Alligator and Axe." },
+            { "resource": "strokes", "type": "animation", "path": "A", "text": "Trace the letter A." },
+            { "resource": "activity", "label": "Circle Letter A", "type": "image", "path": "assets/images/eng/p8_act.jpg", "text": "Identify and circle every letter A found on the big apple." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_002_02",
+          "title": "Letter Bb",
+          "page_start": 9,
+          "page_end": 10,
+          "resource_flow": [
+            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/b_phonics.mp3", "text": "B says /b/ like a bouncing ball." },
+            { "resource": "strokes", "type": "animation", "path": "B", "text": "Trace the letter B." },
+            { "resource": "activity", "label": "Circle Letter B", "type": "image", "path": "assets/images/eng/p10_act.jpg", "text": "Identify and circle every letter B found on the balloon." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_002_03",
+          "title": "Letter Cc",
+          "page_start": 11,
+          "page_end": 12,
+          "resource_flow":[
+            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/c_phonics.mp3", "text": "C says /c/ like a cat." },
+            { "resource": "strokes", "type": "animation", "path": "C", "text": "Trace the letter C." },
+            { "resource": "activity", "label": "Circle Letter C", "type": "image", "path": "assets/images/eng/p12_act.jpg", "text": "Identify and circle every letter C found on the cake." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_002_04",
+          "title": "Letter Dd",
+          "page_start": 13,
+          "page_end": 14,
+          "resource_flow": [
+            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/d_phonics.mp3", "text": "D says /d/ like a dog." },
+            { "resource": "strokes", "type": "animation", "path": "D", "text": "Trace the letter D." },
+            { "resource": "activity", "label": "Circle Letter D", "type": "image", "path": "assets/images/eng/p14_act.jpg", "text": "Identify and circle every letter D found on the duck." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_002_05",
+          "title": "Letter Ee",
+          "page_start": 15,
+          "page_end": 16,
+          "resource_flow": [
+            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/e_phonics.mp3", "text": "E says /e/ like a elephant." },
+            { "resource": "strokes", "type": "animation", "path": "E", "text": "Trace the letter E." },
+            { "resource": "activity", "label": "Circle Letter E", "type": "image", "path": "assets/images/eng/p16_act.jpg", "text": "Identify and circle every letter E found on the egg." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_003",
+      "title": "Recap A - E",
+      "page_start": 17,
+      "page_end": 18,
+      "resource_flow": [
+        { "resource": "activity", "label": "Beginning Sounds", "type": "image", "path": "assets/images/eng/p17_act.jpg", "text": "Match the pictures with their beginning sounds." },
+        { "resource": "activity", "label": "Circle First Letter", "type": "image", "path": "assets/images/eng/p18_act.jpg", "text": "Look at each picture and circle the first letter of its name." }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_004",
+      "title": "Advanced Strokes",
+      "page_start": 19,
+      "page_end": 22,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_004_01",
+          "title": "Pattern Strokes",
+          "page_start": 21,
+          "page_end": 22,
+          "resource_flow": [
+            { "resource": "strokes", "type": "image", "path": "assets/images/eng/p21_strokes.jpg", "text": "Trace over complex loops for the helicopter and zig-zags for the rabbit." },
+            { "resource": "strokes", "type": "image", "path": "assets/images/eng/p22_strokes.jpg", "text": "Practice tracing waves and more complex patterns." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_005",
+      "title": "Letters F - J",
+      "page_start": 23,
+      "page_end": 32,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_005_01",
+          "title": "Letter Ff",
+          "page_start": 23,
+          "page_end": 24,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_f_exp.mp4", "text": "F is for Fish, Frog, and Flower." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p24_act.jpg", "text": "Colour the boxes with the letter F." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_005_02",
+          "title": "Letter Gg",
+          "page_start": 25,
+          "page_end": 26,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_g_exp.mp4", "text": "G is for Goat, Grapes, and Girl." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p26_act.jpg", "text": "Colour all the circles with the letter G." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_005_03",
+          "title": "Letter Hh",
+          "page_start": 27,
+          "page_end": 28,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_h_exp.mp4", "text": "H is for Horse, Hat, and Helicopter." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p28_act.jpg", "text": "Identify and colour every letter H." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_005_04",
+          "title": "Letter Ii",
+          "page_start": 29,
+          "page_end": 30,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p30_act.jpg", "text": "Identify and circle every letter I on the igloo." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_005_05",
+          "title": "Letter Jj",
+          "page_start": 31,
+          "page_end": 32,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_j_exp.mp4", "text": "J is for Jelly, Jug, and Joker." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p32_act.jpg", "text": "Identify and circle every letter J." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_006",
+      "title": "Recap F - J",
+      "page_start": 33,
+      "page_end": 34,
+      "resource_flow": [
+        { "resource": "activity", "label": "Same Letter Circle", "type": "image", "path": "assets/images/eng/p33_act.jpg", "text": "In each row, circle the letters that are the same as the first letter." }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_007",
+      "title": "Letters K - O",
+      "page_start": 35,
+      "page_end": 44,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_007_01",
+          "title": "Letter Kk",
+          "page_start": 35,
+          "page_end": 36,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_k_exp.mp4", "text": "K is for Kite, Kangaroo, and Key." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p36_act.jpg", "text": "Look at the pictures and circle the kites with the letter K." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_007_02",
+          "title": "Letter Ll",
+          "page_start": 37,
+          "page_end": 38,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_l_exp.mp4", "text": "L is for Lion, Lamp, and Ladybug." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p38_act.jpg", "text": "Identify and tick every letter L." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_007_03",
+          "title": "Letter Mm",
+          "page_start": 39,
+          "page_end": 40,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_m_exp.mp4", "text": "M is for Monkey, Milk, and Mango." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p40_act.jpg", "text": "Colour the mangoes with the letter M." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_007_04",
+          "title": "Letter Nn",
+          "page_start": 41,
+          "page_end": 42,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_n_exp.mp4", "text": "N is for Nest, Net, and Nose." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p42_act.jpg", "text": "Identify and circle the nails with the letter N." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_007_05",
+          "title": "Letter Oo",
+          "page_start": 43,
+          "page_end": 44,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_o_exp.mp4", "text": "O is for Owl, Octopus, and Ostrich." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p44_act.jpg", "text": "Colour all the circles with the letter O." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_008",
+      "title": "Recap K - O",
+      "page_start": 45,
+      "page_end": 46,
+      "resource_flow": [
+        { "resource": "activity", "label": "First Letter Colour", "type": "image", "path": "assets/images/eng/p45_act.jpg", "text": "Colour the first letter of each object." },
+        { "resource": "activity", "label": "Recap Circle", "type": "image", "path": "assets/images/eng/p46_act.jpg", "text": "Look at each object and circle its first letter." }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_009",
+      "title": "Letters P - T",
+      "page_start": 47,
+      "page_end": 56,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_009_01",
+          "title": "Letter Pp",
+          "page_start": 47,
+          "page_end": 48,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_p_exp.mp4", "text": "P is for Peacock, Parrot, and Plant." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_009_02",
+          "title": "Letter Qq",
+          "page_start": 49,
+          "page_end": 50,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_q_exp.mp4", "text": "Q is for Queen, Quail, and Quilt." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p50_act.jpg", "text": "Circle the quills with the letter Q." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_009_03",
+          "title": "Letter Rr",
+          "page_start": 51,
+          "page_end": 52,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_r_exp.mp4", "text": "R is for Rooster, Rabbit, and Rose." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p52_act.jpg", "text": "Circle the rings with the letter R." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_009_04",
+          "title": "Letter Ss",
+          "page_start": 53,
+          "page_end": 54,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_s_exp.mp4", "text": "S is for Sun, Snake, and Sparrow." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p54_act.jpg", "text": "Find the spiders with the letter S and colour them." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_009_05",
+          "title": "Letter Tt",
+          "page_start": 55,
+          "page_end": 56,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_t_exp.mp4", "text": "T is for Tiger, Tree, and Tent." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p56_act.jpg", "text": "Colour the turtle shell with the letter T." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_010",
+      "title": "Recap P - T",
+      "page_start": 57,
+      "page_end": 58,
+      "resource_flow": [
+        { "resource": "activity", "label": "Circle Start Picture", "type": "image", "path": "assets/images/eng/p57_act.jpg", "text": "Circle the picture that begins with the given letters." },
+        { "resource": "activity", "label": "Match First Letter", "type": "image", "path": "assets/images/eng/p58_act.jpg", "text": "Match each picture with its first letter." }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_011",
+      "title": "Letters U - Z",
+      "page_start": 59,
+      "page_end": 70,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_eng_sub_011_01",
+          "title": "Letter Uu",
+          "page_start": 59,
+          "page_end": 60,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_u_exp.mp4", "text": "U is for Umbrella, Uncle, and Urn." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p60_act.jpg", "text": "Help find what you need when it rains by following the U's." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_011_02",
+          "title": "Letter Vv",
+          "page_start": 61,
+          "page_end": 62,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_v_exp.mp4", "text": "V is for Van, Vulture, and Vase." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p62_act.jpg", "text": "Colour the boxes with the letter V." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_011_03",
+          "title": "Letter Ww",
+          "page_start": 63,
+          "page_end": 64,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_w_exp.mp4", "text": "W is for Well, Windmill, and Watermelon." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p64_act.jpg", "text": "Identify and circle every letter W." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_011_04",
+          "title": "Letter Xx",
+          "page_start": 65,
+          "page_end": 66,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p66_act.jpg", "text": "Circle the pictures whose names begin with X." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_011_05",
+          "title": "Letter Yy",
+          "page_start": 67,
+          "page_end": 68,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_y_exp.mp4", "text": "Y is for Yacht, Yo-yo, and Yarn." },
+            { "resource": "activity", "type": "image", "path": "assets/images/eng/p68_act.jpg", "text": "Identify and connect each letter Y to the picture in the centre." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_eng_sub_011_06",
+          "title": "Letter Zz",
+          "page_start": 69,
+          "page_end": 70,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_z_exp.mp4", "text": "Z is for Zebra and Zoo." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_012",
+      "title": "Recap U - Z",
+      "page_start": 71,
+      "page_end": 72,
+      "resource_flow": [
+        { "resource": "activity", "label": "What comes after", "type": "image", "path": "assets/images/eng/p71_act.jpg", "text": "Match the pictures to their beginning sounds and identify what comes after." },
+        { "resource": "activity", "label": "Cross Odd One", "type": "image", "path": "assets/images/eng/p72_act.jpg", "text": "Put a cross on the picture that does not begin with the letter in the box." }
+      ]
+    },
+    {
+      "topic_id": "nur_eng_top_013",
+      "title": "Final Revision",
+      "page_start": 73,
+      "page_end": 75,
+      "resource_flow": [
+        { "resource": "activity", "label": "Alphabet Maze", "type": "image", "path": "assets/images/eng/p73_act.jpg", "text": "Help the bee find its way home through the alphabet maze." },
+        { "resource": "activity", "label": "Dot-to-Dot", "type": "image", "path": "assets/images/eng/p74_act.jpg", "text": "Join the dots from A-Z to reveal the plane and write A to Z." },
+        { "resource": "revision", "label": "Final recap", "type": "image", "path": "assets/images/eng/p75_act.jpg", "text": "Final review writing letters from A to Z." }
+      ]
+    }
+  ]
+}

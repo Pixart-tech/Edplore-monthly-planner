@@ -8,16 +8,23 @@ export const canonicalTraceLetterKey = (value) => {
   if (typeof value !== 'string') {
     return null;
   }
-  const trimmed = value.trim();
+  let trimmed = value.trim();
   if (!trimmed) {
     return null;
   }
+
+  if (trimmed.includes('/')) {
+    trimmed = trimmed.split('/').pop() || trimmed;
+  }
+  trimmed = trimmed.replace(/\.[^/.]+$/, '');
 
   const spaced = trimmed.replace(/([a-z])([A-Z])/g, '$1_$2');
   const normalized = spaced
     .replace(/[-\s]+/g, '_')
     .replace(/_+/g, '_');
-  const upper = normalized.toUpperCase();
+  const upper = normalized
+    .replace(/_LINES$/i, '_LINE')
+    .toUpperCase();
   return TRACE_LETTER_ALIASES[upper] ?? upper;
 };
 

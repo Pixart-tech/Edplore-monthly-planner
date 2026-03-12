@@ -1,0 +1,342 @@
+{
+  "book": "Nursery Maths Skill",
+  "topics": [
+    {
+      "topic_id": "nur_math_top_001",
+      "title": "Pre-Math Comparisons",
+      "page_start": 1,
+      "page_end": 12,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_001_01",
+          "title": "Same and Different",
+          "page_start": 1,
+          "page_end": 2,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/same_diff_exp.mp4", "text": "Learn to identify objects that look the same and those that are different." },
+            { "resource": "activity", "label": "Identify Different", "type": "image", "path": "assets/images/math/page_2.jpg", "text": "Cross out the object that is different from the others in each row." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_02",
+          "title": "Big and Small",
+          "page_start": 3,
+          "page_end": 4,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/big_small.json", "text": "Comparing sizes: see how a big box is different from a small box." },
+            { "resource": "activity", "label": "Circle Sizes", "type": "image", "path": "assets/images/math/page_4.jpg", "text": "Circle the big objects and the small objects in the groups." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_03",
+          "title": "Tall and Short",
+          "page_start": 5,
+          "page_end": 6,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/tall_short.mp4", "text": "Look at the giraffe and the goat to see who is tall and who is short." },
+            { "resource": "activity", "label": "Tick and Cross", "type": "image", "path": "assets/images/math/page_6.jpg", "text": "Tick the tall objects and cross the short ones." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_04",
+          "title": "Long and Short",
+          "page_start": 7,
+          "page_end": 8,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/long_short.mp4", "text": "Comparing lengths of logs and snakes." },
+            { "resource": "activity", "label": "Identify Long/Short", "type": "image", "path": "assets/images/math/page_8.jpg", "text": "Tick the long objects and cross the short ones." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_05",
+          "title": "Heavy and Light",
+          "page_start": 9,
+          "page_end": 10,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/heavy_light.json", "text": "Understand weight by looking at an apple and a pineapple on a scale." },
+            { "resource": "activity", "label": "Weight Sorting", "type": "image", "path": "assets/images/math/page_10.jpg", "text": "Circle the heavy objects and the light objects." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_06",
+          "title": "Left and Right",
+          "page_start": 11,
+          "page_end": 12,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/left_right.mp4", "text": "Learning directions: which way is the bus moving?" },
+            { "resource": "activity", "label": "Direction Circle", "type": "image", "path": "assets/images/math/page_12.jpg", "text": "Circle vehicles moving left and objects on the right side of the dog." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_002",
+      "title": "Numbers 1 - 5",
+      "page_start": 13,
+      "page_end": 24,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_002_01",
+          "title": "Number 1",
+          "page_start": 13,
+          "page_end": 14,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_1_exp.mp4", "text": "Introduction to Number 1 with one big elephant." },
+            { "resource": "counting", "type": "audio", "path": "assets/audio/math/count_1.mp3", "text": "One!" },
+            { "resource": "strokes", "type": "image", "path": "assets/images/math/p14_tracing.jpg", "text": "Trace number 1 with your finger and pencil." },
+            { "resource": "activity", "label": "Circle 1", "type": "image", "path": "assets/images/math/p14_act.jpg", "text": "Circle the apples that have the number 1." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_02",
+          "title": "Number 2",
+          "page_start": 15,
+          "page_end": 16,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_2_exp.mp4", "text": "Introduction to Number 2 with two green trees." },
+            { "resource": "counting", "type": "animation", "path": "assets/animations/math/count_2.json", "text": "One, Two!" },
+            { "resource": "strokes", "type": "image", "path": "assets/images/math/p16_tracing.jpg", "text": "Trace and write the number 2." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_03",
+          "title": "Number 5",
+          "page_start": 21,
+          "page_end": 22,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_5_exp.mp4", "text": "Counting 5 colorful flowers in the garden." },
+            { "resource": "strokes", "type": "image", "path": "assets/images/math/p22_tracing.jpg", "text": "Trace number 5 with your finger." }
+          ]
+        }
+      ],
+      "resource_flow": [
+        { "resource": "revision", "label": "Recap 1-5", "type": "Video", "path": "assets/videos/math/recap_1_5.mp4", "text": "Review numbers 1 through 5." },
+        { "resource": "activity", "label": "Count and Match", "type": "image", "path": "assets/images/math/page_23.jpg", "text": "Match the groups of objects to their correct numbers." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_003",
+      "title": "Shapes & Colours (I)",
+      "page_start": 25,
+      "page_end": 28,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_003_01",
+          "title": "Shape - Circle",
+          "page_start": 25,
+          "page_end": 26,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/circle_exp.mp4", "text": "Discover circles in basketballs, clocks, and wheels." },
+            { "resource": "activity", "label": "Trace and Identify", "type": "image", "path": "assets/images/math/page_26.jpg", "text": "Trace the circle and identify circle-shaped objects." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_003_02",
+          "title": "Colour - Red",
+          "page_start": 27,
+          "page_end": 28,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/red_colour.json", "text": "Explore things that are red, like apples and roses." },
+            { "resource": "activity", "label": "Identify and Colour Red", "type": "image", "path": "assets/images/math/page_28.jpg", "text": "Circle the red objects and colour the apple red." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_004",
+      "title": "Numbers 6 - 10",
+      "page_start": 29,
+      "page_end": 42,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_004_01",
+          "title": "Number 6",
+          "page_start": 29,
+          "page_end": 30,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_6_exp.mp4", "text": "Counting 6 cows on the farm." },
+            { "resource": "strokes", "type": "image", "path": "assets/images/math/p30_tracing.jpg", "text": "Trace and write the number 6." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_004_02",
+          "title": "Number 10",
+          "page_start": 39,
+          "page_end": 40,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_10_exp.mp4", "text": "Number 10: One and Zero together." },
+            { "resource": "activity", "label": "Circle 10s", "type": "image", "path": "assets/images/math/page_40.jpg", "text": "Find and circle all leaves with the number 10." }
+          ]
+        }
+      ],
+      "resource_flow": [
+        { "resource": "revision", "label": "Recap 6-10", "type": "youtube video", "path": "https://www.youtube.com/watch?v=count6to10", "text": "Let's count from 6 to 10!" },
+        { "resource": "activity", "label": "Match Numbers", "type": "image", "path": "assets/images/math/page_42.jpg", "text": "Match the numbers in the clouds to the correct boxes." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_005",
+      "title": "Shapes & Colours (II)",
+      "page_start": 43,
+      "page_end": 46,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_005_01",
+          "title": "Shape - Triangle",
+          "page_start": 43,
+          "page_end": 44,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/triangle_exp.mp4", "text": "A triangle has three sides. Look at the pizza slice and party hat." },
+            { "resource": "activity", "label": "Identify Triangles", "type": "image", "path": "assets/images/math/page_44.jpg", "text": "Trace the triangle and circle triangle-shaped objects." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_005_02",
+          "title": "Colour - Green",
+          "page_start": 45,
+          "page_end": 46,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/green_colour.json", "text": "Green is everywhere in grass, leaves, and parrots." },
+            { "resource": "activity", "label": "Colour Green", "type": "image", "path": "assets/images/math/page_46.jpg", "text": "Circle green objects and colour the leaf green." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_006",
+      "title": "Numbers 11 - 15",
+      "page_start": 47,
+      "page_end": 58,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_006_01",
+          "title": "Number 12",
+          "page_start": 49,
+          "page_end": 50,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_12_exp.mp4", "text": "Count 12 galloping horses." },
+            { "resource": "activity", "label": "Circle 12s", "type": "image", "path": "assets/images/math/page_50.jpg", "text": "Circle the drums that have the number 12." }
+          ]
+        }
+      ],
+      "resource_flow": [
+        { "resource": "activity", "label": "Identify & Colour", "type": "image", "path": "assets/images/math/page_58.jpg", "text": "Identify and colour specific numbers from 11-15." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_007",
+      "title": "Shapes & Colours (III)",
+      "page_start": 59,
+      "page_end": 62,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_007_01",
+          "title": "Shape - Square",
+          "page_start": 59,
+          "page_end": 60,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/square_exp.mp4", "text": "A square has four equal sides. Look at the window and chessboard." },
+            { "resource": "activity", "label": "Square Activity", "type": "image", "path": "assets/images/math/page_60.jpg", "text": "Trace the square and circle square-shaped items." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_007_02",
+          "title": "Colour - Blue",
+          "page_start": 61,
+          "page_end": 62,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/blue_colour.json", "text": "Blue like the sky and the beautiful butterfly." },
+            { "resource": "activity", "label": "Colour Blue", "type": "image", "path": "assets/images/math/page_62.jpg", "text": "Circle blue objects and colour the cap blue." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_008",
+      "title": "Numbers 16 - 20",
+      "page_start": 63,
+      "page_end": 73,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_008_01",
+          "title": "Number 20",
+          "page_start": 71,
+          "page_end": 72,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_20_exp.mp4", "text": "Counting 20 watermelons in the field." },
+            { "resource": "counting", "type": "animation", "path": "assets/animations/math/count_20.json", "text": "We see 20 watermelons!" },
+            { "resource": "activity", "label": "Number 20 Act", "type": "image", "path": "assets/images/math/page_72.jpg", "text": "Colour the dress with the number 20 and trace the number." }
+          ]
+        }
+      ],
+      "resource_flow": [
+        { "resource": "activity", "label": "Count and Match", "type": "image", "path": "assets/images/math/page_73.jpg", "text": "Match groups of items (butterflies, cheese, balls) to numbers 16-20." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_009",
+      "title": "Shapes & Colours (IV)",
+      "page_start": 74,
+      "page_end": 77,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_009_01",
+          "title": "Shape - Rectangle",
+          "page_start": 74,
+          "page_end": 75,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/rectangle_exp.mp4", "text": "A rectangle has four sides. See the blackboard, door, and book." },
+            { "resource": "activity", "label": "Rectangle Tracing", "type": "image", "path": "assets/images/math/page_75.jpg", "text": "Trace the rectangle and circle rectangle-shaped objects." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_009_02",
+          "title": "Colour - Yellow",
+          "page_start": 76,
+          "page_end": 77,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/yellow_colour.json", "text": "Yellow is bright like the sun and a happy smiley face." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_010",
+      "title": "Logical Thinking",
+      "page_start": 78,
+      "page_end": 83,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_010_01",
+          "title": "One and Many",
+          "page_start": 78,
+          "page_end": 79,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/one_many.mp4", "text": "See the difference between one umbrella and many umbrellas." },
+            { "resource": "activity", "label": "Tick Correct", "type": "image", "path": "assets/images/math/page_79.jpg", "text": "Tick 'one' or 'many' for the pictures shown." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_010_02",
+          "title": "More and Less",
+          "page_start": 80,
+          "page_end": 81,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/more_less.mp4", "text": "Compare jars and baskets to see which has more." },
+            { "resource": "activity", "label": "More/Less Sorting", "type": "image", "path": "assets/images/math/page_81.jpg", "text": "Tick the picture that has more and cross the one with less." }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_010_03",
+          "title": "Missing Numbers",
+          "page_start": 83,
+          "page_end": 83,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/missing_nums.json", "text": "Help complete the number sequence on the train." },
+            { "resource": "activity", "label": "Train Numbers", "type": "image", "path": "assets/images/math/page_83.jpg", "text": "Fill in the missing numbers in each row." }
+          ]
+        }
+      ]
+    }
+  ]
+}

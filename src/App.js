@@ -1,23 +1,33 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import LESSONS from './lessons.json';
 import ClassSelector from './components/ClassSelector';
 import MonthSelector from './components/MonthSelector';
 import DaySelector from './components/DaySelector';
 import LessonSlider from './components/LessonSlider';
+import BooksAddPage from './components/BooksAddPage';
 
 const monthNumbers = Array.from({ length: 10 }, (_, index) => String(index + 1));
 const dayNumbers = Array.from({ length: 20 }, (_, index) => String(index + 1));
 
-function App() {
-  const [selectedClass, setSelectedClass] = useState(Object.keys(LESSONS)[0]);
+const cloneLessons = (value) => {
+  if (typeof structuredClone === 'function') {
+    return structuredClone(value);
+  }
+  return JSON.parse(JSON.stringify(value));
+};
+
+function PlannerPage({ lessonsData }) {
+  const classNames = Object.keys(lessonsData || {});
+  const [selectedClass, setSelectedClass] = useState(classNames[0]);
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedDay, setSelectedDay] = useState(null);
   const [showLessonPage, setShowLessonPage] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const daySelectorRef = useRef(null);
 
-  const classData = LESSONS[selectedClass];
+  const classData = lessonsData?.[selectedClass];
   const monthData = selectedMonth ? classData?.months?.[selectedMonth] : null;
   const dayData = selectedDay && monthData ? monthData.days?.[selectedDay] : null;
 
@@ -30,8 +40,8 @@ function App() {
   }, [dayData]);
 
   const availableMonths = useMemo(
-    () => new Set(Object.keys(classData.months || {})),
-    [classData.months]
+    () => new Set(Object.keys(classData?.months || {})),
+    [classData?.months]
   );
 
   const availableDays = useMemo(
@@ -93,8 +103,17 @@ function App() {
     }
   }, [showLessonPage]);
 
+  useEffect(() => {
+    if (classNames.length > 0 && !classNames.includes(selectedClass)) {
+      setSelectedClass(classNames[0]);
+      setSelectedMonth(null);
+      setSelectedDay(null);
+      setShowLessonPage(false);
+    }
+  }, [classNames, selectedClass]);
+
   return (
-    <div className="app-shell">
+    <>
       {!showLessonPage && (
         <>
           <header className="app-header">
@@ -109,7 +128,7 @@ function App() {
 
           <main className="layout-grid">
             <ClassSelector
-              classes={Object.keys(LESSONS)}
+              classes={classNames}
               selectedClass={selectedClass}
               onSelect={handleClassSelect}
             />
@@ -142,6 +161,55 @@ function App() {
           selectedDay={selectedDay}
         />
       )}
+    </>
+  );
+}
+
+function App() {
+  const [lessonsData, setLessonsData] = useState(() => cloneLessons(LESSONS));
+  const [loadError, setLoadError] = useState('');
+
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch('/api/lessons')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Failed to load lessons');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        if (isMounted && data?.lessons) {
+          setLessonsData(data.lessons);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setLoadError('Using bundled lessons.json (backend not reachable).');
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return (
+    <div className="app-shell">
+      <Routes>
+        <Route path="/" element={<PlannerPage lessonsData={lessonsData} />} />
+        <Route
+          path="/books/add"
+          element={
+            <BooksAddPage
+              lessonsData={lessonsData}
+              setLessonsData={setLessonsData}
+              loadError={loadError}
+            />
+          }
+        />
+      </Routes>
     </div>
   );
 }
