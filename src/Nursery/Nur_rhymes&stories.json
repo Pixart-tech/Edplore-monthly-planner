@@ -22,7 +22,8 @@
           "page_start": 2,
           "page_end": 2,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/rhy/head_shoulders.mp4", "text": "Identify body parts through this energetic action song." }
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/rhy/head_shoulders.mp4", "text": "Learning Goal: To build auditory skills, introduce body part recognition, and develop gross motor coordination. Activity: Rhyme introduction and physical movement. Detailed procedure: The teacher leads the students in singing the rhyme 'Head, Shoulders, Knees, and Toes' slowly. As each body part is named, the teacher demonstrates touching the corresponding area (head, shoulders, knees, toes), encouraging the children to follow along and physically engage with the song to build physical vocabulary connections." },
+            {"resource": "revision1", "type": "Video", "path": "assets/videos/rhy/head_shoulders.mp4", "text":  "Learning Goal: To reinforce the kinetic connection between vocabulary and physical body parts and improve memory recall. Activity: Energetic rhyme repetition. Detailed procedure: Sing the 'Head, Shoulders, Knees, and Toes' rhyme again as a group. This time, slightly increase the speed of the song to make it a fun, energetic physical activity that tests the children's recall and coordination." }
           ]
         },
         {
@@ -282,7 +283,9 @@
           "page_start": 18,
           "page_end": 20,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/rhy/race_story.mp4", "text": "Moral: Slow and steady wins the race." }
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/rhy/race_story.mp4", "text": "Learning Goal: To introduce narrative listening, build attention span, and understand character contrast. Activity: Storytime reading and character introduction. Detailed procedure: Read the story 'The Tortoise and the Rabbit' aloud to the class. Introduce the two main characters, highlighting their differences: the rabbit who ran fast and was very proud, and the tortoise who walked very slowly. Describe the setting of the forest and the challenge of the race." },
+            {"resource": "revision1", "type": "Video", "path": "assets/videos/", "text":"Learning Goal: To develop story comprehension and extract moral lessons from a narrative. Activity: Story recap and moral discussion. Detailed procedure: Recap the plot points of the story, such as the rabbit falling asleep under a tree and the tortoise passing him to reach the winning post. Discuss the ending and teach the core moral lesson of the story: 'Slow and steady wins the race!'."},
+            {"resource": "revision2", "type": "Video", "path": "", "text": "Learning Goal: To synthesize the week's auditory, physical, and narrative concepts for long-term retention. Activity: Group performance and story reflection. Detailed procedure: Conduct a final, enthusiastic group performance of the 'Head, Shoulders, Knees, and Toes' rhyme, ensuring all students are participating with the correct physical actions. Follow this by asking the students to recall what happened in 'The Tortoise and the Rabbit' and repeating the moral of the story together."}
           ]
         },
         {

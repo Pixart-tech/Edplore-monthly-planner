@@ -17,8 +17,15 @@
               "resource": "explanation", 
               "type": "Video", 
               "path": "assets/videos/evs/body_parts_exp.mp4", 
-              "text": "This section introduces children to their basic personal identity, covering their name, age, gender, and favorite things" 
+              "text": "Learning Goal: To encourage self-recognition, express individual preferences, and state basic personal facts. Activity: Oral introduction and gender identification worksheet. Detailed procedure: Conduct an oral session asking simple questions such as 'What is your name?', 'What is your age?', and 'Name your favourite toy.' Ask the children 'Are you a boy or a girl?' and provide a written activity where students look at pictures of a boy and a girl and tick the image that matches their own gender."
+            },
+            { 
+              "resource": "revision1", 
+              "type": "Video", 
+              "path": "assets/videos/evs/body_parts_exp.mp4", 
+              "text": "Learning Goal: To encourage self-recognition, express individual preferences, and state basic personal facts. Activity: Oral introduction and gender identification worksheet. Detailed procedure: Conduct an oral session asking simple questions such as 'What is your name?', 'What is your age?', and 'Name your favourite toy.' Ask the children 'Are you a boy or a girl?' and provide a written activity where students look at pictures of a boy and a girl and tick the image that matches their own gender."
             }
+
           ]
         },
         {
@@ -31,7 +38,13 @@
               "resource": "explanation", 
               "type": "Video", 
               "path": "assets/videos/evs/body_parts_exp.mp4", 
-              "text": "Instruction focuses on the idea that every part of our body is important, while helping students recognize and point to major areas like the head, hands, and feet" 
+              "text": "Learning Goal: To identify, name, and understand that each part of our body is important. Activity: Oral naming and body part matching. Detailed procedure: Show flashcards or point to different body parts and ask the child to orally name the given parts of the body. Provide a worksheet featuring a picture of a child and ask students to match the body parts by drawing lines from isolated images of a hand, leg, and foot to the correct location on the child's body"
+            },
+            { 
+              "resource": "revision1", 
+              "type": "Video", 
+              "path": "assets/videos/evs/body_parts_exp.mp4", 
+              "text": "Learning Goal: To identify, name, and understand that each part of our body is important. Activity: Oral naming and body part matching. Detailed procedure: Show flashcards or point to different body parts and ask the child to orally name the given parts of the body. Provide a worksheet featuring a picture of a child and ask students to match the body parts by drawing lines from isolated images of a hand, leg, and foot to the correct location on the child's body"
             }
           ]
         },{
@@ -44,7 +57,7 @@
               "resource": "explanation", 
               "type": "image", 
               "path": "assets/videos/evs/body_parts_exp.mp4", 
-              "text": "This lesson focuses on naming and locating specific limbs and joints, such as the shoulder, elbow, wrist, thigh, and knee" 
+              "text": "Learning Goal: To visually distinguish specific upper and lower limbs from other objects. Activity: Circling body parts among distractors. Detailed procedure: Give students a mixed group of pictures containing items like an apple, a banana, a hand, and a foot. Instruct the children to circle only the body parts to assess their visual discrimination. Focus on body vocabulary such as Shoulder, Elbow, Wrist, Thumb, Fingers, Thigh, Knee, Foot, Heel, and Toes"
             }
           ]
         },
@@ -58,7 +71,7 @@
               "resource": "explanation", 
               "type": "image", 
               "path": "assets/animations/evs/face_parts.json", 
-              "text": "This topic identifies individual features on the head, including the hair, eyebrows, eyes, ears, nose, teeth, and tongue" 
+              "text": "Learning Goal: To isolate and identify specific sensory organs and features located on the face. Activity: Identification game and facial feature matching. Detailed procedure: Point to facial features and ask the child to orally name the given parts of the body, specifically focusing on the ear, eye, and nose. Follow up with a matching activity where students draw a line from an isolated picture of an ear, eye, or nose to the corresponding correct place on the pictured boy's face"
             }
           ]
         },
@@ -72,7 +85,7 @@
               "resource": "explanation", 
               "type": "image", 
               "path": "assets/animations/evs/torso_parts.json", 
-              "text": "Instruction for this part of the body highlights the central section, specifically identifying the chest and abdomen" 
+              "text": "Learning Goal: To recognize the central trunk of the body and understand how limbs connect to it. Activity: Kinetic movement and identification. Detailed procedure: Guide the children in physical movements to help them actively touch and distinguish different areas of the body. Emphasize the specific connection points shown in the curriculum, such as the shoulder linking the arm to the torso, and the thigh/knee linking the lower leg"
             }
           ]
         }
@@ -83,14 +96,14 @@
           "label": "revision1", 
           "type": "Video", 
           "path": "assets/videos/evs/all_about_me_rev.mp4", 
-          "text": "A quick recap of everything learned in the All About Me section." 
+          "text": "Learning Goal: To consolidate foundational concepts of personal identity, gender, and family information. Activity: Name and age presentation and family member identification. Detailed procedure: Have the children confidently state their name and age as a review of their personal identity. Revisit the core oral questions like 'Are you a boy or a girl?' and 'Name 2 members of your family.' Provide a worksheet asking students to tick the family members that are part of their family to reinforce their personal context"
         },
         { 
           "resource": "activity", 
           "label": "Match the Body Parts", 
           "type": "image", 
           "path": "assets/images/evs/match_body.jpg", 
-          "text": "Match the body part names to the correct pictures." 
+          "text": "" 
         }
       ]
     },
@@ -99,26 +112,20 @@
       "title": "Personal Hygiene",
       "page_start": 6,
       "page_end": 7,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/hygiene_exp.mp4", 
-          "text": "Learn why it is important to keep ourselves clean every day." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Good Habits", 
-          "type": "image", 
-          "path": "assets/images/evs/page_30.jpg", 
-          "text": "Circle the body hygiene habits you follow, such as brushing and bathing." 
-        },
-        { 
-          "resource": "revision", 
-          "label": "revision1", 
-          "type": "youtube video", 
-          "path": "https://www.youtube.com/watch?v=hygiene_tips", 
-          "text": "Watch a fun video about staying healthy and clean." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_002_01",
+          "title": "Good Habits and Hygiene",
+          "page_start": 6,
+          "page_end": 7,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/evs/hygiene_exp.mp4",
+              "text": "Learning Goal: To understand and identify daily personal hygiene practices and good habits. Activity: Ticking and circling good habits. Detailed procedure: Discuss daily routines like brushing teeth, bathing, washing hands with soap, and wearing clean clothes. Instruct students to look at the pictures in their workbook and tick or circle the hygiene practices they follow."
+            }
+          ]
         }
       ]
     },
@@ -130,110 +137,73 @@
       "sub_topics": [
         {
           "sub_topic_id": "nur_evs_sub_003_01",
-          "title": "Bedroom",
-          "page_start": 11,
-          "page_end": 12,
+          "title": "House Exterior",
+          "page_start": 8,
+          "page_end": 9,
           "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/bedroom_exp.mp4", 
-              "text": "Explore objects and activities typically found in a bedroom." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Bedroom Belonging", 
-              "type": "image", 
-              "path": "assets/images/evs/page_11.jpg", 
-              "text": "Circle the things that belong in a bedroom, like a bed or pillow." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Bedroom Activities", 
-              "type": "image", 
-              "path": "assets/images/evs/page_12.jpg", 
-              "text": "Cross out the activities that are NOT done in a bedroom." 
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/evs/home_ext.jpg",
+              "text": "Learning Goal: To introduce the overall concept of a house and its exterior structure. Activity: Colouring the home. Detailed procedure: Discuss the parts of a house exterior (roof, windows, door). Have students use their crayons to colour the provided outline of the house."
             }
           ]
         },
         {
           "sub_topic_id": "nur_evs_sub_003_02",
-          "title": "Kitchen",
-          "page_start": 13,
-          "page_end": 14,
+          "title": "Bedroom",
+          "page_start": 10,
+          "page_end": 12,
           "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/kitchen_exp.mp4", 
-              "text": "Learn about the refrigerator, oven, and utensils found in the kitchen." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Kitchen Items Activity", 
-              "type": "image", 
-              "path": "assets/images/evs/page_14.jpg", 
-              "text": "Circle the things that belong in the kitchen." 
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/bedroom_exp.jpg",
+              "text": "Learning Goal: To identify objects and appropriate activities associated with a bedroom. Activity: Circling objects and crossing out incorrect activities. Detailed procedure: Discuss bedroom items like a bed, pillow, mirror, and cupboard. Instruct students to circle items belonging to a bedroom and put a cross (X) on activities not done there, like bathing or cooking."
             }
           ]
         },
         {
           "sub_topic_id": "nur_evs_sub_003_03",
-          "title": "Bathroom",
-          "page_start": 16,
-          "page_end": 18,
+          "title": "Kitchen",
+          "page_start": 14,
+          "page_end": 15,
           "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "animation", 
-              "path": "assets/animations/evs/bathroom.json", 
-              "text": "An animation showing bathroom items like the sink, towel, and bathtub." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Bathroom Habits", 
-              "type": "image", 
-              "path": "assets/images/evs/page_18.jpg", 
-              "text": "Tick the activities you do in a bathroom, like brushing teeth or bathing." 
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/kitchen_exp.jpg",
+              "text": "Learning Goal: To recognize kitchen items and appropriate kitchen activities. Activity: Identifying kitchen items and ticking activities. Detailed procedure: Show items like a refrigerator, bowl, and knife. Have students circle items that belong in the kitchen and tick (✔) pictures showing activities like cooking or washing dishes."
             }
           ]
         },
         {
           "sub_topic_id": "nur_evs_sub_003_04",
-          "title": "Living room",
+          "title": "Bathroom",
+          "page_start": 16,
+          "page_end": 18,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/bathroom_exp.jpg",
+              "text": "Learning Goal: To identify bathroom items and related activities. Activity: Connecting objects and ticking activities. Detailed procedure: Introduce items like a sink, towel, and bathtub. Instruct students to connect bathroom items to the picture of the room and tick (✔) activities appropriately done in a bathroom, like bathing or brushing teeth."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_evs_sub_003_05",
+          "title": "Living Room",
           "page_start": 19,
           "page_end": 21,
           "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/living_room_exp.mp4", 
-              "text": "Discover the living room where families watch TV and relax." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Living Room Sort", 
-              "type": "image", 
-              "path": "assets/images/evs/page_20.jpg", 
-              "text": "Circle the items that belong in the living room." 
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/living_room_exp.jpg",
+              "text": "Learning Goal: To recognize living room furniture and appropriate activities. Activity: Circling objects and crossing out incorrect activities. Detailed procedure: Discuss items like a sofa, television, carpet, and bookshelf. Have students circle living room items and cross (X) out activities that do not belong in the living room, like sleeping or bathing."
             }
           ]
-        }
-      ],
-      "resource_flow": [
-        { 
-          "resource": "activity", 
-          "label": "Color The home", 
-          "type": "image", 
-          "path": "assets/images/evs/page_30.jpg", 
-          "text": "Color the home and its rooms with your favorite colors." 
-        },
-        { 
-          "resource": "revision", 
-          "label": "revision1", 
-          "type": "Video", 
-          "path": "assets/videos/evs/my_home_rev.mp4", 
-          "text": "Review all the rooms in a house and their common items." 
         }
       ]
     },
@@ -242,33 +212,20 @@
       "title": "My Family",
       "page_start": 22,
       "page_end": 24,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/family_exp.mp4", 
-          "text": "Meet the family: Mother, Father, Grandparents, and Siblings." 
-        },
-        { 
-          "resource": "phonics", 
-          "label": "Family names", 
-          "type": "audio", 
-          "path": "assets/audio/evs/family_names.mp3", 
-          "text": "Practice saying family member titles correctly." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Paste Family Picture", 
-          "type": "image", 
-          "path": "assets/images/evs/page_23.jpg", 
-          "text": "Paste a beautiful picture of your family in the space provided." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Identify Members", 
-          "type": "image", 
-          "path": "assets/images/evs/page_24.jpg", 
-          "text": "Tick the family members that are part of your family." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_004_01",
+          "title": "Family Members",
+          "page_start": 22,
+          "page_end": 24,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/evs/family_exp.mp4",
+              "text": "Learning Goal: To recognize and name immediate and extended family members. Activity: Pasting a picture and ticking family members. Detailed procedure: Discuss different family members (Father, Mother, Brother, Sister, Grandfather, Grandmother). Have students paste a picture of their own family in the provided space and tick (✔) the boxes corresponding to the members that make up their family."
+            }
+          ]
         }
       ]
     },
@@ -277,19 +234,20 @@
       "title": "My School",
       "page_start": 25,
       "page_end": 26,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/school_exp.mp4", 
-          "text": "A look at the school building and classroom fun." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "School Photo", 
-          "type": "image", 
-          "path": "assets/images/evs/page_26.jpg", 
-          "text": "Paste your school photo and write your school and teacher's name." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_005_01",
+          "title": "School Environment",
+          "page_start": 25,
+          "page_end": 26,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/school_exp.jpg",
+              "text": "Learning Goal: To build familiarity and personal connection with the school environment. Activity: Pasting picture and oral naming. Detailed procedure: Discuss what a school is and the people there (friends, teachers). Instruct students to paste a picture of their school and verbally state their school's name and their teacher's name."
+            }
+          ]
         }
       ]
     },
@@ -298,19 +256,20 @@
       "title": "Clothes",
       "page_start": 27,
       "page_end": 28,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/clothes_exp.mp4", 
-          "text": "Learn about different items of clothing we wear like shirts, frocks, and hats." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Identify Clothes", 
-          "type": "image", 
-          "path": "assets/images/evs/page_27.jpg", 
-          "text": "Point to and name various clothes shown on the page." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_006_01",
+          "title": "Types of Clothes",
+          "page_start": 27,
+          "page_end": 28,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/clothes_exp.jpg",
+              "text": "Learning Goal: To identify and name various types of common clothing. Activity: Circling preferred clothes. Detailed procedure: Introduce clothing vocabulary like shirt, jeans, skirt, socks, shoes, hat, and frock. Have the students look at the options and circle the clothes they most like to wear."
+            }
+          ]
         }
       ]
     },
@@ -319,33 +278,20 @@
       "title": "Fruits",
       "page_start": 29,
       "page_end": 31,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/fruits_exp.mp4", 
-          "text": "Visit a fruit stall and see many healthy fruits." 
-        },
-        { 
-          "resource": "phonics", 
-          "label": "Fruit Names", 
-          "type": "audio", 
-          "path": "assets/audio/evs/fruits_names.mp3", 
-          "text": "Listen and repeat fruit names like Mango, Apple, and Pineapple." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Favourite Fruit", 
-          "type": "image", 
-          "path": "assets/images/evs/page_30.jpg", 
-          "text": "Circle your favourite fruits from the group." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Colouring Fruits", 
-          "type": "image", 
-          "path": "assets/images/evs/page_31.jpg", 
-          "text": "Have fun colouring the fruits on this page." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_007_01",
+          "title": "Identifying Fruits",
+          "page_start": 29,
+          "page_end": 31,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/fruits_exp.jpg",
+              "text": "Learning Goal: To recognize and name common fruits. Activity: Circling favourite fruits and colouring. Detailed procedure: Introduce fruits displayed on a fruit stand like apple, banana, strawberry, mango, and watermelon. Ask students to circle their favourite fruits from the group and then colour the provided outlines of the grapes and orange."
+            }
+          ]
         }
       ]
     },
@@ -354,19 +300,20 @@
       "title": "Vegetables",
       "page_start": 32,
       "page_end": 34,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/veggies_exp.mp4", 
-          "text": "Learn the names of vegetables like carrots, tomatoes, and brinjals." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Shadow Matching", 
-          "type": "image", 
-          "path": "assets/images/evs/page_34.jpg", 
-          "text": "Match the vegetables with their correct shadows." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_008_01",
+          "title": "Identifying Vegetables",
+          "page_start": 32,
+          "page_end": 34,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/vegetables_exp.jpg",
+              "text": "Learning Goal: To recognize, name, and visually match common vegetables. Activity: Colouring and shadow matching. Detailed procedure: Introduce vegetables like cabbage, carrot, brinjal, tomato, and broccoli. Instruct students to colour the outline of the brinjal, and then draw lines to match various vegetables to their correct dark silhouettes (shadows)."
+            }
+          ]
         }
       ]
     },
@@ -375,213 +322,155 @@
       "title": "Flowers",
       "page_start": 35,
       "page_end": 37,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/flowers_exp.mp4", 
-          "text": "Discover beautiful flowers like daisies, roses, and sunflowers." 
-        },
-        { 
-          "resource": "strokes", 
-          "label": "Trace the Flower", 
-          "type": "image", 
-          "path": "assets/images/evs/page_36.jpg", 
-          "text": "Trace and colour the large flower." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Colour the Daisy", 
-          "type": "image", 
-          "path": "assets/images/evs/page_37.jpg", 
-          "text": "Colour the Daisy blue, the Rose red, and the Sunflower yellow." 
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_009_01",
+          "title": "Naming Flowers",
+          "page_start": 35,
+          "page_end": 37,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/flowers_exp.jpg",
+              "text": "Learning Goal: To identify different types of flowers and associate them with their specific colours. Activity: Tracing and specific colouring. Detailed procedure: Introduce flowers such as Rose, Sunflower, Daisy, Lotus, and Hibiscus. Have students trace the dotted lines to complete the big flower outline, and then colour the Daisy blue, the Rose red, and the Sunflower yellow."
+            }
+          ]
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_010",
-      "title": "Animals",
+      "title": "Farm Animals",
       "page_start": 38,
-      "page_end": 46,
+      "page_end": 40,
       "sub_topics": [
         {
           "sub_topic_id": "nur_evs_sub_010_01",
-          "title": "Farm Animals",
+          "title": "Farm Animal Recognition",
           "page_start": 38,
           "page_end": 40,
           "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/farm_animals.mp4", 
-              "text": "Learn about animals that live on a farm, like cows and hens." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Colour Farm Animals", 
-              "type": "image", 
-              "path": "assets/images/evs/page_39.jpg", 
-              "text": "Colour the cow and the hen on this page." 
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/farm_animals_exp.jpg",
+              "text": "Learning Goal: To recognize common farm animals and differentiate them visually. Activity: Colouring and identical matching. Detailed procedure: Discuss farm animals like a cow, horse, pig, and goat. Instruct students to colour the outlines of the cow and hen, and then draw lines to match identical pictures of farm animals across two columns."
             }
           ]
-        },
-        {
-          "sub_topic_id": "nur_evs_sub_010_02",
-          "title": "Wild Animals",
-          "page_start": 41,
-          "page_end": 43,
-          "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/wild_animals.mp4", 
-              "text": "Identify wild animals like the Lion, Elephant, and Tiger." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Identify Wild Animals", 
-              "type": "image", 
-              "path": "assets/images/evs/page_41.jpg", 
-              "text": "Point to the different wild animals shown in the jungle scene." 
-            }
-          ]
-        },
-        {
-          "sub_topic_id": "nur_evs_sub_010_03",
-          "title": "Birds",
-          "page_start": 44,
-          "page_end": 46,
-          "resource_flow": [
-            { 
-              "resource": "explanation", 
-              "type": "Video", 
-              "path": "assets/videos/evs/birds_exp.mp4", 
-              "text": "See colorful birds like the Parrot, Peacock, and Owl." 
-            },
-            { 
-              "resource": "activity", 
-              "label": "Circle Birds", 
-              "type": "image", 
-              "path": "assets/images/evs/page_46.jpg", 
-              "text": "Identify and circle the birds among the other animals." 
-            }
-          ]
-        }
-      ],
-      "resource_flow": [
-        { 
-          "resource": "revision", 
-          "label": "Animal Revision", 
-          "type": "Video", 
-          "path": "assets/videos/evs/animals_rev.mp4", 
-          "text": "Review farm animals, wild animals, and birds together." 
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_011",
-      "title": "Community Helpers",
-      "page_start": 47,
-      "page_end": 49,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/helpers_exp.mp4", 
-          "text": "Meet people who help us like Doctors, Teachers, and Policemen." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Helpers seen activity", 
-          "type": "image", 
-          "path": "assets/images/evs/page_48.jpg", 
-          "text": "Tick the community helpers that you have seen in real life." 
+      "title": "Wild Animals",
+      "page_start": 41,
+      "page_end": 43,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_011_01",
+          "title": "Wild Animal Recognition",
+          "page_start": 41,
+          "page_end": 43,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/wild_animals_exp.jpg",
+              "text": "Learning Goal: To recognize common wild animals. Activity: Colouring wild animals. Detailed procedure: Introduce wild animals typically found in jungles or zoos, like a lion, elephant, tiger, and monkey. Have students use their crayons to colour the large outlines of the lion and the elephant."
+            }
+          ]
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_012",
-      "title": "My Neighbourhood",
-      "page_start": 50,
-      "page_end": 51,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/neighbourhood_exp.mp4", 
-          "text": "Learn about places in your neighbourhood like the park, hospital, and bank." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Neighbourhood places", 
-          "type": "image", 
-          "path": "assets/images/evs/page_51.jpg", 
-          "text": "Circle the objects and places you typically see in your neighbourhood." 
+      "title": "Birds",
+      "page_start": 44,
+      "page_end": 46,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_012_01",
+          "title": "Identifying Birds",
+          "page_start": 44,
+          "page_end": 46,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/birds_exp.jpg",
+              "text": "Learning Goal: To recognize various common birds and distinguish them from animals. Activity: Visual identification and pointing. Detailed procedure: Show images of different birds (e.g., eagle, parrot, duck, pigeon) and ask students to point to and name the birds, focusing on features like wings and beaks."
+            }
+          ]
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_013",
-      "title": "Action Words",
-      "page_start": 52,
-      "page_end": 52,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/actions_exp.mp4", 
-          "text": "See different actions like reading, jumping, and running." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Match Actions", 
-          "type": "image", 
-          "path": "assets/images/evs/page_52.jpg", 
-          "text": "Look at the pictures and say the correct action word for each." 
+      "title": "Community Helpers",
+      "page_start": 47,
+      "page_end": 49,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_013_01",
+          "title": "Who Helps Us",
+          "page_start": 47,
+          "page_end": 49,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/helpers_exp.jpg",
+              "text": "Learning Goal: To identify community helpers and understand their basic roles in society. Activity: Ticking familiar helpers. Detailed procedure: Discuss various professions like a Milkman, Doctor, Teacher, Sweeper, Policeman, and Farmer. Ask students to look at the grid of pictures and tick (✔) the community helpers they have seen in their own lives."
+            }
+          ]
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_014",
-      "title": "Transportation",
-      "page_start": 53,
-      "page_end": 55,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/transport_exp.mp4", 
-          "text": "Explore road, air, and water vehicles like trucks and aeroplanes." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Match Vehicle to Place", 
-          "type": "image", 
-          "path": "assets/images/evs/page_55.jpg", 
-          "text": "Draw a line to match each vehicle to the correct place (sky, road, or water)." 
+      "title": "My Neighbourhood",
+      "page_start": 50,
+      "page_end": 51,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_014_01",
+          "title": "Neighbourhood Places",
+          "page_start": 50,
+          "page_end": 51,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/evs/neighbourhood_exp.jpg",
+              "text": "Learning Goal: To recognize important places and objects found in a local neighbourhood. Activity: Circling neighbourhood items. Detailed procedure: Introduce community places like a hospital, park, bank, school, and police station. Have students circle the objects and places they commonly see in their own neighbourhood, such as a traffic light, park bench, or street lamp."
+            }
+          ]
         }
       ]
     },
     {
       "topic_id": "nur_evs_top_015",
-      "title": "Seasons",
-      "page_start": 56,
-      "page_end": 59,
-      "resource_flow": [
-        { 
-          "resource": "explanation", 
-          "type": "Video", 
-          "path": "assets/videos/evs/seasons_exp.mp4", 
-          "text": "Learn about the four main seasons of the year." 
-        },
-        { 
-          "resource": "activity", 
-          "label": "Identify Seasons", 
-          "type": "image", 
-          "path": "assets/images/evs/seasons_act.jpg", 
-          "text": "Match the same season pictures together." 
+      "title": "Action Words",
+      "page_start": 52,
+      "page_end": 52,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_evs_sub_015_01",
+          "title": "Common Actions",
+          "page_start": 52,
+          "page_end": 52,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/evs/actions_exp.mp4",
+              "text": "Learning Goal: To understand, identify, and associate basic action verbs with physical movements. Activity: Matching actions to pictures. Detailed procedure: Introduce action words like Read, Write, Run, Drink, and Jump. Instruct students to draw lines matching the written action word to the corresponding picture of the child performing that action."
+            }
+          ]
         }
       ]
     }
   ]
 }
+

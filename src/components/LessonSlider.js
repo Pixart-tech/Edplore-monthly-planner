@@ -52,6 +52,13 @@ function LessonMedia({ lesson, shouldShowControls }) {
 
   const hasImage = imageAssetPaths.length > 0;
   const hasVideo = Boolean(lesson.video);
+  const youtubeUrl = (() => {
+    const candidates = [lesson.popvideo, lesson.popvideo2, lesson.popvideo3]
+      .map((entry) => entry?.content)
+      .filter((value) => typeof value === 'string');
+    return candidates.find((value) => value.trim().toLowerCase().startsWith('http')) || '';
+  })();
+  const hasYoutube = Boolean(youtubeUrl);
   const shouldLoadVideo = hasVideo && shouldShowControls;
   const imageAlt = `${lesson.title ?? 'Lesson'} illustration`;
   const activeImagePath = imageAssetPaths[activeImageIndex];
@@ -152,7 +159,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
       });
   }, [hasImage, activeImagePath]);
 
-  if (!hasVideo && !hasImage) {
+  if (!hasVideo && !hasImage && !hasYoutube) {
     return null;
   }
 
@@ -174,6 +181,16 @@ function LessonMedia({ lesson, shouldShowControls }) {
         />
       )}
       {hasImage && !hasVideo && renderImage()}
+      {!hasVideo && !hasImage && hasYoutube && (
+        <div className="lesson-slide__youtube">
+          <iframe
+            src={youtubeUrl}
+            title={lesson.title || 'Video'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
     </div>
   );
 }
@@ -420,6 +437,17 @@ export default function LessonSlider({
       const normalized = canonicalTraceLetterKey(value);
       return normalized && TRACE_LETTER_SET.has(normalized) ? normalized : null;
     };
+    const extractFileLabel = (value) => {
+      if (typeof value !== 'string') {
+        return null;
+      }
+      const trimmed = value.trim();
+      if (!trimmed) {
+        return null;
+      }
+      const base = trimmed.split('/').pop() || trimmed;
+      return base.replace(/\.[^/.]+$/, '');
+    };
 
     const normalizePopVideoKey = (value) => {
       if (typeof value !== 'string') {
@@ -430,26 +458,6 @@ export default function LessonSlider({
     };
     const isUrl = (value) =>
       typeof value === 'string' && value.trim().toLowerCase().startsWith('http');
-    const normalizeImagePath = (value) => {
-      if (!value) {
-        return null;
-      }
-      if (typeof value === 'string') {
-        return value.trim() || null;
-      }
-      if (Array.isArray(value)) {
-        const entry = value.find((item) => typeof item === 'string' && item.trim());
-        return entry ? entry.trim() : null;
-      }
-      if (typeof value === 'object') {
-        const entries = Object.entries(value)
-          .sort((a, b) => a[0].localeCompare(b[0]))
-          .map(([, item]) => (typeof item === 'string' ? item.trim() : ''))
-          .filter(Boolean);
-        return entries[0] || null;
-      }
-      return null;
-    };
     const hasImageWithVideo = Boolean(lesson.video) && Boolean(lesson.image);
 
     const actions = [
@@ -459,42 +467,105 @@ export default function LessonSlider({
         payload: normalizePopupData(lesson.trace),
       },
       {
+        type: 'trace1',
+        fallbackTitle: 'Trace 1',
+        payload: normalizePopupData(lesson.trace1),
+      },
+      {
+        type: 'trace2',
+        fallbackTitle: 'Trace 2',
+        payload: normalizePopupData(lesson.trace2),
+      },
+      {
         type: 'popvideo',
         fallbackTitle: 'Pop video',
         payload: normalizePopupData(lesson.popvideo),
       },
       {
-        type: 'image',
-        fallbackTitle: 'View image',
-        payload: hasImageWithVideo
-          ? { title: 'View image', content: normalizeImagePath(lesson.image) }
-          : null,
+        type: 'popvideo2',
+        fallbackTitle: 'Pop video 2',
+        payload: normalizePopupData(lesson.popvideo2),
       },
+      {
+        type: 'popvideo3',
+        fallbackTitle: 'Pop video 3',
+        payload: normalizePopupData(lesson.popvideo3),
+      },
+      ...(() => {
+        if (!hasImageWithVideo) {
+          return [];
+        }
+        const imageItems = [];
+        const imageValue = lesson.image;
+        if (typeof imageValue === 'string') {
+          imageItems.push(imageValue);
+        } else if (Array.isArray(imageValue)) {
+          imageItems.push(...imageValue);
+        } else if (imageValue && typeof imageValue === 'object') {
+          imageItems.push(
+            ...Object.entries(imageValue)
+              .sort((a, b) => a[0].localeCompare(b[0]))
+              .map(([, value]) => value)
+          );
+        }
+        return imageItems
+          .filter((value) => typeof value === 'string' && value.trim())
+          .map((value, index) => ({
+            type: 'image',
+            fallbackTitle: `View image ${index + 1}`,
+            payload: { title: `View image ${index + 1}`, content: value.trim() },
+          }));
+      })(),
       {
         type: 'audio',
         fallbackTitle: 'Audio',
         payload: normalizePopupData(lesson.audio),
       },
       {
+        type: 'audio2',
+        fallbackTitle: 'Audio 2',
+        payload: normalizePopupData(lesson.audio2),
+      },
+      {
+        type: 'audio3',
+        fallbackTitle: 'Audio 3',
+        payload: normalizePopupData(lesson.audio3),
+      },
+      {
         type: 'audioimage',
         fallbackTitle: 'Image + audio',
         payload: normalizePopupData(lesson.audioimage),
       },
+      {
+        type: 'audioimage2',
+        fallbackTitle: 'Image + audio 2',
+        payload: normalizePopupData(lesson.audioimage2),
+      },
+      {
+        type: 'audioimage3',
+        fallbackTitle: 'Image + audio 3',
+        payload: normalizePopupData(lesson.audioimage3),
+      },
     ].map((action) => {
-      const animationLetter =
-        action.type === 'trace'
-          ? normalizeTraceLetter(action.payload?.content)
-          : null;
+      const isTraceType = ['trace', 'trace1', 'trace2'].includes(action.type);
+      const animationLetter = isTraceType
+        ? normalizeTraceLetter(action.payload?.content)
+        : null;
+      const contentLabel = !isUrl(action.payload?.content)
+        ? extractFileLabel(action.payload?.content)
+        : null;
+      const fileLabel = isTraceType ? contentLabel : contentLabel;
 
       return {
         ...action,
         animationLetter,
+        fileLabel,
         popVideoKey:
-          action.type === 'popvideo' && !isUrl(action.payload?.content)
+          action.type.startsWith('popvideo') && !isUrl(action.payload?.content)
             ? normalizePopVideoKey(action.payload?.content)
             : null,
         popVideoUrl:
-          action.type === 'popvideo' && isUrl(action.payload?.content)
+          action.type.startsWith('popvideo') && isUrl(action.payload?.content)
             ? action.payload?.content?.trim()
             : null,
       };
@@ -520,7 +591,7 @@ export default function LessonSlider({
               })
             }
           >
-            {action.payload.title ?? action.fallbackTitle}
+            {action.fileLabel || action.payload.title || action.fallbackTitle}
           </button>
         ))}
       </div>
@@ -529,25 +600,27 @@ export default function LessonSlider({
 
   const popupTitle =
     popupPayload?.title ??
-    (popupPayload?.type === 'popvideo'
+    (popupPayload?.type?.startsWith('popvideo')
       ? 'Pop video'
       : popupPayload?.type === 'image'
         ? 'View image'
-      : popupPayload?.type === 'audioimage'
+      : popupPayload?.type?.startsWith('audioimage')
         ? 'Image + audio'
-        : popupPayload?.type === 'audio'
+        : popupPayload?.type?.startsWith('audio')
           ? 'Audio'
           : 'Trace reference');
 
   const showTraceAnimation =
-    popupPayload?.type === 'trace' && Boolean(popupPayload?.animationLetter);
+    ['trace', 'trace1', 'trace2'].includes(popupPayload?.type) &&
+    Boolean(popupPayload?.animationLetter);
   const showPopVideo =
-    popupPayload?.type === 'popvideo' && Boolean(popupPayload?.popVideoKey);
+    popupPayload?.type?.startsWith('popvideo') && Boolean(popupPayload?.popVideoKey);
   const showPopVideoUrl =
-    popupPayload?.type === 'popvideo' && Boolean(popupPayload?.popVideoUrl);
+    popupPayload?.type?.startsWith('popvideo') && Boolean(popupPayload?.popVideoUrl);
   const showImage = popupPayload?.type === 'image';
-  const showAudio = popupPayload?.type === 'audio';
-  const showAudioImage = popupPayload?.type === 'audioimage';
+  const showAudioImage = popupPayload?.type?.startsWith('audioimage');
+  const showAudio =
+    popupPayload?.type?.startsWith('audio') && !showAudioImage;
   const trimmedPopupContent =
     typeof popupPayload?.content === 'string'
       ? popupPayload.content.trim()
@@ -608,6 +681,8 @@ export default function LessonSlider({
             {lessons.map((lesson, index) => {
               const lessonTime = lesson.time?.trim();
               const shouldShowControls = index === currentSlide;
+              const hasContent =
+                typeof lesson.content === 'string' && lesson.content.trim().length > 0;
               return (
                 <article
                   className="lesson-slide"
@@ -618,7 +693,9 @@ export default function LessonSlider({
                   <header className="lesson-slide__header">
                     <div className="lesson-slide__header-main">
                       <div>
-                        <p className="eyebrow">Slider's {index + 1}</p>
+                        <p className="eyebrow">
+                          {lesson.slider ? lesson.slider : `Slider's ${index + 1}`}
+                        </p>
                         <h3>{lesson.title}</h3>
                       </div>
                       {lesson.doc && <PdfButton href={lesson.doc} />}
@@ -629,15 +706,24 @@ export default function LessonSlider({
                       </div>
                     )}
                   </header>
-                  <div className="lesson-slide__content">
-                    <div className="lesson-slide__text">
-                      <FormattedContent text={lesson.content} />
-                      {renderPopupButtons(lesson)}
-                    </div>
+                  <div
+                    className={
+                      hasContent
+                        ? 'lesson-slide__content'
+                        : 'lesson-slide__content lesson-slide__content--media-only'
+                    }
+                  >
+                    {hasContent && (
+                      <div className="lesson-slide__text">
+                        <FormattedContent text={lesson.content} />
+                        {renderPopupButtons(lesson)}
+                      </div>
+                    )}
                     <LessonMedia
                       lesson={lesson}
                       shouldShowControls={shouldShowControls}
                     />
+                    {!hasContent && renderPopupButtons(lesson)}
                   </div>
                 </article>
               );

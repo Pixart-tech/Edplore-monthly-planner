@@ -156,6 +156,35 @@ p {
   color: var(--muted);
 }
 
+.resource-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resource-select__title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.resource-select__list {
+  display: grid;
+  gap: 8px;
+}
+
+.resource-select__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.resource-select__item input {
+  margin-top: 2px;
+}
+
 .topic-preview__list {
   display: flex;
   flex-wrap: wrap;
@@ -676,6 +705,15 @@ button {
   flex-wrap: wrap;
 }
 
+.lesson-slide__content--media-only {
+  justify-content: center;
+  align-items: center;
+}
+
+.lesson-slide__content--media-only .lesson-slide__media {
+  align-items: center;
+}
+
 .lesson-slide__text {
   flex: 1;
   min-width: 260px;
@@ -688,6 +726,20 @@ button {
   flex-direction: column;
   gap: 12px;
   align-items: flex-end;
+}
+
+.lesson-slide__youtube {
+  width: min(640px, 100%);
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.lesson-slide__youtube iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .lesson-slide__media--has-both {

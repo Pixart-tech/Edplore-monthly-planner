@@ -1,0 +1,379 @@
+{
+  "book": "LKG Art and Craft",
+  "topics": [
+    {
+      "topic_id": "lkg_art_top_001",
+      "title": "Basic Colouring and Tracing",
+      "sub_topics": [
+        {
+          "sub_topic_id": "lkg_art_sub_001_01",
+          "title": "Colouring: Kettle",
+          "page_start": 1,
+          "page_end": 1,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/kettle_exp.mp4", "text": "Learn to trace dotted lines to form a kettle before colouring." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p1_kettle.jpg", "text": "Trace the dotted lines and colour the teapot as shown in the sample." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_02",
+          "title": "Colouring: Dolphin",
+          "page_start": 4,
+          "page_end": 4,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p4_dolphin.jpg", "text": "Trace and colour the jumping dolphin using the grey sample as a guide." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_03",
+          "title": "Colouring: Sun",
+          "page_start": 7,
+          "page_end": 7,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p7_sun.jpg", "text": "Trace the circular sun and its rays, then fill them with bright colours." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_04",
+          "title": "Colouring: Octopus",
+          "page_start": 10,
+          "page_end": 10,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p10_octopus.jpg", "text": "Trace the tentacles and colour the octopus purple." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_05",
+          "title": "Colouring: Teddy Bear",
+          "page_start": 13,
+          "page_end": 13,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p13_teddy.jpg", "text": "Trace and colour the happy teddy bear." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_06",
+          "title": "Colouring: Train",
+          "page_start": 16,
+          "page_end": 16,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p16_train.jpg", "text": "Complete the engine by tracing the lines and adding vibrant colours." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_07",
+          "title": "Colouring: Colour Palette",
+          "page_start": 19,
+          "page_end": 19,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p19_palette.jpg", "text": "Trace and colour the artist's palette with different shades." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_08",
+          "title": "Colouring: Truck",
+          "page_start": 22,
+          "page_end": 22,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p22_truck.jpg", "text": "Trace and colour the delivery truck." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_09",
+          "title": "Colouring: Butterfly",
+          "page_start": 25,
+          "page_end": 25,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p25_butterfly.jpg", "text": "Trace the wings and add beautiful colours to the butterfly." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_10",
+          "title": "Colouring: Christmas Tree",
+          "page_start": 28,
+          "page_end": 28,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p28_xmas_tree.jpg", "text": "Trace and colour the festive Christmas tree." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_11",
+          "title": "Colouring: Ice Cream",
+          "page_start": 29,
+          "page_end": 29,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p29_ice_cream.jpg", "text": "Colour the delicious ice cream cone." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_12",
+          "title": "Colouring Time: Mouse",
+          "page_start": 35,
+          "page_end": 35,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p35_mouse.jpg", "text": "Colour the little mouse eating cheese." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_001_13",
+          "title": "Colouring: Snail and Mushroom",
+          "page_start": 37,
+          "page_end": 37,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p37_snail.jpg", "text": "Trace the snail's shell and colour the scene." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "lkg_art_top_002",
+      "title": "Creative Printing and Painting",
+      "sub_topics": [
+        {
+          "sub_topic_id": "lkg_art_sub_002_01",
+          "title": "Onion Printing: Flower",
+          "page_start": 2,
+          "page_end": 2,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/onion_print.mp4", "text": "Learn to use onion halves to stamp flower patterns." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p2_onion.jpg", "text": "Use dried onions and paint to create beautiful flowers in the pot." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_002_02",
+          "title": "Sponge Painting: Butterfly",
+          "page_start": 8,
+          "page_end": 8,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/lkg/art/sponge_butterfly.json", "text": "How to tie a sponge to make a butterfly stamp." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p8_butterfly_sponge.jpg", "text": "Apply paint to a tied sponge and press it to create matching butterfly patterns." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_002_03",
+          "title": "Blow Painting: Sun",
+          "page_start": 18,
+          "page_end": 18,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/blow_painting.mp4", "text": "Watch how blowing through a straw spreads paint to create rays." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p18_blow_sun.jpg", "text": "Put yellow paint in the centre and blow it with a straw to create the sun's rays." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "lkg_art_top_003",
+      "title": "Paper Craft and Origami",
+      "sub_topics": [
+        {
+          "sub_topic_id": "lkg_art_sub_003_01",
+          "title": "Origami: Boat",
+          "page_start": 3,
+          "page_end": 3,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/lkg/art/origami_boat.json", "text": "Follow the 11-step folding guide to make a paper boat." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p3_boat.jpg", "text": "Fold your paper boat and paste it on the blue ocean scene." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_003_02",
+          "title": "Paper Pasting",
+          "page_start": 5,
+          "page_end": 5,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p5_pasting.jpg", "text": "Paste green and yellow marble paper circles to create a caterpillar." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_003_03",
+          "title": "Origami: Whale",
+          "page_start": 9,
+          "page_end": 9,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p9_whale.jpg", "text": "Follow the 6 folding steps to create a paper whale and paste it below." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_003_04",
+          "title": "Origami: Fox",
+          "page_start": 23,
+          "page_end": 23,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p23_fox.jpg", "text": "Use the 8-step guide to fold a paper fox and paste it in the field." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "lkg_art_top_004",
+      "title": "Modelling and Mixed Media",
+      "sub_topics": [
+        {
+          "sub_topic_id": "lkg_art_sub_004_01",
+          "title": "Clay Modelling: Ladybird",
+          "page_start": 6,
+          "page_end": 6,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/clay_ladybird.mp4", "text": "Watch how to roll red and black clay to make a bug." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p6_clay.jpg", "text": "Mould a ladybird using red and black PlayDough following the 6-step guide." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_02",
+          "title": "Ice Cream Stick Craft",
+          "page_start": 11,
+          "page_end": 11,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p11_sticks.jpg", "text": "Use painted ice cream sticks to build a simple structure." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_03",
+          "title": "Pom-Pom Caterpillar",
+          "page_start": 12,
+          "page_end": 12,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p12_pompom.jpg", "text": "Glue pom-poms onto a leaf and add googly eyes to finish your caterpillar." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_04",
+          "title": "Paper Plate Bee",
+          "page_start": 14,
+          "page_end": 14,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/plate_bee.mp4", "text": "Learn how a simple plate becomes a bee with paint and googly eyes." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p14_plate_bee.jpg", "text": "Paint stripes on a plate and assemble your bee with clothespins." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_05",
+          "title": "Sharpener Art: Owl",
+          "page_start": 15,
+          "page_end": 15,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p15_sharpener.jpg", "text": "Paste pencil shavings onto the owl's body to create textured feathers." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_06",
+          "title": "Clay Modelling: Tortoise",
+          "page_start": 17,
+          "page_end": 17,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/clay_tortoise.mp4", "text": "Roll green and brown clay into shapes to form a tortoise." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p17_tortoise.jpg", "text": "Follow the 9-step guide to mould your own clay tortoise." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_07",
+          "title": "Cotton Ball Snowman",
+          "page_start": 20,
+          "page_end": 20,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p20_snowman.jpg", "text": "Paste fluffy white cotton balls on the snowman for a winter effect." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_08",
+          "title": "Sand Pasting",
+          "page_start": 21,
+          "page_end": 21,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p21_sand.jpg", "text": "Apply glue and sprinkle sand on the beach area of the picture." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_09",
+          "title": "Pista Art",
+          "page_start": 24,
+          "page_end": 24,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p24_pista.jpg", "text": "Glue coloured pistachio shells onto the tree to create vibrant leaves." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_10",
+          "title": "Button Rainbow Craft",
+          "page_start": 26,
+          "page_end": 26,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/lkg/art/button_rainbow.json", "text": "A colour-guided animation for sorting and pasting buttons." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p26_rainbow.jpg", "text": "Glue colourful buttons in layers and add cotton ball clouds for a rainbow." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_11",
+          "title": "Playdough Shapes",
+          "page_start": 27,
+          "page_end": 27,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p27_playdough.jpg", "text": "Mould a bright flower using yellow, pink, and green clay." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_12",
+          "title": "Yarn Pasting: Lion",
+          "page_start": 30,
+          "page_end": 31,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p30_lion.jpg", "text": "Paste yellow wool around the lion's head to create a fluffy mane." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_004_13",
+          "title": "Feather Sticking",
+          "page_start": 34,
+          "page_end": 34,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p34_feathers.jpg", "text": "Colour the bird and paste soft, colourful feathers on its tail." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "lkg_art_top_005",
+      "title": "Drawing and Free Expression",
+      "sub_topics": [
+        {
+          "sub_topic_id": "lkg_art_sub_005_01",
+          "title": "Drawing Time: Duck",
+          "page_start": 32,
+          "page_end": 32,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/lkg/art/duck_draw.json", "text": "A step-by-step drawing animation for a yellow duck." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p32_duck.jpg", "text": "Follow the 6 steps to draw your own duck and colour it." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_005_02",
+          "title": "Design it",
+          "page_start": 33,
+          "page_end": 33,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p33_design.jpg", "text": "Decorate the girl's dress with glitter, bindis, or vegetable prints." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_005_03",
+          "title": "Drawing Time: Girl",
+          "page_start": 36,
+          "page_end": 36,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/lkg/art/girl_draw.mp4", "text": "How to use circles and triangles to draw a simple person." },
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p36_girl.jpg", "text": "Follow the 4 steps to draw a girl and complete her features." }
+          ]
+        },
+        {
+          "sub_topic_id": "lkg_art_sub_005_04",
+          "title": "Scribbling Time",
+          "page_start": 38,
+          "page_end": 39,
+          "resource_flow": [
+            { "resource": "activity", "type": "image", "path": "assets/images/lkg/art/p38_scribble.jpg", "text": "Use these pages for free-hand expression and creative scribbling." }
+          ]
+        }
+      ]
+    }
+  ]
+}

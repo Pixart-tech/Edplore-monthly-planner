@@ -3,130 +3,129 @@ import re
 from pathlib import Path
 
 RAW_DOC = """
-Detailed Daily Planner: Week 2
-Day 1: Introduction to Single Quantity, Primary Colour Blue, and Body Structure
-I. Circle Time: Introduction to Fine Motor Rhyme
-• Concept: Initial engagement through rhythm and introducing counting through body parts.
-• Activity: Introduce the rhyme "Ten Little Fingers".
-• Detailed Procedure: The instructor leads the children in singing the rhyme while actively counting and moving their fingers. This reinforces simple enumeration and introduces the idea of 'many' small, accessible parts.
+Detailed Daily Planner: Week 1
+Day 1: Introduction to Self, Size, and Vertical Strokes
+I. Circle Time: Introduction to Body Awareness
+Learning Goal: Engage children with a physical rhyme to build auditory skills and basic body part recognition
+.
+Activity: Rhyme – Head, Shoulders, Knees, and Toes
+.
+Detailed Procedure: The teacher leads the students in singing the rhyme slowly, demonstrating how to touch the corresponding body parts (head, shoulders, knees, toes) as they are named. This builds gross motor skills and helps children follow physical cues.
+II. Literacy: Introduction to Standing Line
+Learning Goal: Introduce the first pre-writing stroke, the vertical "Standing Line"
+.
+Concept: A standing line goes straight up and down.
+Detailed Procedure & Activity: Demonstrate drawing a straight vertical line on the board. Then, transition to the English skillbook activity where students trace over the standing lines. The worksheet provides a visual of falling leaves from a tree, with dotted vertical lines descending from the leaves. Instruct students to trace from top to bottom
+.
+III. Numeracy: Introduction to Pre-Math Concept – Big and Small
+Learning Goal: Introduce size differentiation and comparison
+.
+Concept: Understanding the visual difference between large (big) and small objects.
+Detailed Procedure: Use classroom objects (like a large book and a small book) to demonstrate the concept visually. Emphasize the vocabulary "Big" and "Small" clearly so students begin associating the words with the physical scale.
+IV. General Awareness (EVS): Introduction to "All About Me"
+Learning Goal: Encourage self-recognition and personal identity
+.
+Concept: Knowing basic personal facts.
+Detailed Procedure & Activity: Conduct an oral session asking simple questions such as "What is your name?" and "What is your age?"
+. Encourage each child to speak loudly and confidently.
 
-II. Literacy: Introduction to Forward Slanting Line
-• Concept: Introducing the first diagonal pre-writing stroke, which is crucial for forming letters like A, V, M, N, and X.
-• Hook: Use the "Slanty the Line" hook, discussing the forward slant (/) which goes up and to the right.
-• Detailed Procedure:
-    1. Visualisation: Show real-life objects that slant in this direction, such as the side of a tent, an arrow pointing up/right, or the beams of sun rays.
-    2. Tracing Practice: Students trace over the slanting lines on a worksheet. The strokes often resemble rain falling or sun rays extending from the sun.
-    3. Movement Reinforcement: Instruct students to use their arms to perform the "Forward Slant" move in the air, going from bottom-left to top-right.
-III. Numeracy: Introduction to Number 1 and Colour Blue
-• Learning Goal: Master the concept and formation of Number 1 and recognize the primary colour Blue.
-• Concept (Number 1): The vertical nature of the numeral 1 naturally links to the standing line practiced in Week 1.
-    1. Tracing & Writing: Students must trace number 1 with their finger following directional arrows, and then trace and write the number 1 repeatedly in practice boxes.
-    2. Quantity and Recognition: Activities involve circling the apples marked with number 1 amidst other numbers (like 2), or colouring one cup. The skillbook also includes counting and matching one object (like a fish or tomatoes) to the numeral 1.
-• Concept (Colour Blue): Blue is one of the three Primary Colours introduced.
-    1. Visual Recognition: Introduce blue using flashcards and real examples, naming a blue jay or discussing the sky and water.
-    2. Workbook Activity: Students circle the objects that are blue in colour, such as blueberries, a blue hat, and a blue butterfly.
-IV. General Awareness (EVS): Introduction to Parts of the Body
-• Learning Goal: Identify and name the major, external parts of the body.
-• Detailed Procedure:
-    1. Introduction: Use the rhyming and movement sessions (Circle Time) to discuss the main parts of the body (head, arms, legs, hands, feet).
-    2. Activity: Conduct a "Touch and Name" game: The instructor calls out a body part, and the students must immediately touch it (e.g., "Touch your hands!").
--------------------------------------------------------------------------------- 
-
-Day 2: Introduction to Backwards Slant and Spatial Directionality
+--------------------------------------------------------------------------------
+Day 2: Reinforcement of Standing Lines and Size Discrimination
 I. Circle Time: Revisit Rhyme
-• Activity: Revisit - Rhyme: "Ten Little Fingers".
-• Detailed Procedure: Perform the rhyme with increased speed or incorporate a challenge, such as singing the rhyme while seated or standing on one foot, to further engage motor skills.
+Activity: Revisit – Head, Shoulders, Knees, and Toes
+.
+Detailed Procedure: Sing the rhyme again, this time increasing the speed slightly to make it a fun, energetic physical activity that tests their recall and coordination.
+II. Literacy: Revisit Standing Line
+Activity: Revisit – Standing Line
+.
+Detailed Procedure: Continue practicing the vertical stroke. Ensure students are holding their crayons correctly and tracing the dotted lines downwards to build muscle memory
+.
+III. Numeracy: Revisit Big and Small
+Activity: Revisit – Big and Small
+.
+Detailed Procedure & Activity: Move to the Maths skillbook application. Guide students through the visual discrimination tasks. Instruct them to "Circle the big objects" (using examples from the book like the big box and the large teddy bear) and "Circle the small objects" (like the small soccer ball and the small blue hat)
+.
+IV. General Awareness (EVS): Revisit All About Me
+Activity: Revisit – All About Me
+.
+Detailed Procedure & Activity: Expand on self-identity by discussing their personal preferences. Ask oral questions like "Name your favourite toy"
+. This encourages children to express their individual likes within a group setting.
 
-. Literacy: Revisiting to Forward Slanting Line
-• Concept: revisiting forward slanting stroke with many more examples
-• Detailed Procedure:
-    1. Visualisation: Show real-life objects that slant in this direction, such as the side of a tent, an arrow pointing up/right, or the beams of sun rays.
-    2. Tracing Practice: Students trace over the slanting lines on a worksheet. The strokes often resemble rain falling or sun rays extending from the sun.
-    3. Movement Reinforcement: Instruct students to use their arms to perform the "Forward Slant" move in the air, going from bottom-left to top-right.
+--------------------------------------------------------------------------------
+Day 3: Introduction to Sleeping Lines and Genders
+I. Circle Time: Introduction to Story
+Learning Goal: Introduce narrative listening, attention span, and moral comprehension
+.
+Activity: Intro – Story: The Tortoise and the Rabbit
+.
+Detailed Procedure: Read the story aloud to the class. Introduce the two main characters (the slow tortoise and the fast rabbit) and describe the setting of the race.
+II. Literacy: Introduction to Sleeping Line
+Learning Goal: Introduce the horizontal pre-writing stroke
+.
+Concept: A sleeping line goes across from left to right.
+Detailed Procedure & Activity: Demonstrate the horizontal stroke. In the English skillbook, have students trace over the sleeping lines. This activity uses fun associations, asking children to trace the dotted horizontal line to connect animals to their homes: linking the bee to the beehive, the lion to the den, and the dog to the kennel
+.
+III. Numeracy: Revisit Big and Small
+Activity: Revisit – Big and Small
+.
+Detailed Procedure: Continue assessing their grasp of size. Use oral questioning and point-and-identify methods, asking students to "Point to the big object" when shown contrasting images (e.g., a big teddy bear next to a small one)
+.
+IV. General Awareness (EVS): Introduction to Genders
+Learning Goal: Identify biological gender categories
+.
+Concept: Differentiating between a boy and a girl.
+Detailed Procedure & Activity: Ask the children, "Are you a boy or a girl?"
+. Follow up with a worksheet activity where students look at pictures of children and "Tick (✔) below" the image that matches their own gender (a picture of a girl reading, or a boy with a backpack)
+.
 
-III. Numeracy: Introduction to Left and Right
-• Learning Goal: Understand and apply relative positional concepts (Left and Right).
-• Concept (Left and Right):
-    1. Hook: Use "The Magic of Directions" hook.
-    2. Active Practice: Ask students to identify their Left and Right hands/feet. Mark one hand (e.g., the right hand) with a small sticker or ribbon to aid memory.
-    3. Workbook Activity: Perform the spatial tasks: Circle the vehicles moving towards the left (which may include a bus or car), and circle the objects on the right side of the dog.
-• Revisit: Review Number 1 and the colour Blue from Day 1.
+--------------------------------------------------------------------------------
+Day 4: Application and Story Comprehension
+I. Circle Time: Revisit Story
+Activity: Revisit – The Tortoise and the Rabbit
+.
+Detailed Procedure: Recap the plot of the story. Discuss the ending and the moral lesson of the story, emphasizing that taking your time and not giving up is better than rushing and being careless.
+II. Literacy: Revisit Sleeping Line
+Activity: Revisit – Sleeping Line
+.
+Detailed Procedure & Activity: Continue the matching activity from Day 3, tracing horizontal lines from left to right. Have them connect the bird to the nest, the horse to the stable, and the girl to the house
+. Focus on keeping the crayon on the dotted line.
+III. Numeracy: Revisit Big and Small
+Activity: Revisit – Big and Small
+.
+Detailed Procedure: Consolidate the size concept through a physical classroom activity. Ask students to sort mixed items (like blocks or toy cars) into a "Big" pile and a "Small" pile.
+IV. General Awareness (EVS): Revisit Genders
+Activity: Revisit – Genders
+.
+Detailed Procedure: Further discuss differences and similarities between boys and girls. You can use visual aids of clothing items (like a skirt, dress, shirt, and shorts) to discuss different types of clothes children wear
+.
 
-IV. General Awareness (EVS): Revisit Parts of the Body
-• Learning Goal: Reinforce learning through kinetic activity and practical application.
-• Detailed Procedure:
-    1. Game: Play an active game of "Simon Says" focused on body parts (e.g., "Simon says wiggle your fingers," "Simon says touch your feet").
-    2. Activity: Draw a large outline of a person and have students label or paste pictures of the corresponding body parts.
--------------------------------------------------------------------------------- 
-
-Day 3: Introduction to Shapes (Circle) and Fine Motor Curves
-I. Circle Time: Introduction to Social Language
-• Concept: Introducing core moral values and courtesy phrases.
-• Activity: Intro – Magic Words.
-• Detailed Procedure: Introduce words like "Please" and "Thank you." Role-play simple scenarios where these words are necessary (e.g., receiving a toy, asking for a crayon) to instill basic etiquette.
-
-II. Literacy: Introduction to Backwards Slanting Line and Synthesis
-• Concept: Introducing the second diagonal stroke (), completing the concept of slanting movement.
-• Detailed Procedure:
-    1. Demonstration: Draw the backwards slanting line on the board, emphasizing that it mirrors the forward slant, moving up towards the left.
-    2. Combined Tracing: Students practice drawing both slanting lines in quick succession. These strokes form the basis of the letter 'X' and the shape Triangle.
-    3. Activity: Practice tracing over V-shapes (zigzag strokes) and basic curves, as these composite shapes combine the slanting movements.
-
-III. Numeracy: Introduction to Shape – Circle
-• Learning Goal: Recognize the geometric shape Circle.
-• Concept (Circle): The shape is characterized by being perfectly round, with no corners.
-    1. Tracing & Colouring: Students trace and colour the circle outline.
-    2. Object Identification: Students circle the objects that are circle-shaped, such as a clock and a button.
-Revisit: Review Left and Right with some physical activities like point your right ear, raise left hand
-
-IV. General Awareness (EVS): Introduction to Face and Torso Parts
-• Learning Goal: Focus on detailed, specific body features and their location.
-• Detailed Procedure: Review general body parts. Then, introduce the specific features of the Face (eyes, nose, mouth, ears) and the Torso (chest, stomach).
-    1. Sensory Activity: Blindfold a partner and have them identify a specific part of the face or arm (under supervision).
-    2. Discussion: Discuss the function of each part (e.g., eating with the mouth, smelling with the nose).
--------------------------------------------------------------------------------- 
-
-Day 4: Application (Letter B, Number 2, Heavy/Light)
-I. Circle Time: Revisit Magic Words
-• Activity: Revisit – Magic Words.
-• Detailed Procedure: Focus on spontaneous use of "Please" and "Thank You." Introduce a positive affirmation or a short story illustrating the value of courtesy.
-
-II. Literacy: Revisit Backward slanting lines 
-Independent Practice: Hand out large sheets of paper and crayons. Ask students to draw their forward and backwards slanting lines. 
-Encouragement: Walk around to assist and encourage them to get creative. They can decorate their lines with colours and patterns. 
-
-III. Numeracy: Revisit colour red
-• Colour Focus (Red): Introduce the primary colour RED. Discuss objects that are red, such as a Car, Apple, Tomato, Strawberry, and Rose. Activity: Circle the objects that are red among distractors (e.g., car, strawberry, rose) and colour the apple red.
-
-IV. General Awareness (EVS): Revisit Face and Torso Parts and Action Words
-• Learning Goal: Connect body parts to movement and function.
-• Detailed Procedure:
-    1. Activity: Practice Action Words. Call out words like Run, Jump, Drink, Write, Read, Sleep and have children perform the action. Discuss which parts (legs, mouth, hands, eyes) are involved.
-    2. Extension: Discuss hygiene related to body parts (EVS topic), such as washing hands or brushing teeth.
--------------------------------------------------------------------------------- 
-
-
-Day 5: Synthesis and Fine Motor Creation
+--------------------------------------------------------------------------------
+Day 5: Synthesis and Fine Motor Art
 I. Circle Time: Synthesis
-• Activity: Revisit – Rhyme and Magic words.
-• Detailed Procedure: Conduct a final performance of "Ten Little Fingers." Assess spontaneous use of "Please/Thank You" during clean-up or activity distribution.
+Activity: Revisit – Rhyme and Story
+.
+Detailed Procedure: Have a final, enthusiastic group performance of the Head, Shoulders, Knees, and Toes rhyme. Ask students to recall their favourite part of The Tortoise and the Rabbit.
+II. Literacy: Revisit Standing and Sleeping Line
+Activity: Revisit – Standing and Sleeping Line
+.
+Detailed Procedure: Combine both strokes. Have children practice drawing a simple shape, like a window or a ladder, which requires them to use both top-to-bottom (standing) and left-to-right (sleeping) motions.
+III. Numeracy: Revisit Big and Small - Activity
+Activity: Revisit – Big and Small - Activity
+.
+Detailed Procedure: Conduct a final review activity, perhaps pointing out big and small objects around the actual classroom (e.g., the big teacher's desk vs. a small chair).
+IV. General Awareness (EVS): Revisit All About Me, and Genders
+Activity: Revisit – All about me, and Genders
+.
+Detailed Procedure: Bring the week's themes together by having children introduce themselves to the class: "My name is [Name], I am [Age] years old, and I am a [Boy/Girl]".
+V. Art and Craft: Hand Painting
+Learning Goal: Sensory engagement and introduction to primary colours
+.
+Activity: Activity – Hand Painting
+.
+Detailed Procedure: Introduce the Primary Colour RED
+. Instruct the children to "Paint your hand red and make a palm print" on their art pages
+. This messy, fun activity develops tactile senses while solidifying colour recognition.
 
-II. Literacy: Synthesis of Strokes (A-B) and Curves
-• Learning Goal: Reinforce all pre-writing strokes and initial letter formations.
-• Synthesis Activity: Practice writing both slanting lines and forming letters like A X Y N M
-
-III. Numeracy: Synthesis of Concepts
-• Learning Goal: Consolidate number, colour, shape, and comparison concepts.
-• Synthesis Activity:
-Recap Counting: Revisit Number  1 and identification of number 1 and counting 
-    2. Colour & Shape Recap: Review the primary colour Red. Revisit the Circle shape by drawing objects that are round.
-   3. Merge all concepts together and performing an activity like draw 1 circle and colour it red of find 1 object that is circle in shape or red in colour
-  
-IV. Art and Craft: Activity – Paper Folding
-• Learning Goal: Develop precise folding skills and follow multi-step instructions.
-• Activity: Paper Folding Fun.
-• Detailed Procedure: Use the instructions provided in the Art & Craft book: "Fold the paper in half, then fold it again to create neat shapes!". This activity allows students to observe how shapes (like a rectangle or square) are physically transformed by folding.
-• Alternative Craft: If time allows, introduce Paper Sticking (Collage), where students tear coloured paper, glue it on a ball outline, and create a collage. This combines the circle shape (Numeracy) with fine motor tearing and pasting skills.
 """
 
 
@@ -240,9 +239,10 @@ def build_lessons() -> tuple[dict, int]:
 
 def main():
     data, week_number = build_lessons()
-    output_path = Path("src") / "lessons.json"
+    repo_root = Path(__file__).resolve().parent.parent
+    output_path = repo_root / "src" / "lessons.json"
     output_path.write_text(json.dumps(data, indent=2))
-    week_path = Path("src") / f"week{week_number}_lessons.json"
+    week_path = repo_root / "src" / f"week{week_number}_lessons.json"
     week_path.write_text(json.dumps({"week": week_number, **data}, indent=2))
 
 

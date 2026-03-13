@@ -13,7 +13,8 @@
           "page_start": 1,
           "page_end": 1,
           "resource_flow": [
-            { "resource": "strokes", "type": "animation", "path": "Standing lines", "text": "Trace over the standing lines following the arrows." }
+            { "resource": "strokes", "type": "animation", "path": "Standing lines", "text": "Learning Goal: To introduce the first pre-writing stroke, the vertical standing line, to build foundational fine motor skills and hand-eye coordination. Activity: Vertical tracing practice. Detailed procedure: Demonstrate drawing a straight vertical line on the board. Then, instruct students to use their skillbook to trace over the dotted standing lines descending from the leaves, focusing on maintaining a steady grip from top to bottom." },
+            {"resource": "revision1", "type": "animation", "path": "Slanting lines", "text": "Learning Goal: To reinforce the vertical stroke, ensuring proper directional movement and muscle memory. Activity: Repeated tracing of standing lines. Detailed procedure: Continue practicing the vertical standing stroke. Monitor students to ensure they are holding their crayons correctly and consistently tracing the dotted lines in a downward motion."}
           ]
         },
         {
@@ -22,7 +23,19 @@
           "page_start": 2,
           "page_end": 2,
           "resource_flow": [
-           { "resource": "strokes", "type": "animation", "path": "Sleeping lines", "text": "Trace over the sleeping lines to connect the bee to the hive and the dog to its house." }
+           { "resource": "strokes", "type": "animation", "path": "Sleeping lines", "text":"Learning Goal: To introduce the horizontal pre-writing stroke moving from left to right. Activity: Horizontal tracing and matching game. Detailed procedure: Demonstrate drawing a horizontal line across the board. In the skillbook, instruct students to trace over the sleeping lines to connect animals to their homes, such as linking the bee to the beehive, the lion to the den, and the dog to the kennel."  },
+           {
+            "resource": "revision1",
+            "type": "animation",
+            "path": "Sleeping lines",
+            "text":  "Learning Goal: To build consistency and control in drawing horizontal lines from left to right. Activity: Continued horizontal matching practice. Detailed procedure: Continue the horizontal matching activity from the workbook. Have students trace the sleeping lines to connect the bird to the nest, the horse to the stable, and the girl to the house, focusing on keeping the crayon strictly on the dotted line."
+           },
+           {
+            "resource": "revision2",
+            "type": ["animation", "animation"],
+            "path": ["Sleeping lines", "Standing lines"],
+            "text": "Learning Goal: To synthesize both vertical and horizontal strokes, preparing for complex shapes and letter formation. Activity: Combining vertical and horizontal strokes. Detailed procedure: Combine both the standing and sleeping lines in practice. Instruct children to draw simple shapes or objects that require both strokes, actively using both top-to-bottom and left-to-right motions to solidify their understanding."
+           }
           ]
         },
         {
@@ -31,7 +44,18 @@
           "page_start": 3,
           "page_end": 4,
           "resource_flow": [
-            { "resource": "strokes", "type": "animation", "path": "Slanting lines", "text": "Trace the slanting lines to help the child fly the kites." }
+            { 
+            "resource": "strokes", 
+            "type": "animation", 
+            "path": "Slanting lines", 
+            "text": "Learning Goal: To introduce the first diagonal pre-writing stroke, the forward slanting line, to build foundational fine motor skills and hand-eye coordination. Activity: Diagonal tracing practice. Detailed procedure: Demonstrate drawing a diagonal line on the board. Instruct the students to use their English skillbook to trace over the dotted slanting lines representing sunrays, focusing on maintaining a steady grip and controlling the crayon's downward direction."
+          },
+          {
+            "resource": "revision1",
+            "type": "animation",
+            "path": "Slanting lines",
+            "text": "Learning Goal: To reinforce the forward diagonal stroke, building muscle memory and controlled movement. Activity: Continued diagonal tracing practice. Detailed procedure: Continue practicing the slanting stroke. Have students trace the diagonal lines connecting the kites to the children holding them in their workbooks, ensuring they can consistently trace the dotted path without deviating."
+          }
           ]
         },
         {
@@ -40,9 +64,8 @@
           "page_start": 5,
           "page_end": 6,
           "resource_flow": [
-            { "resource": "explanation", "type": "animation", "path": "assets/animations/eng/curves_intro.json", "text": "Introduction to drawing left and right curves." },
-            { "resource": "strokes", "type": "image", "path": "LeftCurve", "text": "Help the diver swim by tracing the curves on the fish's scales." }
-          ]
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/eng/curves_intro.json", "text": "Learning Goal: To introduce non-linear, curved pre-writing strokes essential for forming complex letters and numbers. Activity: Tracing dotted curves. Detailed procedure: Demonstrate drawing an arcing curve on the board. Instruct students to trace the dotted curves over the fish scales, water waves, and the path of the bouncing ball in their skillbooks to build smooth motor control." }
+            ]
         }
       ]
     },
@@ -58,9 +81,8 @@
           "page_start": 7,
           "page_end": 8,
           "resource_flow": [
-            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/a_phonics.mp3", "text": "A says /a/ as in Alligator and Axe." },
-            { "resource": "strokes", "type": "animation", "path": "A", "text": "Trace the letter A." },
-            { "resource": "activity", "label": "Circle Letter A", "type": "image", "path": "assets/images/eng/p8_act.jpg", "text": "Identify and circle every letter A found on the big apple." }
+            { "resource": "phonics", "type": "Youtube link", "path": "A", "text": "Learning Goal: To introduce the first letter of the alphabet, its formation using slanting and sleeping lines, and its short vowel sound. Activity: Letter tracing, writing, and visual identification. Detailed procedure: Introduce the letter A and its vocabulary (Apple, Ant). Have students trace the large letter A with their finger, practice writing it in the provided boxes, and identify and circle every letter A found inside the apple picture."},
+            { "resource": "strokes", "type": "animation", "path": "A", "text": "" }
           ]
         },
         {
@@ -69,9 +91,8 @@
           "page_start": 9,
           "page_end": 10,
           "resource_flow": [
-            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/b_phonics.mp3", "text": "B says /b/ like a bouncing ball." },
-            { "resource": "strokes", "type": "animation", "path": "B", "text": "Trace the letter B." },
-            { "resource": "activity", "label": "Circle Letter B", "type": "image", "path": "assets/images/eng/p10_act.jpg", "text": "Identify and circle every letter B found on the balloon." }
+            { "resource": "phonics", "type": "Youtube link", "path": "B", "text": "Learning Goal: To introduce the letter B, its formation combining a standing line with right curves, and its beginning sound. Activity: Letter tracing and colour-coding identification. Detailed procedure: Introduce words starting with B like Bear and Balloon. Instruct students to trace the letter B with their fingers, write it in the practice lines, and identify and colour every letter B inside the balloon illustration." },
+            { "resource": "strokes", "type": "animation", "path": "B", "text": "" }
           ]
         },
         {
@@ -80,10 +101,8 @@
           "page_start": 11,
           "page_end": 12,
           "resource_flow":[
-            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/c_phonics.mp3", "text": "C says /c/ like a cat." },
-            { "resource": "strokes", "type": "animation", "path": "C", "text": "Trace the letter C." },
-            { "resource": "activity", "label": "Circle Letter C", "type": "image", "path": "assets/images/eng/p12_act.jpg", "text": "Identify and circle every letter C found on the cake." }
-          ]
+            { "resource": "phonics", "type": "Youtube link", "path": "C", "text": "Learning Goal: To introduce the letter C, utilizing the left curve stroke, and its hard beginning sound. Activity: Curved stroke tracing and visual discrimination. Detailed procedure: Teach the hard /c/ sound using words like Cat and Candle. Have students trace the large C with their finger, trace and write it in the grids, and identify and colour the candles that have the letter C on them."},
+            { "resource": "strokes", "type": "animation", "path": "C", "text": "" }]
         },
         {
           "sub_topic_id": "nur_eng_sub_002_04",
@@ -91,10 +110,8 @@
           "page_start": 13,
           "page_end": 14,
           "resource_flow": [
-            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/d_phonics.mp3", "text": "D says /d/ like a dog." },
-            { "resource": "strokes", "type": "animation", "path": "D", "text": "Trace the letter D." },
-            { "resource": "activity", "label": "Circle Letter D", "type": "image", "path": "assets/images/eng/p14_act.jpg", "text": "Identify and circle every letter D found on the duck." }
-          ]
+            { "resource": "phonics", "type": "Youtube link", "path": "D", "text": "Learning Goal: To introduce the letter D, combining a standing line and a large right curve, and its beginning sound. Activity: Letter formation and focused identification. Detailed procedure: Introduce the letter D and associated vocabulary like Dog and Dolphin. Guide students to trace and write the letter, then help the dolphins jump through the rings by colouring the rings containing the letter D."},
+            { "resource": "strokes", "type": "animation", "path": "D", "text": "" }]
         },
         {
           "sub_topic_id": "nur_eng_sub_002_05",
@@ -102,10 +119,8 @@
           "page_start": 15,
           "page_end": 16,
           "resource_flow": [
-            { "resource": "phonics", "type": "Youtube link", "path": "assets/audio/eng/e_phonics.mp3", "text": "E says /e/ like a elephant." },
-            { "resource": "strokes", "type": "animation", "path": "E", "text": "Trace the letter E." },
-            { "resource": "activity", "label": "Circle Letter E", "type": "image", "path": "assets/images/eng/p16_act.jpg", "text": "Identify and circle every letter E found on the egg." }
-          ]
+            { "resource": "phonics", "type": "Youtube link", "path": "E", "text": "Learning Goal: To introduce the letter E, formed by one standing and three sleeping lines, and its beginning sound. Activity: Line-based letter tracing and circling. Detailed procedure: Introduce vocabulary such as Elephant and Egg. Have the children trace the letter E with their fingers, practice writing it on the lines, and circle the decorated eggs that feature the letter E." },
+            { "resource": "strokes", "type": "animation", "path": "E", "text": "" }]
         }
       ]
     },
@@ -115,8 +130,7 @@
       "page_start": 17,
       "page_end": 18,
       "resource_flow": [
-        { "resource": "activity", "label": "Beginning Sounds", "type": "image", "path": "assets/images/eng/p17_act.jpg", "text": "Match the pictures with their beginning sounds." },
-        { "resource": "activity", "label": "Circle First Letter", "type": "image", "path": "assets/images/eng/p18_act.jpg", "text": "Look at each picture and circle the first letter of its name." }
+        { "resource": "revision", "type": "Video", "path": "", "text": "Learning Goal: To consolidate the recognition, formation, and beginning sounds of the first five letters (A-E). Activity: Matching sounds and sound discrimination. Detailed procedure: Review the letters A through E. Instruct students to match pictures (like an ant or an elephant) to their corresponding beginning letters, and then look at isolated pictures to circle the correct first letter of their names." }
       ]
     },
     {
@@ -131,8 +145,7 @@
           "page_start": 21,
           "page_end": 22,
           "resource_flow": [
-            { "resource": "strokes", "type": "image", "path": "assets/images/eng/p21_strokes.jpg", "text": "Trace over complex loops for the helicopter and zig-zags for the rabbit." },
-            { "resource": "strokes", "type": "image", "path": "assets/images/eng/p22_strokes.jpg", "text": "Practice tracing waves and more complex patterns." }
+            { "resource": "strokes", "type": "image", "path": "assets/images/eng/p21_strokes.jpg", "text":  "Learning Goal: To develop advanced fine motor skills and the continuous hand movement required for complex letter writing. Activity: Continuous pattern tracing. Detailed procedure: Demonstrate continuous strokes on the board. Ask students to trace over the complex stroke patterns, such as the loops of the helicopter's path or the zig-zags of the mouse, without lifting their crayons." }
           ]
         }
       ]
@@ -149,8 +162,8 @@
           "page_start": 23,
           "page_end": 24,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_f_exp.mp4", "text": "F is for Fish, Frog, and Flower." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p24_act.jpg", "text": "Colour the boxes with the letter F." }
+            { "resource": "explanation", "type": "Youtube link", "path": "F", "text": "Learning Goal: To introduce the letter F, its linear formation using standing and sleeping lines, and its beginning sound. Activity: Letter tracing and puzzle identification. Detailed procedure: Introduce the /f/ sound using words like Fish and Frog. Have students practice writing the letter F and then carefully colour only the boxes containing the letter F to complete the activity." },
+            { "resource": "strokes", "type": "animation", "path": "F", "text": "" }
           ]
         },
         {
@@ -159,8 +172,8 @@
           "page_start": 25,
           "page_end": 26,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_g_exp.mp4", "text": "G is for Goat, Grapes, and Girl." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p26_act.jpg", "text": "Colour all the circles with the letter G." }
+            { "resource": "explanation", "type": "Youtube link", "path": "G", "text": "Learning Goal: To introduce the letter G, combining a curve with standing and sleeping lines, and its hard beginning sound. Activity: Complex letter formation and visual scanning. Detailed procedure: Introduce vocabulary like Grapes and Goat. Guide students through the multi-step tracing of the letter G, then have them scan a grid to find and colour all the circles containing the letter G." },
+            { "resource": "strokes", "type": "animation", "path": "G", "text": "" }
           ]
         },
         {
@@ -169,8 +182,8 @@
           "page_start": 27,
           "page_end": 28,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_h_exp.mp4", "text": "H is for Horse, Hat, and Helicopter." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p28_act.jpg", "text": "Identify and colour every letter H." }
+            { "resource": "explanation", "type": "Youtube link", "path": "H", "text": "Learning Goal: To introduce the letter H using standing and sleeping lines, and its beginning sound. Activity: Linear letter tracing and visual identification. Detailed procedure: Teach the /h/ sound using words like House and Horse. Instruct the children to trace and write the letter H, and then identify and colour every large block letter H in the given activity space." },
+            { "resource": "strokes", "type": "animation", "path": "H", "text": "" }
           ]
         },
         {
@@ -179,7 +192,8 @@
           "page_start": 29,
           "page_end": 30,
           "resource_flow": [
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p30_act.jpg", "text": "Identify and circle every letter I on the igloo." }
+            { "resource": "explanation", "type": "Youtube link", "path": "I", "text": "Learning Goal: To introduce the letter I, its simple linear formation, and its short vowel sound. Activity: Letter writing and specific letter circling. Detailed procedure: Introduce the short /i/ sound using words like Igloo and Inkpot. Have students practice writing the letter I on the lines, and then find and circle every letter I scattered around the picture of the igloo." },
+            { "resource": "strokes", "type": "animation", "path": "I", "text": "" }
           ]
         },
         {
@@ -188,8 +202,8 @@
           "page_start": 31,
           "page_end": 32,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_j_exp.mp4", "text": "J is for Jelly, Jug, and Joker." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p32_act.jpg", "text": "Identify and circle every letter J." }
+            { "resource": "explanation", "type": "Youtube link", "path": "J", "text": "Learning Goal: To introduce the letter J, utilizing a standing line with a bottom curve, and its beginning sound. Activity: Curved letter tracing and identification. Detailed procedure: Introduce the /j/ sound with words like Joker and Juice. Guide students to trace the letter J with their finger, write it in the grid, and identify and circle every letter J surrounding the clown illustration." },
+            { "resource": "strokes", "type": "animation", "path": "J", "text": "" }
           ]
         }
       ]
@@ -200,7 +214,7 @@
       "page_start": 33,
       "page_end": 34,
       "resource_flow": [
-        { "resource": "activity", "label": "Same Letter Circle", "type": "image", "path": "assets/images/eng/p33_act.jpg", "text": "In each row, circle the letters that are the same as the first letter." }
+        { "resource": "revision",  "type": "image", "path": "assets/images/eng/p33_act.jpg", "text": "Learning Goal: To consolidate the recognition, formation, and beginning sound association for the letters F through J. Activity: Same-letter matching and beginning sound colouring. Detailed procedure: Review the letters F-J. Instruct students to look at a row and circle the letters that match the first one. Follow up by having them look at pictures (like a goat or a hat) and colour the circle containing the correct first letter." }
       ]
     },
     {
@@ -215,8 +229,18 @@
           "page_start": 35,
           "page_end": 36,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_k_exp.mp4", "text": "K is for Kite, Kangaroo, and Key." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p36_act.jpg", "text": "Look at the pictures and circle the kites with the letter K." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_k_exp.mp4",
+              "text": "Learning Goal: To introduce the letter K, its formation using standing and slanting lines, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /k/ sound using words like Kite, Kangaroo, and Key."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p36_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter K. Activity: Letter tracing, writing, and specific object circling. Detailed procedure: Have students trace the large letter K with their finger, practice writing it on the lines, and circle only the kites that contain the letter K."
+            }
           ]
         },
         {
@@ -225,8 +249,18 @@
           "page_start": 37,
           "page_end": 38,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_l_exp.mp4", "text": "L is for Lion, Lamp, and Ladybug." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p38_act.jpg", "text": "Identify and tick every letter L." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_l_exp.mp4",
+              "text": "Learning Goal: To introduce the letter L, its formation using standing and sleeping lines, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /l/ sound using words like Lion, Lamp, and Ladybug."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p38_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter L. Activity: Letter tracing, writing, and ticking. Detailed procedure: Instruct students to trace the letter L with their finger, trace and write it in the grids, and identify and tick every letter L shown on the wooden logs."
+            }
           ]
         },
         {
@@ -235,8 +269,18 @@
           "page_start": 39,
           "page_end": 40,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_m_exp.mp4", "text": "M is for Monkey, Milk, and Mango." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p40_act.jpg", "text": "Colour the mangoes with the letter M." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_m_exp.mp4",
+              "text": "Learning Goal: To introduce the letter M, its formation using standing and slanting lines, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /m/ sound using words like Monkey, Milk, and Mango."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p40_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter M. Activity: Letter tracing, writing, and colouring. Detailed procedure: Guide students to trace the letter M with their finger, write it in the practice boxes, and specifically colour the mangoes that feature the letter M."
+            }
           ]
         },
         {
@@ -245,8 +289,18 @@
           "page_start": 41,
           "page_end": 42,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_n_exp.mp4", "text": "N is for Nest, Net, and Nose." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p42_act.jpg", "text": "Identify and circle the nails with the letter N." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_n_exp.mp4",
+              "text": "Learning Goal: To introduce the letter N, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /n/ sound using words like Nest, Net, and Nose."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p42_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter N. Activity: Letter tracing, writing, and circling. Detailed procedure: Have students trace the letter N, practice writing it on the provided lines, and identify and circle the fingernails that contain the letter N."
+            }
           ]
         },
         {
@@ -255,8 +309,18 @@
           "page_start": 43,
           "page_end": 44,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_o_exp.mp4", "text": "O is for Owl, Octopus, and Ostrich." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p44_act.jpg", "text": "Colour all the circles with the letter O." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_o_exp.mp4",
+              "text": "Learning Goal: To introduce the letter O, its circular formation, and its short vowel sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the short /o/ sound using words like Owl, Octopus, and Ostrich."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p44_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter O. Activity: Letter tracing, writing, and colouring. Detailed procedure: Instruct the children to trace the letter O, practice writing it, and then find and colour all the circles in the grid that contain the letter O."
+            }
           ]
         }
       ]
@@ -267,8 +331,20 @@
       "page_start": 45,
       "page_end": 46,
       "resource_flow": [
-        { "resource": "activity", "label": "First Letter Colour", "type": "image", "path": "assets/images/eng/p45_act.jpg", "text": "Colour the first letter of each object." },
-        { "resource": "activity", "label": "Recap Circle", "type": "image", "path": "assets/images/eng/p46_act.jpg", "text": "Look at each object and circle its first letter." }
+        {
+          "resource": "activity",
+          "label": "First Letter Colour",
+          "type": "image",
+          "path": "assets/images/eng/p45_act.jpg",
+          "text": "Learning Goal: To consolidate the beginning sound association for letters K-O. Activity: First letter identification and colouring. Detailed procedure: Instruct students to look at pictures like an ostrich or a kettle and colour the block letter that represents the correct first letter of the object's name."
+        },
+        {
+          "resource": "activity",
+          "label": "Recap Circle",
+          "type": "image",
+          "path": "assets/images/eng/p46_act.jpg",
+          "text": "Learning Goal: To reinforce sound-to-letter matching for letters K-O. Activity: Visual discrimination and circling the beginning letter. Detailed procedure: Have students look at the provided objects, such as a mango or a lamp, and circle the correct starting letter from the row of options given beside each picture."
+        }
       ]
     },
     {
@@ -283,7 +359,18 @@
           "page_start": 47,
           "page_end": 48,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_p_exp.mp4", "text": "P is for Peacock, Parrot, and Plant." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_p_exp.mp4",
+              "text": "Learning Goal: To introduce the letter P, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /p/ sound using words like Peacock, Parrot, and Plant."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p48_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter P. Activity: Tracing, writing, and circling. Detailed procedure: Guide students to trace the letter P with their finger, write it in the grid, and circle the popcorn kernels that display the letter P."
+            }
           ]
         },
         {
@@ -292,8 +379,18 @@
           "page_start": 49,
           "page_end": 50,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_q_exp.mp4", "text": "Q is for Queen, Quail, and Quilt." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p50_act.jpg", "text": "Circle the quills with the letter Q." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_q_exp.mp4",
+              "text": "Learning Goal: To introduce the letter Q, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /q/ sound using words like Queen, Quail, and Quilt."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p50_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter Q. Activity: Tracing, writing, and circling. Detailed procedure: Have students trace and write the letter Q, and then identify and circle the quills that have the letter Q written on them."
+            }
           ]
         },
         {
@@ -302,8 +399,18 @@
           "page_start": 51,
           "page_end": 52,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_r_exp.mp4", "text": "R is for Rooster, Rabbit, and Rose." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p52_act.jpg", "text": "Circle the rings with the letter R." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_r_exp.mp4",
+              "text": "Learning Goal: To introduce the letter R, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /r/ sound using words like Rooster, Rabbit, and Rose."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p52_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter R. Activity: Tracing, writing, and circling. Detailed procedure: Instruct students to trace the letter R, practice writing it, and circle the rings that contain the letter R."
+            }
           ]
         },
         {
@@ -312,8 +419,18 @@
           "page_start": 53,
           "page_end": 54,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_s_exp.mp4", "text": "S is for Sun, Snake, and Sparrow." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p54_act.jpg", "text": "Find the spiders with the letter S and colour them." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_s_exp.mp4",
+              "text": "Learning Goal: To introduce the letter S, its curved formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /s/ sound using words like Sun, Snake, and Sparrow."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p54_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter S. Activity: Tracing, writing, and specific colouring. Detailed procedure: Guide students to trace and write the letter S, and then find and colour the spiders in the web that have the letter S on them."
+            }
           ]
         },
         {
@@ -322,8 +439,18 @@
           "page_start": 55,
           "page_end": 56,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_t_exp.mp4", "text": "T is for Tiger, Tree, and Tent." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p56_act.jpg", "text": "Colour the turtle shell with the letter T." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_t_exp.mp4",
+              "text": "Learning Goal: To introduce the letter T, its formation using standing and sleeping lines, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /t/ sound using words like Tiger, Tree, and Tent."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p56_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter T. Activity: Tracing, writing, and specific colouring. Detailed procedure: Have students trace the letter T with their fingers, write it in the practice boxes, and colour the sections of the turtle shell that contain the letter T."
+            }
           ]
         }
       ]
@@ -334,8 +461,20 @@
       "page_start": 57,
       "page_end": 58,
       "resource_flow": [
-        { "resource": "activity", "label": "Circle Start Picture", "type": "image", "path": "assets/images/eng/p57_act.jpg", "text": "Circle the picture that begins with the given letters." },
-        { "resource": "activity", "label": "Match First Letter", "type": "image", "path": "assets/images/eng/p58_act.jpg", "text": "Match each picture with its first letter." }
+        {
+          "resource": "activity",
+          "label": "Circle Start Picture",
+          "type": "image",
+          "path": "assets/images/eng/p57_act.jpg",
+          "text": "Learning Goal: To consolidate the recognition of beginning sounds for letters P-T. Activity: Circling pictures based on starting letters. Detailed procedure: Present students with a target letter (like Q or R) and have them circle the corresponding picture (like a quilt or a rose) that begins with that letter."
+        },
+        {
+          "resource": "activity",
+          "label": "Match First Letter",
+          "type": "image",
+          "path": "assets/images/eng/p58_act.jpg",
+          "text": "Learning Goal: To reinforce sound-to-letter matching for letters P-T. Activity: Matching pictures to their first letter. Detailed procedure: Instruct students to draw lines connecting objects like a sun or a parrot to their correct starting letters in the provided boxes."
+        }
       ]
     },
     {
@@ -350,8 +489,18 @@
           "page_start": 59,
           "page_end": 60,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_u_exp.mp4", "text": "U is for Umbrella, Uncle, and Urn." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p60_act.jpg", "text": "Help find what you need when it rains by following the U's." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_u_exp.mp4",
+              "text": "Learning Goal: To introduce the letter U, its curved formation, and its short vowel sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the short /u/ sound using words like Umbrella, Uncle, and Urn."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p60_act.jpg",
+              "text": "Learning Goal: To practice formation and visually scan for the letter U. Activity: Tracing, writing, and completing a maze. Detailed procedure: Have students trace and write the letter U, and then follow the path of U's through the maze to help the boy find his umbrella."
+            }
           ]
         },
         {
@@ -360,8 +509,18 @@
           "page_start": 61,
           "page_end": 62,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_v_exp.mp4", "text": "V is for Van, Vulture, and Vase." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p62_act.jpg", "text": "Colour the boxes with the letter V." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_v_exp.mp4",
+              "text": "Learning Goal: To introduce the letter V, its formation using slanting lines, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /v/ sound using words like Van, Vulture, and Vase."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p62_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter V. Activity: Tracing, writing, and selective colouring. Detailed procedure: Instruct students to trace and write the letter V, and carefully colour only the puzzle sections that contain the letter V."
+            }
           ]
         },
         {
@@ -370,8 +529,18 @@
           "page_start": 63,
           "page_end": 64,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_w_exp.mp4", "text": "W is for Well, Windmill, and Watermelon." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p64_act.jpg", "text": "Identify and circle every letter W." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_w_exp.mp4",
+              "text": "Learning Goal: To introduce the letter W, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /w/ sound using words like Well, Windmill, and Watermelon."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p64_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter W. Activity: Tracing, writing, and circling. Detailed procedure: Guide students to trace and write the letter W, and then identify and circle every letter W scattered around the whale."
+            }
           ]
         },
         {
@@ -380,7 +549,18 @@
           "page_start": 65,
           "page_end": 66,
           "resource_flow": [
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p66_act.jpg", "text": "Circle the pictures whose names begin with X." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_x_exp.mp4",
+              "text": "Learning Goal: To introduce the letter X, its formation using crossing slanting lines, and its sound. Activity: Vocabulary introduction. Detailed procedure: Introduce words associated with X like X-ray and Xmas tree."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p66_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter X. Activity: Tracing, writing, and circling. Detailed procedure: Have students trace the letter X, practice writing it, and circle the pictures whose names begin with X."
+            }
           ]
         },
         {
@@ -389,8 +569,18 @@
           "page_start": 67,
           "page_end": 68,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_y_exp.mp4", "text": "Y is for Yacht, Yo-yo, and Yarn." },
-            { "resource": "activity", "type": "image", "path": "assets/images/eng/p68_act.jpg", "text": "Identify and connect each letter Y to the picture in the centre." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_y_exp.mp4",
+              "text": "Learning Goal: To introduce the letter Y, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /y/ sound using words like Yacht, Yo-yo, and Yarn."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p68_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter Y. Activity: Tracing, writing, and connecting. Detailed procedure: Instruct students to trace and write the letter Y, and draw lines connecting each scattered letter Y to the yo-yo in the centre."
+            }
           ]
         },
         {
@@ -399,7 +589,18 @@
           "page_start": 69,
           "page_end": 70,
           "resource_flow": [
-            { "resource": "explanation", "type": "Video", "path": "assets/videos/eng/letter_z_exp.mp4", "text": "Z is for Zebra and Zoo." }
+            {
+              "resource": "explanation",
+              "type": "Video",
+              "path": "assets/videos/eng/letter_z_exp.mp4",
+              "text": "Learning Goal: To introduce the letter Z, its formation, and its beginning sound. Activity: Vocabulary introduction. Detailed procedure: Introduce the /z/ sound using words like Zebra, Zoo, and Zip."
+            },
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/eng/p70_act.jpg",
+              "text": "Learning Goal: To practice the formation and identification of the letter Z. Activity: Tracing, writing, and completing a path. Detailed procedure: Guide students to trace and write the letter Z, and then colour every box containing the letter Z to help the zebra reach the zoo."
+            }
           ]
         }
       ]
@@ -410,8 +611,20 @@
       "page_start": 71,
       "page_end": 72,
       "resource_flow": [
-        { "resource": "activity", "label": "What comes after", "type": "image", "path": "assets/images/eng/p71_act.jpg", "text": "Match the pictures to their beginning sounds and identify what comes after." },
-        { "resource": "activity", "label": "Cross Odd One", "type": "image", "path": "assets/images/eng/p72_act.jpg", "text": "Put a cross on the picture that does not begin with the letter in the box." }
+        {
+          "resource": "activity",
+          "label": "What comes after",
+          "type": "image",
+          "path": "assets/images/eng/p71_act.jpg",
+          "text": "Learning Goal: To reinforce letter sequence and beginning sounds for letters U-Z. Activity: Sequential writing and picture matching. Detailed procedure: Ask students to write the letter that comes after the given letter in the boxes. Then, have them draw lines to match the pictures to their correct beginning letter sounds."
+        },
+        {
+          "resource": "activity",
+          "label": "Cross Odd One",
+          "type": "image",
+          "path": "assets/images/eng/p72_act.jpg",
+          "text": "Learning Goal: To evaluate sound-to-letter discrimination for letters U-Z. Activity: Identifying the odd picture out. Detailed procedure: Instruct students to look at a target letter and cross out the picture in the corresponding row that does not begin with that letter."
+        }
       ]
     },
     {
@@ -420,10 +633,29 @@
       "page_start": 73,
       "page_end": 75,
       "resource_flow": [
-        { "resource": "activity", "label": "Alphabet Maze", "type": "image", "path": "assets/images/eng/p73_act.jpg", "text": "Help the bee find its way home through the alphabet maze." },
-        { "resource": "activity", "label": "Dot-to-Dot", "type": "image", "path": "assets/images/eng/p74_act.jpg", "text": "Join the dots from A-Z to reveal the plane and write A to Z." },
-        { "resource": "revision", "label": "Final recap", "type": "image", "path": "assets/images/eng/p75_act.jpg", "text": "Final review writing letters from A to Z." }
+        {
+          "resource": "activity",
+          "label": "Alphabet Maze",
+          "type": "image",
+          "path": "assets/images/eng/p73_act.jpg",
+          "text": "Learning Goal: To assess comprehensive alphabet recognition from A to Z in sequence. Activity: Alphabet maze. Detailed procedure: Help the bee find its way to the hive by tracing a continuous path through the hexagonal maze, following the letters in alphabetical order from A to Z."
+        },
+        {
+          "resource": "activity",
+          "label": "Dot-to-Dot",
+          "type": "image",
+          "path": "assets/images/eng/p74_act.jpg",
+          "text": "Learning Goal: To assess sequential alphabet knowledge and independent letter writing from A to Z. Activity: Dot-to-dot drawing and writing practice. Detailed procedure: Instruct students to connect the dots in alphabetical order to reveal the picture of an aeroplane, and then independently write the letters A through Z on the provided practice lines."
+        },
+        {
+          "resource": "revision",
+          "label": "Final recap",
+          "type": "image",
+          "path": "assets/images/eng/p75_act.jpg",
+          "text": "Learning Goal: To provide a final, comprehensive assessment of uppercase letter formation. Activity: Alphabet writing grid. Detailed procedure: Have students independently write all uppercase letters from A to Z in the provided blank square grids to complete their alphabet practice."
+        }
       ]
     }
   ]
 }
+

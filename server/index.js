@@ -110,8 +110,12 @@ app.post('/books/add', (req, res) => {
       dayEntry.lessons = [];
     }
 
-    if (dayEntry.lessons.length >= 6) {
-      res.status(400).json({ error: 'A day can have at most 6 lessons.' });
+    if (dayEntry.lessons.length >= 5) {
+      res.status(400).json({ error: 'A day can have at most 5 lessons.' });
+      return;
+    }
+    if (lesson.slider && dayEntry.lessons.some((item) => item.slider === lesson.slider)) {
+      res.status(400).json({ error: 'This slider already exists for the selected day.' });
       return;
     }
 

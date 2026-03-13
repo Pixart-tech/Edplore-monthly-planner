@@ -4,6 +4,13 @@ import { buildBookCatalog } from '../utils/bookCatalog';
 
 const monthNumbers = Array.from({ length: 10 }, (_, index) => String(index + 1));
 const dayNumbers = Array.from({ length: 20 }, (_, index) => String(index + 1));
+const SLIDER_OPTIONS = [
+  'Circle time',
+  'Literacy',
+  'Numeracy',
+  'General Awareness',
+  'Art & Craft',
+];
 
 const cloneLessons = (value) => {
   if (typeof structuredClone === 'function') {
@@ -15,13 +22,27 @@ const cloneLessons = (value) => {
 const normalizeResourceFlow = (resourceFlow = []) =>
   resourceFlow
     .filter(Boolean)
-    .map((item) => ({
-      resource: item.resource ?? '',
-      label: item.label ?? '',
-      type: item.type ?? '',
-      path: item.path ?? '',
-      text: item.text ?? '',
-    }));
+    .flatMap((item) => {
+      const types = Array.isArray(item.type) ? item.type : [item.type];
+      const paths = Array.isArray(item.path) ? item.path : [item.path];
+      const count = Math.max(types.length, paths.length);
+      if (count <= 1) {
+        return [{
+          resource: item.resource ?? '',
+          label: item.label ?? '',
+          type: item.type ?? '',
+          path: item.path ?? '',
+          text: item.text ?? '',
+        }];
+      }
+      return Array.from({ length: count }, (_, index) => ({
+        resource: item.resource ?? '',
+        label: item.label ?? '',
+        type: types[index] ?? types[0] ?? '',
+        path: paths[index] ?? paths[0] ?? '',
+        text: item.text ?? '',
+      }));
+    });
 
 const isTypeMatch = (value, needle) => value.toLowerCase().includes(needle);
 
@@ -36,39 +57,51 @@ const isImageAudioResource = (item) =>
 
 const buildLessonMedia = (resources) => {
   const primaryVideo = resources.find(isVideoResource) ?? null;
-  const primaryImage = resources.find(isImageResource) ?? null;
+  const imageItems = resources.filter(isImageResource);
+  const primaryImage = imageItems[0] ?? null;
 
-  const traceCandidate = resources.find(
+  const traceCandidates = resources.filter(
     (item) =>
       isAnimationResource(item) ||
       isTypeMatch(item.resource, 'strokes') ||
       isTypeMatch(item.resource, 'trace')
   );
-  const popCandidate = resources.find(isYouTubeResource);
-  const audioCandidate = resources.find(isAudioResource);
-  const imageAudioCandidate = resources.find(isImageAudioResource);
+  const popCandidates = resources.filter(isYouTubeResource);
+  const audioCandidates = resources.filter(isAudioResource);
+  const imageAudioCandidates = resources.filter(isImageAudioResource);
 
   return {
     video: primaryVideo?.path ?? '',
     image: primaryImage?.path ?? '',
-    trace: traceCandidate?.path
-      ? { title: traceCandidate.label || 'Trace', content: traceCandidate.path }
+    images: imageItems.map((item) => item.path).filter(Boolean),
+    trace:
+      traceCandidates.length === 1 && traceCandidates[0]?.path
+        ? { title: traceCandidates[0].label || 'Trace', content: traceCandidates[0].path }
+        : null,
+    trace1: traceCandidates[0]?.path
+      ? { title: traceCandidates[0].label || 'Trace 1', content: traceCandidates[0].path }
       : null,
-    popvideo: popCandidate?.path
-      ? { title: 'Youtube video', content: popCandidate.path }
+    trace2: traceCandidates[1]?.path
+      ? { title: traceCandidates[1].label || 'Trace 2', content: traceCandidates[1].path }
       : null,
-    audio: audioCandidate?.path || audioCandidate?.text
-      ? {
-          title: audioCandidate.label || 'Audio',
-          content: audioCandidate.path || audioCandidate.text,
-        }
-      : null,
-    audioimage: imageAudioCandidate?.path || imageAudioCandidate?.text
-      ? {
-          title: 'Image + audio',
-          content: imageAudioCandidate.path || imageAudioCandidate.text,
-        }
-      : null,
+    popvideos: popCandidates
+      .map((item, index) => ({
+        title: item.label || `Youtube video ${index + 1}`,
+        content: item.path || item.text || '',
+      }))
+      .filter((item) => item.content),
+    audios: audioCandidates
+      .map((item, index) => ({
+        title: item.label || `Audio ${index + 1}`,
+        content: item.path || item.text || '',
+      }))
+      .filter((item) => item.content),
+    audioimages: imageAudioCandidates
+      .map((item, index) => ({
+        title: item.label || `Image + audio ${index + 1}`,
+        content: item.path || item.text || '',
+      }))
+      .filter((item) => item.content),
   };
 };
 
@@ -97,8 +130,12 @@ export default function BooksAddPage(props) {
   const [selectedBookKey, setSelectedBookKey] = useState('');
   const [selectedTopicId, setSelectedTopicId] = useState('');
   const [selectedSubTopicId, setSelectedSubTopicId] = useState('');
+  const [selectedTopicId2, setSelectedTopicId2] = useState('');
+  const [selectedSubTopicId2, setSelectedSubTopicId2] = useState('');
+  const [selectedResourceIds, setSelectedResourceIds] = useState([]);
   const [selectedMonth, setSelectedMonth] = useState('');
   const [selectedDay, setSelectedDay] = useState('');
+  const [selectedSlider, setSelectedSlider] = useState('');
   const [lessonTitle, setLessonTitle] = useState('');
   const [lessonContent, setLessonContent] = useState('');
   const [lessonVideo, setLessonVideo] = useState('');
@@ -115,15 +152,38 @@ export default function BooksAddPage(props) {
   const topicsForBook = selectedBook?.topics ?? [];
   const selectedTopic =
     topicsForBook.find((topic) => topic.topic_id === selectedTopicId) ?? topicsForBook[0];
+  const selectedTopic2 =
+    topicsForBook.find((topic) => topic.topic_id === selectedTopicId2) ?? null;
   const subTopicsForTopic = selectedTopic?.sub_topics ?? [];
   const selectedSubTopic =
     subTopicsForTopic.find((sub) => sub.sub_topic_id === selectedSubTopicId) ?? null;
+  const subTopicsForTopic2 = selectedTopic2?.sub_topics ?? [];
+  const selectedSubTopic2 =
+    subTopicsForTopic2.find((sub) => sub.sub_topic_id === selectedSubTopicId2) ?? null;
   const resourceSource = selectedSubTopic || selectedTopic;
-  const resourceItems = useMemo(
-    () => normalizeResourceFlow(resourceSource?.resource_flow),
-    [resourceSource]
-  );
-  const lessonMedia = useMemo(() => buildLessonMedia(resourceItems), [resourceItems]);
+  const resourceItems = useMemo(() => {
+    const first = normalizeResourceFlow(resourceSource?.resource_flow).map((item, index) => ({
+      ...item,
+      id: `r1-${index}`,
+    }));
+    if (!selectedTopic2) {
+      return first;
+    }
+    const secondSource = selectedSubTopic2 || selectedTopic2;
+    const second = normalizeResourceFlow(secondSource?.resource_flow).map((item, index) => ({
+      ...item,
+      id: `r2-${index}`,
+    }));
+    return [...first, ...second];
+  }, [resourceSource, selectedTopic2, selectedSubTopic2]);
+  const selectedResources = useMemo(() => {
+    if (!selectedResourceIds.length) {
+      return resourceItems;
+    }
+    const selectedSet = new Set(selectedResourceIds);
+    return resourceItems.filter((item) => selectedSet.has(item.id));
+  }, [resourceItems, selectedResourceIds]);
+  const lessonMedia = useMemo(() => buildLessonMedia(selectedResources), [selectedResources]);
   const pageReference = useMemo(
     () => buildPageReference(selectedBook?.book, selectedTopic, selectedSubTopic),
     [selectedBook, selectedTopic, selectedSubTopic]
@@ -174,12 +234,25 @@ export default function BooksAddPage(props) {
   }, [selectedTopicId]);
 
   useEffect(() => {
+    setSelectedTopicId2('');
+    setSelectedSubTopicId2('');
+  }, [selectedBookKey, topicsForBook]);
+
+  useEffect(() => {
+    setSelectedSubTopicId2('');
+  }, [selectedTopicId2]);
+
+  useEffect(() => {
+    setSelectedResourceIds(resourceItems.map((item) => item.id));
+  }, [resourceItems]);
+
+  useEffect(() => {
     if (!selectedBook || !selectedTopic) {
       return;
     }
     const title = selectedSubTopic?.title || selectedTopic.title || '';
     setLessonTitle(title);
-    setLessonContent(buildTopicContent(resourceItems));
+    setLessonContent(buildTopicContent(selectedResources));
     setLessonTime('20 minutes');
     setLessonVideo(lessonMedia.video);
     setLessonImage(lessonMedia.image);
@@ -188,27 +261,39 @@ export default function BooksAddPage(props) {
         (item) => isTypeMatch(item.type, 'pdf') || item.path.toLowerCase().endsWith('.pdf')
       )?.path ?? ''
     );
-  }, [selectedBook, selectedTopic, selectedSubTopic, resourceItems]);
+  }, [selectedBook, selectedTopic, selectedSubTopic, selectedResources, resourceItems]);
 
   const currentDayLessons =
     lessonsData?.[selectedClass]?.months?.[selectedMonth]?.days?.[selectedDay]?.lessons ??
     [];
+  const hasSelectedSlider =
+    selectedSlider &&
+    currentDayLessons.some((lesson) => lesson.slider === selectedSlider);
   const isDayFull =
-    selectedMonth && selectedDay && currentDayLessons.length >= 6;
+    selectedMonth && selectedDay && currentDayLessons.length >= 5;
 
   const handleAddLesson = () => {
     if (!selectedClass || !selectedBook || !selectedTopic || !selectedMonth || !selectedDay) {
       setStatusMessage('Select class, book, topic, month, and day before adding.');
       return;
     }
-    if (currentDayLessons.length >= 6) {
-      setStatusMessage('This day already has 6 lessons.');
+    if (!selectedSlider) {
+      setStatusMessage('Select a slider before adding.');
+      return;
+    }
+    if (currentDayLessons.length >= 5) {
+      setStatusMessage('This day already has 5 lessons.');
+      return;
+    }
+    if (hasSelectedSlider) {
+      setStatusMessage('This slider already exists for the selected day.');
       return;
     }
 
     const newLesson = {
       title: lessonTitle || selectedSubTopic?.title || selectedTopic.title || selectedBook.book,
-      content: lessonContent || buildTopicContent(resourceItems),
+      slider: selectedSlider,
+      content: lessonContent || buildTopicContent(selectedResources),
       video: lessonVideo.trim(),
       doc: lessonDoc.trim(),
       image: lessonImage.trim(),
@@ -217,14 +302,43 @@ export default function BooksAddPage(props) {
     if (lessonMedia.trace) {
       newLesson.trace = lessonMedia.trace;
     }
-    if (lessonMedia.popvideo) {
-      newLesson.popvideo = lessonMedia.popvideo;
+    if (lessonMedia.trace1) {
+      newLesson.trace1 = lessonMedia.trace1;
     }
-    if (lessonMedia.audio) {
-      newLesson.audio = lessonMedia.audio;
+    if (lessonMedia.trace2) {
+      newLesson.trace2 = lessonMedia.trace2;
     }
-    if (lessonMedia.audioimage) {
-      newLesson.audioimage = lessonMedia.audioimage;
+    if (Array.isArray(lessonMedia.popvideos) && lessonMedia.popvideos.length > 0) {
+      newLesson.popvideo = lessonMedia.popvideos[0];
+      if (lessonMedia.popvideos[1]) {
+        newLesson.popvideo2 = lessonMedia.popvideos[1];
+      }
+      if (lessonMedia.popvideos[2]) {
+        newLesson.popvideo3 = lessonMedia.popvideos[2];
+      }
+    }
+    if (Array.isArray(lessonMedia.audios) && lessonMedia.audios.length > 0) {
+      newLesson.audio = lessonMedia.audios[0];
+      if (lessonMedia.audios[1]) {
+        newLesson.audio2 = lessonMedia.audios[1];
+      }
+      if (lessonMedia.audios[2]) {
+        newLesson.audio3 = lessonMedia.audios[2];
+      }
+    }
+    if (Array.isArray(lessonMedia.audioimages) && lessonMedia.audioimages.length > 0) {
+      newLesson.audioimage = lessonMedia.audioimages[0];
+      if (lessonMedia.audioimages[1]) {
+        newLesson.audioimage2 = lessonMedia.audioimages[1];
+      }
+      if (lessonMedia.audioimages[2]) {
+        newLesson.audioimage3 = lessonMedia.audioimages[2];
+      }
+    }
+    if (Array.isArray(lessonMedia.images) && lessonMedia.images.length > 0) {
+      newLesson.image = lessonMedia.images.length === 1
+        ? lessonMedia.images[0]
+        : lessonMedia.images;
     }
 
     setStatusMessage('Saving to lessons.json...');
@@ -357,6 +471,39 @@ export default function BooksAddPage(props) {
                 ))}
               </select>
             </label>
+
+            <label className="form-field form-field--full">
+              <span>Topic 2</span>
+              <select
+                className="input"
+                value={selectedTopic2?.topic_id ?? ''}
+                onChange={(event) => setSelectedTopicId2(event.target.value)}
+              >
+                <option value="">No topic</option>
+                {topicsForBook.map((topic) => (
+                  <option key={`t2-${topic.topic_id}`} value={topic.topic_id}>
+                    {topic.title}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="form-field form-field--full">
+              <span>Sub topic 2</span>
+              <select
+                className="input"
+                value={selectedSubTopic2?.sub_topic_id ?? ''}
+                onChange={(event) => setSelectedSubTopicId2(event.target.value)}
+                disabled={!selectedTopic2}
+              >
+                <option value="">No sub topic</option>
+                {subTopicsForTopic2.map((sub) => (
+                  <option key={`s2-${sub.sub_topic_id}`} value={sub.sub_topic_id}>
+                    {sub.title}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
 
           {selectedBook && (
@@ -366,6 +513,39 @@ export default function BooksAddPage(props) {
                 {(selectedTopic?.title || 'Select topic')} -{' '}
                 {(selectedSubTopic?.title || 'No sub topic')}
               </p>
+              <p className="topic-preview__selection">
+                {(selectedTopic2?.title || 'No topic')} -{' '}
+                {(selectedSubTopic2?.title || 'No sub topic')}
+              </p>
+            </div>
+          )}
+
+          {resourceItems.length > 0 && (
+            <div className="resource-select">
+              <p className="resource-select__title">Select resources</p>
+              <div className="resource-select__list">
+                {resourceItems.map((item) => (
+                  <label key={item.id} className="resource-select__item">
+                    <input
+                      type="checkbox"
+                      checked={selectedResourceIds.includes(item.id)}
+                      onChange={(event) => {
+                        const checked = event.target.checked;
+                        setSelectedResourceIds((prev) => {
+                          if (checked) {
+                            return [...prev, item.id];
+                          }
+                          return prev.filter((id) => id !== item.id);
+                        });
+                      }}
+                    />
+                    <span>
+                      {(item.resource || 'resource') + (item.label ? ` - ${item.label}` : '')}
+                      {item.type ? ` (${item.type})` : ''}
+                    </span>
+                  </label>
+                ))}
+              </div>
             </div>
           )}
         </section>
@@ -376,6 +556,22 @@ export default function BooksAddPage(props) {
           </div>
 
           <div className="form-grid">
+            <label className="form-field">
+              <span>Slider</span>
+              <select
+                className="input"
+                value={selectedSlider}
+                onChange={(event) => setSelectedSlider(event.target.value)}
+                disabled={!selectedTopic}
+              >
+                <option value="">Select slider</option>
+                {SLIDER_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
             <label className="form-field">
               <span>Month</span>
               <select
@@ -419,7 +615,9 @@ export default function BooksAddPage(props) {
               <div className="lesson-list">
                 {currentDayLessons.map((lesson, index) => (
                   <div key={`${lesson.title}-${index}`} className="lesson-list__item">
-                    <p className="lesson-list__title">{lesson.title}</p>
+                    <p className="lesson-list__title">
+                      {lesson.slider ? `${lesson.slider} - ` : ''}{lesson.title}
+                    </p>
                     <p className="lesson-list__meta">
                       {lesson.time || 'No time set'}
                     </p>
@@ -496,23 +694,23 @@ export default function BooksAddPage(props) {
             </label>
           )}
 
-          {lessonMedia.audio?.content && (
+          {lessonMedia.audios?.[0]?.content && (
             <label className="form-field">
               <span>Audio</span>
               <input
                 className="input"
-                value={lessonMedia.audio?.content ?? ''}
+                value={lessonMedia.audios?.[0]?.content ?? ''}
                 readOnly
               />
             </label>
           )}
 
-          {lessonMedia.audioimage?.content && (
+          {lessonMedia.audioimages?.[0]?.content && (
             <label className="form-field">
               <span>Image + Audio</span>
               <input
                 className="input"
-                value={lessonMedia.audioimage?.content ?? ''}
+                value={lessonMedia.audioimages?.[0]?.content ?? ''}
                 readOnly
               />
             </label>
@@ -520,23 +718,34 @@ export default function BooksAddPage(props) {
         </div>
 
         <div className="form-grid">
-          {lessonMedia.trace?.content && (
+          {lessonMedia.trace1?.content && (
             <label className="form-field">
-              <span>Trace Path</span>
+              <span>Trace Path 1</span>
               <input
                 className="input"
-                value={lessonMedia.trace?.content ?? ''}
+                value={lessonMedia.trace1?.content ?? ''}
                 readOnly
               />
             </label>
           )}
 
-          {lessonMedia.popvideo?.content && (
+          {lessonMedia.trace2?.content && (
+            <label className="form-field">
+              <span>Trace Path 2</span>
+              <input
+                className="input"
+                value={lessonMedia.trace2?.content ?? ''}
+                readOnly
+              />
+            </label>
+          )}
+
+          {lessonMedia.popvideos?.[0]?.content && (
             <label className="form-field">
               <span>Youtube Link</span>
               <input
                 className="input"
-                value={lessonMedia.popvideo?.content ?? ''}
+                value={lessonMedia.popvideos?.[0]?.content ?? ''}
                 readOnly
               />
             </label>
@@ -548,7 +757,7 @@ export default function BooksAddPage(props) {
             className="pill-button"
             type="button"
             onClick={handleAddLesson}
-            disabled={isDayFull}
+            disabled={isDayFull || hasSelectedSlider}
           >
             Add to lessons.json
           </button>
