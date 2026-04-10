@@ -231,10 +231,6 @@ const PopVideoPlayer = ({ videoKey }) => {
       <div className="pop-video__frame">
         <div ref={playerContainerRef} className="pop-video__player" />
       </div>
-      <p className="pop-video__duration">
-        Playing from {Number.isNaN(start) ? 0 : start}s
-        {Number.isNaN(end) ? '' : ` to ${end}s`}
-      </p>
     </div>
   );
 };

@@ -78,10 +78,10 @@ const buildLessonMedia = (resources) => {
       traceCandidates.length === 1 && traceCandidates[0]?.path
         ? { title: traceCandidates[0].label || 'Trace', content: traceCandidates[0].path }
         : null,
-    trace1: traceCandidates[0]?.path
+    trace1: traceCandidates.length > 1 && traceCandidates[0]?.path
       ? { title: traceCandidates[0].label || 'Trace 1', content: traceCandidates[0].path }
       : null,
-    trace2: traceCandidates[1]?.path
+    trace2: traceCandidates.length > 1 && traceCandidates[1]?.path
       ? { title: traceCandidates[1].label || 'Trace 2', content: traceCandidates[1].path }
       : null,
     popvideos: popCandidates

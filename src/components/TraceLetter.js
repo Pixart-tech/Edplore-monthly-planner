@@ -35,6 +35,26 @@ export const TRACE_LETTER_KEYS = [
   'D',
   'E',
   'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+  'Q',
+  'R',
+  'S',
+  'T',
+  'U',
+  'V',
+  'W',
+  'X',
+  'Y',
+  'Z',
   'DownCurve',
   'LeftCurve',
   'RightCurve',
@@ -42,6 +62,32 @@ export const TRACE_LETTER_KEYS = [
   'SleepingLine',
   'StandingLine',
   'UpCurve',
+  'smalla',
+  'smallb',
+  'smallc',
+  'smalld',
+  'smalle',
+  'smallf',
+  'smallg',
+  'smallh',
+  'smalli',
+  'smallj',
+  'smallk',
+  'smalll',
+  'smallm',
+  'smalln',
+  'smallo',
+  'smallp',
+  'smallq',
+  'smallr',
+  'smalls',
+  'smallt',
+  'smallu',
+  'smallv',
+  'smallw',
+  'smallx',
+  'smally',
+  'smallz',
 ];
 const strokeDelay = 90;
 const betweenStrokeDelay = 220;
@@ -285,27 +331,25 @@ function TraceLetter({ initialLetter }) {
 
       try {
         const imports = await Promise.all(
-          TRACE_LETTER_KEYS.map((letter) =>
-            import(`../letter-data/${letter}.json`),
-          ),
+          TRACE_LETTER_KEYS.map(async (letterKey) => ({
+            letterKey,
+            module: await import(`../letter-data/${letterKey}.json`),
+          })),
         );
         if (!isMounted) {
           return;
         }
 
-        const aggregated = {};
-        imports.forEach((module) => {
-          if (module && module.default && typeof module.default === 'object') {
-            Object.assign(aggregated, module.default);
-          }
-        });
-
         const letterMap = {};
 
-        Object.keys(aggregated)
-          .sort()
-          .forEach((letter) => {
-            const entry = aggregated[letter];
+        imports.forEach(({ letterKey, module }) => {
+          if (!module || !module.default || typeof module.default !== 'object') {
+            return;
+          }
+          const isSmallLetter = letterKey.toLowerCase().startsWith('small');
+
+          Object.keys(module.default).forEach((letter) => {
+            const entry = module.default[letter];
             if (!entry) {
               return;
             }
@@ -325,15 +369,17 @@ function TraceLetter({ initialLetter }) {
               return;
             }
 
-            letterMap[letter] = { strokes };
-            letterMap[letter.toLowerCase()] = letterMap[letter];
+            const resolvedKey = isSmallLetter ? letterKey : letter;
+            letterMap[resolvedKey] = { strokes };
+            letterMap[resolvedKey.toLowerCase()] = letterMap[resolvedKey];
 
-            const canonicalLetter = canonicalTraceLetterKey(letter);
+            const canonicalLetter = canonicalTraceLetterKey(resolvedKey);
             if (canonicalLetter) {
-              letterMap[canonicalLetter] = letterMap[letter];
-              letterMap[canonicalLetter.toLowerCase()] = letterMap[letter];
+              letterMap[canonicalLetter] = letterMap[resolvedKey];
+              letterMap[canonicalLetter.toLowerCase()] = letterMap[resolvedKey];
             }
           });
+        });
 
         lettersRef.current = letterMap;
         setStatus('ready');

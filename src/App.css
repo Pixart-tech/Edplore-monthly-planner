@@ -1169,11 +1169,11 @@ button {
   .lesson-slide__media {
     width: 100%;
     flex: 1 1 0;
-    order: 0;
+    order: 1;
   }
 
   .lesson-slide__text {
-    order: 1;
+    order: 0;
   }
 }
 

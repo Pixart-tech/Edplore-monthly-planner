@@ -1,0 +1,604 @@
+{
+  "book": "Maths SkillBook",
+  "topics": [
+    {
+      "topic_id": "nur_math_top_001",
+      "title": "Pre-Math Comparisons",
+      "page_start": 1,
+      "page_end": 12,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_001_01",
+          "title": "Same and Different",
+          "page_start": 1,
+          "page_end": 2,
+          "resource_flow": [
+            { 
+            "resource": "explanation", 
+            "type": "image", 
+            "path": "assets/videos/math/same_diff_exp.mp4", 
+            "text": "Learning Goal: To visually discriminate and classify objects based on their similarities and differences. Activity: Identifying and crossing out the odd object. Detailed procedure: Show examples of identical items alongside a different item. Then, guide the students through their workbook to look at rows of objects, such as apples or kettles, and instruct them to cross out the one object that is different from the others in that row."
+           }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_02",
+          "title": "Big and Small",
+          "page_start": 3,
+          "page_end": 4,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/animations/math/big_small.json", "text": "Learning Goal: To introduce size differentiation and comparison vocabulary, helping children visually distinguish between large and small objects. Activity: Visual demonstration using pictures or real-life objects. Detailed procedure: Use contrasting images or items, such as a big gift box and a small gift box, or a big dog and a small dog. Emphasize the vocabulary 'Big' and 'Small' clearly as you point to each object, so students begin associating the words with physical scale"},
+            { "resource": "revision1",  "type": "image", "path": "assets/images/math/page_4.jpg", "text": "Learning Goal: To reinforce the visual discrimination of size and ensure students can correctly identify large objects. Activity: Circling big objects. Detailed procedure: Move to the Maths skillbook application. Guide students through the visual discrimination tasks, instructing them specifically to 'Circle the big objects'. Use the examples provided in the book, such as circling the big box and the large teddy bear from a set of mixed sizes." },
+            {
+              "resource": "revision2",
+              "type": "Video",
+              "path": "assets/videos/math/big_small_exp.mp4",
+              "text":"Learning Goal: To solidify the concept of small sizes and build independent comparative skills. Activity: Circling small objects. Detailed procedure: Continue assessing their grasp of size by focusing on the smaller items. Instruct the students to look at the worksheet and 'Circle the small objects'. Guide them to identify and circle items like the small soccer ball and the small blue hat, ensuring they can consistently differentiate them from the larger distractors."
+            },
+            {
+              "resource":"revision3",
+              "type":"Video",
+              "path":"assets/videos/math/big_small_exp.mp4",
+              "text": "Learning Goal: To assess independent comprehension of size concepts through active pointing or sorting. Activity: Point-and-identify size comparison. Detailed procedure: Consolidate the size concept through an interactive assessment activity. Use the assessment method of asking students to 'Point to the big object' when shown contrasting images, such as a large teddy bear next to a smaller teddy bear, to test their independent recognition."
+            },
+            {
+              "resource": "activity",
+              "type":"Video",
+              "path":"assets/videos/math/big_small_exp.mp4",
+              "text":"Learning Goal: To synthesize the week's comparison vocabulary and apply it confidently. Activity: Final review and real-world size comparison. Detailed procedure: Conduct a final review of the workbook activities to ensure all big objects (like the boxes and teddy bears) and small objects (like the soccer balls and hats) were correctly identified and circled. Extend the learning by pointing out big and small objects around the actual classroom to apply the comparison vocabulary to their real-world environment."
+            }
+          
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_03",
+          "title": "Tall and Short",
+          "page_start": 5,
+          "page_end": 6,
+          "resource_flow": [
+            { 
+              "resource": "explanation", 
+              "type": "Video", 
+              "path": "assets/videos/math/tall_short.mp4", 
+              "text": "Learning Goal: To introduce the comparative concept of vertical height, helping children distinguish between tall and short objects. Activity: Ticking and crossing comparative heights. Detailed procedure: Demonstrate vertical height differences using visual examples like a tall giraffe and a short goat. In the skillbook, instruct the students to look at pairs of objects like ladders or lamps, and tick the tall objects while crossing out the short ones." }
+            ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_04",
+          "title": "Long and Short",
+          "page_start": 7,
+          "page_end": 8,
+          "resource_flow": [
+            { 
+              "resource": "explanation", 
+              "type": "Video", 
+              "path": "assets/videos/math/long_short.mp4", 
+              "text": "Learning Goal: To introduce the comparative concept of horizontal length, allowing children to differentiate between long and short objects. Activity: Visual discrimination of length. Detailed procedure: Show pictures of objects with contrasting lengths, such as a long snake versus a short caterpillar. Instruct students to complete the workbook activity by ticking the long objects, like a pencil or rope, and crossing out the short ones."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_05",
+          "title": "Heavy and Light",
+          "page_start": 9,
+          "page_end": 10,
+          "resource_flow": [
+            { 
+              "resource": "explanation", 
+              "type": "animation", 
+              "path": "assets/animations/math/heavy_light.json", 
+              "text":  "Learning Goal: To introduce the comparative concept of weight. Activity: Grouping objects by perceived weight. Detailed procedure: Discuss the concept of weight using relatable visual examples, such as a boy struggling with a heavy bag versus a girl easily holding a light balloon. Have the students complete the activity by circling the heavy objects like a tree or soccer ball in one section, and circling the light objects like a rock or flower in another."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_001_06",
+          "title": "Left and Right",
+          "page_start": 11,
+          "page_end": 12,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/left_right.mp4", "text": "Learning Goal: To develop spatial awareness and directionality concepts. Activity: Directional circling. Detailed procedure: Teach left and right using hands and directional movement visuals, like a boy running left and a girl running right. In the workbook, instruct students to circle the vehicles moving towards the left side of the page, and then look at a picture of a dog to circle only the objects located on its right side." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_002",
+      "title": "Numbers 1 - 5",
+      "page_start": 13,
+      "page_end": 24,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_002_01",
+          "title": "Number 1",
+          "page_start": 13,
+          "page_end": 14,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_1_exp.mp4", "text": "Learning Goal: To introduce the numeral 1 and the concept of a single quantity. Activity: Tracing, writing, and identifying number 1. Detailed procedure: Introduce the number 1 using visual aids like 1 elephant or 1 finger. Have students trace the large number 1 with their finger, practice writing it in the dotted boxes, and finally circle all the apples that contain the number 1 inside them."},
+            { "resource": "strokes", "type": "animation", "path": "1", "text": "" }
+           ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_02",
+          "title": "Number 2",
+          "page_start": 15,
+          "page_end": 16,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_2_exp.mp4", "text": "Learning Goal: To introduce the numeral 2 and its corresponding quantity. Activity: Tracing, writing, and quantity recognition. Detailed procedure: Show pictures representing two items, such as 2 trees or holding up 2 fingers. Instruct students to trace the number 2 with their finger, trace and write it in the practice grids, and colour the balloons that have the number 2 on them." },
+            { "resource": "strokes", "type": "animation", "path": "2", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_03",
+          "title": "Number 3",
+          "page_start": 21,
+          "page_end": 22,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_3_exp.mp4", "text": "Learning Goal: To introduce the numeral 3 and its corresponding quantity. Activity: Tracing, writing, and quantity recognition. Detailed procedure: Show pictures representing three items, such as 3 stars or holding up 3 fingers. Instruct students to trace the number 3 with their finger, trace and write it in the practice grids, and colour the balloons that have the number 3 on them." },
+            { "resource": "strokes", "type": "animation", "path": "3", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_04",
+          "title": "Number 4",
+          "page_start": 17,
+          "page_end": 18,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_4_exp.mp4", "text": "Learning Goal: To learn the numeral 4 and recognize groups of four items. Activity: Tracing, writing, and selective circling. Detailed procedure: Introduce the number 4 using visuals like 4 frogs on lily pads. Instruct the children to trace the number 4 with their fingers, trace and write it in the provided practice boxes, and circle only the fish that have the number 4 written on them." },
+            { "resource": "strokes", "type": "animation", "path": "4", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_002_05",
+          "title": "Number 5",
+          "page_start": 19,
+          "page_end": 20,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_5_exp.mp4", "text": "Learning Goal: To master the numeral 5 and its quantity, completing the first set of five numbers. Activity: Tracing, writing, and colour identification. Detailed procedure: Use an image of 5 flowers and a full hand of 5 fingers to introduce the number. Guide the students to trace the number 5, practice writing it in the grid, and colour all the circular balls that contain the number 5." },
+            { "resource": "strokes", "type": "animation", "path": "5", "text": "" }
+          ]
+        }
+        
+      ],
+      "resource_flow": [
+        { "resource": "revision", "label": "Recap 1-5", "type": "Video", "path": "assets/videos/math/recap_1_5.mp4", "text": "Review numbers 1 through 5." },
+        { "resource": "activity", "label": "Count and Match", "type": "image", "path": "assets/images/math/page_23.jpg", "text": "Match the groups of objects to their correct numbers." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_003",
+      "title": "Shapes & Colours (I)",
+      "page_start": 25,
+      "page_end": 28,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_003_01",
+          "title": "Shape - Circle",
+          "page_start": 25,
+          "page_end": 26,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/circle_exp.mp4", "text": "Learning Goal: To recognize, name, and draw the geometric shape of a circle. Activity: Shape tracing and real-world identification. Detailed procedure: Discuss what a circle looks like using examples like a basketball, tire, or clock. Have students trace and colour the large dotted circle outline, and then circle the real-world objects in the workbook that are circle-shaped, such as the button and the clock."}
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_003_02",
+          "title": "Colour - Red",
+          "page_start": 27,
+          "page_end": 28,
+          "resource_flow": [
+            { "resource": "explanation", "type": "animation", "path": "assets/animations/math/red_colour.json", "text": "Learning Goal: To identify and confidently name the primary colour red. Activity: Colour recognition and selective colouring. Detailed procedure: Show the students various red objects like an apple, a tomato, a strawberry, a red car, and a rose. Ask them to circle only the red objects from a mixed group of pictures, and then instruct them to colour the outline of the apple using a red crayon." }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_004",
+      "title": "Numbers 6 - 10",
+      "page_start": 29,
+      "page_end": 42,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_004_01",
+          "title": "Number 6",
+          "page_start": 29,
+          "page_end": 30,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_6_exp.mp4", "text":"Learning Goal: To introduce the numeral 6 and counting quantities up to six. Activity: Tracing, writing, and identifying the number 6. Detailed procedure: Show an image of 6 cows to represent the quantity. Have students trace the number 6 with their finger, practice writing it in the dotted boxes, and circle all the chicks that have the number 6 written on them." },
+            { "resource": "strokes", "type": "animation", "path": "6", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_004_02",
+          "title": "Number 7",
+          "page_start": 31,
+          "page_end": 32,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_7_exp.mp4", "text": "Learning Goal: To learn the numeral 7 and recognize groups of seven items. Activity: Tracing, writing, and quantity recognition. Detailed procedure: Introduce the number 7 using visuals like 7 balloons. Instruct the children to trace the number 7 with their fingers, trace and write it in the provided practice boxes, and circle only the balloons that have the number 7 written on them." },
+            { "resource": "strokes", "type": "animation", "path": "7", "text": "" }
+           ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_004_03",
+          "title": "Number 8",
+          "page_start": 33,
+          "page_end": 34,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_8_exp.mp4", "text": "Learning Goal: To introduce the numeral 8 and its corresponding quantity. Activity: Tracing, writing, and quantity recognition. Detailed procedure: Show pictures representing eight items, such as 8 fish or holding up 8 fingers. Instruct students to trace the number 8 with their finger, trace and write it in the practice grids, and colour the balloons that have the number 8 on them." },
+            { "resource": "strokes", "type": "animation", "path": "8", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_004_04",
+          "title": "Number 9",
+          "page_start": 35,
+          "page_end": 36,
+          "resource_flow": [
+            { "resource": "explanation", "type": "Video", "path": "assets/videos/math/num_9_exp.mp4", "text": "Learning Goal: To introduce the numeral 9 and its corresponding quantity. Activity: Tracing, writing, and quantity recognition. Detailed procedure: Show pictures representing nine items, such as 9 butterflies or holding up 9 fingers. Instruct students to trace the number 9 with their finger, trace and write it in the practice grids, and colour the balloons that have the number 9 on them." },
+            { "resource": "strokes", "type": "animation", "path": "9", "text": "" }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_004_05",
+          "title": "Number 10",
+          "page_start": 37,
+          "page_end": 38,
+          "resource_flow": [
+            { 
+              "resource": "explanation", 
+              "type": "Video", 
+              "path": "assets/videos/math/num_10_exp.mp4", 
+              "text":"Learning Goal: To master the numeral 10 and its quantity, completing the first set of ten numbers. Activity: Tracing, writing, and colour identification. Detailed procedure: Use an image of 10 balloons to introduce the number. Guide the students to trace the number 10, practice writing it in the grid, and colour all the circular balls that contain the number 10."
+            }
+          ]
+        }
+      ],
+      "resource_flow": [
+        { "resource": "revision", "label": "Recap 6-10", "type": "youtube video", "path": "https://www.youtube.com/watch?v=count6to10", "text": "Let's count from 6 to 10!" },
+        { "resource": "activity", "label": "Match Numbers", "type": "image", "path": "assets/images/math/page_42.jpg", "text": "Match the numbers in the clouds to the correct boxes." }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_005",
+      "title": "Shapes and Colours II",
+      "page_start": 43,
+      "page_end": 46,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_005_01",
+          "title": "Shape - Triangle",
+          "page_start": 43,
+          "page_end": 44,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/triangle_exp.jpg",
+              "text": "Learning Goal: To recognize, name, and trace the geometric shape of a triangle. Activity: Tracing the triangle and identifying triangle-shaped objects. Detailed procedure: Discuss triangle properties using a pizza slice, watermelon, and party hat. Have students trace and colour the dotted triangle outline, then circle triangle-shaped objects like the watermelon and window in the workbook."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_005_02",
+          "title": "Colour - Green",
+          "page_start": 45,
+          "page_end": 46,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/green_exp.jpg",
+              "text": "Learning Goal: To identify and apply the colour green. Activity: Colour recognition and focused colouring. Detailed procedure: Introduce green using grass, a leaf, grapes, a parrot, and a frog. Have students circle naturally green objects from a mixed selection, and use a green crayon to colour the leaf outline."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_006",
+      "title": "Numbers 11 to 15",
+      "page_start": 47,
+      "page_end": 58,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_006_01",
+          "title": "Number 11",
+          "page_start": 47,
+          "page_end": 48,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num11_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 11 and its quantity. Activity: Tracing, writing, and circling. Detailed procedure: Show 11 mangoes. Have students trace the number 11 with their finger, write it in practice grids, and circle the teddy bears with '11' on them."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_006_02",
+          "title": "Number 12",
+          "page_start": 49,
+          "page_end": 50,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num12_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 12 and its quantity. Activity: Tracing, writing, and circling. Detailed procedure: Show 12 horses. Guide students to trace and write the number 12, then circle the drums displaying the number 12."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_006_03",
+          "title": "Number 13",
+          "page_start": 51,
+          "page_end": 52,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num13_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 13 and its quantity. Activity: Tracing, writing, and circling. Detailed procedure: Show 13 dolls. Instruct children to trace and write 13, and circle the cars with the number 13."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_006_04",
+          "title": "Number 14",
+          "page_start": 53,
+          "page_end": 54,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num14_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 14 and its quantity. Activity: Tracing, writing, and colouring. Detailed procedure: Show 14 cupcakes. Have students trace and write the number 14, and colour the umbrella that has the number 14."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_006_05",
+          "title": "Number 15",
+          "page_start": 55,
+          "page_end": 56,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num15_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 15 and its quantity. Activity: Tracing, writing, and colouring. Detailed procedure: Present 15 pots in a garden. Guide students to trace and write the number 15, and colour the fish displaying the number 15."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_006_06",
+          "title": "Recap: Numbers 11-15",
+          "page_start": 57,
+          "page_end": 58,
+          "resource_flow": [
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/math/recap_11_15.jpg",
+              "text": "Learning Goal: To consolidate counting and recognition for numbers 11-15. Activity: Counting, ticking, and identifying numbers. Detailed procedure: Have students count groups of objects (hats, apples, bells, mangoes) and tick the correct corresponding number below them. Then, identify and colour specific numbers in a grid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_007",
+      "title": "Shapes and Colours III",
+      "page_start": 59,
+      "page_end": 62,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_007_01",
+          "title": "Shape - Square",
+          "page_start": 59,
+          "page_end": 60,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/square_exp.jpg",
+              "text": "Learning Goal: To recognize, name, and draw a square. Activity: Shape tracing and real-world identification. Detailed procedure: Introduce the square using a window, building blocks, and a chessboard. Instruct students to trace and colour the dotted square outline, then circle square-shaped objects like the picture frame and chessboard."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_007_02",
+          "title": "Colour - Blue",
+          "page_start": 61,
+          "page_end": 62,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/blue_exp.jpg",
+              "text": "Learning Goal: To identify and confidently name the primary colour blue. Activity: Colour recognition and selective colouring. Detailed procedure: Present blue objects like a cap, blueberry, bluejay, chair, and butterfly. Ask students to circle only the blue objects from a group, and instruct them to colour the outline of the cap blue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_008",
+      "title": "Numbers 16 to 20",
+      "page_start": 63,
+      "page_end": 73,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_008_01",
+          "title": "Number 16",
+          "page_start": 63,
+          "page_end": 64,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num16_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 16 and its quantity. Activity: Tracing, writing, and circling. Detailed procedure: Show 16 goats. Have students trace and write 16, and circle the buses containing the number 16."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_008_02",
+          "title": "Number 17",
+          "page_start": 65,
+          "page_end": 66,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num17_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 17 and its quantity. Activity: Tracing, writing, and circling. Detailed procedure: Show 17 hens. Guide students to trace and write 17, and circle the buns with the number 17."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_008_03",
+          "title": "Number 18",
+          "page_start": 67,
+          "page_end": 68,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num18_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 18 and its quantity. Activity: Tracing, writing, and colouring. Detailed procedure: Use 18 pumpkins. Have students trace and write 18, and colour the mug displaying the number 18."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_008_04",
+          "title": "Number 19",
+          "page_start": 69,
+          "page_end": 70,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num19_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 19 and its quantity. Activity: Tracing, writing, and colouring. Detailed procedure: Show 19 frogs. Guide students to trace and write 19, and colour the rat containing the number 19."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_008_05",
+          "title": "Number 20",
+          "page_start": 71,
+          "page_end": 72,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/num20_exp.jpg",
+              "text": "Learning Goal: To introduce numeral 20 and its quantity. Activity: Tracing, writing, and colouring. Detailed procedure: Present 20 watermelons. Instruct students to trace and write 20, and colour the dress that has the number 20."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_008_06",
+          "title": "Recap: Numbers 16-20",
+          "page_start": 73,
+          "page_end": 73,
+          "resource_flow": [
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/math/recap_16_20.jpg",
+              "text": "Learning Goal: To consolidate counting and recognition for numbers 16-20. Activity: Count and match. Detailed procedure: Instruct students to count groups of items (butterflies, cheese, balls, brushes, apples) and draw a line to match them with the correct corresponding number."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_009",
+      "title": "Shapes and Colours IV",
+      "page_start": 74,
+      "page_end": 77,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_009_01",
+          "title": "Shape - Rectangle",
+          "page_start": 74,
+          "page_end": 75,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/rectangle_exp.jpg",
+              "text": "Learning Goal: To recognize, name, and draw a rectangle. Activity: Shape tracing and real-world identification. Detailed procedure: Show rectangular objects like a book, chalkboard, and door. Have students trace and colour the dotted rectangle outline, then circle the rectangle-shaped objects in the activity section."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_009_02",
+          "title": "Colour - Yellow",
+          "page_start": 76,
+          "page_end": 77,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/yellow_exp.jpg",
+              "text": "Learning Goal: To identify and apply the primary colour yellow. Activity: Colour recognition and focused colouring. Detailed procedure: Introduce yellow using a banana, lemon, bell, sun, and sunflower. Instruct students to circle the naturally yellow objects from a mixed group, then use a yellow crayon to colour the chick outline."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic_id": "nur_math_top_010",
+      "title": "Quantities and Missing Numbers",
+      "page_start": 78,
+      "page_end": 83,
+      "sub_topics": [
+        {
+          "sub_topic_id": "nur_math_sub_010_01",
+          "title": "One and Many",
+          "page_start": 78,
+          "page_end": 79,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/one_many_exp.jpg",
+              "text": "Learning Goal: To differentiate between singular and plural quantities. Activity: Visual discrimination and ticking. Detailed procedure: Compare single items (one umbrella, one fan) to groups of items (many umbrellas, many fans). Have students look at pairs of images and tick the correct box for 'one' or 'many' based on the picture."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_010_02",
+          "title": "More and Less",
+          "page_start": 80,
+          "page_end": 81,
+          "resource_flow": [
+            {
+              "resource": "explanation",
+              "type": "image",
+              "path": "assets/images/math/more_less_exp.jpg",
+              "text": "Learning Goal: To compare quantities across two groups to identify which has more or less. Activity: Ticking and crossing comparative quantities. Detailed procedure: Show contrasting groups, like a jar with many beads (More) next to a jar with few (Less). Instruct students to tick the picture that has more objects and cross out the one that has less."
+            }
+          ]
+        },
+        {
+          "sub_topic_id": "nur_math_sub_010_03",
+          "title": "Recap & Missing Numbers",
+          "page_start": 82,
+          "page_end": 83,
+          "resource_flow": [
+            {
+              "resource": "activity",
+              "type": "image",
+              "path": "assets/images/math/missing_num_exp.jpg",
+              "text": "Learning Goal: To understand numerical sequencing from 1 to 20 and identify missing values. Activity: Writing sequence and filling missing numbers. Detailed procedure: Have students write the numbers 1-20 in sequence in blank grids. Then, present a 'number train' with blank carriages, instructing students to fill in the missing numbers to complete the continuous sequence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

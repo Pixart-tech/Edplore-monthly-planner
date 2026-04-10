@@ -51,14 +51,17 @@ function LessonMedia({ lesson, shouldShowControls }) {
   }, [lessonImage]);
 
   const hasImage = imageAssetPaths.length > 0;
-  const hasVideo = Boolean(lesson.video);
-  const youtubeUrl = (() => {
-    const candidates = [lesson.popvideo, lesson.popvideo2, lesson.popvideo3]
-      .map((entry) => entry?.content)
-      .filter((value) => typeof value === 'string');
-    return candidates.find((value) => value.trim().toLowerCase().startsWith('http')) || '';
-  })();
-  const hasYoutube = Boolean(youtubeUrl);
+  const hasVideo =
+    typeof lesson.video === 'string' ? lesson.video.trim().length > 0 : Boolean(lesson.video);
+  const popVideoCandidates = [lesson.popvideo, lesson.popvideo2, lesson.popvideo3]
+    .map((entry) => entry?.content)
+    .filter((value) => typeof value === 'string')
+    .map((value) => value.trim())
+    .filter(Boolean);
+  const popVideoUrl =
+    popVideoCandidates.find((value) => value.toLowerCase().startsWith('http')) || '';
+  const popVideoKey = popVideoUrl ? '' : popVideoCandidates[0] || '';
+  const hasPopVideo = Boolean(popVideoUrl || popVideoKey);
   const shouldLoadVideo = hasVideo && shouldShowControls;
   const imageAlt = `${lesson.title ?? 'Lesson'} illustration`;
   const activeImagePath = imageAssetPaths[activeImageIndex];
@@ -159,7 +162,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
       });
   }, [hasImage, activeImagePath]);
 
-  if (!hasVideo && !hasImage && !hasYoutube) {
+  if (!hasVideo && !hasImage && !hasPopVideo) {
     return null;
   }
 
@@ -181,15 +184,18 @@ function LessonMedia({ lesson, shouldShowControls }) {
         />
       )}
       {hasImage && !hasVideo && renderImage()}
-      {!hasVideo && !hasImage && hasYoutube && (
-        <div className="lesson-slide__youtube">
+      {!hasVideo && !hasImage && popVideoUrl && (
+        <div className="video-frame">
           <iframe
-            src={youtubeUrl}
+            src={popVideoUrl}
             title={lesson.title || 'Video'}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </div>
+      )}
+      {!hasVideo && !hasImage && !popVideoUrl && popVideoKey && (
+        <PopVideoPlayer videoKey={popVideoKey} />
       )}
     </div>
   );
@@ -458,7 +464,32 @@ export default function LessonSlider({
     };
     const isUrl = (value) =>
       typeof value === 'string' && value.trim().toLowerCase().startsWith('http');
-    const hasImageWithVideo = Boolean(lesson.video) && Boolean(lesson.image);
+    const hasVideo =
+      typeof lesson.video === 'string'
+        ? lesson.video.trim().length > 0
+        : Boolean(lesson.video);
+    const hasImage = (() => {
+      const imageValue = lesson.image;
+      if (typeof imageValue === 'string') {
+        return imageValue.trim().length > 0;
+      }
+      if (Array.isArray(imageValue)) {
+        return imageValue.some((value) => typeof value === 'string' && value.trim().length > 0);
+      }
+      if (imageValue && typeof imageValue === 'object') {
+        return Object.values(imageValue).some(
+          (value) => typeof value === 'string' && value.trim().length > 0,
+        );
+      }
+      return false;
+    })();
+    const popVideoCandidates = [lesson.popvideo, lesson.popvideo2, lesson.popvideo3]
+      .map((entry) => entry?.content)
+      .filter((value) => typeof value === 'string')
+      .map((value) => value.trim())
+      .filter(Boolean);
+    const hasMainPopVideo = !hasVideo && !hasImage && popVideoCandidates.length > 0;
+    const hasImageWithVideo = hasVideo && hasImage;
 
     const actions = [
       {
@@ -546,7 +577,9 @@ export default function LessonSlider({
         fallbackTitle: 'Image + audio 3',
         payload: normalizePopupData(lesson.audioimage3),
       },
-    ].map((action) => {
+    ]
+      .filter((action) => !(hasMainPopVideo && action.type.startsWith('popvideo')))
+      .map((action) => {
       const isTraceType = ['trace', 'trace1', 'trace2'].includes(action.type);
       const animationLetter = isTraceType
         ? normalizeTraceLetter(action.payload?.content)
@@ -591,7 +624,9 @@ export default function LessonSlider({
               })
             }
           >
-            {action.fileLabel || action.payload.title || action.fallbackTitle}
+            {action.payload?.title
+              ? `${action.payload.title}${action.fileLabel ? ` ${action.fileLabel}` : ''}`
+              : action.fileLabel || action.fallbackTitle}
           </button>
         ))}
       </div>
