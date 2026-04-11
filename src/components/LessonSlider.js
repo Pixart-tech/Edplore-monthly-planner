@@ -66,6 +66,23 @@ function LessonMedia({ lesson, shouldShowControls }) {
   const imageAlt = `${lesson.title ?? 'Lesson'} illustration`;
   const activeImagePath = imageAssetPaths[activeImageIndex];
 
+  const normalizeAssetImportPath = (value) => {
+    if (typeof value !== 'string') {
+      return '';
+    }
+
+    const trimmed = value.trim().replace(/\\/g, '/');
+    if (!trimmed) {
+      return '';
+    }
+
+    const withoutLeadingSlash = trimmed.replace(/^\.?\/*/, '');
+
+    return withoutLeadingSlash
+      .replace(/^assets\/videos\//i, 'assets/Videos/')
+      .replace(/^assets\/images\//i, 'assets/Images/');
+  };
+
   useEffect(() => {
     if (!hasImage) {
       setActiveImageIndex(0);
@@ -108,18 +125,20 @@ function LessonMedia({ lesson, shouldShowControls }) {
     const className = ['lesson-slide__image', extraClass].filter(Boolean).join(' ');
 
     return (
-      <div className={className}>
-        {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt={imageAlt}
-            className={isSmall ? 'lesson-slide__image--small' : undefined}
-          />
-        ) : (
-          <p className="lesson-slide__image-placeholder">
-            {imageError || 'Loading illustration...'}
-          </p>
-        )}
+      <div className="lesson-slide__image-stack">
+        <div className={className}>
+          {imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className={isSmall ? 'lesson-slide__image--small' : undefined}
+            />
+          ) : (
+            <p className="lesson-slide__image-placeholder">
+              {imageError || 'Loading illustration...'}
+            </p>
+          )}
+        </div>
         {renderImageSelectors(isSmall)}
       </div>
     );
@@ -133,7 +152,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
       // CRA requires a static path prefix for dynamic imports.
       // The paths in lessons.json now include assets/, matching src/assets/Videos/...
       // We are in src/components, so ../${lesson.video} resolves to src/assets/Videos/...
-      import(`../${lesson.video}`)
+      import(`../${normalizeAssetImportPath(lesson.video)}`)
         .then((video) => {
           setVideoUrl(video.default);
         })
@@ -152,7 +171,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
       return;
     }
 
-    import(`../${activeImagePath}`)
+    import(`../${normalizeAssetImportPath(activeImagePath)}`)
       .then((image) => {
         setImageUrl(image.default);
       })
@@ -205,6 +224,13 @@ const TRACE_LETTER_SET = new Set(
   TRACE_LETTER_KEYS.map(canonicalTraceLetterKey).filter(Boolean),
 );
 
+const PAGE_REFERENCE_LABELS = {
+  ESB: 'English Skill Book',
+  EWB: 'English - Literacy Workbook',
+  MSB: 'Math Skill Book',
+  MWB: 'Math Workbook',
+};
+
 export default function LessonSlider({
   lessons,
   currentSlide,
@@ -214,11 +240,38 @@ export default function LessonSlider({
   selectedClass,
   selectedMonth,
   selectedDay,
+  contextTitle,
+  contextSubtitle,
 }) {
   const [popupPayload, setPopupPayload] = useState(null);
   const [popupMediaUrl, setPopupMediaUrl] = useState(null);
   const [popupAudioUrl, setPopupAudioUrl] = useState(null);
   const [popupMediaError, setPopupMediaError] = useState(null);
+
+  const formatPageReference = (value) => {
+    if (typeof value !== 'string') {
+      return '';
+    }
+
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return '';
+    }
+
+    const dashedMatch = trimmed.match(/^([A-Za-z]+)\s*-\s*(.+)$/);
+    if (dashedMatch) {
+      const shortCode = dashedMatch[1].toUpperCase();
+      const label = PAGE_REFERENCE_LABELS[shortCode] || dashedMatch[1].trim();
+      return `${dashedMatch[2].trim()} in ${label}`;
+    }
+
+    const spacedMatch = trimmed.match(/^([A-Za-z][A-Za-z\s&-]*)\s+(.+)$/);
+    if (spacedMatch && /\d/.test(spacedMatch[2])) {
+      return `${spacedMatch[2].trim()} in ${spacedMatch[1].trim()}`;
+    }
+
+    return trimmed;
+  };
 
   const closePopup = () => {
     setPopupPayload(null);
@@ -462,6 +515,16 @@ export default function LessonSlider({
       const normalized = value.trim().toLowerCase();
       return normalized || null;
     };
+    const getOrderedVariantEntries = (prefix) =>
+      Object.entries(lesson)
+        .filter(([key]) => new RegExp(`^${prefix}\\d*$`, 'i').test(key))
+        .sort(([keyA], [keyB]) => {
+          const getOrder = (key) => {
+            const match = key.match(/\d+$/);
+            return match ? Number(match[0]) : 0;
+          };
+          return getOrder(keyA) - getOrder(keyB);
+        });
     const isUrl = (value) =>
       typeof value === 'string' && value.trim().toLowerCase().startsWith('http');
     const hasVideo =
@@ -491,22 +554,14 @@ export default function LessonSlider({
     const hasMainPopVideo = !hasVideo && !hasImage && popVideoCandidates.length > 0;
     const hasImageWithVideo = hasVideo && hasImage;
 
+    const traceActions = getOrderedVariantEntries('trace').map(([key, value], index) => ({
+      type: key,
+      fallbackTitle: index === 0 ? 'Trace reference' : `Trace ${index + 1}`,
+      payload: normalizePopupData(value),
+    }));
+
     const actions = [
-      {
-        type: 'trace',
-        fallbackTitle: 'Trace reference',
-        payload: normalizePopupData(lesson.trace),
-      },
-      {
-        type: 'trace1',
-        fallbackTitle: 'Trace 1',
-        payload: normalizePopupData(lesson.trace1),
-      },
-      {
-        type: 'trace2',
-        fallbackTitle: 'Trace 2',
-        payload: normalizePopupData(lesson.trace2),
-      },
+      ...traceActions,
       {
         type: 'popvideo',
         fallbackTitle: 'Pop video',
@@ -580,7 +635,7 @@ export default function LessonSlider({
     ]
       .filter((action) => !(hasMainPopVideo && action.type.startsWith('popvideo')))
       .map((action) => {
-      const isTraceType = ['trace', 'trace1', 'trace2'].includes(action.type);
+      const isTraceType = action.type.startsWith('trace');
       const animationLetter = isTraceType
         ? normalizeTraceLetter(action.payload?.content)
         : null;
@@ -643,10 +698,12 @@ export default function LessonSlider({
         ? 'Image + audio'
         : popupPayload?.type?.startsWith('audio')
           ? 'Audio'
-          : 'Trace reference');
+          : popupPayload?.type?.startsWith('trace')
+            ? 'Trace reference'
+            : 'Additional content');
 
   const showTraceAnimation =
-    ['trace', 'trace1', 'trace2'].includes(popupPayload?.type) &&
+    popupPayload?.type?.startsWith('trace') &&
     Boolean(popupPayload?.animationLetter);
   const showPopVideo =
     popupPayload?.type?.startsWith('popvideo') && Boolean(popupPayload?.popVideoKey);
@@ -674,21 +731,19 @@ export default function LessonSlider({
       <div className="lesson-page__inner">
         <div className="lesson-page__header">
           <div>
-            <h2>
-              {selectedClass} · Month {selectedMonth} · Day {selectedDay}
-            </h2>
-            <p className="lesson-page__subtitle">
-              {lessons.length} sliders available
-            </p>
+            <h2>{contextTitle || `${selectedClass} - Month ${selectedMonth} - Day ${selectedDay}`}</h2>
+            {contextSubtitle ? (
+              <p className="lesson-page__subtitle">{contextSubtitle}</p>
+            ) : null}
           </div>
-            <button
-              type="button"
-              className="text-button lesson-page__close lesson-page__close-button"
-              onClick={onClose}
-            >
-              <span aria-hidden="true">←</span>
-              Back to planner
-            </button>
+          <button
+            type="button"
+            className="text-button lesson-page__close lesson-page__close-button"
+            onClick={onClose}
+          >
+            <span aria-hidden="true">&larr;</span>
+            Back to planner
+          </button>
         </div>
         <div className="lesson-page__nav">
           <button
@@ -700,7 +755,7 @@ export default function LessonSlider({
             Previous
           </button>
           <span>
-            Slider {currentSlide + 1} / {lessons.length}
+            {lessons.length > 1 ? `${currentSlide + 1} / ${lessons.length}` : ''}
           </span>
           <button
             type="button"
@@ -715,6 +770,11 @@ export default function LessonSlider({
           <div className="lesson-page__track">
             {lessons.map((lesson, index) => {
               const lessonTime = lesson.time?.trim();
+              const lessonPageReference =
+                typeof lesson['page refernce'] === 'string'
+                  ? lesson['page refernce'].trim()
+                  : '';
+              const formattedLessonPageReference = formatPageReference(lessonPageReference);
               const shouldShowControls = index === currentSlide;
               const hasContent =
                 typeof lesson.content === 'string' && lesson.content.trim().length > 0;
@@ -735,9 +795,18 @@ export default function LessonSlider({
                       </div>
                       {lesson.doc && <PdfButton href={lesson.doc} />}
                     </div>
-                    {lessonTime && (
-                      <div className="lesson-slide__time-row">
-                        <Time time={lessonTime} />
+                    {(lessonTime || lessonPageReference) && (
+                      <div className="lesson-slide__meta-row">
+                        {lessonTime && (
+                          <div className="lesson-slide__time-row">
+                            <Time time={lessonTime} />
+                          </div>
+                        )}
+                        {lessonPageReference && (
+                          <div className="lesson-slide__page-reference-inline">
+                            <p>Pls Refer Page: {formattedLessonPageReference}</p>
+                          </div>
+                        )}
                       </div>
                     )}
                   </header>
@@ -751,6 +820,22 @@ export default function LessonSlider({
                     {hasContent && (
                       <div className="lesson-slide__text">
                         <FormattedContent text={lesson.content} />
+                        {Array.isArray(lesson.referenceItems) && lesson.referenceItems.length > 0 && (
+                          <div className="lesson-slide__references">
+                            {lesson.referenceItems.map((item) => (
+                              <div
+                                key={`${item.kind}-${item.title}`}
+                                className="lesson-slide__reference-card"
+                              >
+                                <p className="eyebrow">{item.kind}</p>
+                                <h4>{item.title}</h4>
+                                <FormattedContent
+                                  text={item.content || `No ${item.kind.toLowerCase()} content available.`}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
                         {renderPopupButtons(lesson)}
                       </div>
                     )}
@@ -860,3 +945,4 @@ export default function LessonSlider({
     </section>
   );
 }
+

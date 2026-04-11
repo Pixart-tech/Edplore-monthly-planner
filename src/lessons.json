@@ -1,33 +1,1479 @@
 {
   "Nursery": {
+    "rhymes_and_stories": {
+      "rhymes": [
+        {
+          "title": "One, Two, Buckle My Shoe",
+          "content": "Learning Goal: To learn number sequencing. Activity: Number action rhyme. Detailed procedure: The teacher leads a counting rhyme with actions for numbers 1 to 10 to build numerical sequence memory.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Head, Shoulders, Knees, Toes",
+          "content": "Learning Goal: To build auditory skills, introduce body part recognition, and develop gross motor coordination. Activity: Rhyme introduction and physical movement. Detailed procedure: The teacher leads the students in singing the rhyme 'Head, Shoulders, Knees, and Toes' slowly. As each body part is named, the teacher demonstrates touching the corresponding area (head, shoulders, knees, toes), encouraging the children to follow along and physically engage with the song to build physical vocabulary connections.\n\nLearning Goal: To reinforce the kinetic connection between vocabulary and physical body parts and improve memory recall. Activity: Energetic rhyme repetition. Detailed procedure: Sing the 'Head, Shoulders, Knees, and Toes' rhyme again as a group. This time, slightly increase the speed of the song to make it a fun, energetic physical activity that tests the children's recall and coordination.",
+          "video": "assets/videos/rhy/head_shoulders.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Ten Little Fingers",
+          "content": "Learning Goal: To build counting skills and body awareness. Activity: Finger counting rhyme. Detailed procedure: Guide students to count all ten fingers and two little ears while singing the rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "ABC Song",
+          "content": "Learning Goal: To introduce the English alphabet sequence. Activity: Alphabet singing. Detailed procedure: Lead the class to sing the alphabet from A to Z to develop phonetic and letter sequence awareness.",
+          "video": "",
+          "audio": "assets/audio/rhy/abc_song.mp3",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Finger Family",
+          "content": "Learning Goal: To introduce family vocabulary. Activity: Finger play rhyme. Detailed procedure: Introduce family members: Daddy, Mommy, Brother, Sister, and Baby using individual fingers to represent each person.",
+          "video": "assets/videos/rhy/finger_family.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Are You Sleeping",
+          "content": "Learning Goal: To build auditory skills and morning routine awareness. Activity: Singing a morning rhyme. Detailed procedure: Sing the classic morning rhyme about Brother John, incorporating waking-up actions.",
+          "video": "",
+          "audio": "assets/audio/rhy/are_you_sleeping.mp3",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "I Am Special",
+          "content": "Learning Goal: To build self-esteem and recognize individuality. Activity: Self-identity rhyme. Detailed procedure: Sing a rhyme to build self-esteem and discuss with children what makes each of them unique and special.",
+          "video": "assets/videos/rhy/i_am_special.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "1 2 3 4 5 Once I Caught A Fish Alive",
+          "content": "Learning Goal: To reinforce counting up to ten. Activity: Counting and action rhyme. Detailed procedure: Teach the students to count to ten with this fishy adventure, using fingers to show the numbers.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Little Fish",
+          "content": "Learning Goal: To develop gross motor skills and spatial awareness. Activity: Movement rhyme. Detailed procedure: Have children mimic the actions of a little fish swimming in the water.",
+          "video": "assets/videos/rhy/little_fish.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "I Hear Thunder",
+          "content": "Learning Goal: To introduce weather concepts and sound recognition. Activity: Weather-themed rhyme. Detailed procedure: Sing a rhyme about rain, thunder, and getting wet, using hands to mimic falling rain and clapping for thunder.",
+          "video": "assets/videos/rhy/thunder.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Row, Row, Row Your Boat",
+          "content": "Learning Goal: To develop rhythm and cooperative movement. Activity: Rowing action rhyme. Detailed procedure: Pair children up to gently row down the stream with this classic tune, pulling back and forth.",
+          "video": "assets/videos/rhy/row_boat.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Johny, Johny",
+          "content": "Learning Goal: To introduce concepts of truthfulness and daily habits. Activity: Role-play rhyme. Detailed procedure: Perform a fun rhyme about eating sugar and telling the truth, using expressive faces.",
+          "video": "assets/videos/rhy/johny_johny.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Rain Rain Go Away",
+          "content": "Learning Goal: To understand weather patterns and express desires. Activity: Weather rhyme. Detailed procedure: Ask the rain to go away so little Johny can play, using hand gestures to wave the rain away.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Vegetable Rhyme",
+          "content": "Learning Goal: To recognize and name common vegetables. Activity: Vocabulary rhyme. Detailed procedure: Learn about tomatoes, carrots, and peas through song, showing flashcards of the vegetables as they are sung.",
+          "video": "assets/videos/rhy/veggie_rhyme.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Fruit Rhyme",
+          "content": "Learning Goal: To recognize and name common fruits. Activity: Vocabulary rhyme. Detailed procedure: Sing about sweet apples and juicy oranges, encouraging children to mimic eating the fruits.",
+          "video": "assets/videos/rhy/fruit_rhyme.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Humpty Dumpty",
+          "content": "Learning Goal: To build narrative listening and vocabulary. Activity: Classic nursery rhyme. Detailed procedure: Recite the famous story of the egg who had a great fall, incorporating falling motions.",
+          "video": "assets/videos/rhy/humpty.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "It's Raining, It's Pouring",
+          "content": "Learning Goal: To reinforce weather concepts and sleep routines. Activity: Singing a sleepy rhyme. Detailed procedure: Sing about the old man who is snoring while it rains outside, pretending to sleep.",
+          "video": "",
+          "audio": "assets/audio/rhy/raining.mp3",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Little Birdie in the Sky",
+          "content": "Learning Goal: To introduce animal behaviors and habitats. Activity: Nature rhyme. Detailed procedure: Watch the birdie build its nest with twigs and leaves, using hands to mimic flying and nest-building.",
+          "video": "assets/videos/rhy/little_birdie.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Baa, Baa Black Sheep",
+          "content": "Learning Goal: To introduce farm animals and sharing concepts. Activity: Farm animal rhyme. Detailed procedure: Sing a rhyme about a sheep with three bags of wool, distributing imaginary wool to others.",
+          "video": "assets/videos/rhy/black_sheep.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Twinkle, Twinkle, Little Star",
+          "content": "Learning Goal: To develop calm routines and celestial vocabulary. Activity: Lullaby singing. Detailed procedure: Sing the classic lullaby about the stars in the sky, using fingers to make twinkling motions.",
+          "video": "assets/videos/rhy/twinkle.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Dog Says Bow-wow",
+          "content": "Learning Goal: To identify animal sounds. Activity: Animal sound imitation. Detailed procedure: Identify and mimic animal sounds like bow-wow, mew-mew, and grunt-grunt as a group.",
+          "video": "",
+          "audio": "assets/audio/rhy/animal_sounds.mp3",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Pussy Cat, Pussy Cat",
+          "content": "Learning Goal: To build narrative sequencing and spatial awareness. Activity: Journey rhyme. Detailed procedure: Follow the cat as it visits London to see the Queen, acting out the journey.",
+          "video": "assets/videos/rhy/pussy_cat.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Teddy Bear",
+          "content": "Learning Goal: To develop gross motor coordination and listening skills. Activity: Action rhyme. Detailed procedure: Perform the action rhyme: turn around, touch the ground, and go to school, following the instructions in the song.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Jack And Jill",
+          "content": "Learning Goal: To understand cause and effect through a short narrative. Activity: Action story rhyme. Detailed procedure: Follow Jack and Jill up the hill for a pail of water, acting out the climb and the tumble.",
+          "video": "assets/videos/rhy/jack_jill.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Hop a Little",
+          "content": "Learning Goal: To promote physical exercise and gross motor skills. Activity: Exercise rhyme. Detailed procedure: Lead the children in an exercise rhyme: hop, jump, run, and bend, following the rhythmic instructions.",
+          "video": "assets/videos/rhy/hop_a_little.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Bits Of Paper",
+          "content": "Learning Goal: To instill cleanliness and good habits. Activity: Clean-up rhyme. Detailed procedure: Sing a rhyme about cleanliness: picking up paper and tidying the place, actually practicing picking up scraps.",
+          "video": "assets/videos/rhy/bits_of_paper.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Two Twin Aeroplanes",
+          "content": "Learning Goal: To introduce transportation and spatial concepts. Activity: Aviation rhyme. Detailed procedure: Pretend to fly high with two twin aeroplanes, extending arms like wings and soaring.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Pat-a-Cake, Pat-a-Cake",
+          "content": "Learning Goal: To develop hand-eye coordination and rhythm. Activity: Clapping rhyme. Detailed procedure: Bake a cake as fast as you can with the baker's man by clapping hands together with a partner.",
+          "video": "assets/videos/rhy/patacake.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Ding-Dong Bell",
+          "content": "Learning Goal: To build narrative understanding and empathy. Activity: Story rhyme. Detailed procedure: Recite the rhyme 'Pussy's in the well! Who put her in?', discussing kindness to animals.",
+          "video": "",
+          "audio": "assets/audio/rhy/ding_dong.mp3",
+          "image": "",
+          "youtube link": ""
+        }
+      ],
+      "stories": [
+        {
+          "title": "The Tortoise And The Rabbit",
+          "content": "Learning Goal: To introduce narrative listening, build attention span, and understand character contrast. Activity: Storytime reading and character introduction. Detailed procedure: Read the story 'The Tortoise and the Rabbit' aloud to the class. Introduce the two main characters, highlighting their differences: the rabbit who ran fast and was very proud, and the tortoise who walked very slowly. Describe the setting of the forest and the challenge of the race.\n\nLearning Goal: To develop story comprehension and extract moral lessons from a narrative. Activity: Story recap and moral discussion. Detailed procedure: Recap the plot points of the story, such as the rabbit falling asleep under a tree and the tortoise passing him to reach the winning post. Discuss the ending and teach the core moral lesson of the story: 'Slow and steady wins the race!'.\n\nLearning Goal: To synthesize the week's auditory, physical, and narrative concepts for long-term retention. Activity: Group performance and story reflection. Detailed procedure: Conduct a final, enthusiastic group performance of the 'Head, Shoulders, Knees, and Toes' rhyme, ensuring all students are participating with the correct physical actions. Follow this by asking the students to recall what happened in 'The Tortoise and the Rabbit' and repeating the moral of the story together.",
+          "video": "assets/videos/rhy/race_story.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Ant And The Grasshopper",
+          "content": "Learning Goal: To understand the value of hard work and preparation. Activity: Storytime reading and moral discussion. Detailed procedure: Read the story of the ant and the grasshopper. Discuss how the ant prepared for winter while the grasshopper played, emphasizing the moral: 'Hard work always gets its reward.'",
+          "video": "assets/videos/rhy/ant_story.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Fox And The Grapes",
+          "content": "Learning Goal: To learn about coping with failure and limitations. Activity: Storytime reading and comprehension. Detailed procedure: Read the story of the fox trying to reach the grapes. Discuss why the fox gave up and called them sour, teaching the moral: 'We should accept our limitations.'",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Crane And The Fox",
+          "content": "Learning Goal: To teach empathy and the golden rule. Activity: Storytime reading and role-play. Detailed procedure: Read the story of the dinner between the crane and the fox. Discuss how each animal felt when they couldn't eat, highlighting the moral: 'One should not make fun of others' limitations.'",
+          "video": "assets/videos/rhy/crane_fox.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Clever Crow",
+          "content": "Learning Goal: To encourage problem-solving and perseverance. Activity: Storytime reading and practical demonstration. Detailed procedure: Read the story of the thirsty crow. Demonstrate dropping pebbles into a glass of water to raise the level, reinforcing the moral: 'Where there is a will, there is a way.'",
+          "video": "assets/videos/rhy/crow_story.mp4",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        }
+      ]
+    },
     "months": {
       "1": {
-        "days": {
-          "1": {
-            "lessons": [
-              {
-                "title": "One, Two, Buckle My Shoe",
-                "slider": "Circle time",
-                "content": "A counting rhyme with actions for numbers 1 to 10.",
-                "video": "",
-                "doc": "",
-                "image": "",
-                "time": "20 minutes",
-                "popvideo": {
-                  "title": "Youtube video 1",
-                  "content": "2"
+          "days": {
+            "1": {
+              "lessons": [
+                {
+                  "title": "Pre-writing stroke – Standing line",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce the first pre-writing stroke, the vertical standing line, to build foundational fine motor skills and hand-eye coordination. Activity: Vertical tracing practice. Detailed procedure: Demonstrate drawing a straight vertical line on the board. Then, instruct students to use their skillbook to trace over the dotted standing lines descending from the leaves, focusing on maintaining a steady grip from top to bottom.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 1",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Standing lines"
+                  }
+                },
+                {
+                  "title": "All about Me 1",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To encourage self-recognition, express individual preferences, and state basic personal facts. Activity: Oral introduction. Detailed procedure: Conduct an oral session asking simple questions such as 'What is your name?', 'What is your age?', and 'Name your favourite toy.'",
+                  "video": "/assets/Videos/All_about_me.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 1"
                 }
-              }
-            ]
+              ]
+            },
+            "2": {
+              "lessons": [
+                {
+                  "title": "Pre-Writing stroke- Sleeping line",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce the horizontal pre-writing stroke moving from left to right. Activity: Horizontal tracing and matching game. Detailed procedure: Demonstrate drawing a horizontal line across the board. In the skillbook, instruct students to trace over the sleeping lines to connect animals to their homes.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 2",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Sleeping lines"
+                  }
+                },
+                {
+                  "title": "Activity – Talk about me",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To build confidence in expressing personal preferences. Activity: Group discussion. Detailed procedure: Have children stand up and confidently share a few details about themselves, such as their favourite colour or game, with the rest of the class.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/EVS/01.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 1"
+                }
+              ]
+            },
+            "3": {
+              "lessons": [
+                {
+                  "title": "Pre-Writing stroke- slanting lines",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce the first diagonal pre-writing stroke, the forward slanting line. Activity: Diagonal tracing practice. Detailed procedure: Demonstrate drawing a diagonal line on the board. Instruct the students to use their English skillbook to trace over the dotted slanting lines representing sunrays.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 3",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Slanting lines"
+                  }
+                },
+                {
+                  "title": "My Body Parts",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To identify, name, and understand body parts. Activity: Oral naming. Detailed procedure: Show flashcards or point to different body parts and ask the child to orally name the given parts of the body such as Shoulder, Elbow, Knee, and Foot.",
+                  "video": "/assets/Videos/Body_parts.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "2, 3"
+                }
+              ]
+            },
+            "4": {
+              "lessons": [
+                {
+                  "title": "Pre-Writing stroke- Slanting lines",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce the opposing diagonal stroke, completing the foundation needed for complex shapes. Activity: Opposing diagonal tracing practice. Detailed procedure: Demonstrate drawing a slanting line in the opposite direction on the board. Instruct students to trace the corresponding backward slanting lines in their skillbooks.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 4",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Slanting lines"
+                  }
+                },
+                {
+                  "title": "Activity- Body Parts Puzzle",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To visually connect isolated body parts to the whole body. Activity: Body part matching. Detailed procedure: Provide a worksheet featuring a picture of a child and ask students to match the body parts by drawing lines from isolated images to the correct location on the child's body.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/EVS/05.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 5"
+                }
+              ]
+            },
+            "5": {
+              "lessons": [
+                {
+                  "title": "Activity – Sand Tracing(Strokes)",
+                  "slider": "English",
+                  "content": "Learning Goal: To reinforce pre-writing strokes (standing, sleeping, and slanting lines) through tactile feedback. Activity: Sand tracing practice. Detailed procedure: Provide students with a small shallow tray of sand. Instruct them to use their index finger to practice tracing the strokes they learned during the week.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/sand-writing.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Strokes"
+                  }
+                },
+                {
+                  "title": "Revisit – All about me and Body Parts",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To consolidate foundational concepts of personal identity and body vocabulary. Activity: Interactive review game. Detailed procedure: Play a 'Simon Says' style game where you instruct the children to point to specific body parts on themselves. Briefly review their personal identity facts.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS 1 - 5"
+                }
+              ]
+            },
+            "6": {
+              "lessons": [
+                {
+                  "title": "Pre-Writing stroke- Curve",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce non-linear, curved pre-writing strokes essential for forming complex letters and numbers. Activity: Tracing dotted curves. Detailed procedure: Demonstrate drawing an arcing curve on the board. Instruct students to trace the dotted curves over the fish scales and water waves in their skillbooks.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 5",
+                  "trace1": {
+                    "title": "Trace",
+                    "content": "DownCurve"
+                  },
+                   "trace2": {
+                    "title": "Trace",
+                    "content": "UpCurve"
+                  },
+                   "trace3": {
+                    "title": "Trace",
+                    "content": "LeftCurve"
+                  },
+                   "trace4": {
+                    "title": "Trace",
+                    "content": "RightCurve"
+                  }
+                },
+                {
+                  "title": "My Body Parts",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To isolate and identify specific sensory organs on the face and recognize the central trunk of the body. Activity: Visual mapping and oral naming. Detailed procedure: Introduce the specific features of the face (Hair, Forehead, Ear, Nose, Eyes) and the torso using a visual chart.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/04.png","/assets/Images/Nursery/05.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 4, 5"
+                }
+              ]
+            },
+            "7": {
+              "lessons": [
+                {
+                  "title": "Pre-Writing stroke- Curve",
+                  "slider": "English",
+                  "content": "Learning Goal: To develop fluid, continuous hand movement using curved strokes. Activity: Tracing practice. Detailed procedure: Have students trace the dotted curves over the path of the bouncing ball in their skillbooks to build smooth motor control.",
+                  "video": "",
+                  "doc": "",
+                  "image":  ["/assets/Images/Nursery/06.png","/assets/Images/Nursery/07.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 6"
+                },
+                {
+                  "title": "Activity – Drawing myself",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To develop spatial body awareness and self-representation. Activity: Creative drawing. Detailed procedure: Have students use crayons to draw a picture of themselves, ensuring they include a head, torso, arms, and legs to reinforce the body parts they have learned.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/06p.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS 5"
+                }
+              ]
+            },
+            "8": {
+              "lessons": [
+                {
+                  "title": "Letter A",
+                  "slider": "English",
+                  "content": "Learning Goal: To introduce the first letter of the alphabet, its formation using slanting and sleeping lines, and its short vowel sound. Activity: Letter tracing, writing, and visual identification. Detailed procedure: Introduce the letter A and its vocabulary (Apple, Ant). Have students trace the large letter A with their finger and practice writing it.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/A.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 7, 8",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "A"
+                  }
+                },
+                {
+                  "title": "Same and Different",
+                  "slider": "Math",
+                  "content": "Learning Goal: To visually discriminate and classify objects based on their similarities and differences. Activity: Identifying the odd object. Detailed procedure: Show examples of identical items alongside a different item. Guide the students through their workbook to cross out the one object that is different from the others in that row.",
+                  "video": "/assets/Videos/Same&Different.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 1, 2"
+                },
+                {
+                  "title": "Personal Hygiene",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To understand and identify daily personal hygiene practices and good habits. Activity: Ticking and circling good habits. Detailed procedure: Discuss daily routines like brushing teeth, bathing, washing hands with soap, and wearing clean clothes. Instruct students to look at the pictures in their workbook and tick the hygiene practices.",
+                  "video": "/assets/Videos/Persnoal_Hygiene.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 6, 7"
+                }
+              ]
+            },
+            "9": {
+              "lessons": [
+                {
+                  "title": "Letter A",
+                  "slider": "English",
+                  "content": "Learning Goal: To consolidate the independent writing and visual scanning of the letter A. Activity: Writing practice and identification. Detailed procedure: Instruct students to practice writing the letter A independently on the practice lines, and identify and circle every letter A found inside the apple picture.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/A.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 7, 8",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "A"
+                  }
+                },
+                {
+                  "title": "Same and Different",
+                  "slider": "Math",
+                  "content": "Learning Goal: To build consistency in identifying similarities and differences. Activity: Visual discrimination practice. Detailed procedure: Continue workbook activities asking students to cross out the item that is different, applying the logic to new sets of objects.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/same&differenet.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 1"
+                },
+                {
+                  "title": "Activity – Role Play Cleanliness",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To practice personal hygiene habits kinetically. Activity: Role-playing hygiene routines. Detailed procedure: Provide props like a clean dry towel, a comb, and an empty soap bottle. Have students act out the motions of washing hands, combing hair, and drying off.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/activity_ph.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 6"
+                }
+              ]
+            },
+            "10": {
+              "lessons": [
+                {
+                  "title": "Revisit – Curve and letter A",
+                  "slider": "English",
+                  "content": "Learning Goal: To synthesize the week's pre-writing and alphabet skills. Activity: Mixed tracing review. Detailed procedure: Conduct a final review where students draw large curves on a whiteboard, and then confidently practice writing the letter A beside their curves.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/A.png", "/assets/Images/Nursery/06.png","/assets/Images/Nursery/07.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 5, 6, 7,8",
+                  "trace1": {
+                    "title": "Trace",
+                    "content": "A"
+                  }
+                },
+                {
+                  "title": "Revisit – Same/Different",
+                  "slider": "Math",
+                  "content": "Learning Goal: To review visual discrimination concepts. Activity: Interactive sorting. Detailed procedure: Place several identical blocks and one different block on a table. Have children point to the ones that are the 'same' and remove the 'different' one.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Activity_Same&different.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 2"
+                },
+                {
+                  "title": "Revisit – Body Parts/Hygiene",
+                  "slider": "EVS",
+                  "content": "Learning Goal: To connect body parts with the need to keep them clean. Activity: Oral review. Detailed procedure: Point to different body parts (hands, teeth, hair) and ask the children how we keep those specific parts clean (washing, brushing, combing).",
+                  "video": "",
+                  "doc": "",
+                  "image":  ["/assets/Images/Nursery/Personal_Hygiene.png.png","/assets/Images/Nursery/activity_ph.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 2 to 7"
+                }
+              ]
+            },
+            "11": {
+              "lessons": [
+                {
+                  "title": "Letter B",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To introduce the letter B, its formation combining a standing line with right curves, and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce words starting with B like Bear and Balloon. Instruct students to trace the letter B with their fingers and write it in the practice lines.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/B.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 9, 10",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "B"
+                  }
+                },
+                {
+                  "title": "Big and Small",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To introduce size differentiation and comparison vocabulary. Activity: Visual demonstration and circling. Detailed procedure: Use contrasting images or items, such as a big dog and a small dog. Instruct students to circle the big objects or the small objects as directed in the workbook.",
+                  "video": "/assets/Videos/Big&small.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 3, 4"
+                },
+                {
+                  "title": "My Home",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To introduce the overall concept of a house and its exterior structure. Activity: Colouring the home. Detailed procedure: Discuss the parts of a house exterior (roof, windows, door). Have students use their crayons to colour the provided outline of the house.",
+                  "video": "/assets/Videos/My_Home.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 8, 9"
+                }
+              ]
+            },
+            "12": {
+              "lessons": [
+                {
+                  "title": "Letter B",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To reinforce letter B recognition and independent writing. Activity: Colour-coding identification. Detailed procedure: Review the letter B formation. Ask students to scan the workbook page, practice writing the letter, and identify and colour every letter B inside the balloon illustration.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/B.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 3, 4",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "B"
+                  }
+                },
+                {
+                  "title": "Big and Small",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To solidify the concept of sizes and build independent comparative skills. Activity: Circling objects. Detailed procedure: Continue assessing their grasp of size. Instruct the students to look at the worksheet and identify and circle the specified big or small items.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/big&small.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 1"
+                },
+                {
+                  "title": "Activity: Drawing Home",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To express spatial understanding of a house exterior. Activity: Drawing. Detailed procedure: Provide a blank piece of paper and crayons, asking students to draw their own house, ensuring they include a roof, a door, and windows.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Draw_Home.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 11"
+                }
+              ]
+            },
+            "13": {
+              "lessons": [
+                {
+                  "title": "Letter C",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To introduce the letter C, utilizing the left curve stroke, and its hard beginning sound. Activity: Curved stroke tracing. Detailed procedure: Teach the hard /c/ sound using words like Cat and Candle. Have students trace the large C with their finger, and trace and write it in the grids.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 11, 12",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "C"
+                  }
+                },
+                {
+                  "title": "Tall /Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To introduce the comparative concept of vertical height, helping children distinguish between tall and short objects. Activity: Ticking and crossing comparative heights. Detailed procedure: Demonstrate vertical height differences using visual examples. Instruct students to tick the tall objects and cross out the short ones.",
+                  "video": "/assets/Videos/Tall&short.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 5, 6"
+                },
+                {
+                  "title": "Bedroom",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To identify objects and appropriate activities associated with a bedroom. Activity: Circling objects. Detailed procedure: Discuss bedroom items like a bed, pillow, mirror, and cupboard. Instruct students to circle items belonging to a bedroom in their workbook.",
+                  "video": "/assets/Videos/Bedroom.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "10, 11, 12"
+                }
+              ]
+            },
+            "14": {
+              "lessons": [
+                {
+                  "title": "Letter C",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To master letter C identification and independent writing. Activity: Visual discrimination. Detailed procedure: Instruct students to practice writing the letter C on the provided lines. Identify and colour the specific candles in the workbook that have the letter C printed on them.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/C.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 5, 6",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "C"
+                  }
+                },
+                {
+                  "title": "Tall/Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To reinforce vertical size differentiation. Activity: Crossing out short items. Detailed procedure: Have students look at pairs of objects like ladders or lamps, and continue ticking the tall objects while explicitly crossing out the short ones.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/TALL&short.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 4"
+                },
+                {
+                  "title": "Activity: Talk about the items in the bedroom",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To understand appropriate activities for specific rooms. Activity: Crossing out incorrect activities. Detailed procedure: Revisit the bedroom. Have students put a cross (X) on activities in the workbook that are not done there, like bathing or cooking, and orally discuss what they do in their own bedrooms.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Bedromm_Items.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "15": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letters B and C",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To solidify formation and sounds for B and C. Activity: Writing review. Detailed procedure: Have students practice writing B and C on a blank sheet or slate, followed by making the /b/ and /c/ sounds.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/B.png", "/assets/Images/Nursery/C.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace1": {
+                    "title": "Trace",
+                    "content": "B"
+                  },
+                  "trace2": {
+                    "title": "Trace",
+                    "content": "C"
+                  }
+                },
+                {
+                  "title": "Revisit – Big/Small and Tall/Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To differentiate between general size and specific height. Activity: Flashcard sorting. Detailed procedure: Show flashcards and have students describe the objects using both sets of vocabulary (e.g., a big building is also tall).",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/big&small.png", "/assets/Images/Nursery/TALL&short.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – My Home and Bedroom",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To consolidate understanding of home structure. Activity: Oral Q&A. Detailed procedure: Ask students to name items they see in their own bedroom at home, bridging workbook learning to their real lives.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/Home.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "16": {
+              "lessons": [
+                {
+                  "title": "Letter D",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To introduce the letter D, combining a standing line and a large right curve, and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce the letter D and associated vocabulary like Dog and Dolphin. Guide students to trace and write the letter D in their workbooks.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 13, 14",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "D"
+                  }
+                },
+                {
+                  "title": "Long /Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To introduce the comparative concept of horizontal length. Activity: Visual discrimination of length. Detailed procedure: Show pictures with contrasting lengths, such as a long snake versus a short caterpillar. Instruct students to tick the long objects and cross out the short ones.",
+                  "video": "/assets/Videos/Long&short.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 7, 8"
+                },
+                {
+                  "title": "Kitchen",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To recognize kitchen items and appropriate kitchen activities. Activity: Identifying kitchen objects. Detailed procedure: Show items like a refrigerator, bowl, and knife. Have students circle items in their workbook that belong in the kitchen.",
+                  "video": "/assets/Videos/Kitchen.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 13, 14, 15"
+                }
+              ]
+            },
+            "17": {
+              "lessons": [
+                {
+                  "title": "Letter D",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To master letter D identification. Activity: Focused identification. Detailed procedure: Have students practice writing the letter D independently, then help the dolphins jump through the rings by colouring the specific rings containing the letter D.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/D.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 7, 8",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "D"
+                  }
+                },
+                {
+                  "title": "Long/Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To solidify horizontal length comparison. Activity: Crossing out short items. Detailed procedure: Instruct students to complete the workbook activity by explicitly ticking the long objects, like a pencil or rope, and crossing out the short ones.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 5"
+                },
+                {
+                  "title": "Activity – Role Play with Kitchen items",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To understand kitchen activities. Activity: Ticking activities and role play. Detailed procedure: Tick pictures showing activities like cooking or washing dishes in the workbook. Provide toy utensils for a brief role-play cooking session.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Kitchen_Activity.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "18": {
+              "lessons": [
+                {
+                  "title": "Letter E",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To introduce the letter E, formed by one standing and three sleeping lines, and its beginning sound. Activity: Line-based letter tracing. Detailed procedure: Introduce vocabulary such as Elephant and Egg. Have the children trace the letter E with their fingers and practice writing it on the lines.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/E.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 15, 16",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "E"
+                  }
+                },
+                {
+                  "title": "Heavy/Light",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To introduce the comparative concept of weight. Activity: Visual comparison. Detailed procedure: Discuss the concept using relatable examples, such as a boy struggling with a heavy bag versus a girl easily holding a light balloon.",
+                  "video": "/assets/Videos/Heavy&light.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 9, 10"
+                },
+                {
+                  "title": "Bathroom",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To identify bathroom items and related activities. Activity: Connecting objects. Detailed procedure: Introduce items like a sink, towel, and bathtub. Instruct students to connect bathroom items to the picture of the room.",
+                  "video": "/assets/Videos/Bathroom.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 16, 17, 18"
+                }
+              ]
+            },
+            "19": {
+              "lessons": [
+                {
+                  "title": "Letter E",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To master letter E identification and independent writing. Activity: Circling activity. Detailed procedure: Review the sound of E and have students practice writing it. Have students scan the workbook page to circle the decorated eggs that feature the letter E.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 9, 10",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "E"
+                  }
+                },
+                {
+                  "title": "Heavy/Light",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To categorize items by weight. Activity: Grouping objects. Detailed procedure: Have students complete the workbook activity by circling the heavy objects (like a rock) in one section, and light objects (like a flower) in another.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Heavy&light.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 6"
+                },
+                {
+                  "title": "Activity - Puzzle",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To understand proper bathroom hygiene routines. Activity: Ticking activities. Detailed procedure: Instruct students to tick (✔) activities appropriately done in a bathroom, like bathing or brushing teeth, crossing out incorrect ones.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/bathroom_activity.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "20": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letters D and E",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To solidify D and E formations. Activity: Writing review. Detailed procedure: Draw a large D and E on the board and have students 'air trace' the letters before practicing them one more time on a blank sheet.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace1": {
+                    "title": "Trace",
+                    "content": "D"
+                  },
+                  "trace2": {
+                    "title": "Trace",
+                    "content": "E"
+                  }
+                },
+                {
+                  "title": "Revisit – Long/Short and Heavy/Light",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To confidently use comparison terms. Activity: Show and Tell. Detailed procedure: Hold up two classroom objects (a long ruler, a short pencil; a heavy book, a light paper) and ask the children to shout out the correct descriptive word.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/Long&short.png", "/assets/Images/Nursery/Heavy&light"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – Kitchen and Bathroom",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To consolidate room association. Activity: Oral sorting game. Detailed procedure: Call out an item (e.g., 'Soap', 'Spoon', 'Towels') and have the children yell out 'Bathroom!' or 'Kitchen!'.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            }
+          }
+        },
+      "2":{
+        "days":{
+            "1": {
+              "lessons": [
+                {
+                  "title": "Matching letters",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To consolidate recognition of beginning sounds (A-E). Activity: Matching sounds. Detailed procedure: Instruct students to match pictures (like an ant or an elephant) to their corresponding beginning letters in the workbook.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/matching_letters.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 17"
+                },
+                {
+                  "title": "Left/Right",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To develop spatial directionality concepts. Activity: Directional circling. Detailed procedure: Teach left and right using hands and movement visuals. In the workbook, instruct students to circle the vehicles moving towards the left.",
+                  "video": "/assets/Videos/Left&right.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 11, 12"
+                },
+                {
+                  "title": "Living Room",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To recognize living room furniture. Activity: Circling objects. Detailed procedure: Discuss items like a sofa, television, carpet, and bookshelf. Have students circle living room items in the workbook.",
+                  "video": "/assets/Videos/LivingRoom.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 19, 20, 21"
+                }
+              ]
+            },
+            "2": {
+              "lessons": [
+                {
+                  "title": "Circle the first letter",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To assess sound discrimination (A-E). Activity: Sound discrimination worksheet. Detailed procedure: Provide pictures (like a hat or apple) and have students look at the isolated picture to circle the correct first letter of its name.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/circle_first_letter.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 18"
+                },
+                {
+                  "title": "Left/Right",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To solidify left/right identification. Activity: Relative position circling. Detailed procedure: Have students look at a picture of a dog in the workbook and circle only the objects located on its right side.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Left&right.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MWB - 3"
+                },
+                {
+                  "title": "Activity – Puzzle",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To understand appropriate activities for a living room. Activity: Crossing out incorrect activities. Detailed procedure: Have students cross (X) out activities that do not belong in the living room, like sleeping or bathing.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/livingroom_activity.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "3": {
+              "lessons": [
+                {
+                  "title": "Trace and Write",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To develop advanced continuous hand movement. Activity: Continuous pattern tracing. Detailed procedure: Ask students to trace over complex stroke patterns, such as zig-zags or loops, without lifting their crayons.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Trace&write.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EWB - 11"
+                },
+                {
+                  "title": "Revisit – Same/Different",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To review logical classification. Activity: Visual sorting game. Detailed procedure: Bring out physical objects (e.g., 4 green blocks, 1 red block) and ask a student to pick out the one that is different.",
+                  "video": "/assets/Videos/Same&Different.mp4",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/same&differenet.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Activity – Match the items to the parts of the house",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To synthesize knowledge of home rooms. Activity: Matching game. Detailed procedure: Draw lines connecting household items (bed, stove, TV, sink) to the correct room (bedroom, kitchen, living room, bathroom).",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Draw_Home.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "4": {
+              "lessons": [
+                {
+                  "title": "Activity – alphabet puzzle",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To assess letter recognition. Activity: Letter hunt. Detailed procedure: Create a simple grid on the board with various letters and shapes, asking children to come up and circle all the A's, B's, C's, D's, and E's.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/alphabet_ae.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – Big and Small",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To review size comparison. Activity: Physical scale comparison. Detailed procedure: Have children group themselves by 'big' steps and 'small' steps across the room to kinetically experience the size differences.",
+                  "video": "/assets/Videos/Big&small.mp4",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/big&small.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Activity - Drawing",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To express spatial awareness of the living room. Activity: Creative drawing. Detailed procedure: Ask students to draw a picture of a TV or a sofa to represent the living room, encouraging them to use the colours they like.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/livingroom_activity.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "5": {
+              "lessons": [
+                {
+                  "title": "Revisit – Alphabet",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To solidify A-E recognition and formation. Activity: Alphabet dictation. Detailed procedure: Orally call out letters A through E randomly and have the students write them down on their slates or paper.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/A.png","/assets/Images/Nursery/B.png","/assets/Images/Nursery/C.png","/assets/Images/Nursery/D.png","/assets/Images/Nursery/E.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace1": {
+                    "title": "Trace",
+                    "content": "A"
+                  },
+                  "trace2": {
+                    "title": "Trace",
+                    "content": "B"
+                  },
+                  "trace3": {
+                    "title": "Trace",
+                    "content": "C"
+                  },
+                  "trace4": {
+                    "title": "Trace",
+                    "content": "D"
+                  },
+                  "trace5": {
+                    "title": "Trace",
+                    "content": "E"
+                  },
+                  "trace6": {
+                    "title": "Trace",
+                    "content": "F"
+                  }
+                },
+                {
+                  "title": "Revisit – Pre-Math concepts",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To review all spatial and size logic. Activity: Comprehensive oral quiz. Detailed procedure: Do a rapid-fire visual quiz holding up items and asking if they are same/different, big/small, tall/short, or long/short.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/Nursery/same&differenet.png","/assets/Images/Nursery/big&small.png","/assets/Images/Nursery/TALL&short.png" ,"/assets/Images/Nursery/Long&short.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – Living Room",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To consolidate room vocabulary. Activity: Charades. Detailed procedure: Play a game where a child mimes an activity (sleeping, cooking, watching TV) and the class guesses which room they are in.",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Living_room.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "6": {
+              "lessons": [
+                {
+                  "title": "Revisit Letter A",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To ensure perfect recall of Letter A. Activity: Writing and sound review. Detailed procedure: Practice writing the letter A. Ask children to shout out words that start with the /a/ sound (Apple, Ant).",
+                  "video": "",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/A.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "A"
+                  }
+                },
+                {
+                  "title": "Revisit-Tall and Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To consolidate vertical height differentiation. Activity: Building towers. Detailed procedure: Use building blocks to create one tall tower and one short tower, asking the children to identify which is which.",
+                  "video": "/assets/Videos/Tall&short.mp4",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/TALL&short.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – All about me and Personal hygiene",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To connect personal identity to daily care. Activity: Oral presentation. Detailed procedure: Have each child stand up, say their name, and name one thing they do to keep themselves clean (e.g., 'I am Leo, I brush my teeth').",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/EVS/01.png", "/assets/Images/EVS/03.png", "assets/Images/EVS/04.png", "assets/Images/EVS/05.png", "assets/Images/EVS/06.png", "assets/Images/EVS/07.png", "assets/Images/EVS/08.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "7": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letter B",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To ensure perfect recall of Letter B. Activity: Writing and sound review. Detailed procedure: Practice writing the letter B. Provide pictures of a Bear and a Balloon and emphasize the starting /b/ sound.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "B"
+                  }
+                },
+                {
+                  "title": "Revisit – Long and Short",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To consolidate horizontal length differentiation. Activity: String comparison. Detailed procedure: Provide pieces of yarn or string of different lengths. Have the children sort them into 'long' piles and 'short' piles.",
+                  "video": "/assets/Videos/Long&short.mp4",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Long&short.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – My Home",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To review house structure vocabulary. Activity: Labeling the house. Detailed procedure: Show a large picture of a house exterior and ask the children to come point to the roof, door, and windows.",
+                  "video": "/assets/Videos/My_Home.mp4",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "8": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letter C",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To ensure perfect recall of Letter C. Activity: Writing and sound review. Detailed procedure: Practice the curved C stroke. Draw a Cat and a Cup on the board and have the class make the /c/ sound.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "C"
+                  }
+                },
+                {
+                  "title": "Revisit – Heavy and Light",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To consolidate weight differentiation. Activity: Lifting items. Detailed procedure: Set up a weighing station with a heavy book and a light sponge. Have each child lift both and declare which is heavy.",
+                  "video": "/assets/Videos/Heavy&light.mp4",
+                  "doc": "",
+                  "image": "/assets/Images/Nursery/Heavy&light.png",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "MSB - 9, 10"
+                },
+                {
+                  "title": "Revisit – Bedroom and Kitchen",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To review specific room vocabulary. Activity: Flashcard sorting. Detailed procedure: Mix up flashcards of a bed, a pillow, a stove, and a refrigerator. Have the class sort them into 'Bedroom' and 'Kitchen' piles.",
+                  "video": "",
+                  "doc": "",
+                  "image": ["/assets/Images/EVS/12.png","/assets/Images/EVS/13.png","/assets/Images/EVS/15.png", "/assets/Images/EVS/16.png"],
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "EVS - 12, 13, 15, 16"
+                }
+              ]
+            },
+            "9": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letter D",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To ensure perfect recall of Letter D. Activity: Writing and sound review. Detailed procedure: Practice writing the letter D. Review words like Dog and Dolphin, emphasizing the starting sound.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "ESB - 13, 14",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "D"
+                  }
+                },
+                {
+                  "title": "Revisit – Left and Right",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To consolidate spatial directionality. Activity: Movement game. Detailed procedure: Play a game instructing the children to 'raise your left hand', 'touch your right ear', 'jump to the left'.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Revisit – Living room",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To review living room vocabulary. Activity: Drawing game. Detailed procedure: Draw a basic outline of a living room on the board and ask children to suggest items to draw inside it (TV, Sofa).",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
+            },
+            "10": {
+              "lessons": [
+                {
+                  "title": "Revisit – Letters A-E",
+                  "slider": "Literacy",
+                  "content": "Learning Goal: To provide a final assessment of the first five letters. Activity: Alphabet writing grid. Detailed procedure: Provide a worksheet with empty boxes and ask the children to independently write A, B, C, D, and E in order.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": "",
+                  "trace": {
+                    "title": "Trace",
+                    "content": "Letters A-E"
+                  }
+                },
+                {
+                  "title": "Revisit – Pre-math concepts",
+                  "slider": "Numeracy",
+                  "content": "Learning Goal: To synthesize 6 weeks of comparison logic. Activity: Worksheet completion. Detailed procedure: Do a comprehensive worksheet reviewing Big/Small, Tall/Short, Long/Short, and Heavy/Light in one session.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                },
+                {
+                  "title": "Activity – Role Play",
+                  "slider": "General Awareness",
+                  "content": "Learning Goal: To synthesize family and home knowledge. Activity: Dramatic play. Detailed procedure: Assign children roles as different family members and have them pretend to interact in different rooms of the house.",
+                  "video": "",
+                  "doc": "",
+                  "image": "",
+                  "time": "20 minutes",
+                  "youtube link": "",
+                  "page refernce": ""
+                }
+              ]
           }
         }
       }
-    }
+      }
   },
   "LKG": {
+    "rhymes_and_stories": {
+      "rhymes": [],
+      "stories": []
+    },
     "months": {}
   },
   "UKG": {
+    "rhymes_and_stories": {
+      "rhymes": [],
+      "stories": []
+    },
     "months": {}
   }
 }

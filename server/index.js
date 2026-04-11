@@ -90,7 +90,13 @@ app.post('/books/add', (req, res) => {
     const lessons = readJson(lessonsPath);
 
     if (!lessons[className]) {
-      lessons[className] = { months: {} };
+      lessons[className] = {
+        rhymes_and_stories: { rhymes: [], stories: [] },
+        months: {},
+      };
+    }
+    if (!lessons[className].rhymes_and_stories) {
+      lessons[className].rhymes_and_stories = { rhymes: [], stories: [] };
     }
     if (!lessons[className].months) {
       lessons[className].months = {};

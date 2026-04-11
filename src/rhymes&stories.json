@@ -1,0 +1,250 @@
+{
+    "rhymes_and_stories":{
+        "Nursery": {
+            "rhymes": [
+                {
+                "title": "One, Two, Buckle My Shoe",
+                "content": "A counting rhyme with actions for numbers 1 to 10.",
+                "video": "assets/videos/rhy/buckle_shoe_exp.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Head, Shoulders, Knees, Toes",
+                "content": "Learning Goal: To build auditory skills, introduce body part recognition, and develop gross motor coordination. Activity: Rhyme introduction and physical movement. Detailed procedure: The teacher leads the students in singing the rhyme 'Head, Shoulders, Knees, and Toes' slowly. As each body part is named, the teacher demonstrates touching the corresponding area (head, shoulders, knees, toes), encouraging the children to follow along and physically engage with the song to build physical vocabulary connections.",
+                "video": "assets/videos/rhy/head_shoulders.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Ten Little Fingers",
+                "content": "Count all ten fingers and two little ears.",
+                "video": "assets/animations/rhy/ten_fingers.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "ABC Song",
+                "content": "Sing the alphabet from A to Z.",
+                "video": "",
+                "audio": "assets/audio/rhy/abc_song.mp3",
+                "image": ""
+                },
+                {
+                "title": "The Finger Family",
+                "content": "Introduce family members: Daddy, Mommy, Brother, Sister, and Baby.",
+                "video": "assets/videos/rhy/finger_family.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Are You Sleeping",
+                "content": "A classic morning rhyme about Brother John.",
+                "video": "",
+                "audio": "assets/audio/rhy/are_you_sleeping.mp3",
+                "image": ""
+                },
+                {
+                "title": "I Am Special",
+                "content": "A rhyme to build self-esteem and recognize individuality.",
+                "video": "assets/videos/rhy/i_am_special.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "1 2 3 4 5 Once I Caught A Fish Alive",
+                "content": "Count to ten with this fishy adventure.",
+                "video": "assets/animations/rhy/caught_fish.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Little Fish",
+                "content": "Watch the little fish swim in the water.",
+                "video": "assets/videos/rhy/little_fish.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "I Hear Thunder",
+                "content": "A rhyme about rain, thunder, and getting wet.",
+                "video": "assets/videos/rhy/thunder.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Row, Row, Row Your Boat",
+                "content": "Gently row down the stream with this classic tune.",
+                "video": "assets/videos/rhy/row_boat.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Johny, Johny",
+                "content": "A fun rhyme about eating sugar and telling the truth.",
+                "video": "assets/videos/rhy/johny_johny.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Rain Rain Go Away",
+                "content": "Ask the rain to go away so little Johny can play.",
+                "video": "assets/animations/rhy/rain_go_away.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Vegetable Rhyme",
+                "content": "Learn about tomatoes, carrots, and peas.",
+                "video": "assets/videos/rhy/veggie_rhyme.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Fruit Rhyme",
+                "content": "Sing about sweet apples and juicy oranges.",
+                "video": "assets/videos/rhy/fruit_rhyme.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Humpty Dumpty",
+                "content": "The famous egg who had a great fall.",
+                "video": "assets/videos/rhy/humpty.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "It's Raining, It's Pouring",
+                "content": "The old man is snoring while it rains outside.",
+                "video": "",
+                "audio": "assets/audio/rhy/raining.mp3",
+                "image": ""
+                },
+                {
+                "title": "Little Birdie in the Sky",
+                "content": "Watch the birdie build its nest with twigs and leaves.",
+                "video": "assets/videos/rhy/little_birdie.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Baa, Baa Black Sheep",
+                "content": "A rhyme about a sheep with three bags of wool.",
+                "video": "assets/videos/rhy/black_sheep.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Twinkle, Twinkle, Little Star",
+                "content": "The classic lullaby about the stars in the sky.",
+                "video": "assets/videos/rhy/twinkle.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Dog Says Bow-wow",
+                "content": "Identify animal sounds like bow-wow, mew-mew, and grunt-grunt.",
+                "video": "",
+                "audio": "assets/audio/rhy/animal_sounds.mp3",
+                "image": ""
+                },
+                {
+                "title": "Pussy Cat, Pussy Cat",
+                "content": "Follow the cat as it visits London to see the Queen.",
+                "video": "assets/videos/rhy/pussy_cat.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Teddy Bear",
+                "content": "Action rhyme: turn around, touch the ground, and go to school.",
+                "video": "assets/animations/rhy/teddy.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Jack And Jill",
+                "content": "Follow Jack and Jill up the hill for a pail of water.",
+                "video": "assets/videos/rhy/jack_jill.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Hop a Little",
+                "content": "Exercise rhyme: hop, jump, run, and bend.",
+                "video": "assets/videos/rhy/hop_a_little.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Bits Of Paper",
+                "content": "A rhyme about cleanliness: picking up paper and tidying the place.",
+                "video": "assets/videos/rhy/bits_of_paper.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Two Twin Aeroplanes",
+                "content": "Fly high with two twin aeroplanes.",
+                "video": "assets/animations/rhy/aeroplanes.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Pat-a-Cake, Pat-a-Cake",
+                "content": "Bake a cake as fast as you can with the baker's man.",
+                "video": "assets/videos/rhy/patacake.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "Ding-Dong Bell",
+                "content": "Pussy's in the well! Who put her in?",
+                "video": "",
+                "audio": "assets/audio/rhy/ding_dong.mp3",
+                "image": ""
+                }
+            ],
+            "stories": [
+                {
+                "title": "The Tortoise And The Rabbit",
+                "content": "Learning Goal: To introduce narrative listening, build attention span, and understand character contrast. Activity: Storytime reading and character introduction. Detailed procedure: Read the story 'The Tortoise and the Rabbit' aloud to the class. Introduce the two main characters, highlighting their differences: the rabbit who ran fast and was very proud, and the tortoise who walked very slowly. Describe the setting of the forest and the challenge of the race.",
+                "video": "assets/videos/rhy/race_story.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Ant And The Grasshopper",
+                "content": "Moral: Hard work always gets its reward.",
+                "video": "assets/videos/rhy/ant_story.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Fox And The Grapes",
+                "content": "Moral: We should accept our limitations.",
+                "video": "assets/animations/rhy/fox_grapes.json",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Crane And The Fox",
+                "content": "Moral: One should not make fun of others' limitations.",
+                "video": "assets/videos/rhy/crane_fox.mp4",
+                "audio": "",
+                "image": ""
+                },
+                {
+                "title": "The Clever Crow",
+                "content": "Moral: Where there is a will, there is a way.",
+                "video": "assets/videos/rhy/crow_story.mp4",
+                "audio": "",
+                "image": ""
+                }
+            ]
+        },
+        "lkg":{},
+        "ukg":{}
+    }
+}

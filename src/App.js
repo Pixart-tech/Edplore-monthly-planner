@@ -2,9 +2,12 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import LESSONS from './lessons.json';
+import RHYMES_AND_STORIES from './rhymes&stories.json';
 import ClassSelector from './components/ClassSelector';
+import ContentTypeSelector from './components/ContentTypeSelector';
 import MonthSelector from './components/MonthSelector';
 import DaySelector from './components/DaySelector';
+import RhymesStoriesSelector from './components/RhymesStoriesSelector';
 import LessonSlider from './components/LessonSlider';
 import BooksAddPage from './components/BooksAddPage';
 
@@ -18,26 +21,147 @@ const cloneLessons = (value) => {
   return JSON.parse(JSON.stringify(value));
 };
 
+const emptyRhymesAndStories = () => ({
+  rhymes: [],
+  stories: [],
+});
+
+const normalizeRhymesStoriesEntry = (entry) => {
+  if (!entry || typeof entry !== 'object') {
+    return emptyRhymesAndStories();
+  }
+
+  return {
+    rhymes: Array.isArray(entry.rhymes) ? entry.rhymes : [],
+    stories: Array.isArray(entry.stories) ? entry.stories : [],
+  };
+};
+
+const sharedRhymesStoriesByClass = (() => {
+  const source = RHYMES_AND_STORIES?.rhymes_and_stories;
+  if (!source || typeof source !== 'object') {
+    return {};
+  }
+
+  return Object.fromEntries(
+    Object.entries(source).map(([className, entry]) => [
+      className.toLowerCase(),
+      normalizeRhymesStoriesEntry(entry),
+    ])
+  );
+})();
+
+const normalizeRhymesAndStories = (className, classData = {}) => {
+  const fallback = sharedRhymesStoriesByClass[className?.toLowerCase?.()] || emptyRhymesAndStories();
+  const provided = classData.rhymes_and_stories || {};
+
+  return {
+    rhymes:
+      Array.isArray(provided.rhymes) && provided.rhymes.length > 0
+        ? provided.rhymes
+        : fallback.rhymes,
+    stories:
+      Array.isArray(provided.stories) && provided.stories.length > 0
+        ? provided.stories
+        : fallback.stories,
+  };
+};
+
+const enrichLessonsData = (rawLessons = {}) =>
+  Object.fromEntries(
+    Object.entries(rawLessons).map(([className, classData]) => [
+      className,
+      {
+        ...classData,
+        rhymes_and_stories: normalizeRhymesAndStories(className, classData),
+        months: classData?.months || {},
+      },
+    ])
+  );
+
+const normalizeTitleKey = (value) => value?.trim()?.toLowerCase() || '';
+
+const buildReferenceLookup = (items = []) =>
+  new Map(
+    items
+      .filter((item) => item?.title)
+      .map((item) => [normalizeTitleKey(item.title), item])
+  );
+
+const buildLessonReferenceItems = (lesson, rhymeLookup, storyLookup) => {
+  const items = [];
+  const selectedRhyme = rhymeLookup.get(normalizeTitleKey(lesson?.selected_rhyme));
+  const selectedStory = storyLookup.get(normalizeTitleKey(lesson?.selected_story));
+
+  if (selectedRhyme) {
+    items.push({ kind: 'Rhyme', ...selectedRhyme });
+  }
+
+  if (selectedStory) {
+    items.push({ kind: 'Story', ...selectedStory });
+  }
+
+  return items;
+};
+
+const mapCircleItemToLesson = (item, typeLabel) => ({
+  title: item.title,
+  slider: typeLabel,
+  content: item.content,
+  video: item.video || '',
+  audio: item.audio || '',
+  image: item.image || '',
+  time: '',
+});
+
 function PlannerPage({ lessonsData }) {
   const classNames = Object.keys(lessonsData || {});
   const [selectedClass, setSelectedClass] = useState(classNames[0]);
+  const [selectedView, setSelectedView] = useState(null);
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedCircleItem, setSelectedCircleItem] = useState(null);
   const [showLessonPage, setShowLessonPage] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const daySelectorRef = useRef(null);
 
   const classData = lessonsData?.[selectedClass];
+  const rhymesAndStories = classData?.rhymes_and_stories || emptyRhymesAndStories();
+  const rhymeLookup = useMemo(
+    () => buildReferenceLookup(rhymesAndStories.rhymes),
+    [rhymesAndStories.rhymes]
+  );
+  const storyLookup = useMemo(
+    () => buildReferenceLookup(rhymesAndStories.stories),
+    [rhymesAndStories.stories]
+  );
   const monthData = selectedMonth ? classData?.months?.[selectedMonth] : null;
   const dayData = selectedDay && monthData ? monthData.days?.[selectedDay] : null;
 
   const lessonsForDay = useMemo(() => {
     if (!dayData) return [];
-    if (Array.isArray(dayData.lessons) && dayData.lessons.length > 0) {
-      return dayData.lessons;
+
+    const baseLessons =
+      Array.isArray(dayData.lessons) && dayData.lessons.length > 0 ? dayData.lessons : [dayData];
+
+    return baseLessons.map((lesson) => ({
+      ...lesson,
+      referenceItems: buildLessonReferenceItems(lesson, rhymeLookup, storyLookup),
+    }));
+  }, [dayData, rhymeLookup, storyLookup]);
+
+  const standaloneLessons = useMemo(() => {
+    if (!selectedCircleItem) {
+      return [];
     }
-    return [dayData];
-  }, [dayData]);
+
+    return [
+      mapCircleItemToLesson(
+        selectedCircleItem,
+        selectedView === 'stories' ? 'Stories' : 'Rhymes'
+      ),
+    ];
+  }, [selectedCircleItem, selectedView]);
 
   const availableMonths = useMemo(
     () => new Set(Object.keys(classData?.months || {})),
@@ -51,8 +175,19 @@ function PlannerPage({ lessonsData }) {
 
   const handleClassSelect = (className) => {
     setSelectedClass(className);
+    setSelectedView(null);
     setSelectedMonth(null);
     setSelectedDay(null);
+    setSelectedCircleItem(null);
+    setShowLessonPage(false);
+  };
+
+  const handleViewSelect = (view) => {
+    setSelectedView(view);
+    setSelectedMonth(null);
+    setSelectedDay(null);
+    setSelectedCircleItem(null);
+    setShowLessonPage(false);
   };
 
   const handleMonthSelect = (monthNumber) => {
@@ -64,6 +199,13 @@ function PlannerPage({ lessonsData }) {
   const handleDaySelect = (dayNumber) => {
     if (!availableDays.has(dayNumber)) return;
     setSelectedDay(dayNumber);
+    setSelectedCircleItem(null);
+    setShowLessonPage(true);
+  };
+
+  const handleCircleItemSelect = (item) => {
+    setSelectedCircleItem(item);
+    setSelectedDay(null);
     setShowLessonPage(true);
   };
 
@@ -71,6 +213,7 @@ function PlannerPage({ lessonsData }) {
     setShowLessonPage(false);
     setCurrentSlide(0);
     setSelectedDay(null);
+    setSelectedCircleItem(null);
   };
 
   const handlePrevSlide = () => {
@@ -78,24 +221,29 @@ function PlannerPage({ lessonsData }) {
   };
 
   const handleNextSlide = () => {
-    setCurrentSlide((prev) => Math.min(prev + 1, lessonsForDay.length - 1));
+    setCurrentSlide((prev) =>
+      Math.min(prev + 1, (selectedCircleItem ? standaloneLessons : lessonsForDay).length - 1)
+    );
   };
 
   useEffect(() => {
     setCurrentSlide(0);
-  }, [lessonsForDay]);
+  }, [lessonsForDay, standaloneLessons]);
 
   useEffect(() => {
-    if (!dayData) {
+    if (selectedView === 'months' && !dayData) {
       setShowLessonPage(false);
     }
-  }, [dayData]);
+    if (selectedView !== 'months' && !selectedCircleItem) {
+      setShowLessonPage(false);
+    }
+  }, [dayData, selectedCircleItem, selectedView]);
 
   useEffect(() => {
-    if (selectedMonth && daySelectorRef.current) {
+    if (selectedView === 'months' && selectedMonth && daySelectorRef.current) {
       daySelectorRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, [selectedMonth]);
+  }, [selectedMonth, selectedView]);
 
   useEffect(() => {
     if (showLessonPage && typeof window !== 'undefined') {
@@ -106,11 +254,23 @@ function PlannerPage({ lessonsData }) {
   useEffect(() => {
     if (classNames.length > 0 && !classNames.includes(selectedClass)) {
       setSelectedClass(classNames[0]);
+      setSelectedView(null);
       setSelectedMonth(null);
       setSelectedDay(null);
+      setSelectedCircleItem(null);
       setShowLessonPage(false);
     }
   }, [classNames, selectedClass]);
+
+  const contentItems =
+    selectedView === 'stories' ? rhymesAndStories.stories : rhymesAndStories.rhymes;
+  const lessonsToDisplay = selectedCircleItem ? standaloneLessons : lessonsForDay;
+  const contextTitle = selectedCircleItem
+    ? `${selectedClass} - ${selectedView === 'stories' ? 'Stories' : 'Rhymes'}`
+    : `${selectedClass} - Month ${selectedMonth} - Day ${selectedDay}`;
+  const contextSubtitle = selectedCircleItem
+    ? selectedCircleItem.title
+    : '';
 
   return (
     <>
@@ -119,11 +279,10 @@ function PlannerPage({ lessonsData }) {
           <header className="app-header">
             <div>
               <p className="eyebrow">Edplore Monthly Planner</p>
-              <h1>Pick a class, month, and day to view lessons</h1>
+              <p className="helper-text helper-text--left">
+                Note - Rhymes and stories are customized. It will differ from school to school, so select the rhyme or story you want to teach.
+              </p>
             </div>
-            <p className="helper-text">
-              Months and Days only unlock when have available content.
-            </p>
           </header>
 
           <main className="layout-grid">
@@ -132,26 +291,38 @@ function PlannerPage({ lessonsData }) {
               selectedClass={selectedClass}
               onSelect={handleClassSelect}
             />
-            <MonthSelector
-              monthNumbers={monthNumbers}
-              availableMonths={availableMonths}
-              selectedMonth={selectedMonth}
-              onSelect={handleMonthSelect}
-            />
-            <DaySelector
-              dayNumbers={dayNumbers}
-              availableDays={availableDays}
-              selectedDay={selectedDay}
-              onSelect={handleDaySelect}
-              ref={daySelectorRef}
-            />
+            <ContentTypeSelector selectedView={selectedView} onSelect={handleViewSelect} />
+            {selectedView === 'months' ? (
+              <>
+                <MonthSelector
+                  monthNumbers={monthNumbers}
+                  availableMonths={availableMonths}
+                  selectedMonth={selectedMonth}
+                  onSelect={handleMonthSelect}
+                />
+                <DaySelector
+                  dayNumbers={dayNumbers}
+                  availableDays={availableDays}
+                  selectedDay={selectedDay}
+                  onSelect={handleDaySelect}
+                  ref={daySelectorRef}
+                />
+              </>
+            ) : selectedView === 'rhymes' || selectedView === 'stories' ? (
+              <RhymesStoriesSelector
+                title={selectedView === 'stories' ? 'Stories' : 'Rhymes'}
+                items={contentItems}
+                selectedTitle={selectedCircleItem?.title || ''}
+                onSelect={handleCircleItemSelect}
+              />
+            ) : null}
           </main>
         </>
       )}
 
-      {showLessonPage && lessonsForDay.length > 0 && (
+      {showLessonPage && lessonsToDisplay.length > 0 && (
         <LessonSlider
-          lessons={lessonsForDay}
+          lessons={lessonsToDisplay}
           currentSlide={currentSlide}
           onPrevSlide={handlePrevSlide}
           onNextSlide={handleNextSlide}
@@ -159,6 +330,8 @@ function PlannerPage({ lessonsData }) {
           selectedClass={selectedClass}
           selectedMonth={selectedMonth}
           selectedDay={selectedDay}
+          contextTitle={contextTitle}
+          contextSubtitle={contextSubtitle}
         />
       )}
     </>
@@ -166,7 +339,7 @@ function PlannerPage({ lessonsData }) {
 }
 
 function App() {
-  const [lessonsData, setLessonsData] = useState(() => cloneLessons(LESSONS));
+  const [lessonsData, setLessonsData] = useState(() => enrichLessonsData(cloneLessons(LESSONS)));
   const [loadError, setLoadError] = useState('');
 
   useEffect(() => {
@@ -181,7 +354,7 @@ function App() {
       })
       .then((data) => {
         if (isMounted && data?.lessons) {
-          setLessonsData(data.lessons);
+          setLessonsData(enrichLessonsData(data.lessons));
         }
       })
       .catch(() => {
