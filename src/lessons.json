@@ -551,7 +551,7 @@
                   "image": "/assets/Images/Nursery/A.png",
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "EWB - 7, 8",
+                  "page refernce": "EWB - 1, 2",
                   "trace": {
                     "title": "Trace",
                     "content": "A"
@@ -700,7 +700,7 @@
                   "image": "/assets/Images/Nursery/Draw_Home.png",
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "EVS - 11"
+                  "page refernce": "EVS - 9"
                 }
               ]
             },
@@ -1092,7 +1092,7 @@
                   "image": "/assets/Images/Nursery/circle_first_letter.png",
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "EWB - 18"
+                  "page refernce": "ESB - 18"
                 },
                 {
                   "title": "Left/Right",
@@ -1372,7 +1372,7 @@
                   "image": ["/assets/Images/EVS/12.png","/assets/Images/EVS/13.png","/assets/Images/EVS/15.png", "/assets/Images/EVS/16.png"],
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "EVS - 12, 13, 15, 16"
+                  "page refernce":"EVS - 10 to 15"
                 }
               ]
             },
@@ -1408,9 +1408,9 @@
                   "title": "Revisit – Living room",
                   "slider": "General Awareness",
                   "content": "Learning Goal: To review living room vocabulary. Activity: Drawing game. Detailed procedure: Draw a basic outline of a living room on the board and ask children to suggest items to draw inside it (TV, Sofa).",
-                  "video": "",
+                  "video": "/assets/Videos/LivingRoom.mp4",
                   "doc": "",
-                  "image": "",
+                  "image": ["/assets/Images/Nursery/Living_room.png", "/assets/Images/Nursery/livingroom_activity.png"],
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": ""
@@ -1425,13 +1425,29 @@
                   "content": "Learning Goal: To provide a final assessment of the first five letters. Activity: Alphabet writing grid. Detailed procedure: Provide a worksheet with empty boxes and ask the children to independently write A, B, C, D, and E in order.",
                   "video": "",
                   "doc": "",
-                  "image": "",
+                  "image": ["/assets/Images/Nursery/A.png","/assets/Images/Nursery/B.png","/assets/Images/Nursery/C.png","/assets/Images/Nursery/D.png","/assets/Images/Nursery/E.png"],
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": "",
-                  "trace": {
+                  "trace1": {
                     "title": "Trace",
-                    "content": "Letters A-E"
+                    "content": "A"
+                  },
+                  "trace2": {
+                    "title": "Trace",
+                    "content": "B"
+                  },
+                  "trace3": {
+                    "title": "Trace",
+                    "content": "C"
+                  },
+                  "trace4": {
+                    "title": "Trace",
+                    "content": "D"
+                  },
+                  "trace5": {
+                    "title": "Trace",
+                    "content": "E"
                   }
                 },
                 {
@@ -1440,7 +1456,7 @@
                   "content": "Learning Goal: To synthesize 6 weeks of comparison logic. Activity: Worksheet completion. Detailed procedure: Do a comprehensive worksheet reviewing Big/Small, Tall/Short, Long/Short, and Heavy/Light in one session.",
                   "video": "",
                   "doc": "",
-                  "image": "",
+                  "image":["/assets/Images/Nursery/big&small.png","/assets/Images/Nursery/TALL&short.png", "/assets/Images/Nursery/Long&short.png", "/assets/Images/Nursery/Heavy&light"],
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": ""
@@ -1451,7 +1467,7 @@
                   "content": "Learning Goal: To synthesize family and home knowledge. Activity: Dramatic play. Detailed procedure: Assign children roles as different family members and have them pretend to interact in different rooms of the house.",
                   "video": "",
                   "doc": "",
-                  "image": "",
+                  "image": "/assets/Images/EVS/24.png",
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": ""
