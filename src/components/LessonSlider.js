@@ -226,7 +226,7 @@ const TRACE_LETTER_SET = new Set(
 
 const PAGE_REFERENCE_LABELS = {
   ESB: 'English Skill Book',
-  EWB: 'English - Literacy Workbook',
+  EWB: 'English Workbook',
   MSB: 'Math Skill Book',
   MWB: 'Math Workbook',
 };

@@ -9,7 +9,7 @@ export default function MonthSelector({
   return (
     <section className="panel">
       <div className="panel-heading">
-        <p className="eyebrow">Step 2</p>
+        <p className="eyebrow">Step 3</p>
         <h2>Select a month</h2>
       </div>
       <div className="button-grid months">

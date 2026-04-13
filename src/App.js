@@ -280,7 +280,7 @@ function PlannerPage({ lessonsData }) {
             <div>
               <p className="eyebrow">Edplore Monthly Planner</p>
               <p className="helper-text helper-text--left">
-                Note - Rhymes and stories are customized. It will differ from school to school, so select the rhyme or story you want to teach.
+                Note - Rhymes and stories are customized. They will differ from school to school, so select the rhyme or story you want to teach.
               </p>
             </div>
           </header>

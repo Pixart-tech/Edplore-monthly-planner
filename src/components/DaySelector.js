@@ -7,7 +7,7 @@ const DaySelector = React.forwardRef(function DaySelector(
   return (
     <section ref={ref} className="panel">
       <div className="panel-heading">
-        <p className="eyebrow">Step 3</p>
+        <p className="eyebrow">Step 4</p>
         <h2>Pick a day</h2>
       </div>
       <div className="button-grid days">
