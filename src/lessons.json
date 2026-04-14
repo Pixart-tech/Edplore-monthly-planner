@@ -1022,7 +1022,7 @@
                   "content": "Learning Goal: To confidently use comparison terms. Activity: Show and Tell. Detailed procedure: Hold up two classroom objects (a long ruler, a short pencil; a heavy book, a light paper) and ask the children to shout out the correct descriptive word.",
                   "video": "",
                   "doc": "",
-                  "image": ["/assets/Images/Nursery/Long&short.png", "/assets/Images/Nursery/Heavy&light"],
+                  "image": ["/assets/Images/Nursery/Long&short.png", "/assets/Images/Nursery/Heavy&light.png"],
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": ""
@@ -1797,12 +1797,12 @@
                 "title": "Pre-Math concepts: Left and Right",
                 "slider": "Math",
                 "content": "Learning Goal: To differentiate between left and right directions. Activity: Circle kids running left and tick vehicles moving right.",
-                "video": "",
+                "video": "/assets/Videos/Left&right.mp4",
                 "doc": "",
                 "image": "",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB - 3, MWB - 3"
+                "page refernce": "3 in Maths SkillBook And 3 in Maths workbook"
               },
               {
                 "title": "Sense Organs",
@@ -1825,7 +1825,7 @@
                 "content": "Learning Goal: To reinforce writing the letter Aa. Activity: Trace and write the letter Aa in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EWB/a-(05).png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 5,6",
@@ -1838,12 +1838,12 @@
                 "title": "Pre-Math concepts Tall and Short",
                 "slider": "Math",
                 "content": "Learning Goal: To distinguish between tall and short objects. Activity: Identify and color tall/short objects in the skillbook and workbook.",
-                "video": "",
+                "video": "/assets/Videos/Tall&short.mp4",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/MSB/a-(04).png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB-4, MWB -4"
+                "page refernce": "4 in Maths SkillBook And 4 in Maths workbook"
               },
               {
                 "title": "Sense organs Exploration – Beyond the book Activity",
@@ -1851,10 +1851,10 @@
                 "content": "Learning Goal: To practically apply knowledge of sense organs. Activity: Hands-on exploration involving touching, smelling, or tasting.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/EVS/07.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "5"
+                "page refernce": "EVS - 5"
               }
             ]
           },
@@ -1879,12 +1879,12 @@
                 "title": "Pre-Math concepts: Long/Short",
                 "slider": "Math",
                 "content": "Learning Goal: To understand the concept of long and short. Activity: Circle the long snake and the short pencil.",
-                "video": "",
+                "video": "/assets/Videos/Long&short.mp4",
                 "doc": "",
                 "image": "",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB – 5, MWB – 5"
+                "page refernce": "5 in Maths SkillBook And 5 in Maths workbook"
               },
               {
                 "title": "Activity",
@@ -1892,10 +1892,10 @@
                 "content": "Learning Goal: To match sense organs to their respective functions. Activity: Match pictures of eyes, ears, nose to what they do.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/06.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "6"
+                "page refernce": "EVS - 6"
               }
             ]
           },
@@ -1907,7 +1907,7 @@
                 "content": "Learning Goal: To master writing the letter Bb. Activity: Trace and write the letter Bb in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/ESB/a-(07).png","/assets/Images/LKG/ESB/a-(08).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 7,8",
@@ -1922,10 +1922,10 @@
                 "content": "Learning Goal: To differentiate between heavy and light objects. Activity: Circle the light objects and cross out the heavy objects.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/MSB/a-(06).png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB -6, MWB – 6"
+                "page refernce": "6 in Maths SkillBook And 6 in Maths workbook"
               },
               {
                 "title": "Revisit – Sense Organs",
@@ -1933,7 +1933,7 @@
                 "content": "Learning Goal: To reinforce knowledge of the 5 senses. Activity: Oral recap and discussion about sense organs.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/06.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": ""
@@ -1951,7 +1951,15 @@
                 "image": "",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "",
+                "trace1": {
+                  "title": "Letter",
+                  "content": "Aa"
+                },
+                "trace2": {
+                  "title": "Letter",
+                  "content": "Bb"
+                }
               },
               {
                 "title": "Revisit – Pre- math concepts",
@@ -1959,10 +1967,10 @@
                 "content": "Learning Goal: To ensure understanding of left/right, tall/short, long/short, and heavy/light. Activity: Review pre-math concepts.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(03).png","/assets/Images/LKG/MSB/a-(04).png","/assets/Images/LKG/MSB/a-(05).png","/assets/Images/LKG/MSB/a-(06).png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "MSB - 3,4,5,6"
               }
             ]
           },
@@ -1993,9 +2001,13 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB – 7",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 1 and 2"
+                "trace1": {
+                  "title": "Number",
+                  "content": "1"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "2"
                 }
               },
               {
@@ -2004,10 +2016,10 @@
                 "content": "Learning Goal: To understand family members and relationships. Activity: Introduce and discuss family members.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/09.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "7"
+                "page refernce": "EVS - 7"
               }
             ]
           },
@@ -2019,11 +2031,11 @@
                 "content": "Learning Goal: To practice writing the letter Cc independently. Activity: Trace and write the letter Cc in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EWB/a-(09).png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 9,10",
-                "trace": {
+                "trace1": {
                   "title": "Letter",
                   "content": "Cc"
                 }
@@ -2034,13 +2046,17 @@
                 "content": "Learning Goal: To reinforce writing numbers 1 and 2. Activity: Practice writing numbers 1 and 2 in the math workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["assets/Images/LKG/MWB/a-(08).png","assets/Images/LKG/MWB/a-(09).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB – 8,9",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 1 and 2"
+                "trace1": {
+                  "title": "Number",
+                  "content": "1"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "2"
                 }
               },
               {
@@ -2049,10 +2065,10 @@
                 "content": "Learning Goal: To practice concepts related to 'My Family'. Activity: Complete the relevant EVS activity.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/10p.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "8"
+                "page refernce": "EVS - 8"
               }
             ]
           },
@@ -2068,7 +2084,7 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "ESB – 7,8",
-                "trace": {
+                "trace1": {
                   "title": "Letter",
                   "content": "Dd"
                 }
@@ -2083,9 +2099,13 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB – 8",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 3 and 4"
+                "trace1": {
+                  "title": "Number",
+                  "content": "3"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "4"
                 }
               },
               {
@@ -2094,10 +2114,10 @@
                 "content": "Learning Goal: To practice family concepts. Activity: Complete the family-related activity.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/12p.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "9"
+                "page refernce": "EVS - 9"
               }
             ]
           },
@@ -2109,11 +2129,11 @@
                 "content": "Learning Goal: To master writing the letter Dd. Activity: Trace and write the letter Dd in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EWB/a-(11).png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 11,12",
-                "trace": {
+                "trace1": {
                   "title": "Letter",
                   "content": "Dd"
                 }
@@ -2124,13 +2144,17 @@
                 "content": "Learning Goal: To reinforce writing numbers 3 and 4. Activity: Practice writing numbers 3 and 4 in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["assets/Images/LKG/MWB/a-(09).png", "assets/Images/LKG/MWB/a-(10).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB – 10,11",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 3 and 4"
+                "trace1": {
+                  "title": "Number",
+                  "content": "3"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "4"
                 }
               },
               {
@@ -2139,7 +2163,7 @@
                 "content": "Learning Goal: To understand familial roles through play. Activity: Act out different family members and their roles.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/RolePlay_INFamily.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": ""
@@ -2154,10 +2178,18 @@
                 "content": "Learning Goal: To consolidate learning of letters Cc and Dd. Activity: Review vocabulary and practice writing Cc and Dd.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/ESB/a-(05).png","/assets/Images/LKG/ESB/a-(06).png","/assets/Images/LKG/ESB/a-(07).png","/assets/Images/LKG/ESB/a-(08).png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "ESB - 5, 6, 7,8",
+                "trace1": {
+                  "title": "Letter",
+                  "content": "Cc"
+                }, 
+                "trace2": {
+                  "title": "Letter",
+                  "content": "Dd"
+                }
               },
               {
                 "title": "Revisit – numbers 1 to 4",
@@ -2165,10 +2197,26 @@
                 "content": "Learning Goal: To review numbers 1, 2, 3, and 4. Activity: Practice counting and writing numbers 1 through 4.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(07)p.png","/assets/Images/LKG/MSB/a-(08)p.png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "ESB - 7,8",
+                "trace1": {
+                  "title": "Number",
+                  "content": "1"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "2"
+                },
+                "trace3": {
+                  "title": "Number",
+                  "content": "3"
+                },
+                "trace4": {
+                  "title": "Number",
+                  "content": "4"
+                }
               },
               {
                 "title": "Revisit – My Family",
@@ -2176,10 +2224,10 @@
                 "content": "Learning Goal: To reinforce the concept of family. Activity: Final review and discussion about 'My Family'.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/09.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "EVS - 7,8,9"
               }
             ]
           },
@@ -2206,13 +2254,17 @@
                 "content": "Learning Goal: To recognize and write numbers 5 and 6. Activity: Trace and practice writing the numbers 5 and 6.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(09)p.png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB – 9",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 5 and 6"
+                "trace1": {
+                  "title": "Number",
+                  "content": "5"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "6"
                 }
               },
               {
@@ -2221,10 +2273,10 @@
                 "content": "Learning Goal: To identify parts of a home. Activity: Learn about the living room, kitchen, bedroom, and bathroom.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/13.1.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "10"
+                "page refernce": "EVS - 10"
               }
             ]
           },
@@ -2236,7 +2288,7 @@
                 "content": "Learning Goal: To reinforce writing the letter Dd. Activity: Complete workbook exercises for Dd.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EWB/a-(11).png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 11,12",
@@ -2255,9 +2307,13 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB – 12, 13",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 5 and 6"
+                "trace1": {
+                  "title": "Number",
+                  "content": "5"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "6"
                 }
               },
               {
@@ -2266,10 +2322,10 @@
                 "content": "Learning Goal: To associate activities with specific rooms. Activity: Match the rooms of the house with the materials and activities done in that room.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/13.2.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "11"
+                "page refernce": "EVS - 11"
               }
             ]
           },
@@ -2281,7 +2337,7 @@
                 "content": "Learning Goal: To recognize and write the letter Ee. Activity: Trace 'e' with finger, circle the first letter of pictures, trace and write Ee.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/ESB/a-(09).png","/assets/Images/LKG/ESB/a-(10).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "ESB – 9,10",
@@ -2296,13 +2352,17 @@
                 "content": "Learning Goal: To recognize and write numbers 7 and 8. Activity: Trace and practice writing the numbers 7 and 8.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(10)p.png","/assets/Images/LKG/MSB/a-(11)p.png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB – 10",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 7 and 8"
+                "trace1": {
+                  "title": "Number",
+                  "content": "7"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "8"
                 }
               },
               {
@@ -2311,7 +2371,7 @@
                 "content": "Learning Goal: To learn about the school environment. Activity: Discuss the school, classrooms, and play area.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/13.4.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "12"
@@ -2326,7 +2386,7 @@
                 "content": "Learning Goal: To practice writing the letter Ee independently. Activity: Trace and write the letter Ee in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EWB/a-(13).png","/assets/Images/LKG/EWB/a-(14).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 13,14",
@@ -2341,13 +2401,17 @@
                 "content": "Learning Goal: To reinforce writing numbers 7 and 8. Activity: Practice writing numbers 7 and 8 in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MWB/a-(14).png","/assets/Images/LKG/MWB/a-(15).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB – 14,15",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 7 and 8"
+                "trace1": {
+                  "title": "Number",
+                  "content": "7"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "8"
                 }
               },
               {
@@ -2356,10 +2420,10 @@
                 "content": "Learning Goal: To apply knowledge about the school. Activity: Complete the school-related activity.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/14.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "13"
+                "page refernce": "EVS - 13"
               }
             ]
           },
@@ -2371,10 +2435,18 @@
                 "content": "Learning Goal: To review letters Dd and Ee. Activity: Recap activities tracing the letters and circling the first letter of the picture.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image":["/assets/Images/LKG/ESB/a-(08).png","/assets/Images/LKG/ESB/a-(10).png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "ESB -11, EWB – 15"
+                "page refernce": "ESB -11, EWB – 15",
+                "trace1": {
+                  "title": "Letter",
+                  "content": "Dd"
+                },
+                "trace2": {
+                  "title": "Letter",
+                  "content": "Ee"
+                }
               },
               {
                 "title": "Number 9, 0,10",
@@ -2386,9 +2458,17 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB -11,12",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 9, 0, 10"
+                "trace1": {
+                  "title": "Number",
+                  "content": "9"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "0"
+                },
+                "trace3": {
+                  "title": "Number",
+                  "content": "10"
                 }
               },
               {
@@ -2397,10 +2477,10 @@
                 "content": "Learning Goal: To consolidate understanding of house and school environments. Activity: Oral review and discussion.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EVS/16.png", "/assets/Images/LKG/EVS/13.1.png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "EVS - 10 AND 15"
               }
             ]
           }
@@ -2420,7 +2500,7 @@
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "ESB – 13,14",
-                "trace": {
+                "trace1": {
                   "title": "Letter",
                   "content": "Ff"
                 }
@@ -2431,13 +2511,17 @@
                 "content": "Learning Goal: To reinforce writing numbers 9, 0, and 10. Activity: Practice writing numbers 9, 0, and 10 in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": [ "/assets/Images/LKG/MWB/a-(16).png","/assets/Images/LKG/MWB/a-(17).png","/assets/Images/LKG/MWB/a-(18).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB – 16,17,18",
-                "trace": {
-                  "title": "Letter",
-                  "content": "Numbers 9, 0, 10"
+                "trace1": {
+                  "title": "Number",
+                  "content": "9"
+                },
+                "trace2": {
+                  "title": "Number",
+                  "content": "0"
                 }
               },
               {
@@ -2446,10 +2530,10 @@
                 "content": "Learning Goal: To develop problem-solving skills. Activity: Help the child reach home through the maze.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/15.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "14"
+                "page refernce": "EVS - 14"
               }
             ]
           },
@@ -2461,11 +2545,11 @@
                 "content": "Learning Goal: To master writing the letter Ff. Activity: Trace and write the letter Ff in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EWB/a-(16).png","/assets/Images/LKG/EWB/a-(17).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 16,17",
-                "trace": {
+                "trace1": {
                   "title": "Letter",
                   "content": "Ff"
                 }
@@ -2479,7 +2563,7 @@
                 "image": "",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB - 13,14, MWB – 19"
+                "page refernce": "13,14 in Maths SkillBook And 19 in Maths workbook"
               },
               {
                 "title": "My School",

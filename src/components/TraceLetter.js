@@ -88,6 +88,16 @@ export const TRACE_LETTER_KEYS = [
   'Xx',
   'Yy',
   'Zz',
+  '0',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
 ];
 const strokeDelay = 90;
 const betweenStrokeDelay = 220;
