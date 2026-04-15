@@ -2560,7 +2560,7 @@
                 "content": "Learning Goal: To review numbers up to 10. Activity: Count and match the number of objects, count and write the number.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(13).png","/assets/Images/LKG/MSB/a-(14).png","/assets/Images/LKG/MWB/a-(19).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "13,14 in Maths SkillBook And 19 in Maths workbook"
@@ -2574,7 +2574,7 @@
                 "image": "",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "15"
+                "page refernce": "EVS - 15"
               }
             ]
           },
@@ -2586,7 +2586,7 @@
                 "content": "Learning Goal: To recognize and write the letter Gg. Activity: Trace 'g' with finger, circle the first letter of pictures, trace and write Gg.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/ESB/a-(15).png","/assets/Images/LKG/ESB/a-(16).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "ESB – 15,16",
@@ -2601,10 +2601,10 @@
                 "content": "Learning Goal: To understand number sequencing. Activity: Identify numbers before, after, and between on a number line.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/MSB/a-(15)p.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB – 15,16,17"
+                "page refernce": "MSB – 15"
               },
               {
                 "title": "Activity School Tour (Beyond the book)",
@@ -2627,7 +2627,7 @@
                 "content": "Learning Goal: To reinforce writing the letter Gg. Activity: Trace and write the letter Gg in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EWB/a-(18).png","/assets/Images/LKG/EWB/a-(19).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 18,19",
@@ -2653,10 +2653,10 @@
                 "content": "Learning Goal: To associate items with school rooms. Activity: Circle the object that you see in each room.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/17.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "16"
+                "page refernce": "EVS - 16"
               }
             ]
           },
@@ -2668,7 +2668,7 @@
                 "content": "Learning Goal: To recognize and write the letter Hh. Activity: Trace 'h' with finger, tick the first letter of pictures, trace and write Hh.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/ESB/a-(17).png","/assets/Images/LKG/ESB/a-(18).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "ESB – 17,18",
@@ -2683,10 +2683,10 @@
                 "content": "Learning Goal: To consolidate number sequencing. Activity: Review the concepts of before, after, and between.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/MSB/a-(16)p.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "ESB - 16"
               },
               {
                 "title": "Revisit – My School and Different Rooms in a School",
@@ -2694,10 +2694,10 @@
                 "content": "Learning Goal: To reinforce knowledge of the school layout. Activity: Review school rooms.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": "/assets/Images/LKG/EVS/15.png",
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": ""
+                "page refernce": "EVS - 15"
               }
             ]
           },
@@ -2709,7 +2709,7 @@
                 "content": "Learning Goal: To master writing the letter Hh. Activity: Trace and write the letter Hh in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EWB/a-(20).png","/assets/Images/LKG/EWB/a-(21).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 20,21",
@@ -2724,7 +2724,7 @@
                 "content": "Learning Goal: To understand ascending and descending order. Activity: Learn the concept using stairs visual and arrange numbers.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/MSB/a-(18)p.png","/assets/Images/LKG/MSB/a-(19)p.png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MSB – 18,19"
