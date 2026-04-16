@@ -9,6 +9,23 @@ import TraceLetter, {
 } from './TraceLetter';
 import PopVideoPlayer from './PopVideoPlayer';
 
+const normalizeAssetImportPath = (value) => {
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  const trimmed = value.trim().replace(/\\/g, '/');
+  if (!trimmed) {
+    return '';
+  }
+
+  const withoutLeadingSlash = trimmed.replace(/^\.?\/*/, '');
+
+  return withoutLeadingSlash
+    .replace(/^assets\/videos\//i, 'assets/Videos/')
+    .replace(/^assets\/images\//i, 'assets/Images/');
+};
+
 function LessonMedia({ lesson, shouldShowControls }) {
   const [videoUrl, setVideoUrl] = useState(null);
   const [videoError, setVideoError] = useState(null);
@@ -65,23 +82,6 @@ function LessonMedia({ lesson, shouldShowControls }) {
   const shouldLoadVideo = hasVideo && shouldShowControls;
   const imageAlt = `${lesson.title ?? 'Lesson'} illustration`;
   const activeImagePath = imageAssetPaths[activeImageIndex];
-
-  const normalizeAssetImportPath = (value) => {
-    if (typeof value !== 'string') {
-      return '';
-    }
-
-    const trimmed = value.trim().replace(/\\/g, '/');
-    if (!trimmed) {
-      return '';
-    }
-
-    const withoutLeadingSlash = trimmed.replace(/^\.?\/*/, '');
-
-    return withoutLeadingSlash
-      .replace(/^assets\/videos\//i, 'assets/Videos/')
-      .replace(/^assets\/images\//i, 'assets/Images/');
-  };
 
   useEffect(() => {
     if (!hasImage) {
@@ -242,6 +242,7 @@ export default function LessonSlider({
   selectedDay,
   contextTitle,
   contextSubtitle,
+  disclaimerText,
 }) {
   const [popupPayload, setPopupPayload] = useState(null);
   const [popupMediaUrl, setPopupMediaUrl] = useState(null);
@@ -388,7 +389,7 @@ export default function LessonSlider({
         setPopupMediaUrl(path);
         return;
       }
-      import(`../${path}`)
+      import(`../${normalizeAssetImportPath(path)}`)
         .then((asset) => {
           setPopupMediaUrl(asset.default);
         })
@@ -726,6 +727,27 @@ export default function LessonSlider({
     !showAudio &&
     !showAudioImage;
 
+  const renderLessonMeta = (lessonTime, lessonPageReference, formattedLessonPageReference) => {
+    if (!lessonTime && !lessonPageReference) {
+      return null;
+    }
+
+    return (
+      <div className="lesson-slide__meta-row">
+        {lessonTime && (
+          <div className="lesson-slide__time-row">
+            <Time time={lessonTime} />
+          </div>
+        )}
+        {lessonPageReference && (
+          <div className="lesson-slide__page-reference-inline">
+            <p>Pls Refer Page: {formattedLessonPageReference}</p>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <section className="lesson-page" aria-label="Lessons for selected day">
       <div className="lesson-page__inner">
@@ -734,6 +756,9 @@ export default function LessonSlider({
             <h2>{contextTitle || `${selectedClass} - Month ${selectedMonth} - Day ${selectedDay}`}</h2>
             {contextSubtitle ? (
               <p className="lesson-page__subtitle">{contextSubtitle}</p>
+            ) : null}
+            {disclaimerText ? (
+              <p className="lesson-page__disclaimer">{disclaimerText}</p>
             ) : null}
           </div>
           <button
@@ -795,20 +820,6 @@ export default function LessonSlider({
                       </div>
                       {lesson.doc && <PdfButton href={lesson.doc} />}
                     </div>
-                    {(lessonTime || lessonPageReference) && (
-                      <div className="lesson-slide__meta-row">
-                        {lessonTime && (
-                          <div className="lesson-slide__time-row">
-                            <Time time={lessonTime} />
-                          </div>
-                        )}
-                        {lessonPageReference && (
-                          <div className="lesson-slide__page-reference-inline">
-                            <p>Pls Refer Page: {formattedLessonPageReference}</p>
-                          </div>
-                        )}
-                      </div>
-                    )}
                   </header>
                   <div
                     className={
@@ -819,6 +830,11 @@ export default function LessonSlider({
                   >
                     {hasContent && (
                       <div className="lesson-slide__text">
+                        {renderLessonMeta(
+                          lessonTime,
+                          lessonPageReference,
+                          formattedLessonPageReference,
+                        )}
                         <FormattedContent text={lesson.content} />
                         {Array.isArray(lesson.referenceItems) && lesson.referenceItems.length > 0 && (
                           <div className="lesson-slide__references">
@@ -843,6 +859,12 @@ export default function LessonSlider({
                       lesson={lesson}
                       shouldShowControls={shouldShowControls}
                     />
+                    {!hasContent &&
+                      renderLessonMeta(
+                        lessonTime,
+                        lessonPageReference,
+                        formattedLessonPageReference,
+                      )}
                     {!hasContent && renderPopupButtons(lesson)}
                   </div>
                 </article>
@@ -945,4 +967,3 @@ export default function LessonSlider({
     </section>
   );
 }
-

@@ -394,6 +394,9 @@ export default function BooksAddPage(props) {
         <div>
           <p className="eyebrow">Books Mapping</p>
           <h1>Map book topics to a day planner</h1>
+          <p className="helper-text helper-text--left">
+            Disclaimer: Same topics will be repeated for each class. Kindly teach as per kids age.
+          </p>
         </div>
         <p className="helper-text">
           Select a class, book, and topic, then pick the month and day to add it.

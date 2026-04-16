@@ -648,6 +648,13 @@ button {
   font-size: 14px;
 }
 
+.lesson-page__disclaimer {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 620px;
+}
+
 .lesson-page__close {
   font-weight: 700;
   display: inline-flex;
@@ -742,6 +749,7 @@ button {
   flex-direction: column;
   gap: 12px;
   align-items: flex-end;
+  margin-top: -10px;
 }
 
 .lesson-slide__youtube {
@@ -882,7 +890,7 @@ button {
 }
 
 .lesson-slide__popup-card {
-  width: min(560px, 100%);
+  width: min(860px, 100%);
   background: var(--panel);
   border-radius: 20px;
   border: 1px solid var(--border);
@@ -930,7 +938,7 @@ button {
 .lesson-slide__popup-media iframe,
 .lesson-slide__popup-media video,
 .lesson-slide__popup-media img {
-  width: min(520px, 100%);
+  width: min(820px, 100%);
   max-height: 60vh;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -1031,6 +1039,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: min(820px, 100%);
+  margin: 0 auto;
 }
 
 .pop-video__meta {
@@ -1140,16 +1150,17 @@ button {
 }
 
 .lesson-slide__time-row {
-  align-self: flex-end;
+  align-self: flex-start;
   width: auto;
 }
 
 .lesson-slide__meta-row {
-  align-self: flex-end;
+  align-self: flex-start;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
+  margin-bottom: 14px;
 }
 
 .lesson-slide__page-reference-inline {
@@ -1160,7 +1171,7 @@ button {
   color: var(--text);
   font-size: 13px;
   font-weight: 600;
-  text-align: right;
+  text-align: left;
 }
 
 .lesson-slide__page-reference-inline p {
@@ -1235,6 +1246,7 @@ button {
     width: 100%;
     flex: 1 1 0;
     order: 0;
+    margin-top: 0;
   }
 
   .lesson-slide__text {
@@ -1350,6 +1362,7 @@ button {
     width: 100%;
     flex: 1 1 0;
     align-items: stretch;
+    margin-top: 0;
   }
 
   .lesson-slide__text {

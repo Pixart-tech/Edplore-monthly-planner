@@ -13,6 +13,8 @@ import BooksAddPage from './components/BooksAddPage';
 
 const monthNumbers = Array.from({ length: 10 }, (_, index) => String(index + 1));
 const dayNumbers = Array.from({ length: 20 }, (_, index) => String(index + 1));
+const SHARED_DISCLAIMER =
+  'Disclaimer: Same topics will be repeated for each class. Kindly teach as per kids age.';
 
 const cloneLessons = (value) => {
   if (typeof structuredClone === 'function') {
@@ -282,6 +284,7 @@ function PlannerPage({ lessonsData }) {
               <p className="helper-text helper-text--left">
                 Note - Rhymes and stories are customized. They will differ from school to school, so select the rhyme or story you want to teach.
               </p>
+              <p className="helper-text helper-text--left">{SHARED_DISCLAIMER}</p>
             </div>
           </header>
 
@@ -332,6 +335,7 @@ function PlannerPage({ lessonsData }) {
           selectedDay={selectedDay}
           contextTitle={contextTitle}
           contextSubtitle={contextSubtitle}
+          disclaimerText={SHARED_DISCLAIMER}
         />
       )}
     </>
