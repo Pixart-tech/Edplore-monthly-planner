@@ -334,7 +334,7 @@
                   "content": "Learning Goal: To build confidence in expressing personal preferences. Activity: Group discussion. Detailed procedure: Have children stand up and confidently share a few details about themselves, such as their favourite colour or game, with the rest of the class.",
                   "video": "",
                   "doc": "",
-                  "image": "/assets/Images/EVS/01.png",
+                  "image": "/assets/Images/EVS/01p.png",
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": "EVS - 1"
@@ -409,14 +409,10 @@
                   "content": "Learning Goal: To reinforce pre-writing strokes (standing, sleeping, and slanting lines) through tactile feedback. Activity: Sand tracing practice. Detailed procedure: Provide students with a small shallow tray of sand. Instruct them to use their index finger to practice tracing the strokes they learned during the week.",
                   "video": "",
                   "doc": "",
-                  "image": "/assets/Images/Nursery/sand-writing.png",
+                  "image": ["/assets/Images/Nursery/sand-writing.png","/assets/Images/Nursery/pattern_strokes.png"],
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "",
-                  "trace": {
-                    "title": "Letter",
-                    "content": "Strokes"
-                  }
+                  "page refernce": ""
                 },
                 {
                   "title": "Revisit – All about me and Body Parts",
@@ -484,7 +480,15 @@
                   "image":  ["/assets/Images/Nursery/06.png","/assets/Images/Nursery/07.png"],
                   "time": "20 minutes",
                   "youtube link": "",
-                  "page refernce": "ESB - 6"
+                  "page refernce": "ESB - 6",
+                   "trace1": {
+                    "title": "Letter",
+                    "content": "LeftCurve"
+                  },
+                   "trace2": {
+                    "title": "Letter",
+                    "content": "RightCurve"
+                  }
                 },
                 {
                   "title": "Activity – Drawing myself",
@@ -507,9 +511,12 @@
                   "content": "Learning Goal: To introduce the first letter of the alphabet, its formation using slanting and sleeping lines, and its short vowel sound. Activity: Letter tracing, writing, and visual identification. Detailed procedure: Introduce the letter A and its vocabulary (Apple, Ant). Have students trace the large letter A with their finger and practice writing it.",
                   "video": "",
                   "doc": "",
-                  "image": "/assets/Images/Nursery/A.png",
+                  "image":"",
                   "time": "20 minutes",
-                  "youtube link": "",
+                  "popvideo": {
+                    "title": "Sound A",
+                    "content": "a"
+                  },
                   "page refernce": "ESB - 7, 8",
                   "trace": {
                     "title": "Letter",
@@ -630,7 +637,11 @@
                   "content": "Learning Goal: To introduce the letter B, its formation combining a standing line with right curves, and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce words starting with B like Bear and Balloon. Instruct students to trace the letter B with their fingers and write it in the practice lines.",
                   "video": "",
                   "doc": "",
-                  "image": "/assets/Images/Nursery/B.png",
+                  "image": "",
+                  "popvideo": {
+                    "title": "Sound B",
+                    "content": "b"
+                  },
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": "ESB - 9, 10",
@@ -714,7 +725,10 @@
                   "doc": "",
                   "image": "",
                   "time": "20 minutes",
-                  "youtube link": "",
+                  "popvideo": {
+                    "title": "Sound C",
+                    "content": "c"
+                  },
                   "page refernce": "ESB - 11, 12",
                   "trace": {
                     "title": "Letter",
@@ -841,7 +855,10 @@
                   "doc": "",
                   "image": "",
                   "time": "20 minutes",
-                  "youtube link": "",
+                  "popvideo": {
+                    "title": "Sound D",
+                    "content": "d"
+                  },
                   "page refernce": "ESB - 13, 14",
                   "trace": {
                     "title": "Letter",
@@ -921,9 +938,12 @@
                   "content": "Learning Goal: To introduce the letter E, formed by one standing and three sleeping lines, and its beginning sound. Activity: Line-based letter tracing. Detailed procedure: Introduce vocabulary such as Elephant and Egg. Have the children trace the letter E with their fingers and practice writing it on the lines.",
                   "video": "",
                   "doc": "",
-                  "image": "/assets/Images/Nursery/E.png",
+                  "image": "",
                   "time": "20 minutes",
-                  "youtube link": "",
+                  "popvideo": {
+                    "title": "Sound E",
+                    "content": "e"
+                  },
                   "page refernce": "ESB - 15, 16",
                   "trace": {
                     "title": "Letter",
@@ -962,7 +982,7 @@
                   "content": "Learning Goal: To master letter E identification and independent writing. Activity: Circling activity. Detailed procedure: Review the sound of E and have students practice writing it. Have students scan the workbook page to circle the decorated eggs that feature the letter E.",
                   "video": "",
                   "doc": "",
-                  "image": "",
+                  "image": "/assets/Images/Nursery/E.png",
                   "time": "20 minutes",
                   "youtube link": "",
                   "page refernce": "EWB - 9, 10",
@@ -1480,8 +1500,242 @@
   },
   "LKG": {
     "rhymes_and_stories": {
-      "rhymes": [],
-      "stories": []
+      "rhymes": [
+        {
+          "title": "God's Love",
+          "content": "Learning Goal: To introduce concepts of love and gratitude. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Phonics Songs",
+          "content": "Learning Goal: To learn phonics and alphabet sounds. Activity: Singing the alphabet phonics. Detailed procedure: Sing the song 'Ants on the apple a, a, a' to associate letters from A to Z with their sounds and corresponding words.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Boogie Woogie",
+          "content": "Learning Goal: To develop gross motor skills and rhythm. Activity: Action and dance rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "My School",
+          "content": "Learning Goal: To build familiarity and positive associations with the school environment. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Mary Had A Little Lamb",
+          "content": "Learning Goal: To develop rhythm and memory. Activity: Rhyme recitation. Detailed procedure: Recite 'Mary had a little lamb' emphasizing the repetitive structures and rhyming words like 'snow' and 'go'.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "After Bath",
+          "content": "Learning Goal: To learn body parts and personal hygiene concepts. Activity: Action rhyme. Detailed procedure: Recite the rhyme 'After my bath, I try, try, try' while mimicking actions for wiping hands, fingers, toes, legs, and a shiny nose.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Hickory Dickory Dock",
+          "content": "Learning Goal: To learn about numbers, time, and rhythm. Activity: Action rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Mummy and Daddy",
+          "content": "Learning Goal: To foster familial bonds and affection. Activity: Group recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Wheels On The Bus",
+          "content": "Learning Goal: To learn about transportation and parts of a bus. Activity: Action singing. Detailed procedure: Sing 'The wheels on the bus go Round and round' with actions for the wheels, the horn going beep, and the driver talking.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Incy Wincy Spider",
+          "content": "Learning Goal: To develop fine motor skills and understand weather concepts. Activity: Fingerplay rhyme. Detailed procedure: Use finger movements to act out the 'Incy Wincy spider' going up the spout, the rain washing it out, and the sun drying up the rain.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "5 Sense",
+          "content": "Learning Goal: To identify the five sense organs and their functions. Activity: Recitation and pointing. Detailed procedure: Recite the rhyme 'I have two eyes, So I can see' while pointing to the eyes, nose, fingers, ears, and tongue.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "London Bridge Is Falling Down",
+          "content": "Learning Goal: To participate in group play and rhythmic chanting. Activity: Group rhyme. Detailed procedure: Sing the rhyme about London bridge falling down and building it up with iron bars.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "I Am A Little Teapot",
+          "content": "Learning Goal: To learn to follow directions and mimic objects. Activity: Action rhyme. Detailed procedure: Sing 'I am a little teapot, Short and stout' while forming a handle and spout with your arms, and mimic pouring out the tea.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Head, Shoulders, Knees & Toes",
+          "content": "Learning Goal: To identify parts of the body and improve gross motor skills. Activity: Action singing.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Fruits",
+          "content": "Learning Goal: To learn the names of different fruits. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "At the zoo",
+          "content": "Learning Goal: To learn the names and sounds of different wild animals. Activity: Rhyme recitation and animal mimicry.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Butterfly butterfly",
+          "content": "Learning Goal: To appreciate nature and practice fluid arm movements. Activity: Action rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "You Are My Sunshine",
+          "content": "Learning Goal: To develop musical rhythm and expression. Activity: Group singing. Detailed procedure: Sing the lyrics 'You Are my Sunshine, My only sunshine' to encourage emotional expression and group vocalization.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Five Little Monkeys",
+          "content": "Learning Goal: To learn backward counting and rhythmic chanting. Activity: Number action rhyme. Detailed procedure: Act out 'Five little monkeys jumping on the bed', counting down as each monkey falls off and bumps its head, followed by twisting and dancing actions.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Out In The Garden",
+          "content": "Learning Goal: To explore nature and outdoor environments. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Traffic Light Songs",
+          "content": "Learning Goal: To learn basic road safety and traffic light colours. Activity: Singing and color association.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Yankee Doodle",
+          "content": "Learning Goal: To practice rhythm and rhyming words. Activity: Group singing.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Manners Songs",
+          "content": "Learning Goal: To learn golden words like please, thank you, and sorry. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Vegetable Rhymes",
+          "content": "Learning Goal: To identify different vegetables and encourage healthy eating. Activity: Rhyme recitation.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        }
+      ],
+      "stories": [
+        {
+          "title": "Lion and the Mouse",
+          "content": "Learning Goal: To understand that an act of kindness is never wasted. Activity: Storytime reading.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The 3 Little Pigs",
+          "content": "Learning Goal: To learn that hard work pays off. Activity: Storytime reading. Detailed procedure: Narrate how the three pigs decided to build houses of straw, sticks, and bricks, and how the third pig worked all day to build a strong brick house.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Little Red Riding Hood",
+          "content": "Learning Goal: To build attention span and follow a narrative arc. Activity: Storytime reading.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Mouse and the Cats",
+          "content": "Learning Goal: To learn about fairness and problem-solving. Activity: Storytelling and comprehension.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Monkey and the Cap Seller",
+          "content": "Learning Goal: To develop problem-solving skills and narrative comprehension. Activity: Story reading.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        }
+      ]
     },
     "months": {
       "1": {
@@ -1667,10 +1921,10 @@
                 "content": "Learning Goal: To reinforce knowledge of 'All about me' and body parts. Activity: Complete the activity exercises.",
                 "video": "",
                 "doc": "",
-                "image": "",
+                "image": ["/assets/Images/LKG/EVS/03.png","/assets/Images/LKG/EVS/04.png"],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "EVS - 3"
+                "page refernce": "EVS - 1 AND 2"
               }
             ]
           },
@@ -1732,7 +1986,7 @@
                 "content": "Learning Goal: To reinforce knowledge of human body parts. Activity: Complete the body parts puzzle.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/LKG/EVS/05.png",
+                "image": "/assets/Images/LKG/EVS/05p.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "3"
@@ -1851,7 +2105,7 @@
                 "content": "Learning Goal: To practically apply knowledge of sense organs. Activity: Hands-on exploration involving touching, smelling, or tasting.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/EVS/07.png",
+                "image": "/assets/Images/LKG/EVS/07.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EVS - 5"
@@ -1892,7 +2146,7 @@
                 "content": "Learning Goal: To match sense organs to their respective functions. Activity: Match pictures of eyes, ears, nose to what they do.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/LKG/EVS/06.png",
+                "image": "/assets/Images/LKG/EVS/06p.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EVS - 6"
@@ -1907,7 +2161,7 @@
                 "content": "Learning Goal: To master writing the letter Bb. Activity: Trace and write the letter Bb in the workbook.",
                 "video": "",
                 "doc": "",
-                "image": ["/assets/Images/LKG/ESB/a-(07).png","/assets/Images/LKG/ESB/a-(08).png"],
+                "image": ["/assets/Images/LKG/ESB/a-(03).png","/assets/Images/LKG/ESB/a-(04).png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EWB – 7,8",
@@ -1933,7 +2187,7 @@
                 "content": "Learning Goal: To reinforce knowledge of the 5 senses. Activity: Oral recap and discussion about sense organs.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/LKG/EVS/06.png",
+                "image": "/assets/Images/LKG/EVS/06p.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": ""
@@ -2449,7 +2703,7 @@
                 }
               },
               {
-                "title": "Number 9, 0,10",
+                "title": "Number 9, 0",
                 "slider": "Math",
                 "content": "Learning Goal: To recognize and write numbers 9, 0, and 10. Activity: Trace and practice writing the numbers 9, 0, and 10.",
                 "video": "",
@@ -2465,10 +2719,6 @@
                 "trace2": {
                   "title": "Number",
                   "content": "0"
-                },
-                "trace3": {
-                  "title": "Number",
-                  "content": "10"
                 }
               },
               {
@@ -2912,9 +3162,1450 @@
     },
   "UKG": {
     "rhymes_and_stories": {
-      "rhymes": [],
-      "stories": []
+      "rhymes": [
+        {
+          "title": "Prayer",
+          "content": "Learning Goal: To instil a sense of gratitude and routine. Activity: Recitation. Detailed procedure: Guide students to fold their hands and close their eyes while reciting the prayer together.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Greeting Song",
+          "content": "Learning Goal: To learn social etiquette and morning greetings. Activity: Singing with actions. Detailed procedure: Stand in a circle and sing the greeting song, waving to peers.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Five Little Fish",
+          "content": "Learning Goal: To practice reverse counting and rhythm. Activity: Finger play. Detailed procedure: Show five fingers and fold one down with each verse as the fish swim away.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Busy Bee",
+          "content": "Learning Goal: To encourage cleanliness and helping at home. Activity: Action rhyme. Detailed procedure: Mime sweeping, raking, and washing hands along with the rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Simple Simson",
+          "content": "Learning Goal: To develop phonetic awareness. Activity: Rhyme recitation. Detailed procedure: Read aloud with emphasis on rhythm and rhyming words.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Months of The Year",
+          "content": "Learning Goal: To learn the days in each month. Activity: Calendar rhyme recitation. Detailed procedure: Recite the poem to remember which months have thirty or thirty-one days.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Sun, Moon and Stars",
+          "content": "Learning Goal: To introduce celestial bodies. Activity: Point and say. Detailed procedure: Point upwards to the sky, and twinkle fingers for stars.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Shapes",
+          "content": "Learning Goal: To identify circles, squares, rectangles, and triangles. Activity: Tracing shapes in the air. Detailed procedure: Make shapes in the air with fingers while reciting the properties of each shape.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "In the heart of a seed",
+          "content": "Learning Goal: To understand plant germination. Activity: Seed visualization. Detailed procedure: Curl up like a seed and slowly 'grow' tall while the poem is read.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Animal Homes",
+          "content": "Learning Goal: To identify where animals live. Activity: Matching actions. Detailed procedure: Call out the animal and have students mimic its home or sound.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Hen has a Chicken",
+          "content": "Learning Goal: To learn animal sounds and their young ones. Activity: Animal sounds play. Detailed procedure: Make the animal sounds mentioned in the rhyme (cheep, bow, quack).",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Little Plant",
+          "content": "Learning Goal: To reinforce the life cycle of a plant. Activity: Growth enactment. Detailed procedure: Crouch down like a seed and slowly stand up to mimic a growing plant.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Pease Porridge Hot",
+          "content": "Learning Goal: To develop rhythm and hand-clapping coordination. Activity: Partner clapping. Detailed procedure: Pair students to clap hands together to the beat of the rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Days Of The Week",
+          "content": "Learning Goal: To memorize the days of the week in order. Activity: Sequence chanting. Detailed procedure: Recite the days, clapping on each day to set a steady rhythm.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Rectangle Is The Window",
+          "content": "Learning Goal: To relate 2D shapes to real-world objects. Activity: Object finding. Detailed procedure: Point to real windows, doors, and balls as the shapes are mentioned in the rhyme.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Five Lovely Flowers",
+          "content": "Learning Goal: To practice subtraction and counting down. Activity: Finger counting. Detailed procedure: Hold up five fingers and put one down as each flower faces a challenge.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Doe A Deer",
+          "content": "Learning Goal: To introduce musical notes. Activity: Singing. Detailed procedure: Sing the notes with simple hand gestures for each pitch.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Tomatoes Are Red",
+          "content": "Learning Goal: To reinforce color and vegetable recognition. Activity: Color pointing. Detailed procedure: Show a red tomato and ask students to point to other red objects.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Dashing Through The Snow",
+          "content": "Learning Goal: To learn about winter themes. Activity: Jingling action. Detailed procedure: Pretend to ride a sleigh and shake imaginary bells.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Miss Polly Had A Dolly",
+          "content": "Learning Goal: To act out caring for a sick doll and calling a doctor. Activity: Role-play. Detailed procedure: Use a doll to act out the steps—calling the doctor and giving a pill.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Hickety Pickety My Black Hen",
+          "content": "Learning Goal: To learn counting and farm animals. Activity: Counting eggs. Detailed procedure: Hold up fingers to represent the number of eggs laid by the hen.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Wee Willy Winkie",
+          "content": "Learning Goal: To encourage healthy bedtime routines. Activity: Bedtime mime. Detailed procedure: Pretend to knock on the window and sleep.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Cobbler Cobbler",
+          "content": "Learning Goal: To learn about community helpers. Activity: Mending mime. Detailed procedure: Pretend to tap and stitch shoes while reciting.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Little Boy Blue",
+          "content": "Learning Goal: To recognize farm animals. Activity: Horn blowing action. Detailed procedure: Mime blowing a horn and sleeping under a haystack.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Bubble Bubbles",
+          "content": "Learning Goal: To imagine floating and blowing bubbles. Activity: Bubble blowing. Detailed procedure: Mime blowing and popping bubbles in the air.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Neddy Had Nine Teddies",
+          "content": "Learning Goal: To practice counting and bedtime routines. Activity: Teddy counting. Detailed procedure: Count to nine on fingers and pretend to put teddies to bed.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Bingo",
+          "content": "Learning Goal: To practice spelling and rhythm. Activity: Clapping spelling. Detailed procedure: Clap for each missing letter in B-I-N-G-O to build phonetic memory.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Bear Went Over The Mountain",
+          "content": "Learning Goal: To encourage exploration. Activity: Marching. Detailed procedure: March in place as the bear goes over the mountain and river.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "To Market, To Market",
+          "content": "Learning Goal: To learn about shopping and animals. Activity: Trot in place. Detailed procedure: Bounce gently on the spot mimicking a jiggety-jog ride.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Mulberry Bush",
+          "content": "Learning Goal: To learn daily routines (washing face, brushing teeth). Activity: Daily routine mime. Detailed procedure: Act out the routines mentioned while walking in a circle.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        }
+      ],
+      "stories": [
+        {
+          "title": "The Three Sheep",
+          "content": "Learning Goal: To understand overcoming obstacles using smart thinking. Activity: Story narration. Detailed procedure: Use distinct voices for Ben, Jen, Ken, and the monster to highlight character differences.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "Elephant And Friend",
+          "content": "Learning Goal: To value friendship beyond physical appearance. Activity: Role-play listening. Detailed procedure: Ask children to mimic the animals the elephant meets to show understanding of the characters.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Honest Woodcutter",
+          "content": "Learning Goal: To understand the value of honesty. Activity: Moral discussion. Detailed procedure: Tell the story of the woodcutter and God, then ask questions about why telling the truth is important.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        },
+        {
+          "title": "The Sun And The Cloud",
+          "content": "Learning Goal: To see that goodness and strength overcome negativity. Activity: Story comprehension. Detailed procedure: Narrate the interaction between the sun, birds, black cloud, and wind, encouraging children to express the emotions.",
+          "video": "",
+          "audio": "",
+          "image": "",
+          "youtube link": ""
+        }
+      ]
     },
-    "months": {}
+    "months": {
+      "1": {
+        "days": {
+          "1": {
+            "lessons": [
+              {
+                "title": "Recap Small case a-z letters",
+                "slider": "English",
+                "content": "Learning Goal: To recap small case letters a-z. Activity: Writing and tracing practice. Detailed procedure: Instruct students to trace and write small case letters in their skillbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 1, 2",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Small case letters a-z"
+                }
+              },
+              {
+                "title": "Thick and Thin",
+                "slider": "Math",
+                "content": "Learning Goal: To differentiate between thick and thin objects. Activity: Object comparison. Detailed procedure: Show examples of thick and thin objects and have students complete the textbook exercises.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 1, 2, MWB - 1"
+              },
+              {
+                "title": "All about me",
+                "slider": "EVS",
+                "content": "Learning Goal: To encourage self-recognition, express individual preferences, and state basic personal facts. Activity: Oral introduction. Detailed procedure: Conduct an oral session asking simple questions such as 'What is your name?', 'What is your age?', and 'Name your favourite toy.'",
+                "video": "/assets/Videos/All_about_me.mp4",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 1"
+              }
+            ]
+          },
+          "2": {
+            "lessons": [
+              {
+                "title": "Recap Aa- Zz",
+                "slider": "English",
+                "content": "Learning Goal: To recap both capital and small case letters. Activity: Alphabet recognition and writing. Detailed procedure: Practice writing upper and lower case letters sequentially.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 1, 2, 3",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Aa - Zz letters"
+                }
+              },
+              {
+                "title": "Front and Back",
+                "slider": "Math",
+                "content": "Learning Goal: To understand the spatial concepts of front and back. Activity: Visual identification. Detailed procedure: Demonstrate front and back using classroom objects and guide students through the workbook activities.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 3, 4, MWB - 2"
+              },
+              {
+                "title": "Activity Drawing- Myself",
+                "slider": "EVS",
+                "content": "Learning Goal: To build self-awareness through art. Activity: Self-portrait drawing. Detailed procedure: Provide paper and crayons for students to draw a picture of themselves.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "3": {
+            "lessons": [
+              {
+                "title": "Activity",
+                "slider": "English",
+                "content": "Learning Goal: To reinforce alphabet recognition and phonics. Activity: Tracing words. Detailed procedure: Have students complete the word tracing activities in their skillbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 3, 4",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Simple words"
+                }
+              },
+              {
+                "title": "Up and Down",
+                "slider": "Math",
+                "content": "Learning Goal: To understand the directional concepts of up and down. Activity: Physical and visual exercise. Detailed procedure: Ask students to point up and down, then complete the textbook pages.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 5, 6, MWB - 3"
+              },
+              {
+                "title": "Sense Organs",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify the five sense organs and their functions. Activity: Matching and discussion. Detailed procedure: Discuss eyes, ears, nose, tongue, and skin. Complete the matching activities in the book.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 2, 3"
+              }
+            ]
+          },
+          "4": {
+            "lessons": [
+              {
+                "title": "Activity",
+                "slider": "English",
+                "content": "Learning Goal: To practice vocabulary and letter formation. Activity: Tracing and matching. Detailed procedure: Instruct students to trace the words provided in the skillbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 5, 6, 7",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Vocabulary words"
+                }
+              },
+              {
+                "title": "Open and Closed",
+                "slider": "Math",
+                "content": "Learning Goal: To identify states of being open and closed. Activity: Identification. Detailed procedure: Show open and closed boxes or doors. Instruct students to complete the corresponding worksheets.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 7, 8, MWB - 4"
+              },
+              {
+                "title": "Sense Organs Exploration",
+                "slider": "EVS",
+                "content": "Learning Goal: To explore the senses practically. Activity: Sensory game. Detailed procedure: Bring different items to class for smelling, touching, looking at, or listening to.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "5": {
+            "lessons": [
+              {
+                "title": "Activity",
+                "slider": "English",
+                "content": "Learning Goal: To learn the use of 'a' and 'an'. Activity: Filling in articles. Detailed procedure: Explain when to use 'a' and 'an' and have students practice in their skillbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 8, 9"
+              },
+              {
+                "title": "Recap 1 to 50",
+                "slider": "Math",
+                "content": "Learning Goal: To recite and write numbers from 1 to 50. Activity: Number grid completion. Detailed procedure: Have students fill in the missing numbers in the 1 to 50 grid.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 9"
+              },
+              {
+                "title": "Revisit – All About Me/Sense Organs Activity",
+                "slider": "EVS",
+                "content": "Learning Goal: To consolidate knowledge about oneself and the five senses. Activity: Oral quiz. Detailed procedure: Ask students questions combining personal facts and which sense organ they use for different actions.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "6": {
+            "lessons": [
+              {
+                "title": "Long Vowel Sound",
+                "slider": "English",
+                "content": "Learning Goal: To recognize and pronounce long vowel sounds. Activity: Reading aloud. Detailed procedure: Read out words with long vowel sounds and have students repeat and complete the skillbook exercise.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 10, 11"
+              },
+              {
+                "title": "Backward counting",
+                "slider": "Math",
+                "content": "Learning Goal: To count backward from 50. Activity: Balloon countdown. Detailed procedure: Practice counting backward orally, then complete the backward counting exercise in the book.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 10, 11"
+              },
+              {
+                "title": "Internal Body Parts",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify internal body parts like brain, heart, and lungs. Activity: Diagram labeling. Detailed procedure: Explain the main internal organs and their basic functions. Guide students to complete the labeling.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 4, 5, 6"
+              }
+            ]
+          },
+          "7": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'a'",
+                "slider": "English",
+                "content": "Learning Goal: To practice reading and writing words with the long 'a' sound. Activity: Word writing. Detailed procedure: Guide students to write words like cake, fake, jail, brain in their workbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 4"
+              },
+              {
+                "title": "Before/After/Between",
+                "slider": "Math",
+                "content": "Learning Goal: To understand number sequence and positioning. Activity: Number placement. Detailed procedure: Use a number line to demonstrate numbers that come before, after, or between others.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 12, 13"
+              },
+              {
+                "title": "Internal Body Parts Activity",
+                "slider": "EVS",
+                "content": "Learning Goal: To reinforce the names and locations of internal organs. Activity: Hands-on placement game. Detailed procedure: Use a cutout of a human body and have students place paper organs in the correct spots.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "8": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'a'",
+                "slider": "English",
+                "content": "Learning Goal: To reinforce the long 'a' sound. Activity: Word selection and writing. Detailed procedure: Have students choose the correct long 'a' word for each picture and write it.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 12, 13"
+              },
+              {
+                "title": "Activity/Recap",
+                "slider": "Math",
+                "content": "Learning Goal: To review ascending and descending order and number sequences. Activity: Workbook exercises. Detailed procedure: Complete the ascending and descending order practice boxes.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 14, 15"
+              },
+              {
+                "title": "Daily Routine and Good Habits",
+                "slider": "EVS",
+                "content": "Learning Goal: To distinguish between good and bad habits. Activity: Picture identification. Detailed procedure: Discuss daily routines like brushing teeth and bathing. Have students write down the good habits shown.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 7, 8, 9"
+              }
+            ]
+          },
+          "9": {
+            "lessons": [
+              {
+                "title": "Long 'a' vowel Words - Activity",
+                "slider": "English",
+                "content": "Learning Goal: To apply knowledge of long 'a' words. Activity: Word sorting or matching game. Detailed procedure: Conduct a classroom game using flashcards of long 'a' words.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Tens and Ones",
+                "slider": "Math",
+                "content": "Learning Goal: To introduce the concept of place value up to 50. Activity: Block counting. Detailed procedure: Explain tens and ones using visual blocks and have students write the corresponding numbers.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 16"
+              },
+              {
+                "title": "Activity – Role Play Good Habits",
+                "slider": "EVS",
+                "content": "Learning Goal: To practice good habits through action. Activity: Role playing. Detailed procedure: Ask students to mime activities like washing hands, throwing garbage in a bin, and making a bed.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "10": {
+            "lessons": [
+              {
+                "title": "Revisit – Long 'a' vowel sentence",
+                "slider": "English",
+                "content": "Learning Goal: To form simple sentences using long 'a' words. Activity: Sentence creation. Detailed procedure: Give students simple long 'a' words and ask them to form short sentences verbally.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Backwards counting and Before/After/Between",
+                "slider": "Math",
+                "content": "Learning Goal: To consolidate backwards counting and sequence concepts. Activity: Blackboard exercises. Detailed procedure: Write numbers on the board and ask students what comes before, after, or between.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Internal Body Parts/Daily Routine and Good Habits",
+                "slider": "EVS",
+                "content": "Learning Goal: To review internal body parts and daily habits. Activity: Q&A session. Detailed procedure: Conduct a quick recap asking students to name internal organs and share one good habit they practiced today.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "11": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'e'",
+                "slider": "English",
+                "content": "Learning Goal: To learn the long 'e' vowel sound. Activity: Word and picture matching. Detailed procedure: Instruct students to trace words that have the long 'e' sound and tick correct pictures.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 14, 15"
+              },
+              {
+                "title": "Number Names",
+                "slider": "Math",
+                "content": "Learning Goal: To learn number names from 1 to 10. Activity: Tracing number names. Detailed procedure: Instruct students to trace and write the words 'One' to 'Ten'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 17",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Number names 1-10"
+                }
+              },
+              {
+                "title": "My Family",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify family members and relationships. Activity: Discussion. Detailed procedure: Talk about mothers, fathers, siblings, and grandparents. Discuss family trees.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 10"
+              }
+            ]
+          },
+          "12": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'e' Words – Game",
+                "slider": "English",
+                "content": "Learning Goal: To practice the long 'e' sound playfully. Activity: Word recognition game. Detailed procedure: Use the board or flashcards to play a game identifying long 'e' words vs short 'e' words.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number Names",
+                "slider": "Math",
+                "content": "Learning Goal: To learn number names from 11 to 20. Activity: Tracing number names. Detailed procedure: Instruct students to trace and write the words 'Eleven' to 'Twenty'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 18",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Number names 11-20"
+                }
+              },
+              {
+                "title": "Role Play - My Family",
+                "slider": "EVS",
+                "content": "Learning Goal: To understand family roles. Activity: Role playing. Detailed procedure: Assign roles of different family members to students and have them act out a brief daily scenario.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "13": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'e'",
+                "slider": "English",
+                "content": "Learning Goal: To practice spelling long 'e' words. Activity: Word writing. Detailed procedure: Instruct students to trace and write words like beat, leak, seed, year, hear.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 5",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Long 'e' words"
+                }
+              },
+              {
+                "title": "Number names",
+                "slider": "Math",
+                "content": "Learning Goal: To reinforce number names from 11 to 20. Activity: Counting and writing. Detailed procedure: Have students count stars and trace/write the corresponding number name.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MWB - 5, 6"
+              },
+              {
+                "title": "My Family",
+                "slider": "EVS",
+                "content": "Learning Goal: To personalize family knowledge. Activity: Family scrapbook activity. Detailed procedure: Instruct students to write the names of their family members and paste their pictures in the workbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 11, 12"
+              }
+            ]
+          },
+          "14": {
+            "lessons": [
+              {
+                "title": "Long vowel 'e' Words – Activity",
+                "slider": "English",
+                "content": "Learning Goal: To strengthen vocabulary with long 'e' sounds. Activity: Group activity. Detailed procedure: Write words on the board and have students identify which ones have a long 'e' sound.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number Names Puzzle",
+                "slider": "Math",
+                "content": "Learning Goal: To recognize number names in a puzzle format. Activity: Puzzle solving. Detailed procedure: Provide a simple word search or matching puzzle for number names 1-20.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Safety at home",
+                "slider": "EVS",
+                "content": "Learning Goal: To understand basic safety rules at home. Activity: Safety discussion. Detailed procedure: Discuss the dangers of playing with fire, sharp objects, or wet floors. Have students cross out dangerous situations in the book.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 13, 14"
+              }
+            ]
+          },
+          "15": {
+            "lessons": [
+              {
+                "title": "Revisit – Long vowel 'e' Sentence",
+                "slider": "English",
+                "content": "Learning Goal: To read and construct sentences with long 'e' words. Activity: Reading aloud. Detailed procedure: Write simple sentences on the board (e.g., 'I see a green tree') and read them together.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Number Names",
+                "slider": "Math",
+                "content": "Learning Goal: To test knowledge of number names 1-20. Activity: Oral recitation. Detailed procedure: Have students orally spell the number names randomly written on the board.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – My Family and Safety at Home",
+                "slider": "EVS",
+                "content": "Learning Goal: To review family structures and home safety. Activity: Group discussion. Detailed procedure: Ask students to name one family member and one safety rule they follow at home.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "16": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'i'",
+                "slider": "English",
+                "content": "Learning Goal: To learn the long 'i' vowel sound. Activity: Word recognition and writing. Detailed procedure: Practice writing words with long 'i' sounds, distinguishing them from short 'i'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 16, 17"
+              },
+              {
+                "title": "Number Names (21-30)",
+                "slider": "Math",
+                "content": "Learning Goal: To learn number names from 21 to 30. Activity: Tracing number names. Detailed procedure: Instruct students to trace and write the words 'Twenty one' to 'Thirty'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 19",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Number names 21-30"
+                }
+              },
+              {
+                "title": "Types of Houses",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify different types of houses. Activity: Visual identification. Detailed procedure: Show pictures of different houses (apartments, bungalows, huts) and circle the houses in the workbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 15, 16"
+              }
+            ]
+          },
+          "17": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'i' Words – Game",
+                "slider": "English",
+                "content": "Learning Goal: To practice identifying long 'i' words. Activity: Sorting game. Detailed procedure: Sort flashcards into long 'i' and short 'i' piles.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number names Activity",
+                "slider": "Math",
+                "content": "Learning Goal: To review number names 1-30. Activity: Dictation. Detailed procedure: Call out random numbers from 1 to 30 and have students write the number names in their rough books.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Drawing Activity Houses",
+                "slider": "EVS",
+                "content": "Learning Goal: To visualize different houses. Activity: Drawing. Detailed procedure: Provide drawing materials and ask students to draw their own house or a house they like.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "18": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'i'",
+                "slider": "English",
+                "content": "Learning Goal: To spell and write long 'i' words. Activity: Writing practice. Detailed procedure: Have students complete the long 'i' writing exercise in the workbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 6"
+              },
+              {
+                "title": "Number names (21-30)",
+                "slider": "Math",
+                "content": "Learning Goal: To reinforce number names from 21 to 30. Activity: Writing practice. Detailed procedure: Have students fill down the numbers from 21 to 30 in their workbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MWB - 7"
+              },
+              {
+                "title": "My School",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify parts of a school and classroom. Activity: Vocabulary building. Detailed procedure: Discuss the playground, classroom, blackboard, and library. Look at the school picture in the book.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 17, 18"
+              }
+            ]
+          },
+          "19": {
+            "lessons": [
+              {
+                "title": "Long vowel 'i' Words – Activity",
+                "slider": "English",
+                "content": "Learning Goal: To use long 'i' words contextually. Activity: Fill in the blanks. Detailed procedure: Create a few sentences on the board with missing long 'i' words for students to fill.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number names Matching",
+                "slider": "Math",
+                "content": "Learning Goal: To link numerals to their number names. Activity: Matching game. Detailed procedure: Provide a worksheet or board activity drawing lines from numbers (21-30) to their words.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Activity School Tour",
+                "slider": "EVS",
+                "content": "Learning Goal: To observe the school environment firsthand. Activity: School walk. Detailed procedure: Take the class on a brief tour of the school, identifying key areas like the principal's office, playground, and washrooms.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "20": {
+            "lessons": [
+              {
+                "title": "Revisit – Long i sentences",
+                "slider": "English",
+                "content": "Learning Goal: To read sentences containing long 'i' words confidently. Activity: Group reading. Detailed procedure: Read a short paragraph together focusing on long 'i' vocabulary.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Number names",
+                "slider": "Math",
+                "content": "Learning Goal: To assess learning of number names 1-30. Activity: Quick oral test. Detailed procedure: Ask students individually to spell specific numbers between 1 and 30.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Types of Houses and My School",
+                "slider": "EVS",
+                "content": "Learning Goal: To consolidate vocabulary related to housing and school. Activity: Picture description. Detailed procedure: Show pictures of a house and a school and ask students to point out specific features.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "days": {
+          "1": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'o'",
+                "slider": "English",
+                "content": "Learning Goal: To introduce the long 'o' vowel sound. Activity: Word reading and tracing. Detailed procedure: Present words like goat, rope, rose. Instruct students to trace the words in their skillbook.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 18, 19",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Long 'o' words"
+                }
+              },
+              {
+                "title": "Number Names (31-40)",
+                "slider": "Math",
+                "content": "Learning Goal: To learn number names from 31 to 40. Activity: Tracing number names. Detailed procedure: Instruct students to trace and write the words 'Thirty one' to 'Forty'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 20",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Number names 31-40"
+                }
+              },
+              {
+                "title": "Activity",
+                "slider": "EVS",
+                "content": "Learning Goal: To identify classroom objects. Activity: Tracing names. Detailed procedure: Instruct students to trace names like books, cupboard, blackboard, and classroom.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 19, 20",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Classroom object names"
+                }
+              }
+            ]
+          },
+          "2": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'o' Words – Game",
+                "slider": "English",
+                "content": "Learning Goal: To practice long 'o' sound recognition. Activity: Phonics game. Detailed procedure: Say a word and have students stand up if it has a long 'o' sound and sit down if it doesn't.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number names Activity",
+                "slider": "Math",
+                "content": "Learning Goal: To reinforce number names 31-40. Activity: Missing letters. Detailed procedure: Write number names on the board with missing letters for students to complete.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Activity",
+                "slider": "EVS",
+                "content": "Learning Goal: To recognize danger signs. Activity: Hazard identification. Detailed procedure: Instruct students to put a cross on dangerous activities depicted in the book.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EVS - 21"
+              }
+            ]
+          },
+          "3": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'o'",
+                "slider": "English",
+                "content": "Learning Goal: To write and practice long 'o' words. Activity: Word writing. Detailed procedure: Have students write long 'o' sound words in their workbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 7"
+              },
+              {
+                "title": "Number names (31-40)",
+                "slider": "Math",
+                "content": "Learning Goal: To memorize number spelling. Activity: Independent writing. Detailed procedure: Have students practice writing the number names 31-40 in their workbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MWB - 8"
+              },
+              {
+                "title": "Activity Puzzle",
+                "slider": "EVS",
+                "content": "Learning Goal: To encourage problem-solving and critical thinking. Activity: Solving a simple puzzle. Detailed procedure: Give students a simple physical puzzle related to classroom items to solve in groups.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "4": {
+            "lessons": [
+              {
+                "title": "Long vowel 'o' Words – Activity",
+                "slider": "English",
+                "content": "Learning Goal: To correctly apply long 'o' words. Activity: Fill-in-the-blank sentences. Detailed procedure: Write sentences on the board and have students select the correct long 'o' word to fill the gap.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number names Matching",
+                "slider": "Math",
+                "content": "Learning Goal: To match numerals to words. Activity: Draw the line. Detailed procedure: Draw numbers on one side of the board and words on the other, asking students to draw lines matching them.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – All about me",
+                "slider": "EVS",
+                "content": "Learning Goal: To review personal details. Activity: Oral presentation. Detailed procedure: Have a few students come to the front and state 3 facts about themselves.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "5": {
+            "lessons": [
+              {
+                "title": "Revisit – Long o sentences",
+                "slider": "English",
+                "content": "Learning Goal: To review long 'o' sounds in sentences. Activity: Sentence reading. Detailed procedure: Read simple short stories focusing on long 'o' vocabulary.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Number names",
+                "slider": "Math",
+                "content": "Learning Goal: To review spelling of numbers 1-40. Activity: Spelling bee. Detailed procedure: Conduct a small spelling bee for the number names learned so far.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Sense Organs",
+                "slider": "EVS",
+                "content": "Learning Goal: To test recall of sense organs. Activity: Flashcards. Detailed procedure: Hold up pictures of actions and have students shout out the corresponding sense organ.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "6": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'u'",
+                "slider": "English",
+                "content": "Learning Goal: To introduce the long 'u' sound. Activity: Word writing. Detailed procedure: Instruct students to trace and learn long 'u' words such as cube, suit, tube.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "ESB - 20, 21",
+                "trace": {
+                  "title": "Trace",
+                  "content": "Long 'u' words"
+                }
+              },
+              {
+                "title": "Number Names (41-50)",
+                "slider": "Math",
+                "content": "Learning Goal: To learn number names 41 to 50. Activity: Writing and counting. Detailed procedure: Teach the spelling pattern for 'forty' and have students write names up to fifty.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MSB - 20"
+              },
+              {
+                "title": "Revisit - Internal Body Parts",
+                "slider": "EVS",
+                "content": "Learning Goal: To review internal body parts. Activity: Body map. Detailed procedure: Point to parts of the torso/head and ask students which internal organ is located there.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "7": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'u' Words – Game",
+                "slider": "English",
+                "content": "Learning Goal: To practice the long 'u' sound playfully. Activity: Picture matching game. Detailed procedure: Match flashcards of words to their corresponding images.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Number names (41-50)",
+                "slider": "Math",
+                "content": "Learning Goal: To practice writing number names. Activity: Workbook exercises. Detailed procedure: Complete the workbook page covering the numbers 41 through 50.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MWB - 9"
+              },
+              {
+                "title": "Revisit – Daily Routine and Good Habits",
+                "slider": "EVS",
+                "content": "Learning Goal: To review the importance of good habits. Activity: Habit sorting. Detailed procedure: Give students a list of actions and ask them to classify them as 'Good Habit' or 'Bad Habit'.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "8": {
+            "lessons": [
+              {
+                "title": "Long Vowel 'u'",
+                "slider": "English",
+                "content": "Learning Goal: To write and recognize long 'u' words. Activity: Independent writing. Detailed procedure: Have students write out words like glue, cute, duty, tube in their workbooks.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "EWB - 8"
+              },
+              {
+                "title": "Tens and Ones",
+                "slider": "Math",
+                "content": "Learning Goal: To understand place value tens and ones. Activity: Counting blocks. Detailed procedure: Demonstrate how to group items into tens and remaining ones.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "MWB - 10"
+              },
+              {
+                "title": "Revisit – Safety at Home",
+                "slider": "EVS",
+                "content": "Learning Goal: To review home safety. Activity: Oral discussion. Detailed procedure: Discuss the 'why' behind safety rules. E.g., 'Why shouldn't we play with sharp objects?'",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "9": {
+            "lessons": [
+              {
+                "title": "Revisit – Long Vowel a, e, i words",
+                "slider": "English",
+                "content": "Learning Goal: To review multiple long vowel sounds. Activity: Vowel sorting. Detailed procedure: Provide a list of words and have students group them by their vowel sound.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Backwards Counting",
+                "slider": "Math",
+                "content": "Learning Goal: To test backward counting ability. Activity: Rocket launch countdown. Detailed procedure: Pretend to launch a rocket and have the class count backward from 50 aloud.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – My Family",
+                "slider": "EVS",
+                "content": "Learning Goal: To review vocabulary related to family. Activity: Draw and tell. Detailed procedure: Ask students to draw their favorite family activity and describe it to the class.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          },
+          "10": {
+            "lessons": [
+              {
+                "title": "Revisit – Long vowel o, u words",
+                "slider": "English",
+                "content": "Learning Goal: To review the final long vowel sounds. Activity: Dictation. Detailed procedure: Give a short dictation of long 'o' and 'u' words.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Number Names",
+                "slider": "Math",
+                "content": "Learning Goal: To solidify spelling of numbers 1-50. Activity: Number name bingo. Detailed procedure: Play a simple bingo game using number names instead of numerals.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              },
+              {
+                "title": "Revisit – Types of Houses and My School",
+                "slider": "EVS",
+                "content": "Learning Goal: To review community environments. Activity: Model building or drawing. Detailed procedure: Build a small school or house using building blocks or draw one on the board collectively.",
+                "video": "",
+                "doc": "",
+                "image": "",
+                "time": "20 minutes",
+                "youtube link": "",
+                "page refernce": "Beyond Book"
+              }
+            ]
+          }
+        }
+      }
+    }
   }
 }

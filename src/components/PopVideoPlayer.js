@@ -170,22 +170,25 @@ const PopVideoPlayer = ({ videoKey }) => {
           width: '100%',
           videoId,
           playerVars: {
+            autoplay: 1,
             rel: 0,
             modestbranding: 1,
             controls: 0,
             disablekb: 1,
+            playsinline: 1,
             start: Number.isNaN(start) ? undefined : start,
             end: Number.isNaN(end) ? undefined : end,
           },
-        };
+          events: {
+            onReady: (event) => {
+              event.target.playVideo();
 
-        if (!Number.isNaN(end)) {
-          playerConfig.events = {
-            onReady: () => {
-              requestAnimationFrame(checkEnd);
+              if (!Number.isNaN(end)) {
+                requestAnimationFrame(checkEnd);
+              }
             },
-          };
-        }
+          },
+        };
 
         playerRef.current = new YT.Player(playerContainerRef.current, playerConfig);
       })
