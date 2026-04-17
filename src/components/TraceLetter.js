@@ -457,7 +457,7 @@ function TraceLetter({ initialLetter }) {
         <div className="trace-letter__actions">
           <button
             type="button"
-            className="text-button trace-letter__replay-button"
+            className="trace-letter__replay-button"
             onClick={handleReplay}
             disabled={isAnimating}
           >
