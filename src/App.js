@@ -106,15 +106,31 @@ const buildLessonReferenceItems = (lesson, rhymeLookup, storyLookup) => {
   return items;
 };
 
-const mapCircleItemToLesson = (item, typeLabel) => ({
-  title: item.title,
-  slider: typeLabel,
-  content: item.content,
-  video: item.video || '',
-  audio: item.audio || '',
-  image: item.image || '',
-  time: '',
-});
+const getYouTubeLink = (item) => {
+  if (!item || typeof item !== 'object') {
+    return '';
+  }
+
+  const candidates = [item.youtubeLink, item['youtube link'], item.youtube_link, item.link];
+  const match = candidates.find((value) => typeof value === 'string' && value.trim());
+  return match ? match.trim() : '';
+};
+
+const mapCircleItemToLesson = (item, typeLabel) => {
+  const youtubeLink = getYouTubeLink(item);
+
+  return {
+    title: item.title,
+    slider: typeLabel,
+    content: item.content,
+    video: item.video || '',
+    audio: item.audio || '',
+    image: item.image || '',
+    youtubeLink,
+    'youtube link': youtubeLink,
+    time: '',
+  };
+};
 
 function PlannerPage({ lessonsData }) {
   const classNames = Object.keys(lessonsData || {});

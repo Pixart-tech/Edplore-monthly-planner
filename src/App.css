@@ -829,12 +829,29 @@ button {
   align-items: center;
 }
 
+.lesson-slide__image-button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: inherit;
+}
+
+.lesson-slide__image-button--clickable {
+  cursor: zoom-in;
+}
+
 .lesson-slide__image {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
   background: #fff;
   width: 100%;
+}
+
+.lesson-slide__image-button:focus-visible .lesson-slide__image {
+  outline: 3px solid rgba(16, 185, 129, 0.35);
+  outline-offset: 2px;
 }
 
 .lesson-slide__image-placeholder {

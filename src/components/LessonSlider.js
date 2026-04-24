@@ -26,7 +26,54 @@ const normalizeAssetImportPath = (value) => {
     .replace(/^assets\/images\//i, 'assets/Images/');
 };
 
-function LessonMedia({ lesson, shouldShowControls }) {
+const parseYouTubeId = (value) => {
+  if (typeof value !== 'string') {
+    return '';
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return '';
+  }
+
+  try {
+    const url = new URL(trimmed);
+
+    if (url.hostname.includes('youtu.be')) {
+      return url.pathname.replace(/^\/+/, '').split('/')[0] || '';
+    }
+
+    if (url.hostname.includes('youtube.com')) {
+      if (url.pathname.startsWith('/embed/')) {
+        return url.pathname.split('/')[2] || '';
+      }
+      return url.searchParams.get('v') || '';
+    }
+  } catch {
+    const match = trimmed.match(/(?:v=|\/)([0-9A-Za-z_-]{11})(?:[?&/]|$)/);
+    return match ? match[1] : '';
+  }
+
+  return '';
+};
+
+const buildYouTubeEmbedUrl = (value, autoPlay = false) => {
+  const videoId = parseYouTubeId(value);
+
+  if (!videoId) {
+    return '';
+  }
+
+  const searchParams = new URLSearchParams({
+    rel: '0',
+    playsinline: '1',
+    autoplay: autoPlay ? '1' : '0',
+  });
+
+  return `https://www.youtube.com/embed/${videoId}?${searchParams.toString()}`;
+};
+
+function LessonMedia({ lesson, shouldShowControls, onImagePreview }) {
   const [videoUrl, setVideoUrl] = useState(null);
   const [videoError, setVideoError] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
@@ -34,6 +81,15 @@ function LessonMedia({ lesson, shouldShowControls }) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const lessonImage = lesson?.image;
+  const lessonYouTubeLink = useMemo(() => {
+    const candidates = [lesson?.youtubeLink, lesson?.['youtube link'], lesson?.youtube_link];
+    const match = candidates.find((value) => typeof value === 'string' && value.trim());
+    return match ? match.trim() : '';
+  }, [lesson]);
+  const youtubeEmbedUrl = useMemo(
+    () => buildYouTubeEmbedUrl(lessonYouTubeLink, shouldShowControls),
+    [lessonYouTubeLink, shouldShowControls]
+  );
 
   const imageAssetPaths = useMemo(() => {
     const image = lessonImage;
@@ -68,6 +124,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
   }, [lessonImage]);
 
   const hasImage = imageAssetPaths.length > 0;
+  const hasYouTubeVideo = Boolean(youtubeEmbedUrl);
   const hasVideo =
     typeof lesson.video === 'string' ? lesson.video.trim().length > 0 : Boolean(lesson.video);
   const popVideoCandidates = [lesson.popvideo, lesson.popvideo2, lesson.popvideo3]
@@ -79,7 +136,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
     popVideoCandidates.find((value) => value.toLowerCase().startsWith('http')) || '';
   const popVideoKey = popVideoUrl ? '' : popVideoCandidates[0] || '';
   const hasPopVideo = Boolean(popVideoUrl || popVideoKey);
-  const shouldLoadVideo = hasVideo && shouldShowControls;
+  const shouldLoadVideo = hasVideo && shouldShowControls && !hasYouTubeVideo;
   const imageAlt = `${lesson.title ?? 'Lesson'} illustration`;
   const activeImagePath = imageAssetPaths[activeImageIndex];
 
@@ -123,22 +180,40 @@ function LessonMedia({ lesson, shouldShowControls }) {
     }
 
     const className = ['lesson-slide__image', extraClass].filter(Boolean).join(' ');
+    const canPreviewImage = Boolean(activeImagePath && onImagePreview);
 
     return (
       <div className="lesson-slide__image-stack">
-        <div className={className}>
-          {imageUrl ? (
-            <img
-              src={imageUrl}
-              alt={imageAlt}
-              className={isSmall ? 'lesson-slide__image--small' : undefined}
-            />
-          ) : (
-            <p className="lesson-slide__image-placeholder">
-              {imageError || 'Loading illustration...'}
-            </p>
-          )}
-        </div>
+        <button
+          type="button"
+          className={`lesson-slide__image-button${
+            canPreviewImage ? ' lesson-slide__image-button--clickable' : ''
+          }`}
+          onClick={() =>
+            canPreviewImage
+              ? onImagePreview({
+                  title: `${lesson.title || 'Lesson'} preview`,
+                  content: activeImagePath,
+                })
+              : undefined
+          }
+          disabled={!canPreviewImage}
+          aria-label={`Preview ${lesson.title || 'lesson'} image`}
+        >
+          <div className={className}>
+            {imageUrl ? (
+              <img
+                src={imageUrl}
+                alt={imageAlt}
+                className={isSmall ? 'lesson-slide__image--small' : undefined}
+              />
+            ) : (
+              <p className="lesson-slide__image-placeholder">
+                {imageError || 'Loading illustration...'}
+              </p>
+            )}
+          </div>
+        </button>
         {renderImageSelectors(isSmall)}
       </div>
     );
@@ -181,20 +256,30 @@ function LessonMedia({ lesson, shouldShowControls }) {
       });
   }, [hasImage, activeImagePath]);
 
-  if (!hasVideo && !hasImage && !hasPopVideo) {
+  if (!hasYouTubeVideo && !hasVideo && !hasImage && !hasPopVideo) {
     return null;
   }
 
   const mediaClassNames = [
     'lesson-slide__media',
-    hasVideo && hasImage ? 'lesson-slide__media--has-both' : '',
+    (hasYouTubeVideo || hasVideo) && hasImage ? 'lesson-slide__media--has-both' : '',
   ]
     .filter(Boolean)
     .join(' ');
 
   return (
     <div className={mediaClassNames}>
-      {hasVideo && (
+      {hasYouTubeVideo && (
+        <div className="lesson-slide__youtube">
+          <iframe
+            src={youtubeEmbedUrl}
+            title={lesson.title || 'YouTube video'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
+      {!hasYouTubeVideo && hasVideo && (
         <VideoPreview
           videoUrl={videoUrl}
           title={lesson.title}
@@ -202,8 +287,8 @@ function LessonMedia({ lesson, shouldShowControls }) {
           idleMessage={videoError || 'Navigate to this lesson to load the preview.'}
         />
       )}
-      {hasImage && !hasVideo && renderImage()}
-      {!hasVideo && !hasImage && popVideoUrl && (
+      {hasImage && !hasYouTubeVideo && !hasVideo && renderImage()}
+      {!hasYouTubeVideo && !hasVideo && !hasImage && popVideoUrl && (
         <div className="video-frame">
           <iframe
             src={popVideoUrl}
@@ -213,7 +298,7 @@ function LessonMedia({ lesson, shouldShowControls }) {
           />
         </div>
       )}
-      {!hasVideo && !hasImage && !popVideoUrl && popVideoKey && (
+      {!hasYouTubeVideo && !hasVideo && !hasImage && !popVideoUrl && popVideoKey && (
         <PopVideoPlayer videoKey={popVideoKey} />
       )}
     </div>
@@ -858,6 +943,12 @@ export default function LessonSlider({
                     <LessonMedia
                       lesson={lesson}
                       shouldShowControls={shouldShowControls}
+                      onImagePreview={(payload) =>
+                        setPopupPayload({
+                          type: 'image',
+                          ...payload,
+                        })
+                      }
                     />
                     {!hasContent &&
                       renderLessonMeta(
