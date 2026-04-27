@@ -638,7 +638,16 @@ export default function LessonSlider({
       .map((value) => value.trim())
       .filter(Boolean);
     const hasMainPopVideo = !hasVideo && !hasImage && popVideoCandidates.length > 0;
-    const hasImageWithVideo = hasVideo && hasImage;
+    const lessonYouTubeLink =
+      typeof lesson?.youtubeLink === 'string' && lesson.youtubeLink.trim()
+        ? lesson.youtubeLink.trim()
+        : typeof lesson?.['youtube link'] === 'string' && lesson['youtube link'].trim()
+          ? lesson['youtube link'].trim()
+          : typeof lesson?.youtube_link === 'string' && lesson.youtube_link.trim()
+            ? lesson.youtube_link.trim()
+            : '';
+    const hasYouTubeVideo = Boolean(buildYouTubeEmbedUrl(lessonYouTubeLink));
+    const hasImageWithPrimaryMedia = (hasVideo || hasYouTubeVideo) && hasImage;
 
     const traceActions = getOrderedVariantEntries('trace').map(([key, value], index) => ({
       type: key,
@@ -664,7 +673,7 @@ export default function LessonSlider({
         payload: normalizePopupData(lesson.popvideo3),
       },
       ...(() => {
-        if (!hasImageWithVideo) {
+        if (!hasImageWithPrimaryMedia) {
           return [];
         }
         const imageItems = [];
@@ -684,8 +693,8 @@ export default function LessonSlider({
           .filter((value) => typeof value === 'string' && value.trim())
           .map((value, index) => ({
             type: 'image',
-            fallbackTitle: `View image ${index + 1}`,
-            payload: { title: `View image ${index + 1}`, content: value.trim() },
+            fallbackTitle: 'View image',
+            payload: { title: 'View image', content: value.trim() },
           }));
       })(),
       {
