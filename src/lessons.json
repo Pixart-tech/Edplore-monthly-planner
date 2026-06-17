@@ -1699,7 +1699,7 @@
                 "doc": "",
                 "image": [
                   "/assets/Images/Nursery/Activity - My Family.png",
-                  "/assets/Images/Nursery/Activity - My Family_2"
+                  "/assets/Images/Nursery/Activity - My Family_2.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -1730,7 +1730,7 @@
                 "content": "Learning Goal: To build independent writing skills for the number 2. Activity: Writing practice. Detailed procedure: Have students practice tracing and writing the number 2 inside the grid lines in their workbook.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/Nursery/number2_1wb.png ,/assets/Images/Nursery/number2_2wb.png",
+                "image": ["/assets/Images/Nursery/number2_1wb.png" ,"/assets/Images/Nursery/number2_2wb.png"],
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "MWB - 9, 10",
@@ -1794,12 +1794,12 @@
                 "title": "Revisit – My Family",
                 "slider": "EVS",
                 "content": "Learning Goal: To consolidate foundational concepts of family. Activity: Interactive review. Detailed procedure: Ask students to recall the names of the family members they learned. Have them share one thing they love doing with their family.",
-                "video": "",
+                "video": "/assets/Videos/myfamily.mp4",
                 "doc": "",
                 "image": [
                   "/assets/Images/Nursery/Myfamily.png",
                   "/assets/Images/Nursery/Activity - My Family.png",
-                  "/assets/Images/Nursery/Activity - My Family_2"
+                  "/assets/Images/Nursery/Activity - My Family_2.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -2067,7 +2067,7 @@
                 "content": "Learning Goal: To consolidate understanding of the school identity. Activity: Pasting and writing. Detailed procedure: Instruct students to paste a picture of their school in the workbook frame. Help them orally state their school's name and their teacher's name.",
                 "video": "",
                 "doc": "",
-                "image": "/assets/Images/EVS/revist_my_school.png",
+                "image": "/assets/Images/Nursery/revist_my_school.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EVS - 26"
@@ -2138,8 +2138,8 @@
                 "video": "",
                 "doc": "",
                 "image": [
-                  "H/assets/Nursery/Hsb_1.png",
-                  "H/assets/Nursery/Hsb_2.png"
+                  "/assets/Images/Nursery/Hsb_1.png",
+                  "/assets/Images/Nursery/hsb_2.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -2173,7 +2173,7 @@
                 "content": "Learning Goal: To express personal preferences regarding clothing. Activity: Circling preferred items. Detailed procedure: Instruct students to look at the mixed array of clothes in their workbook and circle the clothes they personally like to wear.",
                 "video": "/assets/Videos/personal_style.mp4",
                 "doc": "",
-                "image": "/assets/Images/Nursery/clhactivity.png",
+                "image": "/assets/Images/Nursery/clothes_activity.png",
                 "time": "20 minutes",
                 "youtube link": "",
                 "page refernce": "EVS - 28"
@@ -2189,8 +2189,8 @@
                 "video": "",
                 "doc": "",
                 "image": [
-                  "/assets/Images/Nursery/Hwb_1.png",
-                  "/assets/Images/Nursery/Hwb_2.png"
+                  "/assets/Images/Nursery/hwb_1.png",
+                  "/assets/Images/Nursery/hwb_2.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -2243,7 +2243,7 @@
                   "/assets/Images/Nursery/G.png",
                   "/assets/Images/Nursery/G1.png",
                   "/assets/Images/Nursery/Hsb_1.png",
-                  "/assets/Images/Nursery/Hsb_2.png"
+                  "/assets/Images/Nursery/hsb_2.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -2343,7 +2343,7 @@
                 "doc": "",
                 "image": [
                   "/assets/Images/Nursery/clothes.png",
-                  "/assets/Images/Nursery/clhactivity.png"
+                  "/assets/Images/Nursery/clothes_activity.png"
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -2376,7 +2376,7 @@
                   "/assets/Images/Nursery/spc_2.png"
                 ],
                 "time": "20 minutes",
-                "youtube link": "",
+                "youtube link": "https://www.youtube.com/watch?v=8yypSEvZb9g",
                 "page refernce": "MSB - 25, 26"
               },
               {
@@ -2610,7 +2610,7 @@
                 "video": "",
                 "doc": "",
                 "image": [
-                  "/assets/Images/Nursery/I1.png",
+                  "/assets/Images/Nursery/I.png",
                   "/assets/Images/Nursery/I2.png"
                 ],
                 "time": "20 minutes",
@@ -2818,7 +2818,7 @@
                 "doc": "",
                 "image": [
                   "/assets/Images/Nursery/I.png",
-                  "/assets/Images/Nursery/I1.png",
+                  "/assets/Images/Nursery/I2.png",
                   "/assets/Images/Nursery/J.png",
                   "/assets/Images/Nursery/J1.png"
                 ],
@@ -2988,11 +2988,8 @@
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
-                "page refernce": "MSB - 39, 40",
-                "trace": {
-                  "title": "Number ",
-                  "content": "10"
-                }
+                "page refernce": "MSB - 39, 40"
+                
               },
               {
                 "title": "Revisit – Places in School",
@@ -3120,11 +3117,8 @@
                 "trace4": {
                   "title": "Number",
                   "content": "9"
-                },
-                "trace5": {
-                  "title": "Number",
-                  "content": "10"
                 }
+               
 
               },
               {
@@ -4918,16 +4912,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MSB/a-(20).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MSB -20",
-              "trace1": {
-                "title": "Number ",
-                "content": "11"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "12"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=JPz70XMCwNE",
+              "page refernce": "MSB -20"
+             
             },
             {
               "title": "Good Manners",
@@ -4967,16 +4954,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MWB/a-(23).png","/assets/Images/LKG/MWB/a-(24).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MWB -23,24",
-              "trace1": {
-                "title": "Number ",
-                "content": "11"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "12"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=JPz70XMCwNE",
+              "page refernce": "MWB -23,24"
+              
             },
             {
               "title": "Activity",
@@ -5005,7 +4985,7 @@
               "page refernce": "EWB – 29,30",
               "trace": {
                 "title": "Letter ",
-                "content": "Ll"
+                "content": "L"
               }
             },
             {
@@ -5014,18 +4994,11 @@
               "content": "Learning Goal: To recognize and write numbers 13 and 14. Activity: Trace and practice writing numbers 13 and 14.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/MSB/a-(21).png"],
+              "image": "/assets/Images/LKG/MSB/a-(21).png",
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MSB – 21",
-              "trace1": {
-                "title": "Number ",
-                "content": "13"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "14"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=S5NF-18nar4",
+              "page refernce": "MSB – 21"
+              
             },
             {
               "title": "Golden Words",
@@ -5054,7 +5027,7 @@
               "page refernce": "EWB – 29,30",
               "trace": {
                 "title": "Letter ",
-                "content": "Ll"
+                "content": "L"
               }
             },
             {
@@ -5065,16 +5038,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MWB/a-(25).png","/assets/Images/LKG/MWB/a-(26).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MWB – 25,26",
-              "trace1": {
-                "title": "Number ",
-                "content": "13"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "14"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=S5NF-18nar4",
+              "page refernce": "MWB – 25,26"
+             
             },
             {
               "title": "Activity",
@@ -5107,7 +5073,7 @@
               },
               "trace2": {
                 "title": "Letter ",
-                "content": "Ll"
+                "content": "L"
               }
 
             },
@@ -5119,24 +5085,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MSB/a-(20).png","/assets/Images/LKG/MSB/a-(21).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "",
-              "trace1": {
-                "title": "Number ",
-                "content": "11"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "12"
-              },
-              "trace3": {
-                "title": "Number ",
-                "content": "13"
-              },
-              "trace4": {
-                "title": "Number ",
-                "content": "14"
-              }
+              "youtube link": ["https://www.youtube.com/watch?v=JPz70XMCwNE","https://www.youtube.com/watch?v=S5NF-18nar4"],
+              "page refernce": ""
+             
 
             },
             {
@@ -5177,16 +5128,9 @@
               "doc": "",
               "image": "/assets/Images/LKG/MSB/a-(22).png",
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MSB – 22",
-              "trace1": {
-                "title": "Number ",
-                "content": "15"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "16"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=eNilVDAzML8",
+              "page refernce": "MSB – 22"
+             
             },
             {
               "title": "Healthy and Unhealthy Food",
@@ -5226,16 +5170,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MWB/a-(27).png","/assets/Images/LKG/MWB/a-(28).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MWB – 27,28",
-              "trace1": {
-                "title": "Number ",
-                "content": "15"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "16"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=eNilVDAzML8",
+              "page refernce": "MWB – 27,28"
+             
             },
             {
               "title": "Activity",
@@ -5275,16 +5212,9 @@
               "doc": "",
               "image": "/assets/Images/LKG/MSB/a-(23).png",
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MSB – 23",
-              "trace1": {
-                "title": "Number ",
-                "content": "17"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "18"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=toJchs_8KeQ",
+              "page refernce": "MSB – 23"
+            
             },
             {
               "title": "Parts of a Plant",
@@ -5324,16 +5254,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MWB/a-(29).png","/assets/Images/LKG/MWB/a-(30).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MWB – 29,30",
-              "trace1": {
-                "title": "Number ",
-                "content": "17"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "18"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=toJchs_8KeQ",
+              "page refernce": "MWB – 29,30"
+              
             },
             {
               "title": "Activity",
@@ -5378,23 +5301,8 @@
               "image": [ "/assets/Images/LKG/MSB/a-(22).png","/assets/Images/LKG/MSB/a-(23).png"],
               "time": "20 minutes",
               "youtube link": "",
-              "page refernce": "",
-              "trace1": {
-                "title": "Number ",
-                "content": "15"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "16"
-              },
-              "trace3": {
-                "title": "Number ",
-                "content": "17"
-              },
-              "trace4": {
-                "title": "Number ",
-                "content": "18"
-              }
+              "page refernce": ""
+            
             },
             {
               "title": "Revisit – healthy and unhealthy food and parts of plants",
@@ -5438,16 +5346,9 @@
               "doc": "",
               "image": ["/assets/Images/LKG/MSB/a-(24).png","/assets/Images/LKG/MSB/a-(25).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": "MSB – 24,25",
-              "trace1": {
-                "title": "Number ",
-                "content": "19"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "20"
-              }
+              "youtube link": "https://www.youtube.com/watch?v=hlZzBOtrUh8",
+              "page refernce": "MSB – 24,25"
+              
             },
             {
               "title": "Things plants need to grow",
@@ -5488,15 +5389,8 @@
               "image": ["/assets/Images/LKG/MWB/a-(31).png","/assets/Images/LKG/MWB/a-(32).png"],
               "time": "20 minutes",
               "youtube link": "",
-              "page refernce": "MWB – 31,32",
-              "trace1": {
-                "title": "Number ",
-                "content": "19"
-              },
-              "trace2": {
-                "title": "Number ",
-                "content": "20"
-              }
+              "page refernce": "MWB – 31,32"
+             
             },
             {
               "title": "Activity Talk about healthy and unhealthy food",
@@ -5944,9 +5838,9 @@
               "content": "Learning Goal: To identify the semi-circle shape. Activity: Learn to trace and recognize semi-circle objects.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/MSB/a-(34).png","/assets/Images/LKG/MSB/a-(35).png"],
+              "image": ["/assets/Images/LKG/MSB/a-(34)p.png","/assets/Images/LKG/MSB/a-(35).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=L82P0hGpIKM",
               "page refernce": "MSB – 34,35"
             },
             {
@@ -5985,7 +5879,7 @@
               "content": "Learning Goal: To reinforce recognition of the semi-circle shape. Activity: Complete workbook activities for semi-circle.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/LKG/MWB/a-(40).png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MWB -40"
@@ -6071,7 +5965,7 @@
               "content": "Learning Goal: To identify the color orange. Activity: Identify and color objects orange.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/MSB/a-(36).png","/assets/Images/LKG/MSB/a-(37).png"],
+              "image": ["/assets/Images/LKG/MSB/a-(36)p.png","/assets/Images/LKG/MSB/a-(37).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MSB – 36,37"
@@ -6080,7 +5974,7 @@
               "title": "Revisit- Good manners and golden words",
               "slider": "EVS",
               "content": "Learning Goal: To reinforce polite behavior. Activity: Discuss situations to use golden words and show good manners.",
-              "video": ["/assets/Videos/Good manners.mp4", "/assets/Videos/golden words.mp4"],
+              "video": "/assets/Videos/Good manners.mp4",
               "doc": "",
               "image": ["/assets/Images/LKG/EVS/18.png","/assets/Images/LKG/EVS/20.png"],
               "time": "20 minutes",
@@ -6097,7 +5991,7 @@
               "content": "Learning Goal: To master writing the letter Tt. Activity: Complete workbook exercises for Tt.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/EWB/a-(46).png","/assets/Images/LKG/EWB/a-(01).png"],
+              "image": ["/assets/Images/LKG/EWB/a-(46).png","/assets/Images/LKG/EWB/a-(01).png","/assets/Images/LKG/ESB/a-(45).png","/assets/Images/LKG/ESB/a-(46).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "EWB – 46,47",
@@ -6149,7 +6043,7 @@
               "content": "Learning Goal: To understand the spatial concepts of near and far. Activity: Observe pictures and identify proximity.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/MSB/38.png","/assets/Images/LKG/MSB/39.png"],
+              "image": ["/assets/Images/LKG/MSB/a-(38).png","/assets/Images/LKG/MSB/a-(39).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MSB – 38,39"
@@ -6160,7 +6054,7 @@
               "content": "Learning Goal: To reinforce plant-related topics. Activity: Oral review of plants and their needs.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/LKG/EVS/24.png","/assets/Images/LKG/EVS/26.png","/assets/Images/LKG/EVS/27.png"],
+              "image": ["/assets/Images/LKG/EVS/24.png", "/assets/Images/LKG/EVS/27.png", "/assets/Images/LKG/EVS/26.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -6195,9 +6089,9 @@
               "title": "Revisit – Things we get from plants",
               "slider": "EVS",
               "content": "Learning Goal: To review what plants provide. Activity: Discuss fruits, vegetables, and other plant products.",
-              "video": "",
+              "video": "/assets/Videos/wonders_of_plants.mp4",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/EVS/33.png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -6212,7 +6106,7 @@
               "content": "Learning Goal: To consolidate learning of uppercase letters Kk through Tt. Activity: Comprehensive oral and written review.",
               "video": "",
               "doc": "",
-              "image": [],
+              "image": ["/assets/Images/LKG/ESB/a-(25).png","/assets/Images/LKG/ESB/a-(26).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "",
@@ -6243,7 +6137,7 @@
               "title": "Revisit – Fruits and Vegetables",
               "slider": "EVS",
               "content": "Learning Goal: To review fruits and vegetables. Activity: Oral recap and identification.",
-              "video": ["/assets/Videos/Yummy fruits.mp4","/assets/Videos/common vegetables.mp4"],
+              "video": "",
               "doc": "",
               "image": ["/assets/Images/LKG/EVS/32p.png","/assets/Images/LKG/EVS/33.png","/assets/Images/LKG/EVS/36.png","/assets/Images/LKG/EVS/37.png"],
               "time": "20 minutes",
@@ -7891,7 +7785,7 @@
               "title": "Sight words (From 16 to 27 words)",
               "slider": "English",
               "content": "Learning Goal: To recognize more sight words. Activity: Word matching. Detailed procedure: Continue with the next set of sight words on the board, pointing and reading together.",
-              "video": "https://www.youtube.com/watch?v=4_jOF2xEdzY",
+              "video": "",
               "doc": "",
               "image": "/assets/Images/UKG/ESB/b-(15).png",
               "time": "20 minutes",
@@ -7950,7 +7844,7 @@
               "title": "Revisit – healthy and unhealthy food/ plants",
               "slider": "EVS",
               "content": "Learning Goal: To test recall on food and plant types. Activity: Oral Q&A. Detailed procedure: Ask students to name one healthy food, one unhealthy food, and one type of plant.",
-              "video": ["/assets/Videos/healthyvsunhealthy.mp4","/assets/Videos/Exploring_plant_types.mp4"],
+              "video": "/assets/Videos/healthyvsunhealthy.mp4",
               "doc": "",
               "image": ["/assets/Images/UKG/EVS/21.png","/assets/Images/UKG/EVS/22.png","/assets/Images/UKG/EVS/23.png"],
               "time": "20 minutes",
@@ -8013,7 +7907,7 @@
               "title": "Before/After/Between (51-60)",
               "slider": "Math",
               "content": "Learning Goal: To master sequencing specifically between 51 and 60. Activity: Workbook exercise. Detailed procedure: Instruct students to complete the before/after/between exercises for numbers 51-60.",
-              "video": [],
+              "video": "",
               "doc": "",
               "image": ["/assets/Images/UKG/MWB/a-(45).png","/assets/Images/UKG/MWB/a-(46).png"],
               "time": "20 minutes",
@@ -8041,7 +7935,7 @@
               "content": "Learning Goal: To reinforce 'L' blend phonics. Activity: Word completion. Detailed procedure: Instruct students to fill in the missing 'L' blend to complete the picture name.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/UKG/ESB/b-(18).png","/assets/Images/UKG/ESB/b-(19).png"],
+              "image": ["/assets/Images/UKG/ESB/b-(20).png","/assets/Images/UKG/ESB/b-(21).png"],
               "time": "20 minutes",
               "youtube link": "https://www.youtube.com/watch?v=EtnI7JPeCAQ",
               "page refernce": "ESB – 29, 30"
@@ -8135,9 +8029,9 @@
               "title": "Revisit – Types of plants and Germination",
               "slider": "EVS",
               "content": "Learning Goal: To consolidate learning about plant life. Activity: Discussion. Detailed procedure: Ask students to recall the steps of a seed growing and name a few plant types.",
-              "video": ["/assets/Videos/INTRO_GERMINATION.mp4","/assets/Videos/categorizing_plants.mp4"],
+              "video": "/assets/Videos/INTRO_GERMINATION.mp4",
               "doc": "",
-              "image": ["/assets/Images/UKG/EVS/24.png","/assets/Images/UKG/EVS/25.png","/assets/Images/UKG/EVS/30.png","/assets/Images/UKG/EVS/31.png"],
+              "image": ["/assets/Images/UKG/EVS/25.png","/assets/Images/UKG/EVS/30.png","/assets/Images/UKG/EVS/24.png","/assets/Images/UKG/EVS/31.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -8232,7 +8126,7 @@
               "doc": "",
               "image": ["/assets/Images/UKG/ESB/b-(26).png","/assets/Images/UKG/ESB/b-(27).png","/assets/Images/UKG/ESB/b-(28).png"],
               "time": "20 minutes",
-              "youtube link": "https://www.youtube.com/watch?v=svqH6KIm_Os",
+              "youtube link": "",
               "page refernce": "ESB – 35, 36, 37"
             },
             {
@@ -8243,7 +8137,7 @@
               "doc": "",
               "image": "/assets/Images/UKG/MSB/30.png",
               "time": "20 minutes",
-              "youtube link": "https://www.youtube.com/watch?v=uqfS0GvJiGg",
+              "youtube link": "https://www.youtube.com/watch?v=t9kZmfnYYME",
               "page refernce": "MSB – 30"
             },
             {
@@ -8426,18 +8320,18 @@
               "content": "Learning Goal: To introduce the pentagon shape. Activity: Tracing and colouring. Detailed procedure: Explain that a pentagon has 5 sides. Instruct students to trace, colour, and identify pentagon objects.",
               "video": "",
               "doc": "",
-              "image": [],
+              "image": ["/assets/Images/UKG/MSB/33.png","/assets/Images/UKG/MWB/a-(19).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=WhzcyYP6jYM",
               "page refernce": "MSB – 33, MWB - 19"
             },
             {
               "title": "Activity Talk about their favourite fruits",
               "slider": "EVS",
               "content": "Learning Goal: To practice oral expression and vocabulary. Activity: Oral sharing. Detailed procedure: Ask each student to name their favourite fruit and describe its colour or taste.",
-              "video": "",
+              "video": "/assets/Videos/oral expression.mp4",
               "doc": "",
-              "image": "/assets/Videos/oral expression.mp4",
+              "image": "",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "Beyond the book"
@@ -8452,7 +8346,7 @@
               "content": "Learning Goal: To use 'S' blends contextually. Activity: Fill in the blanks. Detailed procedure: Provide sentences and ask students to choose the correct 'S' blend word to complete them.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/EWB/a-(44).png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "EWB - 18"
@@ -8463,7 +8357,7 @@
               "content": "Learning Goal: To introduce skip counting by 2s. Activity: Number jumping. Detailed procedure: Use a number line to show jumping over one number to land on the next (0, 2, 4, 6...).",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MSB/34.png","/assets/Images/UKG/MSB/35.png"],
               "time": "20 minutes",
               "youtube link": "https://www.youtube.com/watch?v=MUMyE91WRrQ",
               "page refernce": "MSB – 34, 35"
@@ -8472,8 +8366,9 @@
               "title": "Activity-fireless cooking Fruit Salad",
               "slider": "EVS",
               "content": "Learning Goal: To experience making a healthy snack. Activity: Fireless cooking. Detailed procedure: Teacher demonstrates mixing pre-cut fruits to make a simple fruit salad for the class.",
+              "video": "/assets/Videos/making_fruit_salad.mp4.mp4",
               "doc": "",
-              "image": "/assets/Videos/making_fruit_salad.mp4",
+              "image": "",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "Beyond the book"
@@ -8488,7 +8383,7 @@
               "content": "Learning Goal: To consolidate 'S' blend words. Activity: Independent workbook practice. Detailed procedure: Have students write out words and short phrases utilizing 'S' blends.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EWB/a-(45).png","/assets/Images/UKG/EWB/a-(46).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "EWB – 19, 20"
@@ -8499,18 +8394,18 @@
               "content": "Learning Goal: To practice skip counting. Activity: Filling missing numbers. Detailed procedure: Instruct students to fill in the missing numbers counting by 2s to help the character reach the end.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MWB/a-(20).png","/assets/Images/UKG/MWB/a-(21).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=MUMyE91WRrQ",
               "page refernce": "MWB – 20, 21"
             },
             {
               "title": "Revisit – fruits",
               "slider": "EVS",
               "content": "Learning Goal: To recall fruit facts. Activity: Flashcard quiz. Detailed procedure: Hold up flashcards of fruits and ask whether they have one seed, few seeds, or many seeds.",
-              "video": "",
+              "video": "/assets/Videos/categorizing by seeds.mp4",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/EVS/37.png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -8536,18 +8431,18 @@
               "content": "Learning Goal: To learn numbers 61 through 66. Activity: Number tracing. Detailed procedure: Introduce numbers 61-66 and have students trace them in the skillbook.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MSB/36.png","/assets/Images/UKG/MSB/37.png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=nbAmcOrWtpc&t=0s",
               "page refernce": "MSB – 36, 37"
             },
             {
               "title": "Vegetables",
               "slider": "EVS",
               "content": "Learning Goal: To distinguish between underground and above-ground vegetables. Activity: Picture study. Detailed procedure: Show pictures and explain which vegetables grow under the soil and which grow above.",
-              "video": "",
+              "video": "/assets/Videos/underground_vs_above_ground.mp4",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EVS/40.png","/assets/Images/UKG/EVS/41.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "40, 41"
@@ -8564,7 +8459,7 @@
               "doc": "",
               "image": "",
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=sgr_r3b_DbI",
               "page refernce": "Beyond the book"
             },
             {
@@ -8573,9 +8468,9 @@
               "content": "Learning Goal: To learn numbers 67 through 70. Activity: Number tracing. Detailed procedure: Introduce numbers 67-70 and have students trace them to complete the set up to 70.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MSB/38.png","/assets/Images/UKG/MSB/39.png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=nbAmcOrWtpc&t=132s",
               "page refernce": "MSB- 38, 39"
             },
             {
@@ -8584,7 +8479,7 @@
               "content": "Learning Goal: To identify vegetable growth types. Activity: Worksheet filling. Detailed procedure: Have students circle above-ground vegetables and underground vegetables in their books.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EVS/42.png","/assets/Images/UKG/EVS/43.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "42, 43"
@@ -8610,18 +8505,18 @@
               "content": "Learning Goal: To reinforce writing numbers 61-70 sequentially. Activity: Independent writing. Detailed procedure: Have students write the numbers 61 to 70 independently in their workbooks.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/MWB/a-(22).png",
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=nbAmcOrWtpc",
               "page refernce": "MWB - 22"
             },
             {
               "title": "Activity",
               "slider": "EVS",
               "content": "Learning Goal: To spell vegetable names. Activity: Word writing. Detailed procedure: Have students use the hint box to write the correct names for the vegetables pictured.",
-              "video": "",
+              "video": "/assets/Videos/vegetable_spelling.mp4",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/EVS/44.png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "44"
@@ -8647,7 +8542,7 @@
               "content": "Learning Goal: To understand sequencing for numbers 61-70. Activity: Worksheet completion. Detailed procedure: Instruct students to fill in the missing numbers before, after, or between the given 60s numbers.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/MSB/40.png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MSB - 40"
@@ -8673,9 +8568,9 @@
               "content": "Learning Goal: To review all blends learned so far. Activity: Phonics review. Detailed procedure: Quickly go through flashcards of L, R, and S blends and have the class sound them out.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": [ "/assets/Images/UKG/ESB/b-(22).png","/assets/Images/UKG/ESB/b-(23).png","/assets/Images/UKG/ESB/b-(29).png","/assets/Images/UKG/ESB/b-(30).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": ["https://www.youtube.com/watch?v=svqH6KIm_Os","https://www.youtube.com/watch?v=EtnI7JPeCAQ","https://www.youtube.com/watch?v=i9kINwIoT1w"],
               "page refernce": ""
             },
             {
@@ -8684,7 +8579,7 @@
               "content": "Learning Goal: To reinforce sequencing for numbers 61-70. Activity: Independent practice. Detailed procedure: Have students complete additional before, after, and between exercises in their workbooks.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MWB/a-(23).png","/assets/Images/UKG/MWB/a-(24).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MWB – 23, 24"
@@ -8693,7 +8588,7 @@
               "title": "Revisit – Vegetables",
               "slider": "EVS",
               "content": "Learning Goal: To consolidate vegetable knowledge. Activity: Oral Q&A. Detailed procedure: Ask students to name two underground vegetables and two above-ground vegetables.",
-              "video": "",
+              "video": "/assets/Videos/underground_vs_above_ground.mp4",
               "doc": "",
               "image": "",
               "time": "20 minutes",
@@ -8721,18 +8616,18 @@
               "content": "Learning Goal: To arrange numbers 61-70 in order. Activity: Sequencing. Detailed procedure: Explain arranging from smallest to largest and vice versa. Have students complete the skillbook exercise.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MSB/41.png"],
               "time": "20 minutes",
               "youtube link": "",
-              "page refernce": "MSB – 41, 42"
+              "page refernce": "MSB – 41"
             },
             {
               "title": "Flowers",
               "slider": "EVS",
               "content": "Learning Goal: To identify common flowers. Activity: Vocabulary building. Detailed procedure: Show pictures of flowers like rose, hibiscus, marigold, and teach their names.",
-              "video": "",
+              "video": "/assets/Videos/flower_expert.mp4",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/EVS/45.png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "45"
@@ -8747,7 +8642,7 @@
               "content": "Learning Goal: To review all sight words taught. Activity: Sight word bingo. Detailed procedure: Play a simple bingo game using sight words to make the review fun.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/ESB/b-(15).png",
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -8758,7 +8653,7 @@
               "content": "Learning Goal: To reinforce ascending and descending concepts. Activity: Independent practice. Detailed procedure: Instruct students to arrange the jumbled numbers correctly in their workbooks.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MWB/a-(25).png","/assets/Images/UKG/MWB/a-(26).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MWB - 25, 26"
@@ -8767,9 +8662,9 @@
               "title": "Activity",
               "slider": "EVS",
               "content": "Learning Goal: To observe flower characteristics. Activity: Matching and writing. Detailed procedure: Have students match flowers to their petals and write their names in the boxes provided.",
-              "video": "",
+              "video": "/assets/Videos/observing_shapes.mp4",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EVS/46.png","/assets/Images/UKG/EVS/47.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "46, 47"
@@ -8784,18 +8679,18 @@
               "content": "Learning Goal: To review 'L' blend words. Activity: Picture naming. Detailed procedure: Show pictures and have students verbally identify them using the correct 'L' blend.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/ESB/b-(16).png","/assets/Images/UKG/ESB/b-(17).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=EtnI7JPeCAQ",
               "page refernce": ""
             },
             {
               "title": "Tens and Ones",
               "slider": "Math",
               "content": "Learning Goal: To review place value up to 70. Activity: Block counting. Detailed procedure: Have students count tens and ones for numbers in the 60s and write the corresponding numerals.",
-              "video": "",
+              "video": "/assets/Videos/Mastering_Tens_and_Ones.mp4",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/MSB/43.png","/assets/Images/UKG/MWB/a-(27).png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": "MSB - 43, MWB - 27"
@@ -8806,7 +8701,7 @@
               "content": "Learning Goal: To review plant categories. Activity: Recap discussion. Detailed procedure: Ask students to explain the difference between a shrub and an herb, providing examples.",
               "video": "",
               "doc": "",
-              "image": ["/assets/Images/UKG/EVS/22.png","/assets/Images/UKG/EVS/23.png","/assets/Images/UKG/EVS/24.png","/assets/Images/UKG/EVS/25.png"],
+              "image": ["/assets/Images/UKG/EVS/22.png","/assets/Images/UKG/EVS/23.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -8821,10 +8716,10 @@
               "content": "Learning Goal: To review 'R' blend words. Activity: Reading practice. Detailed procedure: Read short sentences containing 'R' blends together as a class.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/ESB/b-(22).png","/assets/Images/UKG/ESB/b-(23).png"],
               "time": "20 minutes",
-              "youtube link": "",
-              "page refernce": ""
+              "youtube link": "https://www.youtube.com/watch?v=svqH6KIm_Os",
+              "page refernce":"" 
             },
             {
               "title": "Number names 61-70",
@@ -8832,18 +8727,18 @@
               "content": "Learning Goal: To learn number names for 61-70. Activity: Writing and tracing. Detailed procedure: Instruct students to trace and write the number names 'Sixty one' to 'Seventy'.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/MSB/44.png",
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=l29ycb_7TYQ",
               "page refernce": "MSB - 44"
             },
             {
               "title": "Revisit – Germination",
               "slider": "EVS",
               "content": "Learning Goal: To remember the plant life cycle. Activity: Sequence sorting. Detailed procedure: Scramble the stages of germination on the board and ask students to re-order them.",
-              "video": "",
+              "video": "/assets/Videos/INTRO_GERMINATION.mp4",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EVS/30.png","/assets/Images/UKG/EVS/31.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
@@ -8858,9 +8753,9 @@
               "content": "Learning Goal: To review 'S' blend words. Activity: Spelling bee. Detailed procedure: Conduct a mini spelling test or game focusing on 'S' blend words.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/ESB/b-(29).png","/assets/Images/UKG/ESB/b-(30).png"],
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=i9kINwIoT1w",
               "page refernce": ""
             },
             {
@@ -8869,18 +8764,18 @@
               "content": "Learning Goal: To reinforce spelling of 61-70 number names. Activity: Independent writing. Detailed procedure: Have students practice writing the number names without tracing.",
               "video": "",
               "doc": "",
-              "image": "",
+              "image": "/assets/Images/UKG/MWB/a-(28).png",
               "time": "20 minutes",
-              "youtube link": "",
+              "youtube link": "https://www.youtube.com/watch?v=y8F_gIwq3M4",
               "page refernce": "MWB - 28"
             },
             {
               "title": "Revisit – Fruits and Vegetables",
               "slider": "EVS",
               "content": "Learning Goal: To consolidate knowledge of fruits and vegetables. Activity: Show and tell. Detailed procedure: Bring a real fruit or vegetable and ask students to classify it and describe it.",
-              "video": "",
+              "video": ["/assets/Videos/categorizing by seeds.mp4", "/assets/Videos/underground_vs_above_ground.mp4"],
               "doc": "",
-              "image": "",
+              "image": ["/assets/Images/UKG/EVS/40.png","/assets/Images/UKG/EVS/41.png","/assets/Images/UKG/EVS/37.png"],
               "time": "20 minutes",
               "youtube link": "",
               "page refernce": ""
