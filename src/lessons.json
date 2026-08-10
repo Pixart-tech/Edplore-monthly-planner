@@ -2767,7 +2767,7 @@
                 "doc": "",
                 "image": [
                   "/assets/Images/Nursery/Jwb1.png",
-                  "/assets/Images/Nursery/Jwb2.png"
+                  "/assets/Images/Nursery/Jwb2.png" 
                 ],
                 "time": "20 minutes",
                 "youtube link": "",
@@ -3153,7 +3153,7 @@
           "page refernce": "ESB - 35, 36",
           "trace": {
             "title": "Trace",
-            "content": "Letter K"
+            "content": "K"
           }
         },
         {
@@ -3171,7 +3171,7 @@
           "title": "Introduction to fruits",
           "slider": "EVS",
           "content": "Learning Goal: To identify and name different types of fruits. Activity: Vocabulary building. Detailed procedure: Show pictures of different fruits like Apple, Mango, Orange, and Banana. Ask the children to point to their favourite fruit and match it to the vocabulary.",
-          "video": "",
+          "video": "/assets/videos/Early_Ed__Intro_to_Fruits.mp4",
           "doc": "",
           "image": "/assets/Images/Nursery/fruits.png",
           "time": "20 minutes",
@@ -3194,7 +3194,7 @@
           "page refernce": "EWB - 24",
           "trace": {
             "title": "Trace",
-            "content": "Letter K"
+            "content": "K"
           }
         },
         {
@@ -3214,7 +3214,7 @@
           "content": "Learning Goal: To express personal preferences regarding fruits. Activity: Circling preferred items. Detailed procedure: Instruct students to look at the mixed array of fruits in their workbook, circle the ones they like, and colour the fruit outlines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/fruit_Activity.png", "/assets/Images/Nursery/fruit_Activity_1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EVS - 30, 31"
@@ -3235,7 +3235,7 @@
           "page refernce": "ESB - 37, 38",
           "trace": {
             "title": "Trace",
-            "content": "Letter L"
+            "content": "L"
           }
         },
         {
@@ -3276,7 +3276,7 @@
           "page refernce": "EWB - 26",
           "trace": {
             "title": "Trace",
-            "content": "Letter L"
+            "content": "L"
           }
         },
         {
@@ -3311,7 +3311,7 @@
           "content": "Learning Goal: To solidify formation and sounds for K and L. Activity: Writing and sound review. Detailed procedure: Have students practice writing K and L, making the /k/ and /l/ sounds, and recalling words that start with them.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/lsb (1).png","/assets/Images/Nursery/lsb (2).png","/assets/Images/Nursery/ksb (1).png", "/assets/Images/Nursery/ksb (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 23, 25",
@@ -3342,7 +3342,7 @@
           "content": "Learning Goal: To ensure long-term retention of fruit vocabulary. Activity: Flashcard review. Detailed procedure: Show flashcards of different fruits and have the class identify them rapidly.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/fruits.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": ""
@@ -3357,13 +3357,13 @@
           "content": "Learning Goal: To introduce the letter M and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce words starting with M like Monkey, Milk, and Mango. Guide students to trace and write the letter M, then colour the mangoes with the letter M.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/mesb.png", "/assets/Images/Nursery/mesb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "ESB - 39, 40",
           "trace": {
             "title": "Trace",
-            "content": "Letter M"
+            "content": "M"
           }
         },
         {
@@ -3372,7 +3372,7 @@
           "content": "Learning Goal: To introduce the concept of 'eleven'. Activity: Object counting and tracing. Detailed procedure: Show a picture of 11 mangoes. Have the students count along. Guide them to trace the large number 11, then circle the teddy bears with the number 11.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/num11sb.png", "/assets/Images/Nursery/num11sb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 47, 48"
@@ -3381,9 +3381,9 @@
           "title": "Introduction to vegetables",
           "slider": "EVS",
           "content": "Learning Goal: To identify and name different types of vegetables. Activity: Vocabulary building. Detailed procedure: Show pictures of different vegetables like Carrot, Tomato, Cabbage, and Onion. Ask the children to identify them.",
-          "video": "",
+          "video": "/assets/Videos/Introduction_to_Vegetables.mp4",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/vegetables (1).png", "/assets/Images/Nursery/vegetables (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EVS - 32"
@@ -3398,13 +3398,13 @@
           "content": "Learning Goal: To reinforce letter M recognition and independent writing. Activity: Focused writing practice. Detailed procedure: Have students practice tracing and writing the letter M independently in their workbooks.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/mewb.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 28",
           "trace": {
             "title": "Trace",
-            "content": "Letter M"
+            "content": "M"
           }
         },
         {
@@ -3413,7 +3413,7 @@
           "content": "Learning Goal: To build independent writing skills for the number 11. Activity: Writing practice. Detailed procedure: Instruct students to trace and write the number 11 independently inside the grid lines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/b-(25).png", "/assets/Images/Nursery/b-(26).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 35, 36"
@@ -3439,13 +3439,13 @@
           "content": "Learning Goal: To introduce the letter N and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce the /n/ sound with words like Nest, Net, and Nose. Instruct the children to trace and write the letter N, and circle the nails with the letter N.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/nsb1.png", "/assets/Images/Nursery/nsb2.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "ESB - 41, 42",
           "trace": {
             "title": "Trace",
-            "content": "Letter N"
+            "content": "N"
           }
         },
         {
@@ -3454,7 +3454,7 @@
           "content": "Learning Goal: To introduce the concept of 'twelve'. Activity: Object counting and tracing. Detailed procedure: Show a picture of 12 horses. Have the students count along. Guide them to trace the large number 12, then circle the drums with the number 12.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/12msb1 (1).png", "/assets/Images/Nursery/12msb1 (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 49, 50"
@@ -3480,13 +3480,13 @@
           "content": "Learning Goal: To reinforce letter N recognition and independent writing. Activity: Focused writing practice. Detailed procedure: Have students practice tracing and writing the letter N independently in their workbooks.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/nwb.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 30",
           "trace": {
             "title": "Trace",
-            "content": "Letter N"
+            "content": "N"
           }
         },
         {
@@ -3495,7 +3495,7 @@
           "content": "Learning Goal: To build independent writing skills for the number 12. Activity: Writing practice. Detailed procedure: Instruct students to trace and write the number 12 independently inside the grid lines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/12mwb.png", "/assets/Images/Nursery/12mwb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 37, 38"
@@ -3521,13 +3521,17 @@
           "content": "Learning Goal: To solidify formation and sounds for M and N. Activity: Writing review. Detailed procedure: Have students practice writing M and N, reviewing their sounds.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/mewb.png", "/assets/Images/Nursery/nwb.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 29, 27",
-          "trace": {
+          "trace1": {
             "title": "Trace",
-            "content": "Letters M, N"
+            "content": "M"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "N"
           }
         },
         {
@@ -3536,7 +3540,7 @@
           "content": "Learning Goal: To synthesize recognition and counting for numbers 11 and 12. Activity: Interactive counting. Detailed procedure: Use blocks or crayons to create groups of 11 and 12, having students count them out.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/num11sb.png", "/assets/Images/Nursery/num11sb1.png", "/assets/Images/Nursery/12msb1 (1).png", "/assets/Images/Nursery/12msb1 (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": ""
@@ -3562,13 +3566,13 @@
           "content": "Learning Goal: To introduce the letter O and its beginning sound. Activity: Letter tracing. Detailed procedure: Introduce words starting with O like Owl, Octopus, and Ostrich. Guide students to trace and write the letter O, then colour all the circles with the letter O.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/osb.png", "/assets/Images/Nursery/osb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "ESB - 43, 44",
           "trace": {
             "title": "Trace",
-            "content": "Letter O"
+            "content": "O"
           }
         },
         {
@@ -3577,7 +3581,7 @@
           "content": "Learning Goal: To introduce the concept of 'thirteen'. Activity: Object counting and tracing. Detailed procedure: Show a picture of 13 dolls. Have the students count along. Guide them to trace the large number 13, then circle the cars with the number 13.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/13msb.png", "/assets/Images/Nursery/13msb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 51, 52"
@@ -3586,9 +3590,9 @@
           "title": "Flowers",
           "slider": "EVS",
           "content": "Learning Goal: To identify and name different types of flowers. Activity: Vocabulary building. Detailed procedure: Show pictures of different flowers like Rose, Lotus, Sunflower, and Daisy. Discuss their colours.",
-          "video": "",
+          "video": "/assets/Videos/types_of_flowers.mp4",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/flowers.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EVS - 35"
@@ -3603,13 +3607,13 @@
           "content": "Learning Goal: To reinforce letter O recognition and independent writing. Activity: Focused writing practice. Detailed procedure: Have students practice tracing and writing the letter O independently in their workbooks.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/oewb.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 32",
           "trace": {
             "title": "Trace",
-            "content": "Letter O"
+            "content": "O"
           }
         },
         {
@@ -3618,7 +3622,7 @@
           "content": "Learning Goal: To build independent writing skills for the number 13. Activity: Writing practice. Detailed procedure: Instruct students to trace and write the number 13 independently inside the grid lines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/13mwb (1).png", "/assets/Images/Nursery/13mwb (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 40"
@@ -3629,7 +3633,7 @@
           "content": "Learning Goal: To practice tracing and shape recognition of flowers. Activity: Tracing and colouring. Detailed procedure: Instruct students to trace the dotted lines to complete the flower and colour it.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/flower_activity.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EVS - 36"
@@ -3644,7 +3648,7 @@
           "content": "Learning Goal: To assess beginning sound association. Activity: First letter colouring. Detailed procedure: Instruct students to look at pictures and colour the first letter of each object.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/coluring_activity.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "ESB - 45"
@@ -3655,7 +3659,7 @@
           "content": "Learning Goal: To introduce the concept of 'fourteen'. Activity: Object counting and tracing. Detailed procedure: Show a picture of 14 cupcakes. Have the students count along. Guide them to trace the large number 14, then colour the umbrella with the number 14.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/14msb (1).png", "/assets/Images/Nursery/14msb (2).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 53, 54"
@@ -3666,7 +3670,7 @@
           "content": "Learning Goal: To reinforce flower colour associations. Activity: Specific colouring. Detailed procedure: Instruct students to colour the Daisy blue, the Rose red, and the Sunflower yellow according to the workbook.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/assoc_activity.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EVS - 37"
@@ -3681,7 +3685,7 @@
           "content": "Learning Goal: To consolidate letter-sound recognition. Activity: Circling the first letter. Detailed procedure: Look at each object in the workbook and circle its correct first letter from the given options.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/circle_first_letter.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "ESB - 46"
@@ -3692,7 +3696,7 @@
           "content": "Learning Goal: To build independent writing skills for the number 14. Activity: Writing practice. Detailed procedure: Instruct students to trace and write the number 14 independently inside the grid lines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/14MWB(1).png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 42"
@@ -3718,7 +3722,7 @@
           "content": "Learning Goal: To assess letter formation skills. Activity: Writing recap. Detailed procedure: Have students complete the recap activities provided in the English Workbook.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/recap_k-o.png", "/assets/Images/Nursery/recap_k-o_1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "EWB - 31, 33"
@@ -3729,7 +3733,7 @@
           "content": "Learning Goal: To reinforce counting concepts for 13 and 14. Activity: Practice writing. Detailed procedure: Provide extra practice for tracing and writing the numbers.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/recap_13-14.png", "/assets/Images/Nursery/recap_13-14_1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 39, 41"
@@ -3740,7 +3744,7 @@
           "content": "Learning Goal: To ensure long-term retention of flower vocabulary. Activity: Flashcard review. Detailed procedure: Show flashcards of different flowers and have the class identify them.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/flowers.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": ""
@@ -3766,7 +3770,7 @@
           "content": "Learning Goal: To introduce the concept of 'fifteen'. Activity: Object counting and tracing. Detailed procedure: Show a picture of 15 pots. Have the students count along. Guide them to trace the large number 15, then colour the fish with the number 15.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/15msb.png", "/assets/Images/Nursery/15msb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 55, 56"
@@ -3803,7 +3807,7 @@
           "content": "Learning Goal: To build independent writing skills for the number 15. Activity: Writing practice. Detailed procedure: Instruct students to trace and write the number 15 independently inside the grid lines.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Imaages/Nursery/15mwb.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 43"
@@ -3827,16 +3831,33 @@
           "title": "Activity - Sand tracing(K-O)",
           "slider": "English",
           "content": "Learning Goal: To reinforce letter formation through tactile sensory feedback. Activity: Sand tray writing. Detailed procedure: Provide shallow trays filled with sand. Instruct the children to use their index finger to write letters K through O.",
-          "video": "",
+          "video": "/assets/Videos/sandtracing_k_o.mp4",
           "doc": "",
           "image": "",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "",
-          "trace": {
+          "trace1": {
             "title": "Trace",
-            "content": "Letters K-O"
+            "content": "K"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "L"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "M"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "N"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "O"
           }
+
         },
         {
           "title": "Number 15",
@@ -3844,7 +3865,7 @@
           "content": "Learning Goal: To consolidate writing skills for the number 15. Activity: Continued writing practice. Detailed procedure: Provide additional practice for tracing and writing the number 15.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/15mwb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MWB - 44"
@@ -3868,7 +3889,7 @@
           "title": "Phonic song (K-O)",
           "slider": "English",
           "content": "Learning Goal: To musically connect the letters K-O with their phonetic sounds. Activity: Group sing-along. Detailed procedure: Sing an alphabet phonics song focusing on K through O, emphasizing the sound each letter makes.",
-          "video": "",
+          "video": "/assets/Videos/Phonic song (K-O).mp4",
           "doc": "",
           "image": "",
           "time": "20 minutes",
@@ -3881,7 +3902,7 @@
           "content": "Learning Goal: To synthesize counting and number recognition. Activity: Ticking correct numbers. Detailed procedure: Have students count groups of objects (like hats or bells) and tick the correct number below them.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Imaages/Nursery/recap.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 57"
@@ -3907,13 +3928,29 @@
           "content": "Learning Goal: To provide a comprehensive review of letters K through O. Activity: Oral and written assessment. Detailed procedure: Do a quick flashcard review of K-O, followed by having them practice writing the letters.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": ["/assets/Images/Nursery/ksb (1).png", "/assets/Images/Nursery/ksb (2).png", "/assets/Images/Nursery/lsb (1).png", "/assets/Images/Nursery/lsb (2).png", "/assets/Images/Nursery/mesb.png","/assets/Images/Nursery/mesb1.png", "/assets/Images/Nursery/nsb1.png", "/assets/Images/Nursery/nsb2.png", "/assets/Images/Nursery/osb.png", "/assets/Images/Nursery/osb1.png"],
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "",
-          "trace": {
+          "trace1": {
             "title": "Trace",
-            "content": "Letters K-O"
+            "content": "K"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "L"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "M"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "N"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "O"
           }
         },
         {
@@ -3922,7 +3959,7 @@
           "content": "Learning Goal: To synthesize counting and number recognition for 11 to 15. Activity: Identification. Detailed procedure: Instruct students to identify and colour the given numbers from 11 to 15 in their workbook.",
           "video": "",
           "doc": "",
-          "image": "",
+          "image": "/assets/Images/Nursery/recap_11-15.png",
           "time": "20 minutes",
           "youtube link": "",
           "page refernce": "MSB - 58"
@@ -3938,18 +3975,564 @@
           "youtube link": "",
           "page refernce": ""
         }
+        
       ]
     }
         }
-      }
+      },
+      "5":{
+        "days":{
+           "1": {
+      "lessons": [
+        {
+          "title": "Activity - Play-Doh alphabet making",
+          "slider": "English",
+          "content": "Learning Goal: To develop fine motor skills and letter shape recognition. Activity: Clay modeling. Detailed procedure: Give children Play-Doh and guide them to mold letters K through O.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - ice cream stick triangle",
+          "slider": "Math",
+          "content": "Learning Goal: To understand the properties of a triangle. Activity: Crafting. Detailed procedure: Provide children with three ice cream sticks and glue to construct a physical triangle, reinforcing its three sides.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Vegetable art",
+          "slider": "EVS",
+          "content": "Learning Goal: To explore vegetables through art. Activity: Vegetable printing. Detailed procedure: Use cut vegetables like okra (lady's finger) or potato dipped in paint to stamp patterns on paper.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "2": {
+      "lessons": [
+        {
+          "title": "Activity - Missing letters(K-O)",
+          "slider": "English",
+          "content": "Learning Goal: To test sequence memory for the alphabet letters K to O. Activity: Fill-in-the-blank game. Detailed procedure: Write the sequence K, _, M, _, O on the board and ask students to fill in the missing letters.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Play-Doh triangle",
+          "slider": "Math",
+          "content": "Learning Goal: To reinforce the shape of a triangle. Activity: Clay modeling. Detailed procedure: Guide students to roll Play-Doh into 'snakes' and connect three of them to form a triangle.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Vegetable skin peeling (pea, corn)",
+          "slider": "EVS",
+          "content": "Learning Goal: To develop fine motor skills and sensory exploration. Activity: Hands-on peeling. Detailed procedure: Provide boiled peas or corn on the cob and let the children practice peeling them under supervision.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "3": {
+      "lessons": [
+        {
+          "title": "Activity - alphabet puzzle",
+          "slider": "English",
+          "content": "Learning Goal: To assess letter recognition in a mixed format. Activity: Puzzle solving. Detailed procedure: Use alphabet puzzle mats or pieces and have children find and insert the letters K through O into their correct spots.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Green colour hand art (Tree)",
+          "slider": "Math",
+          "content": "Learning Goal: To reinforce the colour green through sensory art. Activity: Handprint art. Detailed procedure: Paint the children's hands green and have them press them onto paper to create the 'leaves' of a drawn tree trunk.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - sorting fruits and vegetables",
+          "slider": "EVS",
+          "content": "Learning Goal: To distinguish between fruits and vegetables. Activity: Categorization game. Detailed procedure: Provide a mix of fruit and vegetable flashcards or toy models, and have children sort them into two distinct baskets.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "4": {
+      "lessons": [
+        {
+          "title": "Revisit - Letter A- J",
+          "slider": "English",
+          "content": "Learning Goal: To ensure long-term retention of previous letters. Activity: Quick review. Detailed procedure: Rapidly flash cards from A to J and have the class shout out the letter name and sound.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace1": {
+            "title": "Trace",
+            "content": "Letter A"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter B"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "Letter C"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "Letter D"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "Letter E"
+          },
+          "trace6": {
+            "title": "Trace",
+            "content": "Letter F"
+          },
+          "trace7": {
+            "title": "Trace",
+            "content": "Letter G"
+          },
+          "trace8": {
+            "title": "Trace",
+            "content": "Letter H"
+          },
+          "trace9": {
+            "title": "Trace",
+            "content": "Letter I"
+          },
+          "trace10": {
+            "title": "Trace",
+            "content": "Letter J"
+          }
+
+        },
+        {
+          "title": "Activity - sorting colours Red and Green",
+          "slider": "Math",
+          "content": "Learning Goal: To discriminate between primary and secondary colours. Activity: Sorting game. Detailed procedure: Mix red and green blocks or toys. Have students separate them into a 'Red' pile and a 'Green' pile.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - show and tell - vegetables",
+          "slider": "EVS",
+          "content": "Learning Goal: To build confidence in public speaking and personal expression. Activity: Show and Tell. Detailed procedure: Ask each child to hold up a vegetable (real or toy) and state its name and colour.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "5": {
+      "lessons": [
+        {
+          "title": "Revisit - Alphabet K and O",
+          "slider": "English",
+          "content": "Learning Goal: To solidify formation and sounds for K and O. Activity: Writing review. Detailed procedure: Have students practice writing K and O on their slates.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace": {
+            "title": "Trace",
+            "content": "Letter K"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter O"
+          }
+        },
+        {
+          "title": "Revisit - Triangle and Green",
+          "slider": "Math",
+          "content": "Learning Goal: To consolidate shape and colour knowledge. Activity: Oral review. Detailed procedure: Hold up a green triangle and ask the children to name both its colour and shape.",
+          "video": "",
+          "doc": "",
+          "image": ["/assets/Images/Nursery/trianglesb.png", "/assets/Images/Nursery/trianglesb1.png","/assets/Images/Nursery/greensb1.png","/assets/Images/Nursery/greensb2.png"],
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Revisit - Vegetables",
+          "slider": "EVS",
+          "content": "Learning Goal: To consolidate vegetable vocabulary. Activity: Oral recap. Detailed procedure: Briefly review the names and colours of the vegetables learned so far.",
+          "video": "",
+          "doc": "",
+          "image": ["/assets/Images/Nursery/vegetables (1).png", "/assets/Images/Nursery/vegetables (2).png"],
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "6": {
+      "lessons": [
+        {
+          "title": "Activity - Letters from A-E",
+          "slider": "English",
+          "content": "Learning Goal: To review letters A-E. Activity: Writing and identification. Detailed procedure: Have children practice writing A-E and finding objects around the room that start with these letters.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace1": {
+            "title": "Trace",
+            "content": "Letter A"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter B"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "Letter C"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "Letter D"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "Letter E"
+          }
+        },
+        {
+          "title": "Activity - Number sequencing 1 to 10",
+          "slider": "Math",
+          "content": "Learning Goal: To review numerical order from 1 to 10. Activity: Number line building. Detailed procedure: Provide number cards from 1 to 10 and have the children work together to line them up in the correct sequence on the floor.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Flower Stamping",
+          "slider": "EVS",
+          "content": "Learning Goal: To explore flower shapes through art. Activity: Crafting. Detailed procedure: Use the base of a cut celery stalk or a plastic bottle dipped in paint to stamp flower shapes onto paper.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "7": {
+      "lessons": [
+        {
+          "title": "Activity - Letters from F-J",
+          "slider": "English",
+          "content": "Learning Goal: To review letters F-J. Activity: Writing and identification. Detailed procedure: Have children practice writing F-J and recalling the phonics song for this segment.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace1": {
+            "title": "Trace",
+            "content": "Letter F"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter G"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "Letter H"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "Letter I"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "Letter J"
+          }
+        },
+        {
+          "title": "Activity - Number sequencing 11 to 15",
+          "slider": "Math",
+          "content": "Learning Goal: To review numerical order from 11 to 15. Activity: Number line building. Detailed procedure: Provide number cards from 11 to 15 and have the children order them correctly.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Flower craft",
+          "slider": "EVS",
+          "content": "Learning Goal: To develop fine motor skills and creativity. Activity: Paper flower making. Detailed procedure: Help children glue pre-cut paper petals around a center circle to create their own flower.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "8": {
+      "lessons": [
+        {
+          "title": "Activity - letters from K-O",
+          "slider": "English",
+          "content": "Learning Goal: To review letters K-O. Activity: Writing and identification. Detailed procedure: Have children practice writing K-O and finding the corresponding flashcards.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace1": {
+            "title": "Trace",
+            "content": "Letter K"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter L"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "Letter M"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "Letter N"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "Letter O"
+          }
+
+        },
+        {
+          "title": "Activity - Missing numbers 1 to 15",
+          "slider": "Math",
+          "content": "Learning Goal: To test sequence memory for numbers 1 to 15. Activity: Fill-in-the-blank game. Detailed procedure: Write a sequence with blanks (e.g., 11, _, 13, _, 15) on the board and have students fill in the missing numbers.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - flower hunt game",
+          "slider": "EVS",
+          "content": "Learning Goal: To encourage active visual scanning and flower recognition. Activity: Scavenger hunt. Detailed procedure: Hide artificial flowers or pictures of flowers around the room and let the children hunt for them.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "9": {
+      "lessons": [
+        {
+          "title": "Missing letters from A to O",
+          "slider": "English",
+          "content": "Learning Goal: To synthesize alphabet sequencing from A to O. Activity: Comprehensive fill-in-the-blank. Detailed procedure: Create a large grid on the board with several missing letters between A and O, and ask students to complete it.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Activity - Counting 1 to 15",
+          "slider": "Math",
+          "content": "Learning Goal: To synthesize counting skills. Activity: Group counting. Detailed procedure: Have the class count aloud together from 1 to 15, clapping their hands for each number.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Revisit - Flowers",
+          "slider": "EVS",
+          "content": "Learning Goal: To consolidate flower vocabulary. Activity: Oral recap. Detailed procedure: Briefly review the names and colours of the flowers learned.",
+          "video": "",
+          "doc": "",
+          "image": "/assets/Images/Nursery/flowers.png",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
+    },
+    "10": {
+      "lessons": [
+        {
+          "title": "Revisit - Letters A-O",
+          "slider": "English",
+          "content": "Learning Goal: To provide a grand review of the first 15 letters. Activity: Alphabet dictation. Detailed procedure: Orally call out letters A through O randomly and have the students write them down.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": "",
+          "trace1": {
+            "title": "Trace",
+            "content": "Letter A"
+          },
+          "trace2": {
+            "title": "Trace",
+            "content": "Letter B"
+          },
+          "trace3": {
+            "title": "Trace",
+            "content": "Letter C"
+          },
+          "trace4": {
+            "title": "Trace",
+            "content": "Letter D"
+          },
+          "trace5": {
+            "title": "Trace",
+            "content": "Letter E"
+          },
+          "trace6": {
+            "title": "Trace",
+            "content": "Letter F"
+          },
+          "trace7": {
+            "title": "Trace",
+            "content": "Letter G"
+          },
+          "trace8": {
+            "title": "Trace",
+            "content": "Letter H"
+          },
+          "trace9": {
+            "title": "Trace",
+            "content": "Letter I"
+          },
+          "trace10": {
+            "title": "Trace",
+            "content": "Letter J"
+          },
+          "trace11": {
+            "title": "Trace",
+            "content": "Letter K"
+          },
+          "trace12": {
+            "title": "Trace",
+            "content": "Letter L"
+          },
+          "trace13": {
+            "title": "Trace",
+            "content": "Letter M"
+          },
+          "trace14": {
+            "title": "Trace",
+            "content": "Letter N"
+          },
+          "trace15": {
+            "title": "Trace",
+            "content": "Letter O"
+          }
+
+
+
+        },
+        {
+          "title": "Recap - Numbers 1 to 15",
+          "slider": "Math",
+          "content": "Learning Goal: To provide a grand review of numbers 1 to 15. Activity: Comprehensive oral quiz. Detailed procedure: Hold up number flashcards from 1 to 15 in random order and have the class identify them.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        },
+        {
+          "title": "Revisit - Fruits/ Vegetables/Flowers",
+          "slider": "EVS",
+          "content": "Learning Goal: To synthesize EVS topics. Activity: Sorting game. Detailed procedure: Mix flashcards of fruits, vegetables, and flowers. Ask the children to sort them into three distinct categories.",
+          "video": "",
+          "doc": "",
+          "image": "",
+          "time": "20 minutes",
+          "youtube link": "",
+          "page refernce": ""
+        }
+      ]
     }
+  }
+
     
     
-    
-    
+      }
+
+    }
   },
-
-
   "LKG": {
   "rhymes_and_stories": {
     "rhymes": [
@@ -6957,7 +7540,1251 @@
             ]
           }
         }
+      },
+      {
+  "months": {
+    "4": {
+      "days": {
+        "1": {
+          "lessons": [
+            {
+              "title": "Letters Uu",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Uu. Activity: Trace and write the letter Uu in the skillbook.",
+              "video": "",
+              "doc": "",
+              "image": ["/assets/Images/LKG/ESB/a-(49).png","/assets/Images/LKG/ESB/a-(50).png"],
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 49,50",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter U"
+              }
+            },
+            {
+              "title": "Numbers 21 and 22",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 21 and 22. Activity: Trace and write the numbers 21 and 22.",
+              "video": "",
+              "doc": "",
+              "image": ["/assets/Images/LKG/MSB/a-(40).png","/assets/Images/LKG/MSB/a-(41).png"],
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB -40",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 21 and 22"
+              }
+            },
+            {
+              "title": "Domestic Animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To identify common domestic animals. Activity: Learn about different domestic animals like cows, goats, and horses.",
+              "video": "",
+              "doc": "",
+              "image": "/assets/Images/LKG/EVS/42.png",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "40"
+            }
+          ]
+        },
+        "2": {
+          "lessons": [
+            {
+              "title": "Letters Uu",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Uu. Activity: Practice tracing and writing the letter Uu in the workbook.",
+              "video": "",
+              "doc": "",
+              "image": ["/assets/Images/LKG/EWB/a-(49).png","/assets/Images/LKG/EWB/a-(50).png"],
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB - 49,50",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter U"
+              }
+            },
+            {
+              "title": "Numbers 21 and 22",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 21 and 22. Activity: Workbook tracing and writing exercises.",
+              "video": "",
+              "doc": "",
+              "image": ["/assets/Images/LKG/MWB/a-(43).png","/assets/Images/LKG/MWB/a-(44).png"],
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB -43,44"
+              
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To practice domestic animals identification. Activity: Complete matching and identification exercises.",
+              "video": "",
+              "doc": "",
+              "image": "/assets/Images/LKG/EVS/43.png",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "41"
+            }
+          ]
+        },
+        "3": {
+          "lessons": [
+            {
+              "title": "Letters Vv",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Vv. Activity: Trace and practice writing the letter Vv in the skillbook.",
+              "video": "",
+              "doc": "",
+              "image": ["/assets/Images/LKG/ESB/a-(51).png","/assets/Images/LKG/ESB/a-(52).png"],
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 51,52",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter V"
+              }
+            },
+            {
+              "title": "Numbers 23 and 24",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 23 and 24. Activity: Trace and write the numbers 23 and 24.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 41"
+              
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To match domestic animals with their names. Activity: Practice related EVS workbook tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "42"
+            }
+          ]
+        },
+        "4": {
+          "lessons": [
+            {
+              "title": "Letters Vv",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Vv. Activity: Workbook tracing and writing exercises.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 51,52",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Vv"
+              }
+            },
+            {
+              "title": "Numbers 23 and 24",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 23 and 24. Activity: Workbook writing and counting practice.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 45,46",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 23 and 24"
+              }
+            },
+            {
+              "title": "Activity – making of Play-Doh animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To develop fine motor skills and express animal shapes. Activity: Sculpt domestic animals using colorful play-dough.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "5": {
+          "lessons": [
+            {
+              "title": "Revisit Letters Uu and Vv",
+              "slider": "English",
+              "content": "Learning Goal: To consolidate learning of letters Uu and Vv. Activity: Review vocabulary and practice writing.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 25 and 26",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 25 and 26. Activity: Trace and write the numbers 25 and 26.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 42",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 25 and 26"
+              }
+            },
+            {
+              "title": "Revisit – Domestic animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To review domestic animals. Activity: Oral recap and discussion on what domestic animals help us do.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "6": {
+          "lessons": [
+            {
+              "title": "Letter Ww",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Ww. Activity: Learn Ww vocabulary and practice tracing.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB -53,54",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Ww"
+              }
+            },
+            {
+              "title": "Numbers 25 and 26",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 25 and 26. Activity: Workbook tracing and counting practice.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 47,48",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 25 and 26"
+              }
+            },
+            {
+              "title": "Wild animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To identify common wild animals. Activity: Discuss wild animals like lions, tigers, and elephants.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "43"
+            }
+          ]
+        },
+        "7": {
+          "lessons": [
+            {
+              "title": "Letter Ww",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Ww. Activity: Trace and write Ww in the workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 53,54",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Ww"
+              }
+            },
+            {
+              "title": "Numbers 27 and 28",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 27 and 28. Activity: Trace and write the numbers 27 and 28.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 43",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 27 and 28"
+              }
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To practice wild animal names and identification. Activity: Complete wild animal identification activities.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "44"
+            }
+          ]
+        },
+        "8": {
+          "lessons": [
+            {
+              "title": "Letter Xx",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Xx. Activity: Learn Xx vocabulary and practice tracing Xx.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 55,56",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Xx"
+              }
+            },
+            {
+              "title": "Numbers 27 and 28",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 27 and 28. Activity: Practice in math workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 49,50",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 27 and 28"
+              }
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To matching wild animals with their correct shadows. Activity: Complete shadow match worksheet.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "45"
+            }
+          ]
+        },
+        "9": {
+          "lessons": [
+            {
+              "title": "Letter Xx",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Xx. Activity: Trace and write Xx in the workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 55,56",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Xx"
+              }
+            },
+            {
+              "title": "Numbers 29 and 30",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 29 and 30. Activity: Trace and write the numbers 29 and 30.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 44",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 29 and 30"
+              }
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To review wild and domestic animals. Activity: Interactive categorizing activity.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "46"
+            }
+          ]
+        },
+        "10": {
+          "lessons": [
+            {
+              "title": "Revisit – Ww and Xx",
+              "slider": "English",
+              "content": "Learning Goal: To consolidate learning of letters Ww and Xx. Activity: Oral vocabulary and tracing recap.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 29 and 30",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 29 and 30. Activity: Complete workbook sequencing tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 51,52",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 29 and 30"
+              }
+            },
+            {
+              "title": "Revisit - Animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To reinforce wild and domestic animals concepts. Activity: Recapping names and sounds of animals.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "11": {
+          "lessons": [
+            {
+              "title": "Letter – Yy",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Yy. Activity: Trace 'y' with finger and practice writing in skillbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 57,58",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Yy"
+              }
+            },
+            {
+              "title": "Before/ After Between",
+              "slider": "Math",
+              "content": "Learning Goal: To identify sequence order of numbers. Activity: Fill in numbers before, after, and between.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB-45"
+            },
+            {
+              "title": "Animals and their young ones",
+              "slider": "EVS",
+              "content": "Learning Goal: To identify animal young ones. Activity: Match animals with their respective young ones.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "48"
+            }
+          ]
+        },
+        "12": {
+          "lessons": [
+            {
+              "title": "Letter – Yy",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Yy. Activity: Complete workbook exercises for Yy.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 57,58",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Yy"
+              }
+            },
+            {
+              "title": "Before/ After Between",
+              "slider": "Math",
+              "content": "Learning Goal: To practice sequencing numbers up to 30. Activity: Complete workbook sequential order tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB-53"
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To practice identifying parents and young ones. Activity: Trace and match names of baby animals.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "49"
+            }
+          ]
+        },
+        "13": {
+          "lessons": [
+            {
+              "title": "Letter Zz",
+              "slider": "English",
+              "content": "Learning Goal: To recognize and write the letter Zz. Activity: Trace 'z' with finger and practice writing in skillbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 59,50",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Zz"
+              }
+            },
+            {
+              "title": "Recap- Before/After/ Between",
+              "slider": "Math",
+              "content": "Learning Goal: To consolidate learning of number lines. Activity: Review activities on sequencing numbers.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To identify animal young ones. Activity: Complete matching and coloring tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "50"
+            }
+          ]
+        },
+        "14": {
+          "lessons": [
+            {
+              "title": "Letter Zz",
+              "slider": "English",
+              "content": "Learning Goal: To master writing the letter Zz. Activity: Complete workbook exercises for Zz.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB -59,60",
+              "trace": {
+                "title": "Trace",
+                "content": "Letter Zz"
+              }
+            },
+            {
+              "title": "Activity",
+              "slider": "Math",
+              "content": "Learning Goal: To practice sequence identification. Activity: Trace the missing numbers before, after, and between.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 46"
+            },
+            {
+              "title": "Activity- matching animals with their young ones (Beyond the book)",
+              "slider": "EVS",
+              "content": "Learning Goal: To apply young ones logic hands-on. Activity: Role-play animals finding their lost babies in class.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "15": {
+          "lessons": [
+            {
+              "title": "Revisit – Yy and Zz",
+              "slider": "English",
+              "content": "Learning Goal: To review letters Yy and Zz. Activity: Trace, identify vocabulary, and revise writing.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Activity",
+              "slider": "Math",
+              "content": "Learning Goal: To consolidate number logic concepts. Activity: Complete sequence order tasks in the workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 54"
+            },
+            {
+              "title": "Revisit – Animals and their young ones",
+              "slider": "EVS",
+              "content": "Learning Goal: To consolidate knowledge of animal young ones. Activity: Complete final recap discussion.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "16": {
+          "lessons": [
+            {
+              "title": "English Recap",
+              "slider": "English",
+              "content": "Learning Goal: To recap letter recognition up to Zz. Activity: Complete letters revision worksheet.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 61"
+            },
+            {
+              "title": "Full/ Half/Empty",
+              "slider": "Math",
+              "content": "Learning Goal: To identify the concepts of full, half, and empty. Activity: Circle empty and tick half/full objects in images.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 47,48"
+            },
+            {
+              "title": "Aquatic Animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To identify common aquatic animals. Activity: Discuss sharks, whales, octopuses, and starfish.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "51"
+            }
+          ]
+        },
+        "17": {
+          "lessons": [
+            {
+              "title": "Revision",
+              "slider": "English",
+              "content": "Learning Goal: To revise letter tracing and matching. Activity: Match uppercase and lowercase letters in workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 61"
+            },
+            {
+              "title": "Activity",
+              "slider": "Math",
+              "content": "Learning Goal: To categorize full, half, and empty objects. Activity: Color glasses to represent different fill capacities.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 55"
+            },
+            {
+              "title": "Activity",
+              "slider": "EVS",
+              "content": "Learning Goal: To reinforce aquatic animal names. Activity: Circle the correct names of water-based animals.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "52"
+            }
+          ]
+        },
+        "18": {
+          "lessons": [
+            {
+              "title": "Recap",
+              "slider": "English",
+              "content": "Learning Goal: To trace and recognize lowercase letters. Activity: Practice lowercase letter writing.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "ESB – 62"
+            },
+            {
+              "title": "Numbers 31 and 32",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 31 and 32. Activity: Trace and write the numbers 31 and 32.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 49",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 31 and 32"
+              }
+            },
+            {
+              "title": "Activity- Drawing aquatic animals (Beyond the book)",
+              "slider": "EVS",
+              "content": "Learning Goal: To creatively depict aquatic life. Activity: Draw and color fish or octopuses in drawing notebooks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "19": {
+          "lessons": [
+            {
+              "title": "Revision",
+              "slider": "English",
+              "content": "Learning Goal: To trace words and vowels. Activity: Practice writing vowels and simple phonetic words.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "EWB – 62"
+            },
+            {
+              "title": "Numbers 31 and 32",
+              "slider": "Math",
+              "content": "Learning Goal: To reinforce writing numbers 31 and 32. Activity: Complete workbook practice tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 56,57",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 31 and 32"
+              }
+            },
+            {
+              "title": "Activity – Play-Doh animals (Beyond the book)",
+              "slider": "EVS",
+              "content": "Learning Goal: To reinforce shape modeling skills. Activity: Mold starfish and fish using vibrant play-dough.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "20": {
+          "lessons": [
+            {
+              "title": "Revisit – Aa and Zz",
+              "slider": "English",
+              "content": "Learning Goal: To review letters from Aa to Zz. Activity: Oral recite and board-matching activities.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 33 and 34",
+              "slider": "Math",
+              "content": "Learning Goal: To recognize and write numbers 33 and 34. Activity: Trace and write the numbers 33 and 34.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 50",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 33 and 34"
+              }
+            },
+            {
+              "title": "Revisit – Aquatic animals",
+              "slider": "EVS",
+              "content": "Learning Goal: To consolidate learning of ocean animals. Activity: Class quiz and identification game.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        }
       }
+    },
+    "5": {
+      "days": {
+        "1": {
+          "lessons": [
+            {
+              "title": "Missing letters Aa- Ee (Beyond the book)",
+              "slider": "Literacy",
+              "content": "Learning Goal: To identify missing alphabetical letter sequences. Activity: Complete 'fill in the blank' letter trains on board.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 33 and 34",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To master writing numbers 33 and 34. Activity: Workbook writing practice.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 58,59",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 33 and 34"
+              }
+            },
+            {
+              "title": "Activity Sorting domestic and wild animals (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To distinguish between farm and jungle environments. Activity: Group animal figures based on domestic/wild classification.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "2": {
+          "lessons": [
+            {
+              "title": "Matching uppercase letters to lower-case letters Aa-Ee",
+              "slider": "Literacy",
+              "content": "Learning Goal: To match capital letters with their small counterpart. Activity: Link capital A-E to small letters.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 35 and 36",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To recognize and write numbers 35 and 36. Activity: Trace and write the numbers 35 and 36.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 51",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 35 and 36"
+              }
+            },
+            {
+              "title": "Activity – Animal making using play dough (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To develop dexterity and design. Activity: Sculpt different animal shapes using play-dough.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "3": {
+          "lessons": [
+            {
+              "title": "Missing letters Ff- Jj (Beyond the book)",
+              "slider": "Literacy",
+              "content": "Learning Goal: To practice sequencing middle-range alphabet letters. Activity: Insert correct missing letters Ff-Jj.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 35 and 36",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To master writing numbers 35 and 36. Activity: Practice writing in numeracy workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 60,61",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 35 and 36"
+              }
+            },
+            {
+              "title": "Activity – Dress as their favorite animal (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To promote peer socialization and motor mimicry. Activity: Dress-up day with children mimicking animal sounds.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "4": {
+          "lessons": [
+            {
+              "title": "Matching uppercase letters to lower-case letters Ff-Jj",
+              "slider": "Literacy",
+              "content": "Learning Goal: To understand matching letter structures. Activity: Drawing lines connecting capital and lowercase sets.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 37 and 38",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To recognize and write numbers 37 and 38. Activity: Trace and write the numbers 37 and 38.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 52",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 37 and 38"
+              }
+            },
+            {
+              "title": "Revisit – young ones of animals",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To consolidate vocabulary of baby animals. Activity: Recalling baby animal names (e.g., puppy, kid, calf).",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "5": {
+          "lessons": [
+            {
+              "title": "Revisit – letter Aa - Jj",
+              "slider": "Literacy",
+              "content": "Learning Goal: To verify writing proficiency for first ten alphabets. Activity: Trace and board review practice.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 37 and 38",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To master writing numbers 37 and 38. Activity: Practice in math workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 62,63",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 37 and 38"
+              }
+            },
+            {
+              "title": "Revisit – Animal sounds",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To recognize sound associations of pets/wild beasts. Activity: Interactive mimicry game in group circles.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "6": {
+          "lessons": [
+            {
+              "title": "Missing letters Kk- Oo (Beyond the book)",
+              "slider": "Literacy",
+              "content": "Learning Goal: To complete alphabetical missing structures for K-O. Activity: Fill in missing letter slots.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 39 and 40",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To recognize and write numbers 39 and 40. Activity: Trace and write the numbers 39 and 40.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB – 53",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 39 and 40"
+              }
+            },
+            {
+              "title": "Revisit – Aquatic animals",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To review names and properties of marine life. Activity: Flashcard game identifying water-dwelling creatures.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "7": {
+          "lessons": [
+            {
+              "title": "Matching uppercase letters to lower-case letters Kk to Oo",
+              "slider": "Literacy",
+              "content": "Learning Goal: To practice visual association of letters. Activity: Connecting lines on capital and lowercase groups.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Numbers 39 and 40",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To master writing numbers 39 and 40. Activity: Practice in math workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB – 64,65",
+              "trace": {
+                "title": "Trace",
+                "content": "Numbers 39 and 40"
+              }
+            },
+            {
+              "title": "Activity Role Play (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To develop empathetic social skills. Activity: Act as caretakers, veterinarians, or animals.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "8": {
+          "lessons": [
+            {
+              "title": "Missing letters Pp- Zz (Beyond the book)",
+              "slider": "Literacy",
+              "content": "Learning Goal: To test final string alphabetical sequence. Activity: Complete missing slots for remaining letters.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Before/After/Between and Activity",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To master sequence orders from 21 to 40. Activity: Missing numbers and positional math tasks.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MSB -54,55"
+            },
+            {
+              "title": "Activity Animal Story (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To build creative narrative retention. Activity: Listen to a narrative on animal environments.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "9": {
+          "lessons": [
+            {
+              "title": "Matching uppercase letters to lower-case letters Pp-Zz",
+              "slider": "Literacy",
+              "content": "Learning Goal: To solidify total alphabetical associations. Activity: Connecting remaining uppercase/lowercase categories.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Before/After/Between and Activity",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To review sequence structures in workbook. Activity: Positional writing in workbook.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": "MWB -66,67"
+            },
+            {
+              "title": "Activity Show and tell (Animals) (Beyond the Book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To practice public speech and display logic. Activity: Show-and-tell presenting favorite animal toys.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        },
+        "10": {
+          "lessons": [
+            {
+              "title": "Revisit Letters Aa to Zz",
+              "slider": "Literacy",
+              "content": "Learning Goal: To review all letters from Aa to Zz. Activity: Trace and boards exercises.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Revisit Numbers 21 to 40",
+              "slider": "Numeracy",
+              "content": "Learning Goal: To consolidate counting up to 40. Activity: Group math oral counting game.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            },
+            {
+              "title": "Field trip to the zoo (Beyond the book)",
+              "slider": "General Awareness",
+              "content": "Learning Goal: To experience wild habitats practically. Activity: Educational outdoor trip to identify various animals.",
+              "video": "",
+              "doc": "",
+              "image": "",
+              "time": "20 minutes",
+              "youtube link": "",
+              "page refernce": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}
     }
       }
     
